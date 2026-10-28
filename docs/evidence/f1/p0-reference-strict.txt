@@ -1,0 +1,13 @@
+Started: 2026-10-28T15:58:55.8215975+01:00
+Directory: C:\Codex\LexiStack\.git\f1-preflight
+Command: dart run validate_reference.dart
+LexiStack schema v2: STRICT
+pack1.json [pack1]: 8 levels, 32 groups, 128 tile positions
+pack2.json [pack2]: 8 levels, 32 groups, 128 tile positions
+pack3.json [pack3]: 8 levels, 32 groups, 128 tile positions
+pack4.json [pack4]: 8 levels, 32 groups, 128 tile positions
+daily.json [daily, Daily]: 8 levels, 32 groups, 128 tile positions
+Totals: 5 packs, 40 levels, 160 groups, 640 tile positions; 0 errors, 0 warnings.
+Strict minimum: PASS; initial benchmark (4×8 campaign + 8 daily): PASS.
+VALID (0 warnings).
+Exit code: 0

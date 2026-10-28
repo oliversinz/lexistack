@@ -1,0 +1,11 @@
+Started: 2026-10-28T16:04:45.3523141+01:00
+Directory: C:\Codex\LexiStack
+Command: dart analyze
+Analyzing LexiStack...
+
+  error - lib\infrastructure\asset_catalog.dart:10:10 - The name 'FlutterError' isn't a type and can't be used in an on-catch clause. Try correcting the name to match an existing class. - non_type_in_catch_clause
+warning - lib\infrastructure\asset_catalog.dart:12:7 - Dead code: This on-catch block won't be executed because 'FormatException' is a subtype of 'InvalidType' and hence will have been caught already. Try reordering the catch clauses so that this block can be reached, or removing the unreachable catch clause. - dead_code_on_catch_subtype
+   info - test\app_test.dart:3:8 - The import of 'dart:typed_data' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/services.dart'. Try removing the import directive. - unnecessary_import
+
+3 issues found.
+Exit code: 3

@@ -1,0 +1,41 @@
+Started: 2026-10-28T16:12:53.8179247+01:00
+Directory: C:\Codex\LexiStack
+Command: git commit -m 'Implement F1 Flutter foundation with pinned content contract'
+[codex/f1-foundation 158f19d] Implement F1 Flutter foundation with pinned content contract
+ 36 files changed, 1913 insertions(+), 23 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 .metadata
+ create mode 100644 analysis_options.yaml
+ create mode 100644 android/.gitignore
+ create mode 100644 android/app/build.gradle.kts
+ create mode 100644 android/app/src/debug/AndroidManifest.xml
+ create mode 100644 android/app/src/main/AndroidManifest.xml
+ create mode 100644 android/app/src/main/kotlin/de/cloudwards/lexistack/MainActivity.kt
+ create mode 100644 android/app/src/main/res/drawable-v21/launch_background.xml
+ create mode 100644 android/app/src/main/res/drawable/launch_background.xml
+ create mode 100644 android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/values-night/styles.xml
+ create mode 100644 android/app/src/main/res/values/styles.xml
+ create mode 100644 android/app/src/profile/AndroidManifest.xml
+ create mode 100644 android/build.gradle.kts
+ create mode 100644 android/gradle.properties
+ create mode 100644 android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100644 android/settings.gradle.kts
+ create mode 100644 assets/levels/manifest.json
+ create mode 100644 assets/levels/pack1.json
+ create mode 100644 lib/app/catalog_controller.dart
+ create mode 100644 lib/infrastructure/asset_catalog.dart
+ create mode 100644 lib/main.dart
+ create mode 100644 lib/ui/app.dart
+ create mode 100644 lib/ui/catalog_screens.dart
+ create mode 100644 lib/ui/theme.dart
+ create mode 100644 pubspec.lock
+ create mode 100644 pubspec.yaml
+ create mode 100644 test/app_test.dart
+ create mode 100644 test/content_test.dart
+ create mode 100644 tool/validate_levels.dart
+Exit code: 0

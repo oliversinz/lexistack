@@ -1,0 +1,9 @@
+Started: 2026-10-28T16:03:20.4804584+01:00
+Directory: C:\Codex\LexiStack
+Command: dart run tool/validate_levels.dart --partial
+LexiStack schema v2: PARTIAL
+pack1.json [pack1]: 8 levels, 32 groups, 128 tile positions
+Totals: 1 packs, 8 levels, 32 groups, 128 tile positions; 0 errors, 0 warnings.
+PARTIAL catalog validation; this is not final release acceptance.
+VALID (0 warnings).
+Exit code: 0

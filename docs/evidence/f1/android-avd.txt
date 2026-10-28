@@ -1,0 +1,8 @@
+Started: 2026-10-28T16:12:19.4702603+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 emu avd name
+Pixel_10
+
+OK
+
+Exit code: 0

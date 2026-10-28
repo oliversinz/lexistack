@@ -1,0 +1,154 @@
+Started: 2026-10-28T16:06:50.6730749+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+Exit code: 0
+
+Started: 2026-10-28T16:06:58.7791896+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input keyevent KEYCODE_HOME
+Exit code: 0
+
+Started: 2026-10-28T16:07:17.0714708+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input swipe 540 2100 540 500 350
+Exit code: 0
+
+Started: 2026-10-28T16:07:18.2474684+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell uiautomator dump /sdcard/f1-launcher.xml
+UI hierchary dumped to: /sdcard/f1-launcher.xml
+Exit code: 0
+
+Started: 2026-10-28T16:07:21.4529493+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell cat /sdcard/f1-launcher.xml
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><hierarchy rotation="0"><node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="0" hint=""><node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="1" hint=""><node index="0" text="" resource-id="android:id/content" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="2" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/launcher" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="1" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/drag_layer" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="1" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/scrim_view" class="android.view.View" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="6" hint="" /><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/apps_view" class="android.widget.RelativeLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,2424]" drawing-order="9" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/search_container_all_apps" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="Search" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[78,231][1002,396]" drawing-order="7" hint=""><node index="1" text="" resource-id="" class="android.widget.RelativeLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[78,241][991,386]" drawing-order="1" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/g_icon" class="android.widget.ImageView" package="com.google.android.apps.nexuslauncher" content-desc="Google app" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[89,250][215,376]" drawing-order="2" hint="" /><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/typeahead_input" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[226,241][854,386]" drawing-order="3" hint=""><node index="0" text="Search web and more" resource-id="com.google.android.apps.nexuslauncher:id/input" class="android.widget.EditText" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[226,241][854,386]" drawing-order="2" hint="Search web and more" /></node><node index="2" text="" resource-id="com.google.android.apps.nexuslauncher:id/end_icons" class="android.widget.LinearLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[739,250][991,376]" drawing-order="4" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/mic_icon" class="android.widget.ImageView" package="com.google.android.apps.nexuslauncher" content-desc="Voice search" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[739,250][865,376]" drawing-order="1" hint="" /><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/lens_icon" class="android.widget.ImageButton" package="com.google.android.apps.nexuslauncher" content-desc="Google Lens" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[865,250][991,376]" drawing-order="2" hint="" /></node><node index="3" text="" resource-id="com.google.android.apps.nexuslauncher:id/action_btn_container" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[854,245][991,382]" drawing-order="1" hint="" /></node></node><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/bottom_sheet_background" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,137][1080,2424]" drawing-order="1" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/bottom_sheet_handle_area" class="android.view.View" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,137][1080,232]" drawing-order="1" hint="" /><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/bottom_sheet_handle" class="android.view.View" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[498,179][582,190]" drawing-order="2" hint="" /></node><node index="2" text="" resource-id="com.google.android.apps.nexuslauncher:id/apps_list_view" class="android.widget.GridView" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,318][1080,2424]" drawing-order="3" hint=""><node index="0" text="Calendar" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Calendar" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[30,413][285,696]" drawing-order="1" hint="" /><node index="1" text="Camera" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Camera" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[285,413][540,696]" drawing-order="2" hint="" /><node index="2" text="Chrome" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Chrome" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[540,413][795,696]" drawing-order="3" hint="" /><node index="3" text="Clock" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Clock" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[795,413][1050,696]" drawing-order="4" hint="" /><node index="4" text="Contacts" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Contacts" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[30,696][285,979]" drawing-order="5" hint="" /><node index="5" text="Drive" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Drive" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[285,696][540,979]" drawing-order="6" hint="" /><node index="6" text="Files" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Files" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[540,696][795,979]" drawing-order="7" hint="" /><node index="7" text="Gmail" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Gmail" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[795,696][1050,979]" drawing-order="8" hint="" /><node index="8" text="Google" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Google" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[30,979][285,1262]" drawing-order="9" hint="" /><node index="9" text="LexiStack" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="LexiStack" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[285,979][540,1262]" drawing-order="10" hint="" /><node index="10" text="Maps" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Maps" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[540,979][795,1262]" drawing-order="11" hint="" /><node index="11" text="Messages" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Messages" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[795,979][1050,1262]" drawing-order="12" hint="" /><node index="12" text="Phone" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Phone" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[30,1262][285,1545]" drawing-order="13" hint="" /><node index="13" text="Photos" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Photos" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[285,1262][540,1545]" drawing-order="14" hint="" /><node index="14" text="Play Store" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Play Store" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[540,1262][795,1545]" drawing-order="15" hint="" /><node index="15" text="Safety" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Safety" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[795,1262][1050,1545]" drawing-order="16" hint="" /><node index="16" text="Settings" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Settings" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[30,1545][285,1828]" drawing-order="17" hint="" /><node index="17" text="TMoble" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="TMoble" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[285,1545][540,1828]" drawing-order="18" hint="" /><node index="18" text="YouTube" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="YouTube" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[540,1545][795,1828]" drawing-order="19" hint="" /><node index="19" text="YT Music" resource-id="com.google.android.apps.nexuslauncher:id/icon" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="YT Music" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[795,1545][1050,1828]" drawing-order="20" hint="" /></node><node index="3" text="" resource-id="com.google.android.apps.nexuslauncher:id/all_apps_header" class="android.widget.LinearLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,318][1080,450]" drawing-order="4" hint="" /><node index="5" text="" resource-id="com.google.android.apps.nexuslauncher:id/scroll_letter_layout" class="android.view.ViewGroup" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[954,355][1080,2424]" drawing-order="6" hint="" /><node index="6" text="" resource-id="com.google.android.apps.nexuslauncher:id/fast_scroller" class="android.view.View" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[996,355][1080,2424]" drawing-order="5" hint="" /></node><node index="3" text="" resource-id="com.google.android.apps.nexuslauncher:id/accessibility_action_view" class="android.view.View" package="com.google.android.apps.nexuslauncher" content-desc="Home" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,142][1080,2361]" drawing-order="1" hint="" /><node index="4" text="" resource-id="com.google.android.apps.nexuslauncher:id/page_indicator_container" class="android.widget.LinearLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1866][1080,1929]" drawing-order="4" hint="" /><node index="5" text="" resource-id="com.google.android.apps.nexuslauncher:id/hotseat" class="android.view.ViewGroup" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[16,1907][1064,2388]" drawing-order="3" hint=""><node index="0" text="" resource-id="" class="android.view.ViewGroup" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[85,1907][995,2097]" drawing-order="1" hint=""><node index="0" text="Phone" resource-id="" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Phone" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[85,1907][253,2097]" drawing-order="1" hint="" /><node index="1" text="Messages" resource-id="" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Messages" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[332,1907][500,2097]" drawing-order="2" hint="" /><node index="2" text="Chrome" resource-id="" class="android.widget.TextView" package="com.google.android.apps.nexuslauncher" content-desc="Chrome" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[580,1907][748,2097]" drawing-order="3" hint="" /></node><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/search_container_hotseat" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="Google search" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[92,2121][988,2281]" drawing-order="2" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/g_icon" class="android.widget.ImageView" package="com.google.android.apps.nexuslauncher" content-desc="Google app" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[103,2139][225,2262]" drawing-order="1" hint="" /><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/end_part" class="android.widget.LinearLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[733,2121][977,2281]" drawing-order="2" hint=""><node index="0" text="" resource-id="com.google.android.apps.nexuslauncher:id/mic_icon" class="android.widget.ImageView" package="com.google.android.apps.nexuslauncher" content-desc="Voice search" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[733,2121][855,2281]" drawing-order="2" hint="" /><node index="1" text="" resource-id="com.google.android.apps.nexuslauncher:id/lens_icon" class="android.widget.ImageButton" package="com.google.android.apps.nexuslauncher" content-desc="Google Lens" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[855,2121][977,2281]" drawing-order="3" hint="" /></node></node></node><node index="6" text="" resource-id="com.google.android.apps.nexuslauncher:id/overview_actions_view" class="android.widget.FrameLayout" package="com.google.android.apps.nexuslauncher" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1949][1080,2424]" drawing-order="8" hint="" /></node></node></node></node></node></hierarchy>
+Exit code: 0
+
+Started: 2026-10-28T16:07:22.0476111+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell screencap -p /sdcard/f1-launcher.png
+Exit code: 0
+
+Started: 2026-10-28T16:07:23.2317813+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 pull /sdcard/f1-launcher.png docs/screenshots/f1-launcher.png
+/sdcard/f1-launcher.png: 1 file pulled, 0 skipped. 48.3 MB/s (577748 bytes in 0.011s)
+Exit code: 0
+
+Started: 2026-10-28T16:07:44.7699519+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input tap 412 1100
+Exit code: 0
+
+Started: 2026-10-28T16:07:45.5387816+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell screencap -p /sdcard/f1-cold.png
+Exit code: 0
+
+Started: 2026-10-28T16:07:47.1423493+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 pull /sdcard/f1-cold.png docs/screenshots/f1-home-cold.png
+/sdcard/f1-cold.png: 1 file pulled, 0 skipped. 42.0 MB/s (583163 bytes in 0.013s)
+Exit code: 0
+
+Started: 2026-10-28T16:08:02.7356535+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell screencap -p /sdcard/f1-cold-ready.png
+Exit code: 0
+
+Started: 2026-10-28T16:08:03.9239558+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 pull /sdcard/f1-cold-ready.png docs/screenshots/f1-home-cold.png
+/sdcard/f1-cold-ready.png: 1 file pulled, 0 skipped. 30.4 MB/s (179466 bytes in 0.006s)
+Exit code: 0
+
+Started: 2026-10-28T16:08:18.9172790+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input tap 360 1450
+Exit code: 0
+
+Started: 2026-10-28T16:08:19.5220426+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell uiautomator dump /sdcard/f1-pack.xml
+UI hierchary dumped to: /sdcard/f1-pack.xml
+Exit code: 0
+
+Started: 2026-10-28T16:08:22.4910946+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell screencap -p /sdcard/f1-pack.png
+Exit code: 0
+
+Started: 2026-10-28T16:08:23.4309107+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 pull /sdcard/f1-pack.png docs/screenshots/f1-pack.png
+/sdcard/f1-pack.png: 1 file pulled, 0 skipped. 34.0 MB/s (178888 bytes in 0.005s)
+Exit code: 0
+
+Started: 2026-10-28T16:08:34.0782630+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input tap 540 780
+Exit code: 0
+
+Started: 2026-10-28T16:08:34.6461269+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell uiautomator dump /sdcard/f1-level.xml
+UI hierchary dumped to: /sdcard/f1-level.xml
+Exit code: 0
+
+Started: 2026-10-28T16:08:37.3818929+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell screencap -p /sdcard/f1-level.png
+Exit code: 0
+
+Started: 2026-10-28T16:08:38.3001378+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 pull /sdcard/f1-level.png docs/screenshots/f1-level.png
+/sdcard/f1-level.png: 1 file pulled, 0 skipped. 28.3 MB/s (103448 bytes in 0.003s)
+Exit code: 0
+
+Started: 2026-10-28T16:08:38.9776020+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell pidof de.cloudwards.lexistack
+7281
+Exit code: 0
+
+Started: 2026-10-28T16:08:39.6032154+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input keyevent KEYCODE_HOME
+Exit code: 0
+
+Started: 2026-10-28T16:08:40.2672846+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input swipe 540 2100 540 500 350
+Exit code: 0
+
+Started: 2026-10-28T16:08:41.2689266+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell uiautomator dump /sdcard/f1-warm-launcher.xml
+UI hierchary dumped to: /sdcard/f1-warm-launcher.xml
+Exit code: 0
+
+Started: 2026-10-28T16:08:57.2742884+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell input tap 412 1100
+Exit code: 0
+
+Started: 2026-10-28T16:08:57.9268381+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell screencap -p /sdcard/f1-warm.png
+Exit code: 0
+
+Started: 2026-10-28T16:08:58.8579500+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 pull /sdcard/f1-warm.png docs/screenshots/f1-level-warm.png
+/sdcard/f1-warm.png: 1 file pulled, 0 skipped. 22.2 MB/s (103518 bytes in 0.004s)
+Exit code: 0
+
+Started: 2026-10-28T16:08:59.5555386+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' -s emulator-5554 shell pidof de.cloudwards.lexistack
+7281
+Exit code: 0

@@ -1,0 +1,16 @@
+Started: 2026-10-28T15:58:00.1172184+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter emulators
+1 available emulator:
+
+Id       • Name     • Manufacturer • Platform
+
+Pixel_10 • Pixel 10 • Google       • android
+
+To run an emulator, run 'flutter emulators --launch <emulator id>'.
+To create a new emulator, run 'flutter emulators --create [--name xyz]'.
+
+You can find more information on managing emulators at the links below:
+  https://developer.android.com/studio/run/managing-avds
+  https://developer.android.com/studio/command-line/avdmanager
+Exit code: 0

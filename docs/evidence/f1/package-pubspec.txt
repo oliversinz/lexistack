@@ -1,0 +1,12 @@
+Started: 2026-10-28T16:12:19.6570090+01:00
+Directory: C:\Codex\LexiStack
+Command: Get-Content .git/f1-contract-test/pubspec.yaml
+name: lexistack_content_contract
+description: Shared schema v2 models, parsing and catalog validation for LexiStack.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.2
+Exit code: 0

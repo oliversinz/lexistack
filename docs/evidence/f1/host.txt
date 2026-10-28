@@ -1,0 +1,11 @@
+Started: 2026-10-28T16:12:19.5318068+01:00
+Directory: C:\Codex\LexiStack
+Command: & { Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,BuildNumber; $PSVersionTable.PSVersion; git --version }
+
+Caption                   Version    BuildNumber
+-------                   -------    -----------
+Microsoft Windows 11 Home 10.0.26300 26300
+
+git version 2.55.0.windows.1
+
+Exit code: 0

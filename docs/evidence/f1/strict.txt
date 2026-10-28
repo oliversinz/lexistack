@@ -1,0 +1,11 @@
+Started: 2026-10-28T16:03:20.4573192+01:00
+Directory: C:\Codex\LexiStack
+Command: dart run tool/validate_levels.dart
+LexiStack schema v2: STRICT
+ERROR [catalog.campaignCount] assets/levels/manifest.json $.campaign: Strict mode requires at least four campaign files; found 1.
+ERROR [catalog.dailyMissing] assets/levels/manifest.json $.daily: Strict mode requires a separate Daily file.
+pack1.json [pack1]: 8 levels, 32 groups, 128 tile positions
+Totals: 1 packs, 8 levels, 32 groups, 128 tile positions; 2 errors, 0 warnings.
+Strict minimum: FAIL; initial benchmark (4×8 campaign + 8 daily): NOT MET.
+INVALID.
+Exit code: 1

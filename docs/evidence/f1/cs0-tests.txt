@@ -1,0 +1,78 @@
+Started: 2026-10-28T15:58:55.7664403+01:00
+Directory: C:\Codex\LexiStack\.git\f1-contract-test
+Command: dart test --reporter expanded
+00:00 +0: loading test\cli_test.dart
+00:00 +0: test\cli_test.dart: partial exits 0 with totals; strict exits 1 for incomplete installation
+00:00 +1: test\cli_test.dart: partial exits 0 with totals; strict exits 1 for incomplete installation
+00:00 +2: test\cli_test.dart: partial exits 0 with totals; strict exits 1 for incomplete installation
+00:00 +3: test\contract_test.dart: models, diagnostics and input collections cannot be mutated
+00:00 +4: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +5: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +6: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +7: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +8: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +9: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +10: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +11: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +12: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +13: test\cli_test.dart: candidate CLI reports replacement/addition and leaves every byte unchanged
+00:00 +14: test\contract_test.dart: rejects duplicate category ID
+00:00 +15: test\cli_test.dart: read failures and usage errors return nonzero
+00:00 +16: test\cli_test.dart: read failures and usage errors return nonzero
+00:00 +17: test\cli_test.dart: read failures and usage errors return nonzero
+00:00 +18: test\cli_test.dart: read failures and usage errors return nonzero
+00:00 +19: test\contract_test.dart: rejects non-unique tiers
+00:00 +20: test\cli_test.dart: malformed UTF-8 reports a read error
+00:00 +21: test\cli_test.dart: malformed UTF-8 reports a read error
+00:00 +22: test\contract_test.dart: rejects non-integer tier
+00:00 +23: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +24: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +25: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +26: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +27: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +28: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +29: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +30: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +31: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +32: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +33: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +34: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +35: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +36: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +37: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +38: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +39: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +40: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +41: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +42: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +43: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +44: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +45: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +46: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +47: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +48: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +49: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +50: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +51: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +52: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +53: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +54: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +55: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +56: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +57: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +58: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +59: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +60: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +61: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +62: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +63: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +64: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +65: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +66: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +67: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +68: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +69: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +70: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +71: test\cli_test.dart: bin entrypoint works in a plain Dart process
+00:00 +72: All tests passed!
+Exit code: 0

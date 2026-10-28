@@ -1,0 +1,9 @@
+Started: 2026-10-28T16:12:19.5903576+01:00
+Directory: C:\Codex\LexiStack
+Command: Get-FileHash -Algorithm SHA256 build/app/outputs/flutter-apk/app-debug.apk
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          9477F86BB80CA6A522DA50774ABBB7DEA01C6DD8F034FA089A1A4ED0B64BE93C       C:\Codex\LexiStack\build\app\out…
+
+Exit code: 0

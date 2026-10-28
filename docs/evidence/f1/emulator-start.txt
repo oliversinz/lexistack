@@ -1,0 +1,4 @@
+Started: 2026-10-28T15:58:32.4608299+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter emulators --launch Pixel_10
+Exit code: 0

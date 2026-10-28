@@ -1,0 +1,5 @@
+Started: 2026-10-28T15:57:48.1621188+01:00
+Directory: C:\Codex\LexiStack
+Command: dart --version
+Dart SDK version: 3.13.7 (stable) (Thu Oct 22 14:28:57 2026 -0700) on "windows_x64"
+Exit code: 0

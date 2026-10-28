@@ -1,0 +1,7 @@
+Started: 2026-10-28T15:58:30.7889738+01:00
+Directory: C:\Codex\LexiStack\.git\f1-contract-test
+Command: dart pub get
+Resolving dependencies...
+Downloading packages...
+Got dependencies!
+Exit code: 0

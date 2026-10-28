@@ -1,0 +1,61 @@
+Started: 2026-10-28T16:06:20.5890175+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter test --reporter expanded
+00:00 +0: loading C:/Codex/LexiStack/test/app_test.dart
+00:00 +0: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +1: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +2: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +3: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +4: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +5: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +6: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +7: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +8: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +9: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +10: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +11: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +12: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +13: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +14: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +15: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +16: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +17: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +18: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +19: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +20: C:/Codex/LexiStack/test/app_test.dart: malformed asset shows file diagnostics and retry recovers
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: Too many elements
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:696:24)
+#1      WidgetController.widget (package:flutter_test/src/controller.dart:828:30)
+#2      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2429:15)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetController.scrollUntilVisible (package:flutter_test/src/controller.dart:2427:27)
+#7      main.reveal (file:///C:/Codex/LexiStack/test/app_test.dart:29:18)
+#8      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/app_test.dart:73:11)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from dart:async and package:stack_trace)
+
+The test description was:
+  malformed asset shows file diagnostics and retry recovers
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +20 -1: C:/Codex/LexiStack/test/app_test.dart: malformed asset shows file diagnostics and retry recovers [E]
+  Test failed. See exception logs above.
+  The test description was: malformed asset shows file diagnostics and retry recovers
+
+00:01 +20 -1: C:/Codex/LexiStack/test/app_test.dart: missing bundled file is named without crashing
+00:01 +21 -1: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(360.0, 640.0) and enlarged text
+00:02 +22 -1: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(390.0, 844.0) and enlarged text
+00:02 +23 -1: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(1280.0, 800.0) and enlarged text
+00:02 +24 -1: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/app_test.dart: malformed asset shows file diagnostics and retry recovers
+Exit code: 1

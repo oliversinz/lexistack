@@ -1,0 +1,31 @@
+Started: 2026-10-28T16:06:50.6363702+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter test --reporter expanded
+00:00 +0: loading C:/Codex/LexiStack/test/app_test.dart
+00:00 +0: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +1: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +2: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +3: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +4: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +5: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +6: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +7: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +8: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +9: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +10: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +11: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +12: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +13: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +14: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +15: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +16: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +17: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +18: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +19: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +20: C:/Codex/LexiStack/test/app_test.dart: malformed asset shows file diagnostics and retry recovers
+00:01 +21: C:/Codex/LexiStack/test/app_test.dart: missing bundled file is named without crashing
+00:01 +22: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(360.0, 640.0) and enlarged text
+00:02 +23: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(390.0, 844.0) and enlarged text
+00:02 +24: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(1280.0, 800.0) and enlarged text
+00:02 +25: All tests passed!
+Exit code: 0

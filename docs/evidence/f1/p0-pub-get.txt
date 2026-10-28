@@ -1,0 +1,8 @@
+Started: 2026-10-28T15:57:48.1699727+01:00
+Directory: C:\Codex\LexiStack\.git\f1-preflight
+Command: flutter pub get
+Resolving dependencies...
+Downloading packages...
++ lexistack_content_contract 0.1.0 from git https://github.com/oliversinz/lexistack-content.git at d9acbd in packages/lexistack_content_contract
+Changed 1 dependency!
+Exit code: 0

@@ -1,0 +1,8 @@
+Started: 2026-10-28T16:12:19.4881888+01:00
+Directory: C:\Codex\LexiStack
+Command: & 'C:/Users/olive/AppData/Local/Android/sdk/platform-tools/adb.exe' version
+Android Debug Bridge version 1.0.41
+Version 37.0.1-15733141
+Installed as C:\Users\olive\AppData\Local\Android\sdk\platform-tools\adb.exe
+Running on Windows 10.0.26300
+Exit code: 0

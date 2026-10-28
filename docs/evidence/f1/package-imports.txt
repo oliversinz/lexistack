@@ -1,0 +1,17 @@
+Started: 2026-10-28T16:09:26.8480271+01:00
+Directory: C:\Codex\LexiStack
+Command: rg -n '^import|^export' .git/f1-contract-test/lib
+.git/f1-contract-test/lib\src\validator.dart:1:import 'diagnostics.dart';
+.git/f1-contract-test/lib\src\validator.dart:2:import 'models.dart';
+.git/f1-contract-test/lib\src\validator.dart:3:import 'parser.dart';
+.git/f1-contract-test/lib\src\parser.dart:1:import 'dart:convert';
+.git/f1-contract-test/lib\src\parser.dart:3:import 'diagnostics.dart';
+.git/f1-contract-test/lib\src\parser.dart:4:import 'models.dart';
+.git/f1-contract-test/lib\src\models.dart:1:import 'dart:convert';
+.git/f1-contract-test/lib\lexistack_content_contract.dart:4:export 'src/diagnostics.dart';
+.git/f1-contract-test/lib\lexistack_content_contract.dart:5:export 'src/models.dart';
+.git/f1-contract-test/lib\lexistack_content_contract.dart:6:export 'src/parser.dart' show parseManifest, parsePack;
+.git/f1-contract-test/lib\lexistack_content_contract.dart:7:export 'src/validator.dart';
+.git/f1-contract-test/lib\cli.dart:4:import 'dart:io';
+.git/f1-contract-test/lib\cli.dart:6:import 'lexistack_content_contract.dart';
+Exit code: 0

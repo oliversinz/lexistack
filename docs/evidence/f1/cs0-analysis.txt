@@ -1,0 +1,6 @@
+Started: 2026-10-28T15:58:55.8041836+01:00
+Directory: C:\Codex\LexiStack\.git\f1-contract-test
+Command: dart analyze
+Analyzing f1-contract-test...
+No issues found!
+Exit code: 0
