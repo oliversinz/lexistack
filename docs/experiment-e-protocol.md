@@ -12,7 +12,7 @@ This is a **practical workflow comparison**, not a controlled causal estimate of
 |---|---|---|---|---|
 | C | Codex | Optimized Genesis v1, autonomous one-shot | `oliversinz/LexiStack3` `8b84f2d6c75c` | One uninterrupted completed run, as historically reported |
 | D | Claude Code | Optimized Genesis v1, originally one-shot | `oliversinz/LexiStack4` `9029748` | Assisted final run with interventions/restarts; model effort changed during run |
-| E | Codex (planned) | Product Contract + F1–F6 autonomous feature runs and independent gates | `oliversinz/LexiStack5` (future) | Determine separately per feature run and for the full project |
+| E | Codex (in progress) | Product Contract + F1–F6 autonomous feature runs and independent gates | `https://github.com/oliversinz/lexistack` (in progress) | Determine separately per feature run and for the full project |
 
 The historical **73 (C)** and **72 (D)** tests are developer-reported counts, not proof that the independent matrix passes. Re-run independent probes whenever toolchains and source availability permit. Do not treat repo size, screenshot count or code verbosity as a quality score.
 

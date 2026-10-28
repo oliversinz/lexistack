@@ -41,8 +41,8 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Everyday Echoes'), findsOneWidget);
       expect(find.text('8 level entries · Available offline'), findsOneWidget);
-      await reveal(tester, 'FOUNDATION PREVIEW');
-      expect(find.text('FOUNDATION PREVIEW'), findsOneWidget);
+      await reveal(tester, 'F2 PLAYABLE PREVIEW');
+      expect(find.text('F2 PLAYABLE PREVIEW'), findsOneWidget);
       await reveal(tester, 'Explore collection', -200);
       await tester.tap(find.text('Explore collection'));
       await tester.pumpAndSettle();
@@ -53,6 +53,7 @@ void main() {
       expect(find.text('16 words'), findsOneWidget);
       expect(find.text('4 hidden connections'), findsOneWidget);
       expect(find.text('BREAKFAST BAKES'), findsNothing);
+      await reveal(tester, 'Back to collection');
       await tester.tap(find.text('Back to collection'));
       await tester.pumpAndSettle();
       await tester.pageBack();

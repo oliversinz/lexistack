@@ -1,6 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
+import '../core/game.dart';
+import 'board_controller.dart';
+
 class CatalogController extends ChangeNotifier {
   CatalogController({required this.loadCatalog});
 
@@ -9,6 +12,12 @@ class CatalogController extends ChangeNotifier {
   String? error;
   bool loading = false;
   bool _disposed = false;
+  final Map<String, BoardController> _attempts = {};
+
+  BoardController boardFor(Level level) => _attempts.putIfAbsent(
+    level.id,
+    () => BoardController(Game(level, seed: 20261028)),
+  );
 
   Future<void> load() async {
     if (loading) return;
@@ -33,6 +42,9 @@ class CatalogController extends ChangeNotifier {
   @override
   void dispose() {
     _disposed = true;
+    for (final board in _attempts.values) {
+      board.dispose();
+    }
     super.dispose();
   }
 }

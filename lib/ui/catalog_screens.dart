@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
 import '../app/catalog_controller.dart';
+import 'board_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.controller});
@@ -63,7 +64,8 @@ class HomeScreen extends StatelessWidget {
                       FilledButton.icon(
                         onPressed: () => Navigator.of(context).push(
                           MaterialPageRoute<void>(
-                            builder: (_) => PackScreen(pack: pack),
+                            builder: (_) =>
+                                PackScreen(pack: pack, controller: controller),
                           ),
                         ),
                         icon: const Icon(Icons.arrow_forward),
@@ -79,11 +81,11 @@ class HomeScreen extends StatelessWidget {
               SelectableText(report.warnings.join('\n')),
           ],
           const SizedBox(height: 12),
-          Text('FOUNDATION PREVIEW', style: text.labelLarge),
+          Text('F2 PLAYABLE PREVIEW', style: text.labelLarge),
           const SizedBox(height: 8),
           const Text(
-            'Browse level details in this build. Playable puzzles, progress '
-            'and Daily mode are coming in later phases.',
+            'Play all eight preview levels. Attempts stay in memory only; '
+            'closing the process loses them. Progression and Daily come later.',
           ),
         ],
       );
@@ -92,9 +94,10 @@ class HomeScreen extends StatelessWidget {
 }
 
 class PackScreen extends StatelessWidget {
-  const PackScreen({super.key, required this.pack});
+  const PackScreen({super.key, required this.pack, required this.controller});
 
   final Pack pack;
+  final CatalogController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +107,7 @@ class PackScreen extends StatelessWidget {
       children: [
         Text(pack.description, style: text.headlineSmall),
         const SizedBox(height: 12),
-        Text('${pack.levels.length} level entries · Details preview'),
+        Text('${pack.levels.length} level entries · F2 free preview play'),
         const SizedBox(height: 24),
         for (final (index, level) in pack.levels.indexed) ...[
           Card(
@@ -128,6 +131,7 @@ class PackScreen extends StatelessWidget {
                     pack: pack,
                     level: level,
                     number: index + 1,
+                    controller: controller,
                   ),
                 ),
               ),
@@ -146,11 +150,13 @@ class LevelEntryScreen extends StatelessWidget {
     required this.pack,
     required this.level,
     required this.number,
+    required this.controller,
   });
 
   final Pack pack;
   final Level level;
   final int number;
+  final CatalogController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -182,7 +188,20 @@ class LevelEntryScreen extends StatelessWidget {
         ),
         const SizedBox(height: 24),
         const Text(
-          'This build previews the collection. Gameplay is not available yet.',
+          'F2 preview: all levels are available. Attempts are kept only '
+          'while this app process is open. No saved progress or coin charges.',
+        ),
+        const SizedBox(height: 16),
+        FilledButton(
+          onPressed: () => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => BoardScreen(
+                controller: controller.boardFor(level),
+                number: number,
+              ),
+            ),
+          ),
+          child: const Text('Play / Resume preview'),
         ),
         const SizedBox(height: 24),
         OutlinedButton.icon(

@@ -4,3 +4,5 @@
 *.md text eol=lf
 *.dart text eol=lf
 *.yaml text eol=lf
+# Execution prompts are archived byte-for-byte, including supplied line endings.
+prompts/*.md -text
