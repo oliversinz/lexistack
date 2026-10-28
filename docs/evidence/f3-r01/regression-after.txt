@@ -1,0 +1,62 @@
+COMMAND: flutter test test/app/load_recovery_test.dart test/app/persistence_test.dart test/ui/progress_test.dart --reporter expanded
+00:00 +0: loading C:/Codex/LexiStack/test/app/load_recovery_test.dart
+00:00 +0: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +1: C:/Codex/LexiStack/test/app/persistence_test.dart: PER-01/02 exact partial/hinted round-trip and next shuffle matches uninterrupted
+00:00 +2: C:/Codex/LexiStack/test/app/persistence_test.dart: PER-01/02 exact partial/hinted round-trip and next shuffle matches uninterrupted
+00:00 +3: C:/Codex/LexiStack/test/app/persistence_test.dart: PER-01/02 exact partial/hinted round-trip and next shuffle matches uninterrupted
+00:00 +4: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 retry validates malformed/unsupported document {"version":99}
+00:00 +5: C:/Codex/LexiStack/test/app/persistence_test.dart: PER-02 pending hinted loss retains concealment and rescue arithmetic
+00:00 +6: C:/Codex/LexiStack/test/app/persistence_test.dart: PER-04/05/06 salvage around PER-04 known duplicate plus missing ID, unchanged length
+00:00 +7: C:/Codex/LexiStack/test/app/persistence_test.dart: PER-04/05/06 salvage around missing tile
+00:00 +8: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +9: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +10: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +11: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +12: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +13: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +14: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +15: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +16: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +17: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +18: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +19: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +20: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +21: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +22: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:00 +23: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +24: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +25: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +26: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +27: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +28: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +29: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +30: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +31: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +32: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +33: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +34: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +35: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +36: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +37: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +38: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +39: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +40: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +41: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +42: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +43: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +44: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +45: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +46: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +47: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +48: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +49: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +50: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:01 +51: C:/Codex/LexiStack/test/ui/progress_test.dart: F3-R01 read failure hides gameplay and save controls; Retry load restores progress
+00:02 +52: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:06 +53: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 unaffordable pending rescue disabled; explicit reveal still works
+00:08 +54: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 production app reconstruction retains paid hints selection order and shuffle
+00:08 +55: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 Daily real UI result/reentry cannot repeat payout across reconstruction
+00:09 +56: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 midnight stale screen rejects purchase; resume and next Daily use new date
+00:10 +57: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 visible save failure, retry, Reset cancellation/confirmation and reopen
+00:11 +58: All tests passed!
+EXIT: 0

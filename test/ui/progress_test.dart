@@ -8,7 +8,8 @@ import 'package:lexistack/ui/app.dart';
 import 'package:lexistack/ui/board_screen.dart';
 
 import '../app_test.dart' show TestBundle;
-import '../support/progress_fixture.dart' show TestClock;
+import '../support/progress_fixture.dart'
+    show TestClock, player, firstBoard, win;
 import 'board_test.dart'
     show enterBoard, viewport, tapVisible, submitWords, pendingLoss, tile;
 
@@ -32,6 +33,59 @@ Future<void> home(
 }
 
 void main() {
+  testWidgets(
+    'F3-R01 read failure hides gameplay and save controls; Retry load restores progress',
+    (t) async {
+      viewport(t, const Size(360, 640), scale: 1.3);
+      final clock = TestClock();
+      final store = MemoryProgressStorage();
+      final original = await player(store: store, clock: clock);
+      final active = firstBoard(original);
+      win(active);
+      active.newAttempt();
+      active.pairMagnet();
+      await original.flush();
+      final document = store.value;
+      final writeCount = store.writes.length;
+      store.failRead = true;
+      await home(t, store, clock);
+      expect(find.byKey(const Key('load-warning')), findsOneWidget);
+      expect(
+        find.textContaining('Saved progress could not be loaded.'),
+        findsOneWidget,
+      );
+      expect(find.text('Retry load'), findsOneWidget);
+      expect(find.text('Retry save'), findsNothing);
+      expect(find.byKey(const Key('storage-warning')), findsNothing);
+      expect(find.byKey(const Key('wallet')), findsNothing);
+      expect(find.byKey(const Key('stats-summary')), findsNothing);
+      expect(find.text('Continue Campaign'), findsNothing);
+      expect(find.text('Explore collection'), findsNothing);
+      expect(find.text('Play Daily'), findsNothing);
+      expect(find.text('Reset progress'), findsNothing);
+      await tapVisible(t, find.text('Retry load'));
+      expect(find.byKey(const Key('load-warning')), findsOneWidget);
+      expect(store.value, document);
+      expect(store.writes, hasLength(writeCount));
+
+      store.failRead = false;
+      await tapVisible(t, find.text('Retry load'));
+      expect(find.byKey(const Key('load-warning')), findsNothing);
+      expect(find.text('Retry load'), findsNothing);
+      expect(find.text('Retry save'), findsNothing);
+      expect(find.text('170 coins'), findsOneWidget);
+      expect(find.textContaining('1 games played'), findsOneWidget);
+      expect(store.value, document);
+      expect(store.writes, hasLength(writeCount));
+      await tapVisible(t, find.text('Continue Campaign'));
+      expect(board(t).attempt.id, active.attempt.id);
+      expect(board(t).game.snapshot(), active.game.snapshot());
+      expect(board(t).coins, 170);
+      expect(board(t).progress.state.results, hasLength(1));
+      expect(t.takeException(), isNull);
+    },
+  );
+
   testWidgets(
     'F3 actual first win, paid hint, explicit replay reward and saved result',
     (t) async {

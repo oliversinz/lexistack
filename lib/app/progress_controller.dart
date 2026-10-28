@@ -10,6 +10,8 @@ import '../core/share.dart';
 import 'progress.dart';
 import 'storage.dart';
 
+enum ProgressLoadStatus { notLoaded, loading, ready, failed }
+
 /// A transition settles and captures one complete document synchronously;
 /// only the serial storage write is asynchronous.
 class ProgressController extends ChangeNotifier {
@@ -26,9 +28,18 @@ class ProgressController extends ChangeNotifier {
   Future<void> _writes = Future.value();
   int _revision = 0, _savedRevision = 0;
   bool _disposed = false;
+  ProgressLoadStatus _loadStatus = ProgressLoadStatus.notLoaded;
+  ProgressLoadStatus get loadStatus => _loadStatus;
+  bool get initialized => _loadStatus == ProgressLoadStatus.ready;
+  String? get loadWarning => _loadStatus == ProgressLoadStatus.failed
+      ? 'Saved progress could not be loaded. Retry loading to continue. Your saved data has not been changed.'
+      : null;
+
+  /// A write failure after successful initialization.
   String? storageWarning;
   String? recoveryNotice;
-  bool get saved => _savedRevision == _revision && storageWarning == null;
+  bool get saved =>
+      initialized && _savedRevision == _revision && storageWarning == null;
   String get today => dayKey(clock());
   List<Pack> get campaignPacks =>
       catalog.packs.take(catalog.manifest.campaign.length).toList();
@@ -36,22 +47,32 @@ class ProgressController extends ChangeNotifier {
       catalog.manifest.daily == null ? [] : catalog.packs.last.levels;
 
   Future<void> load() async {
+    if (initialized || _loadStatus == ProgressLoadStatus.loading || _disposed) {
+      return;
+    }
+    _loadStatus = ProgressLoadStatus.loading;
+    _notify();
     try {
       _state = Progress.decode(await storage.read(), catalog, clock());
-      if (_state.recovery.isNotEmpty) {
-        recoveryNotice = _state.recovery.join(' ');
-      }
+      recoveryNotice = _state.recovery.isEmpty
+          ? null
+          : _state.recovery.join(' ');
+      _loadStatus = ProgressLoadStatus.ready;
     } catch (_) {
-      storageWarning = 'Progress could not be read. Changes are not yet saved.';
+      _loadStatus = ProgressLoadStatus.failed;
     }
     _notify();
   }
+
+  Future<void> retryLoad() => load();
 
   void _notify() {
     if (!_disposed) notifyListeners();
   }
 
   void _save() {
+    // Until a read succeeds, even an explicit save retry must leave storage alone.
+    if (!initialized) return;
     final document = _state.encode();
     final revision = ++_revision;
     _writes = _writes.then((_) async {
@@ -72,6 +93,7 @@ class ProgressController extends ChangeNotifier {
   void retrySave() => _save();
 
   void refreshDay() {
+    if (!initialized) return;
     if (_state.dailyAttempt != null && _state.dailyAttempt!.date != today) {
       _state.dailyAttempt = null;
       _save();
@@ -81,6 +103,7 @@ class ProgressController extends ChangeNotifier {
   }
 
   bool unlocked(Level level) {
+    if (!initialized) return false;
     for (final pack in campaignPacks) {
       final index = pack.levels.indexWhere((l) => l.id == level.id);
       if (index >= 0) {
@@ -161,6 +184,7 @@ class ProgressController extends ChangeNotifier {
   }
 
   Attempt? continueCampaign() {
+    if (!initialized) return null;
     final unfinished = _state.attempts.values.toList()
       ..sort((a, b) => b.entered.compareTo(a.entered));
     if (unfinished.isNotEmpty) {
@@ -177,6 +201,7 @@ class ProgressController extends ChangeNotifier {
   }
 
   Attempt? enterDaily() {
+    if (!initialized) return null;
     refreshDay();
     if (_state.daily.containsKey(today)) {
       return _resultBoard(resultFor('', date: today));
@@ -194,6 +219,7 @@ class ProgressController extends ChangeNotifier {
   }
 
   bool isCurrent(Attempt attempt) =>
+      initialized &&
       !attempt.game.isFinal &&
       (attempt.date == null
           ? identical(_state.attempts[attempt.levelId], attempt)
@@ -293,6 +319,7 @@ class ProgressController extends ChangeNotifier {
   }
 
   void setSettings({String? theme, bool? haptics}) {
+    if (!initialized) return;
     if (theme != null && !['system', 'light', 'dark'].contains(theme)) return;
     if (theme != null) _state.theme = theme;
     if (haptics != null) _state.haptics = haptics;
@@ -300,7 +327,7 @@ class ProgressController extends ChangeNotifier {
   }
 
   void reset({required bool confirmed}) {
-    if (!confirmed) return;
+    if (!initialized || !confirmed) return;
     _state = Progress();
     recoveryNotice = null;
     _save();

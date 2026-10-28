@@ -1,0 +1,17 @@
+COMMAND: flutter test test/app/load_recovery_test.dart --reporter expanded
+00:00 +0: loading C:/Codex/LexiStack/test/app/load_recovery_test.dart
+00:00 +0: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +0 -1: F3-R01 failed read never overwrites existing progress on save retry [E]
+  Expected: true
+    Actual: <false>
+  A failed read must not replace unknown saved data with defaults
+
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\app\load_recovery_test.dart 22:5               main.<fn>
+
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+EXIT: 1

@@ -1,0 +1,4 @@
+COMMAND: dart analyze
+Analyzing LexiStack...
+No issues found!
+EXIT: 0

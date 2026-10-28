@@ -97,7 +97,9 @@ class HomeScreen extends StatelessWidget {
               onPressed: controller.load,
               child: const Text('Retry'),
             ),
-          ] else if (player != null) ...[
+          ] else if (player != null && !player.initialized)
+            ProgressStatus(controller: player)
+          else if (player != null) ...[
             ProgressStatus(controller: player),
             const SizedBox(height: 8),
             Text(

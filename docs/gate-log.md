@@ -556,3 +556,54 @@ manual Android scenarios. No web runtime or Windows desktop build was run.
 - No known blocking F3 defect remains. Local preferences are not a database or
   a hard power-loss guarantee. Eight Daily boards rotate. Full F4 UX and F6
   browser equivalence remain deliberately unimplemented. **Gate stays PENDING.**
+
+## F3-R01 — Post-review correction (2026-10-28)
+
+**Independent review: CORRECTION REQUIRED (one High defect). Corrected feature
+is PENDING independent re-review; no F4 work.** This is a separate correction
+pass against reviewed commit `0b7a308e7e4718534d46b48cc3d74e8d009d4a25`,
+on `codex/f3-progression-economy-persistence`. Accepted `main` remains
+`9928bd5895e9258bdadb79580bc41497482181d9`. Original F3 evidence is retained.
+Agent: Codex/GPT-6 (build/effort unavailable); Windows/PowerShell,
+Flutter 3.47.8 / Dart 3.13.7; unchanged content-package pin.
+
+A thrown storage read now leaves initialization explicitly unavailable.
+Controller operations, including Reset and save retry, cannot mutate/persist
+progress until loading succeeds. Home hides wallet/statistics/gameplay controls
+and offers **Retry load**. Load and write errors are separate; null reads and
+the existing malformed-document recovery policy still initialize normally.
+
+The populated-save regression first reproduced the overwrite on reviewed code
+([exit 1](evidence/f3-r01/regression-before.txt)). The corrected test exercises
+blocked purchases/completion/settings/Reset, repeated failed reads, and exact
+recovery of 205 coins, achievements, two results, campaign/Daily attempts and
+settings. A subsequent paid hint persists 175 coins across reconstruction with
+no duplicate results. A real-app widget test at 360×640 / 1.3× text verifies the
+visible read error, absence of destructive controls and working Retry load.
+The [focused run](evidence/f3-r01/regression-after.txt) passed 58 tests, exit 0.
+
+| Exact command | Exit | Evidence |
+|---|---:|---|
+| `flutter pub get` | 0 | [pub-get.txt](evidence/f3-r01/pub-get.txt) |
+| `dart run tool/validate_levels.dart --partial` | 0 | [validator-partial.txt](evidence/f3-r01/validator-partial.txt) |
+| `dart run tool/validate_levels.dart` | **1 expected** | [validator-strict.txt](evidence/f3-r01/validator-strict.txt): incomplete campaign only |
+| `dart analyze` | 0 | [analysis.txt](evidence/f3-r01/analysis.txt): no issues |
+| `flutter test --reporter expanded` | 0 | [tests.txt](evidence/f3-r01/tests.txt): **122 passed**, including existing F1/F2/F3 regressions |
+| `dart run tool/check_prng.dart` | 0 | [prng.txt](evidence/f3-r01/prng.txt) |
+| `flutter build apk --debug` | 0 | [apk.txt](evidence/f3-r01/apk.txt) |
+
+Android smoke: Pixel_10, API 36, emulator-5554. Updated APK installed and opened
+via launcher (PID 13879, fully drawn 5.116 s). [Home](evidence/f3-r01/android-home.png)
+restored 70 coins/one result; [Continue](evidence/f3-r01/android-resumed.png)
+restored the rescued campaign board, peek and four selected tiles. Both original
+screenshots were visually inspected. [Commands/logcat](evidence/f3-r01/android-commands.txt)
+and adjacent XML retain observations; no runtime crash observed. **No injected
+read failure was exercised on Android**; that proof is controller/widget only.
+APK SHA-256: `42dabf498a89c5a4c0cd79a0a0e66469803603c71c21df2cc1a3e838b792f72d`.
+
+Original prompt preserved, SHA-256:
+`05d19438bfa68270fd1457c217d6512407a8148fa76e6c9a35d13a2b4d9bf20d`.
+Contracts, frozen assets, dependency pin and prior evidence are unchanged.
+One post-review corrective request; no mid-pass human rescue. Nonfatal Gradle
+native-access warnings persist. No known remaining F3-R01 defect or required
+environment block; browser execution remains outside this correction.

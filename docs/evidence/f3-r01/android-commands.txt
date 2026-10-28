@@ -1,0 +1,81 @@
+2026-10-28T19:01:13.9379819+01:00 > adb -s emulator-5554 shell getprop sys.boot_completed
+1
+EXIT: 0
+2026-10-28T19:01:14.0423222+01:00 > adb -s emulator-5554 shell getprop ro.build.version.release
+16
+EXIT: 0
+2026-10-28T19:01:14.1191320+01:00 > adb -s emulator-5554 shell getprop ro.build.version.sdk
+36
+EXIT: 0
+2026-10-28T19:01:14.1883192+01:00 > adb -s emulator-5554 shell wm size
+Physical size: 1080x2424
+EXIT: 0
+2026-10-28T19:01:14.2835330+01:00 > adb -s emulator-5554 shell wm density
+Physical density: 420
+EXIT: 0
+2026-10-28T19:01:14.3689812+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-r01-window.xml
+UI hierchary dumped to: /sdcard/f3-r01-window.xml
+EXIT: 0
+2026-10-28T19:01:17.1382701+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-window.xml C:/Codex/LexiStack/.git/f3-r01-window.xml
+/sdcard/f3-r01-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (14105 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:01:29.2404770+01:00 > adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T19:01:31.4474073+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T19:01:33.5903286+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-r01-window.xml
+UI hierchary dumped to: /sdcard/f3-r01-window.xml
+EXIT: 0
+2026-10-28T19:01:36.1338832+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-window.xml C:/Codex/LexiStack/.git/f3-r01-window.xml
+/sdcard/f3-r01-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (14031 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:01:42.4329064+01:00 > adb -s emulator-5554 shell input swipe 540 2100 540 600 500
+EXIT: 0
+2026-10-28T19:01:43.0500478+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-r01-window.xml
+UI hierchary dumped to: /sdcard/f3-r01-window.xml
+EXIT: 0
+2026-10-28T19:01:45.3873097+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-window.xml C:/Codex/LexiStack/.git/f3-r01-window.xml
+/sdcard/f3-r01-window.xml: 1 file pulled, 0 skipped. 6.9 MB/s (23662 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:01:51.0875141+01:00 > adb -s emulator-5554 logcat -c
+EXIT: 0
+2026-10-28T19:01:51.2660006+01:00 > adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T19:01:58.3536475+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+13879
+EXIT: 0
+2026-10-28T19:01:58.4550469+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-r01-window.xml
+UI hierchary dumped to: /sdcard/f3-r01-window.xml
+EXIT: 0
+2026-10-28T19:02:00.8019502+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-window.xml C:/Codex/LexiStack/.git/f3-r01-window.xml
+/sdcard/f3-r01-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (12901 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:02:00.9486386+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-r01-capture.png
+EXIT: 0
+2026-10-28T19:02:01.4145988+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-capture.png C:/Codex/LexiStack/docs/evidence/f3-r01/android-home.png
+/sdcard/f3-r01-capture.png: 1 file pulled, 0 skipped. 34.5 MB/s (207326 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:02:29.3128742+01:00 > adb -s emulator-5554 shell input tap 540 1000
+EXIT: 0
+2026-10-28T19:02:29.4817162+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-r01-window.xml
+UI hierchary dumped to: /sdcard/f3-r01-window.xml
+EXIT: 0
+2026-10-28T19:02:31.8287035+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-window.xml C:/Codex/LexiStack/.git/f3-r01-window.xml
+/sdcard/f3-r01-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (14121 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:02:31.9709485+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-r01-capture.png
+EXIT: 0
+2026-10-28T19:02:32.3691094+01:00 > adb -s emulator-5554 pull /sdcard/f3-r01-capture.png C:/Codex/LexiStack/docs/evidence/f3-r01/android-resumed.png
+/sdcard/f3-r01-capture.png: 1 file pulled, 0 skipped. 28.4 MB/s (139121 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:02:32.4435169+01:00 > adb -s emulator-5554 logcat -d -v time ActivityTaskManager:I AndroidRuntime:E flutter:I *:S
+--------- beginning of system
+10-28 19:01:50.929 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+--------- beginning of main
+10-28 19:01:52.649 I/flutter (13879): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 19:01:52.780 I/flutter (13879): The Dart VM service is listening on http://127.0.0.1:39163/hNZ9fAI2MFw=/
+10-28 19:01:56.032 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s116ms
+10-28 19:01:56.032 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +5s116ms
+EXIT: 0
