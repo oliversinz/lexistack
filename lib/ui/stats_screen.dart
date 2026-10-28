@@ -17,7 +17,7 @@ class StatsScreen extends StatelessWidget {
         title: 'Statistics',
         children: [
           Text('Every connection counts.', style: text.headlineSmall),
-          const SizedBox(height: 20),
+          const SizedBox(height: 16),
           if (state.gamesPlayed == 0) ...[
             const Text(
               'Your story starts with a puzzle. Finish a game to see your statistics here. Unfinished games do not count.',
@@ -30,7 +30,7 @@ class StatsScreen extends StatelessWidget {
               children: [
                 Text(
                   '${counted(state.gamesPlayed, 'game')} played',
-                  style: text.headlineMedium,
+                  style: text.displaySmall,
                 ),
                 const SizedBox(height: 12),
                 Text(
@@ -44,6 +44,8 @@ class StatsScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
+          const Divider(),
+          const SizedBox(height: 12),
           Text('Mistakes in your wins', style: text.titleLarge),
           const SizedBox(height: 12),
           for (final (index, count) in state.winMistakeBuckets.indexed)
@@ -61,9 +63,12 @@ class StatsScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(3),
                           child: LinearProgressIndicator(
-                            minHeight: 16,
+                            minHeight: 18,
+                            backgroundColor: Theme.of(context)
+                                .colorScheme
+                                .surfaceContainerHigh,
                             value: state.wins == 0 ? 0 : count / state.wins,
                           ),
                         ),

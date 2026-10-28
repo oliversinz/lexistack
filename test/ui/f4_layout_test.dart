@@ -116,7 +116,7 @@ void main() {
           find.descendant(of: card, matching: find.text('Explore collection')),
         );
         final locked = find.byKey(ValueKey('level-${pack.levels[1].id}'));
-        expect(t.widget<ListTile>(locked).onTap, isNull);
+        expect(t.widget<InkWell>(locked).onTap, isNull);
         await tapVisible(t, locked);
         expect(find.byType(LevelEntryScreen), findsNothing);
         t

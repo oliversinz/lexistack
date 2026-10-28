@@ -48,9 +48,8 @@ void main() {
       await tester.pumpAndSettle();
       await reveal(tester, 'Explore collection');
       expect(find.text('Everyday Echoes'), findsOneWidget);
-      expect(find.text('8 level entries · Available offline'), findsOneWidget);
-      await reveal(tester, 'Settings');
-      expect(find.text('Settings'), findsOneWidget);
+      expect(find.text('0 / 8 solved · Available offline'), findsOneWidget);
+      expect(find.byTooltip('Settings'), findsOneWidget);
       await reveal(tester, 'Explore collection', -200);
       await tester.tap(find.text('Explore collection'));
       await tester.pumpAndSettle();
@@ -140,7 +139,7 @@ void main() {
       await tester.tap(find.text('Explore collection'));
       await tester.pumpAndSettle();
       await reveal(tester, 'Hidden in Plain Sight');
-      final locked = tester.widget<ListTile>(
+      final locked = tester.widget<InkWell>(
         find.byKey(const ValueKey('level-pack1_lvl08')),
       );
       expect(locked.onTap, isNull);

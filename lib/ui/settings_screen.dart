@@ -47,34 +47,65 @@ class SettingsScreen extends StatelessWidget {
         const SizedBox(height: 24),
         Text('Appearance', style: Theme.of(context).textTheme.titleMedium),
         const SizedBox(height: 8),
-        for (final mode in ['system', 'light', 'dark'])
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Semantics(
-              selected: controller.state.theme == mode,
-              child: OutlinedButton.icon(
-                key: ValueKey('theme-$mode'),
-                onPressed: () => controller.setSettings(theme: mode),
-                icon: Icon(
-                  controller.state.theme == mode
-                      ? Icons.radio_button_checked
-                      : Icons.radio_button_off,
+        Row(
+          children: [
+            for (final mode in ['system', 'light', 'dark'])
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 6),
+                  child: Semantics(
+                    selected: controller.state.theme == mode,
+                    child: OutlinedButton(
+                      key: ValueKey('theme-$mode'),
+                      style: OutlinedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 12,
+                          horizontal: 2,
+                        ),
+                        backgroundColor: controller.state.theme == mode
+                            ? Theme.of(context).colorScheme.primaryContainer
+                            : null,
+                        side: BorderSide(
+                          color: controller.state.theme == mode
+                              ? Theme.of(context).colorScheme.primary
+                              : Theme.of(context).colorScheme.outlineVariant,
+                        ),
+                      ),
+                      onPressed: () => controller.setSettings(theme: mode),
+                      child: Column(
+                        children: [
+                          Icon(
+                            mode == 'system'
+                                ? Icons.brightness_auto_outlined
+                                : mode == 'light'
+                                ? Icons.light_mode_outlined
+                                : Icons.dark_mode_outlined,
+                          ),
+                          const SizedBox(height: 8),
+                          Text('${mode[0].toUpperCase()}${mode.substring(1)}'),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
-                label: Text('${mode[0].toUpperCase()}${mode.substring(1)}'),
               ),
-            ),
-          ),
+          ],
+        ),
+        const SizedBox(height: 12),
         const Text('System follows your device appearance.'),
         const SizedBox(height: 24),
-        Card(
+        InsetCard(
           child: SwitchListTile(
+            contentPadding: EdgeInsets.zero,
             title: const Text('Haptic Feedback'),
             subtitle: const Text('A little feel for each connection.'),
             value: controller.state.haptics,
             onChanged: (value) => controller.setSettings(haptics: value),
           ),
         ),
-        const SizedBox(height: 28),
+        const SizedBox(height: 24),
+        const Divider(),
+        const SizedBox(height: 12),
         Text(
           'Saved on this device',
           style: Theme.of(context).textTheme.titleMedium,

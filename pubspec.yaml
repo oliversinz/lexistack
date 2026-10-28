@@ -23,6 +23,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Fraunces
+      fonts:
+        - asset: assets/fonts/fraunces.ttf
+    - family: DM Sans
+      fonts:
+        - asset: assets/fonts/dmsans.ttf
   assets:
     - assets/levels/manifest.json
     - assets/levels/pack1.json

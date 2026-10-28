@@ -8,6 +8,7 @@ import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 import '../app/board_controller.dart';
 import '../core/game.dart';
 import 'progress_status.dart';
+import 'common.dart';
 import 'share_button.dart';
 import 'theme.dart';
 
@@ -38,6 +39,7 @@ class _BoardScreenState extends State<BoardScreen>
   );
   final scroll = ScrollController();
   String? justSolved;
+  final boosters = GlobalKey();
 
   Future<void> haptic(Future<void> Function() feedback) async {
     try {
@@ -83,6 +85,194 @@ class _BoardScreenState extends State<BoardScreen>
     super.dispose();
   }
 
+  Widget actionDock(BuildContext context) {
+    final game = controller.game;
+    final colors = Theme.of(context).colorScheme;
+    return Container(
+      key: const Key('action-dock'),
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+      decoration: BoxDecoration(
+        color: colors.surfaceContainerLow,
+        border: Border(top: BorderSide(color: colors.outlineVariant)),
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: DragTarget<String>(
+                  onWillAcceptWithDetails: (details) =>
+                      game.order.contains(details.data),
+                  onAcceptWithDetails: (details) =>
+                      act(() => controller.drag(details.data)),
+                  builder: (context, candidates, rejected) => Container(
+                    key: const Key('selection-tray'),
+                    constraints: const BoxConstraints(minHeight: 56),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 6,
+                    ),
+                    decoration: BoxDecoration(
+                      color: candidates.isEmpty
+                          ? colors.surfaceContainerHigh
+                          : colors.primaryContainer,
+                      border: Border.all(
+                        color: candidates.isEmpty
+                            ? colors.outlineVariant
+                            : colors.primary,
+                        width: 1.5,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Semantics(
+                      label:
+                          'Selection tray, ${game.selection.length} of 4: ${game.selection.map((id) => game.tile(id).text).join(', ')}',
+                      child: ExcludeSemantics(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Selected ${game.selection.length}/4',
+                              style: Theme.of(context).textTheme.labelLarge,
+                            ),
+                            SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Text(
+                                game.selection.isEmpty
+                                    ? 'Drop a word here'
+                                    : game.selection
+                                          .map((id) => game.tile(id).text)
+                                          .join(' · '),
+                                style: Theme.of(context).textTheme.bodySmall,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              FilledButton(
+                key: const Key('submit'),
+                onPressed: game.canSubmit ? () => act(controller.submit) : null,
+                child: const Text('Submit'),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: TextButton(
+                  onPressed: () => act(controller.shuffle),
+                  child: const Text('Shuffle'),
+                ),
+              ),
+              Expanded(
+                child: TextButton(
+                  onPressed: game.selection.isEmpty
+                      ? null
+                      : () => act(controller.deselect),
+                  child: const Text('Deselect'),
+                ),
+              ),
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    final target = boosters.currentContext;
+                    if (target != null) {
+                      Scrollable.ensureVisible(
+                        target,
+                        duration: motionDuration(context, 200),
+                        alignment: 0,
+                      );
+                    }
+                  },
+                  child: const Text('Boosters'),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget resultHeader(BuildContext context) {
+    final game = controller.game;
+    final colors = Theme.of(context).colorScheme;
+    final text = Theme.of(context).textTheme;
+    return TweenAnimationBuilder<double>(
+      key: ValueKey('result-entry-${controller.attempt.id}'),
+      tween: Tween(begin: 0, end: 1),
+      duration: motionDuration(context, 220),
+      builder: (context, value, child) => Opacity(opacity: value, child: child),
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: colors.primaryContainer,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: colors.primary),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              game.status == GameStatus.won
+                  ? 'CONNECTION COMPLETE'
+                  : 'THE REVEAL',
+              style: text.labelSmall,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 12),
+            if (game.status == GameStatus.won) ...[
+              Center(child: StarRow(stars: game.stars, size: 46)),
+              const SizedBox(height: 8),
+            ],
+            Text(
+              game.status == GameStatus.won
+                  ? 'You found every connection!'
+                  : 'Loss accepted · Solutions revealed',
+              style: text.headlineSmall,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 10),
+            if (game.status == GameStatus.won)
+              Text(
+                '${'★' * game.stars}${'☆' * (3 - game.stars)} · ${counted(game.mistakes, 'mistake')}',
+                key: const Key('win-stars'),
+                textAlign: TextAlign.center,
+              ),
+            const SizedBox(height: 8),
+            Text(
+              '+${controller.result?.reward ?? 0} coins awarded for this attempt',
+              textAlign: TextAlign.center,
+              style: text.titleMedium,
+            ),
+            const SizedBox(height: 4),
+            Text(
+              '${counted(controller.progress.state.gamesPlayed, 'game')} played · ${counted(controller.progress.state.wins, 'win')}',
+              textAlign: TextAlign.center,
+              style: text.bodySmall,
+            ),
+            if (controller.result != null) ...[
+              const SizedBox(height: 16),
+              ShareButton(result: controller.result!),
+            ],
+            if (controller.date == null && widget.onNext != null)
+              TextButton(
+                onPressed: widget.onNext,
+                child: const Text('Next connection'),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: controller,
@@ -90,296 +280,302 @@ class _BoardScreenState extends State<BoardScreen>
       final game = controller.game;
       final playing = game.status == GameStatus.playing && controller.active;
       final text = Theme.of(context).textTheme;
+      final colors = Theme.of(context).colorScheme;
+      final pack = controller.progress.catalog.packs.firstWhere(
+        (p) => p.id == game.level.packId,
+      );
       return Scaffold(
-        appBar: AppBar(title: Text('$number · ${game.level.title}')),
+        appBar: AppBar(
+          title: Text(
+            '$number · ${game.level.title}',
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 16),
+              child: Row(
+                children: [
+                  Icon(Icons.toll_rounded, size: 18, color: colors.primary),
+                  const SizedBox(width: 4),
+                  Text(
+                    '${controller.coins} coins',
+                    key: const Key('wallet'),
+                    style: text.labelLarge,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
         body: SafeArea(
-          child: Align(
-            alignment: Alignment.topCenter,
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 460),
-              child: SingleChildScrollView(
-                key: const Key('board-scroll'),
-                controller: scroll,
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    ProgressStatus(controller: controller.progress),
-                    if (controller.date != null)
-                      Text('Daily ${controller.date}'),
-                    if (controller.expired)
-                      const Text(
-                        'A new day has begun. Return Home to open today’s Daily.',
-                      ),
-                    const SizedBox(height: 12),
-                    Semantics(
-                      label: '${game.lives} of 4 lives',
-                      child: ExcludeSemantics(
-                        child: Row(
-                          children: [
-                            for (var i = 0; i < 4; i++)
-                              Icon(
-                                i < game.lives
-                                    ? Icons.favorite
-                                    : Icons.favorite_border,
-                                color:
-                                    Theme.of(context).brightness ==
-                                        Brightness.dark
-                                    ? const Color(0xFFFFAEB9)
-                                    : const Color(0xFF9D3344),
-                                size: 28,
-                              ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Text(counted(game.mistakes, 'mistake')),
+          child: LayoutBuilder(
+            builder: (context, bounds) {
+              final tileHeight = bounds.maxHeight < 650 ? 60.0 : 78.0;
+              return Column(
+                children: [
+                  Expanded(
+                    child: SingleChildScrollView(
+                      key: const Key('board-scroll'),
+                      controller: scroll,
+                      padding: const EdgeInsets.fromLTRB(16, 4, 16, 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          ProgressStatus(
+                            controller: controller.progress,
+                            showWallet: false,
+                          ),
+                          Text(
+                            controller.date != null
+                                ? 'Daily ${controller.date}'
+                                : pack.title.toUpperCase(),
+                            style: text.labelSmall,
+                          ),
+                          if (controller.expired)
+                            const Text(
+                              'A new day has begun. Return Home to open today’s Daily.',
                             ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      'Groups found: ${game.solvedIds.length}/4',
-                      style: text.titleMedium,
-                    ),
-                    const SizedBox(height: 8),
-                    if (game.status == GameStatus.lostPendingDecision &&
-                        !controller.expired)
-                      _PendingDecision(controller: controller, act: act)
-                    else if (game.isFinal) ...[
-                      TweenAnimationBuilder<double>(
-                        key: ValueKey('result-entry-${controller.attempt.id}'),
-                        tween: Tween(begin: 0, end: 1),
-                        duration: motionDuration(context, 220),
-                        builder: (context, value, child) =>
-                            Opacity(opacity: value, child: child),
-                        child: Text(
-                          game.status == GameStatus.won
-                              ? 'You found every connection!'
-                              : 'Loss accepted · Solutions revealed',
-                          style: text.headlineSmall,
-                        ),
-                      ),
-                      if (game.status == GameStatus.won)
-                        Text(
-                          '${'★' * game.stars}${'☆' * (3 - game.stars)} · ${counted(game.mistakes, 'mistake')}',
-                          key: const Key('win-stars'),
-                          style: text.titleLarge,
-                        ),
-                      Text(
-                        '+${controller.result?.reward ?? 0} coins awarded for this attempt',
-                      ),
-                      Text(
-                        '${counted(controller.progress.state.gamesPlayed, 'game')} played · ${counted(controller.progress.state.wins, 'win')}',
-                      ),
-                      if (controller.result != null) ...[
-                        const SizedBox(height: 16),
-                        ShareButton(result: controller.result!),
-                      ],
-                      if (controller.date == null && widget.onNext != null) ...[
-                        const SizedBox(height: 8),
-                        OutlinedButton(
-                          onPressed: widget.onNext,
-                          child: const Text('Next connection'),
-                        ),
-                      ],
-                      const SizedBox(height: 12),
-                    ] else
-                      Semantics(
-                        liveRegion: true,
-                        child: Text(
-                          controller.feedback,
-                          key: const Key('feedback'),
-                          style: text.bodyLarge,
-                        ),
-                      ),
-                    for (final category in game.revealedCategories) ...[
-                      const SizedBox(height: 12),
-                      _CategoryCard(
-                        key: ValueKey('reveal-${category.id}'),
-                        category: category,
-                        animate: justSolved == category.id,
-                      ),
-                    ],
-                    if (playing) ...[
-                      for (final category in game.remainingCategories)
-                        Padding(
-                          padding: const EdgeInsets.only(top: 4),
-                          child: Semantics(
-                            label:
-                                'Tier ${category.difficultyTier} group, ${game.peekedIds.contains(category.id) ? category.title : 'hidden'}',
-                            child: ExcludeSemantics(
-                              child: Row(
-                                children: [
-                                  Container(
-                                    width: 8,
-                                    height: 8,
-                                    decoration: BoxDecoration(
-                                      color:
-                                          tierColors[category.difficultyTier -
-                                              1],
-                                      shape: BoxShape.circle,
+                          const SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Semantics(
+                                label: '${game.lives} of 4 lives',
+                                child: ExcludeSemantics(
+                                  child: Row(
+                                    children: [
+                                      for (var i = 0; i < 4; i++)
+                                        Icon(
+                                          i < game.lives
+                                              ? Icons.favorite
+                                              : Icons.favorite_border,
+                                          color: colors.error,
+                                          size: 21,
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  counted(game.mistakes, 'mistake'),
+                                  style: text.bodySmall,
+                                ),
+                              ),
+                              Text(
+                                '${game.solvedIds.length}/4 found',
+                                style: text.labelMedium,
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 8),
+                          if (playing) ...[
+                            Row(
+                              children: [
+                                for (final category in game.level.categories)
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(right: 4),
+                                      child: Semantics(
+                                        label:
+                                            'Tier ${category.difficultyTier} group, ${game.solvedIds.contains(category.id)
+                                                ? 'solved'
+                                                : game.peekedIds.contains(category.id)
+                                                ? category.title
+                                                : 'hidden'}',
+                                        child: ExcludeSemantics(
+                                          child: Container(
+                                            padding: const EdgeInsets.symmetric(
+                                              vertical: 4,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  tierColors[category
+                                                          .difficultyTier -
+                                                      1],
+                                              borderRadius:
+                                                  BorderRadius.circular(4),
+                                            ),
+                                            child: Text(
+                                              'T${category.difficultyTier} ${game.solvedIds.contains(category.id) ? '✓' : '· · ·'}',
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(
+                                                color: tierInk,
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w700,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                  const SizedBox(width: 8),
-                                  Expanded(
-                                    child: Text(
-                                      game.peekedIds.contains(category.id)
-                                          ? 'Peek: ${category.title}'
-                                          : 'Tier ${category.difficultyTier} · Hidden connection',
-                                      style: text.labelMedium,
-                                    ),
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Semantics(
+                                liveRegion: true,
+                                child: Text(
+                                  controller.feedback,
+                                  key: const Key('feedback'),
+                                  style: text.bodySmall,
+                                ),
+                              ),
+                            ),
+                            for (final category in game.remainingCategories)
+                              if (game.peekedIds.contains(category.id))
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 6),
+                                  child: Text(
+                                    'Peek: ${category.title}',
+                                    style: text.labelLarge,
+                                  ),
+                                ),
+                          ],
+                          if (game.status == GameStatus.lostPendingDecision &&
+                              !controller.expired)
+                            _PendingDecision(controller: controller, act: act)
+                          else if (game.isFinal)
+                            resultHeader(context),
+                          for (final category in game.revealedCategories) ...[
+                            const SizedBox(height: 8),
+                            _CategoryCard(
+                              key: ValueKey('reveal-${category.id}'),
+                              category: category,
+                              animate: justSolved == category.id,
+                              compact: playing,
+                              expanded:
+                                  justSolved == category.id ||
+                                  game.solvedIds.lastOrNull == category.id,
+                            ),
+                          ],
+                          if (playing) ...[
+                            const SizedBox(height: 8),
+                            GridView.count(
+                              key: const Key('tile-grid'),
+                              crossAxisCount: 4,
+                              mainAxisSpacing: 7,
+                              crossAxisSpacing: 7,
+                              childAspectRatio:
+                                  (bounds.maxWidth - 32 - 21) / 4 / tileHeight,
+                              shrinkWrap: true,
+                              physics: const NeverScrollableScrollPhysics(),
+                              children: [
+                                for (final id in game.order)
+                                  _BoardTile(
+                                    key: ValueKey(id),
+                                    tile: game.tile(id),
+                                    controller: controller,
+                                    act: act,
+                                    shake: shake,
+                                  ),
+                              ],
+                            ),
+                            const SizedBox(height: 18),
+                            Container(
+                              key: boosters,
+                              padding: const EdgeInsets.only(top: 12),
+                              decoration: BoxDecoration(
+                                border: Border(
+                                  top: BorderSide(color: colors.outlineVariant),
+                                ),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Text(
+                                    'BOOSTERS · PAY ONLY ON SUCCESS',
+                                    style: text.labelSmall,
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: _Booster(
+                                          label: 'Pair Magnet · 30',
+                                          enabled: controller.canPair,
+                                          reason: controller.coins < 30
+                                              ? 'Needs 30 coins'
+                                              : 'No unmarked group remains',
+                                          onPressed: () =>
+                                              act(controller.pairMagnet),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Expanded(
+                                        child: _Booster(
+                                          label: 'Category Peek · 40',
+                                          enabled: controller.canPeek,
+                                          reason: controller.coins < 40
+                                              ? 'Needs 40 coins'
+                                              : 'No hidden title remains',
+                                          onPressed: () =>
+                                              act(controller.categoryPeek),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Expanded(
+                                        child: _Booster(
+                                          label: 'Extra Life · 60',
+                                          enabled: controller.canExtraLife,
+                                          reason: game.lives == 4
+                                              ? 'All four lives are full'
+                                              : 'Needs 60 coins',
+                                          onPressed: () =>
+                                              act(controller.extraLife),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
                             ),
-                          ),
-                        ),
-                      const SizedBox(height: 16),
-                      GridView.count(
-                        key: const Key('tile-grid'),
-                        crossAxisCount: 4,
-                        mainAxisSpacing: 6,
-                        crossAxisSpacing: 6,
-                        childAspectRatio: .95,
-                        shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
-                        children: [
-                          for (final id in game.order)
-                            _BoardTile(
-                              key: ValueKey(id),
-                              tile: game.tile(id),
-                              controller: controller,
-                              act: act,
-                              shake: shake,
+                            const SizedBox(height: 12),
+                            Text(
+                              'Tap to toggle. Hold a word, then drag it onto another word or the selection tray.',
+                              style: text.bodySmall,
                             ),
-                        ],
-                      ),
-                      const SizedBox(height: 12),
-                      DragTarget<String>(
-                        onWillAcceptWithDetails: (details) =>
-                            game.order.contains(details.data),
-                        onAcceptWithDetails: (details) =>
-                            act(() => controller.drag(details.data)),
-                        builder: (context, candidates, rejected) => Container(
-                          key: const Key('selection-tray'),
-                          constraints: const BoxConstraints(minHeight: 64),
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: candidates.isEmpty
-                                ? Theme.of(context)
-                                      .colorScheme
-                                      .surfaceContainerHigh
-                                : Theme.of(context)
-                                      .colorScheme
-                                      .primaryContainer,
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                          child: Text(
-                            'Selected ${game.selection.length}/4 · Drop a word here'
-                            '${game.selection.isEmpty ? '' : '\n${game.selection.map((id) => game.tile(id).text).join(' · ')}'}',
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: OutlinedButton(
-                              onPressed: () => act(controller.shuffle),
-                              child: const Text('Shuffle'),
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Expanded(
-                            child: OutlinedButton(
-                              onPressed: game.selection.isEmpty
-                                  ? null
-                                  : () => act(controller.deselect),
-                              child: const Text('Deselect'),
-                            ),
+                          ],
+                          if (game.isFinal) ...[
+                            const SizedBox(height: 20),
+                            Text('The red herrings', style: text.titleLarge),
+                            for (final hint in game.revealedRedHerrings)
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12),
+                                child: Text(hint.note),
+                              ),
+                            if (controller.result != null) ...[
+                              const SizedBox(height: 16),
+                              SelectableText(
+                                controller.result!.shareText,
+                                key: const Key('share-data'),
+                              ),
+                            ],
+                            if (controller.date == null) ...[
+                              const SizedBox(height: 16),
+                              OutlinedButton(
+                                onPressed: controller.newAttempt,
+                                child: const Text('Replay · New attempt'),
+                              ),
+                            ],
+                          ],
+                          const SizedBox(height: 12),
+                          TextButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: const Text('Back to level'),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 8),
-                      FilledButton(
-                        key: const Key('submit'),
-                        onPressed: game.canSubmit
-                            ? () => act(controller.submit)
-                            : null,
-                        child: const Text('Submit'),
-                      ),
-                      const SizedBox(height: 20),
-                      const Text(
-                        'Boosters · Coins are charged only on success',
-                      ),
-                      const SizedBox(height: 8),
-                      Wrap(
-                        spacing: 8,
-                        runSpacing: 8,
-                        children: [
-                          _Booster(
-                            label: 'Pair Magnet · 30',
-                            enabled: controller.canPair,
-                            reason: controller.coins < 30
-                                ? 'Needs 30 coins'
-                                : 'No unmarked group remains',
-                            onPressed: () => act(controller.pairMagnet),
-                          ),
-                          _Booster(
-                            label: 'Category Peek · 40',
-                            enabled: controller.canPeek,
-                            reason: controller.coins < 40
-                                ? 'Needs 40 coins'
-                                : 'No hidden title remains',
-                            onPressed: () => act(controller.categoryPeek),
-                          ),
-                          _Booster(
-                            label: 'Extra Life · 60',
-                            enabled: controller.canExtraLife,
-                            reason: game.lives == 4
-                                ? 'All four lives are full'
-                                : 'Needs 60 coins',
-                            onPressed: () => act(controller.extraLife),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      const Text(
-                        'Tap to toggle. Hold a word, then drag it onto another word or the selection tray.',
-                      ),
-                    ],
-                    if (game.isFinal) ...[
-                      const SizedBox(height: 20),
-                      Text('The red herrings', style: text.titleLarge),
-                      for (final hint in game.revealedRedHerrings)
-                        Padding(
-                          padding: const EdgeInsets.only(top: 12),
-                          child: Text(hint.note),
-                        ),
-                      if (controller.result != null) ...[
-                        const SizedBox(height: 16),
-                        SelectableText(
-                          controller.result!.shareText,
-                          key: const Key('share-data'),
-                        ),
-                      ],
-                    ],
-                    const SizedBox(height: 20),
-                    if (game.isFinal && controller.date == null)
-                      OutlinedButton(
-                        onPressed: controller.newAttempt,
-                        child: const Text('Replay · New attempt'),
-                      ),
-                    const SizedBox(height: 8),
-                    TextButton(
-                      onPressed: () => Navigator.pop(context),
-                      child: const Text('Back to level'),
                     ),
-                  ],
-                ),
-              ),
-            ),
+                  ),
+                  if (playing) actionDock(context),
+                ],
+              );
+            },
           ),
         ),
       );
@@ -392,19 +588,32 @@ class _PendingDecision extends StatelessWidget {
   final BoardController controller;
   final BoardAction act;
   @override
-  Widget build(BuildContext context) => Card(
+  Widget build(BuildContext context) => Container(
+    decoration: BoxDecoration(
+      border: Border(
+        top: BorderSide(
+          color: Theme.of(context).colorScheme.secondary,
+          width: 5,
+        ),
+      ),
+      color: Theme.of(context).colorScheme.surfaceContainerLow,
+    ),
     child: Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          const Padding(
+            padding: EdgeInsets.only(bottom: 16),
+            child: Icon(Icons.pause_circle_outline, size: 48),
+          ),
           Text(
             'Out of lives · Your choice',
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 8),
           const Text(
-            'Your attempt is waiting. Rescue it to continue, or accept the loss to reveal the remaining connections.',
+            'Your attempt is waiting. Rescue it to continue, or accept the loss to reveal the remaining connections. Revealing is final.',
           ),
           const SizedBox(height: 16),
           FilledButton(
@@ -433,50 +642,126 @@ class _PendingDecision extends StatelessWidget {
   );
 }
 
-class _CategoryCard extends StatelessWidget {
+class _CategoryCard extends StatefulWidget {
   const _CategoryCard({
     super.key,
     required this.category,
     this.animate = false,
+    this.compact = false,
+    this.expanded = true,
   });
   final Category category;
-  final bool animate;
+  final bool animate, compact, expanded;
   @override
-  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
-    tween: Tween(begin: animate ? 0 : 1, end: 1),
-    duration: motionDuration(context, 350),
-    builder: (context, value, child) => ClipRect(
-      child: Align(
-        heightFactor: value,
-        child: Opacity(opacity: value, child: child),
-      ),
-    ),
-    child: DefaultTextStyle.merge(
-      style: const TextStyle(color: tierInk),
-      child: Container(
-        key: ValueKey('category-${category.id}'),
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: tierColors[category.difficultyTier - 1],
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Tier ${category.difficultyTier} · ${category.title}',
-              style: Theme.of(context).textTheme.titleMedium!
-                  .copyWith(color: tierInk),
-            ),
-            const SizedBox(height: 6),
-            Text(category.tiles.map((t) => t.text).join(' · ')),
-            const SizedBox(height: 8),
-            Text(category.triviaFact),
-          ],
+  State<_CategoryCard> createState() => _CategoryCardState();
+}
+
+class _CategoryCardState extends State<_CategoryCard> {
+  late bool expanded = widget.expanded;
+  @override
+  void didUpdateWidget(_CategoryCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.expanded != widget.expanded) expanded = widget.expanded;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final category = widget.category;
+    final showDetails = !widget.compact || expanded;
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: widget.animate ? 0 : 1, end: 1),
+      duration: motionDuration(context, 350),
+      builder: (context, value, child) => ClipRect(
+        child: Align(
+          heightFactor: value,
+          child: Opacity(opacity: value, child: child),
         ),
       ),
-    ),
-  );
+      child: DefaultTextStyle.merge(
+        style: const TextStyle(color: tierInk),
+        child: Container(
+          key: ValueKey('category-${category.id}'),
+          decoration: BoxDecoration(
+            color: tierColors[category.difficultyTier - 1],
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: tierInk.withValues(alpha: .2)),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (widget.compact)
+                Semantics(
+                  button: true,
+                  expanded: expanded,
+                  child: InkWell(
+                    onTap: () => setState(() => expanded = !expanded),
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(minHeight: 48),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 8,
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                'Tier ${category.difficultyTier} · ${category.title}',
+                                style: Theme.of(context).textTheme.labelLarge!
+                                    .copyWith(color: tierInk),
+                              ),
+                            ),
+                            Icon(
+                              expanded ? Icons.expand_less : Icons.expand_more,
+                              color: tierInk,
+                              size: 20,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              else
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(14, 14, 14, 0),
+                  child: Text(
+                    'Tier ${category.difficultyTier} · ${category.title}',
+                    style: Theme.of(context).textTheme.titleMedium!
+                        .copyWith(color: tierInk),
+                  ),
+                ),
+              if (showDetails)
+                Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    14,
+                    widget.compact ? 0 : 6,
+                    14,
+                    12,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        category.tiles.map((t) => t.text).join(' · '),
+                        style: Theme.of(context).textTheme.labelSmall!
+                            .copyWith(color: tierInk, letterSpacing: 0),
+                      ),
+                      const SizedBox(height: 5),
+                      Text(
+                        category.triviaFact,
+                        style: Theme.of(context).textTheme.bodySmall!
+                            .copyWith(color: tierInk, height: 1.4),
+                      ),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class _BoardTile extends StatefulWidget {
@@ -529,8 +814,16 @@ class _BoardTileState extends State<_BoardTile> {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
           decoration: BoxDecoration(
-            color: selected ? colors.primary : colors.surfaceContainerHighest,
-            borderRadius: BorderRadius.circular(12),
+            color: selected ? colors.primary : colors.surfaceContainerLow,
+            borderRadius: BorderRadius.circular(8),
+            boxShadow: [
+              BoxShadow(
+                color: selected
+                    ? colors.primary.withValues(alpha: .35)
+                    : colors.outlineVariant,
+                offset: Offset(0, selected ? 1 : 3),
+              ),
+            ],
             border: Border.all(
               color: focused
                   ? colors.onSurface
@@ -546,16 +839,19 @@ class _BoardTileState extends State<_BoardTile> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      tile.text.replaceAll(' ', '\n'),
-                      maxLines: 2,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 14,
-                        color: selected ? colors.onPrimary : colors.onSurface,
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        tile.text.replaceAll(' ', '\n'),
+                        maxLines: 2,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 14,
+                          letterSpacing: -.3,
+                          color: selected ? colors.onPrimary : colors.onSurface,
+                        ),
                       ),
                     ),
                   ),
@@ -634,8 +930,16 @@ class _Booster extends StatelessWidget {
         child: Semantics(
           hint: enabled ? 'Available' : reason,
           child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              minimumSize: const Size(48, 64),
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+            ),
             onPressed: enabled ? onPressed : null,
-            child: Text(label),
+            child: Text(
+              label,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+            ),
           ),
         ),
       ),
@@ -643,7 +947,11 @@ class _Booster extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 4),
           child: ExcludeSemantics(
-            child: Text(reason, style: Theme.of(context).textTheme.bodySmall),
+            child: Text(
+              reason,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
           ),
         ),
     ],

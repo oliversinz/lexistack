@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import '../app/progress_controller.dart';
 
 class ProgressStatus extends StatelessWidget {
-  const ProgressStatus({super.key, required this.controller});
+  const ProgressStatus({
+    super.key,
+    required this.controller,
+    this.showWallet = true,
+  });
   final ProgressController controller;
+  final bool showWallet;
   @override
   Widget build(BuildContext context) => Column(
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -19,11 +24,12 @@ class ProgressStatus extends StatelessWidget {
         ] else
           const Text('Loading saved progress…'),
       ] else ...[
-        Text(
-          '${controller.state.coins} coins',
-          key: const Key('wallet'),
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
+        if (showWallet)
+          Text(
+            '${controller.state.coins} coins',
+            key: const Key('wallet'),
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
         if (controller.storageWarning != null) ...[
           Text(controller.storageWarning!, key: const Key('storage-warning')),
           TextButton(
