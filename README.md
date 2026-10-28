@@ -1,114 +1,117 @@
-# LexiStack — F2 playable preview
+# LexiStack — F3 persistent offline game
 
-A genuine offline Flutter Android puzzle: Home → collection → level details →
-**Play / Resume preview**. All eight frozen Everyday Echoes levels are playable
-in this phase preview, without campaign unlock rules. Find four groups of four
-words before exhausting four lives. Tap to toggle; hold and drag onto another
-tile to add both, or onto the tray to add one. Shuffle is free. A repeated wrong
-set costs no extra life; three matching words produce **One Away!**.
+Find four groups of four words before exhausting four lives. Tap to toggle;
+hold and drag onto another tile to add both, or onto the tray to add one.
+Shuffle is free. Repeating a wrong set costs no extra life; three matching
+words produce **One Away!**. At zero lives, solutions stay concealed until
+**Reveal / Accept Loss**. A paid rescue continues the same attempt.
 
-Zero lives opens a spoiler-free decision: **Rescue / Extra Life** continues the
-same attempt at one life; **Reveal / Accept Loss** finalizes the loss and shows
-solutions. Pair Magnet, Category Peek and Extra Life are explicitly **F2 preview
-effects without coin charging**. Stars use lifetime mistakes, including after
-rescues: 0 → 3, 1–2 → 2, 3+ → 1.
+The installed content is **8 campaign levels and 8 separate Daily boards**.
+Campaign stage 1 is unlocked; winning unlocks the next stage in that pack.
+Continue resumes the most recently entered unfinished campaign attempt,
+including pending loss. Finished levels require an explicit replay.
 
-Attempts survive navigation **only in memory**. Process restart loses them.
-New attempt/replay is explicit. There is no economy, durable progression,
-Daily gameplay, statistics, settings or clipboard integration in F2.
+- Start with **150 coins**. Pair Magnet costs **30**, Category Peek **40**,
+  Extra Life **60**. Rejected actions do not charge or change the game.
+- Stars use lifetime mistakes: **0 → 3**, **1–2 → 2**, **3+ → 1**, including
+  after rescues. A campaign level's first win pays **50/30/15** coins.
+- The first successful replay pays **5 once per level**; later replay wins
+  pay zero. Best stars never decrease.
+- Daily permits one attempt per local civil date. Its first win pays the star
+  reward **plus 25**. The eight-board pool repeats every eight days.
+- Finalized wins/losses count toward statistics; pending losses and abandoned
+  old-day Daily attempts do not. Home shows actual statistics and streaks.
 
-## Run on Windows
+## Run and verify on Windows
 
-Verified with Flutter **3.47.8**, Dart **3.13.7**, Android SDK **36.1.0** and the
-**Pixel_10** Android 16 emulator. Use PowerShell from this repository:
+Verified toolchain: Flutter **3.47.8**, Dart **3.13.7**, Android SDK **36.1.0**,
+Pixel_10 / Android 16. Use PowerShell from this repository:
 
 ```powershell
-flutter --version
-dart --version
 flutter doctor -v
 flutter pub get
-flutter emulators
 flutter emulators --launch Pixel_10
 flutter run -d emulator-5554
-```
-
-Use the emulator ID shown by your installation. Flutter and Git must be on PATH.
-Android licenses must be accepted (`flutter doctor --android-licenses`).
-
-## Check and build
-
-```powershell
 dart run tool/validate_levels.dart --partial
 dart run tool/validate_levels.dart
-dart run tool/validate_levels.dart assets/levels/pack1.json
 dart analyze
-flutter test
+flutter test --reporter expanded
 dart run tool/check_prng.dart
 flutter build apk --debug
 git hash-object --no-filters assets/levels/pack1.json
+git hash-object --no-filters assets/levels/daily.json
 ```
 
-Partial validation passes with 8 levels / 32 groups / 128 tile positions.
-Strict validation **exits 1 as expected in F2**: three campaign packs and Daily
-are intentionally absent. The candidate command reports a replacement preview
-and never writes assets. An external candidate path with a new pack ID is
-validated as an addition against the installed catalog.
+Partial validation: **16 levels / 64 groups / 256 tile positions**, zero errors
+and warnings. Strict validation **intentionally exits 1 in F3** because three
+campaign packs remain for F5; Daily is installed and valid. To validate an
+external candidate without changing assets:
+`dart run tool/validate_levels.dart path/to/candidate.json`. Matching pack IDs
+are replacement previews; new IDs are additions. Future imports must follow
+the assigned phase and [reference lock](docs/reference-content-lock.md).
 
-The debug APK is `build/app/outputs/flutter-apk/app-debug.apk`. To verify a
-launcher start independently of `flutter run`:
+For an actual launcher/process-restart check:
 
 ```powershell
 $adb = "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe"
-& $adb devices -l
 & $adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
 & $adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+# Open the app drawer and tap LexiStack; play and wait for Saving to clear.
+& $adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+& $adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+# Tap the launcher icon again, then Continue Campaign.
+& $adb -s emulator-5554 shell pidof de.cloudwards.lexistack
 ```
 
-Open the emulator's app drawer and tap **LexiStack**. In the recorded run, the
-first debug cold launch took 5.360 seconds to reach Android's fully-drawn event;
-a warm launcher reopen reused the process and showed the previous screen.
-If startup seems slow, inspect `adb logcat` before diagnosing an app failure.
+## Implementation and recovery
 
-## Boundaries and content
+`lib/core/` contains pure-Dart rules, scoring, sharing, civil-day arithmetic,
+PRNG and validated game snapshots. The pinned external content package owns
+all content parsing/validation; `asset_catalog.dart` only loads assets.
+`ProgressController` coordinates money, progression, Daily, results and saves;
+`BoardController` forwards gestures. UI uses SDK `ChangeNotifier` listeners.
 
-- `lib/infrastructure/asset_catalog.dart` reads bundled strings; the shared
-  package owns all parsing, models and validation.
-- `lib/core/` owns pure-Dart transitions, typed outcomes, immutable state views,
-  stars and the exact finalized-only campaign/Daily share formatter.
-- `lib/app/catalog_controller.dart` loads content and retains in-memory board
-  controllers. `BoardController` uses SDK `ChangeNotifier`; `lib/ui/` handles
-  rendering and gestures. No animation callback controls game rules.
-- `StableRandom` uses Park–Miller: `state * 16807 % 2147483647`, seeds
-  1…2147483646. Its largest product is below 2^46 and exactly representable in
-  JavaScript. Descending Fisher–Yates uses `next() % (i + 1)`. Seed and current
-  RNG state are exposed, without persistence. F2 uses seed **20261028**; the
-  initial source-tile indexes are **11,15,6,0,12,13,1,7,14,8,5,3,9,4,2,10**.
-  Independent PowerShell BigInteger vectors and a direct Dart VM probe are in
-  `docs/evidence/f2/` and `tool/check_prng.dart`. Browser execution is deferred
-  to F6; no cross-platform runtime pass is claimed yet.
-- The pure Dart content package is pinned to
-  `d9acbd52de0e198dd109a4859299318db3f465f5` at
-  [lexistack-content](https://github.com/oliversinz/lexistack-content),
-  subdirectory `packages/lexistack_content_contract`; commit `pubspec.lock`.
-- The only installed pack comes from LexiStack3 commit
-  `8b84f2d6c75cb807fba9db19cba707f963e02020`. Its Git blob must remain
-  `5efa3c88c769f74eee872860766681f5c2cc1c64`. Do not edit or reserialize it.
-- Runtime content and SDK typography/icons are local. No font downloads or
-  third-party font files are used. Flutter exposes its SDK license notices.
-  There is no backend, runtime content fetching, analytics or persistence.
-  Android debug manifests retain Flutter's development-tool Internet permission.
-- Future imports must follow the assigned phase and
-  [reference lock](docs/reference-content-lock.md). Do not add absent files to
-  the partial manifest. New Studio-authored content is outside this experiment.
+One JSON document, **version 1**, is written under **`lexistack.progress`** by
+`SharedPreferencesAsync` (Android's default DataStore preferences backend).
+Storage and local clock are injected; `MemoryProgressStorage` supplies delayed
+writes and failures in tests. Each successful transition captures its entire
+snapshot before joining the serial write queue. `flush()` waits for that queue.
+Failures display **Progress not saved** and offer Retry; subsequent writes work.
+This lightweight local store does **not** promise hard power-loss durability or
+protection against deliberate, internally consistent save-file edits.
 
-A missing or malformed asset shows its filename/location and a Retry action.
-Restore the exact asset and rebuild; retry cannot repair a damaged APK.
-Git access is needed at dependency-resolution time. Preserve the pin instead of
-substituting a branch when resolution fails. This host lacks Visual Studio, so
-Windows desktop builds were not attempted; F1 has Android scaffolding only.
-Java/Gradle emitted native-access warnings, but the debug build succeeded.
+Unfinished attempts retain board/selection order, history, seed/current PRNG,
+solved groups, hints, lives, mistakes and pending decisions. Recovery requires
+a true unique permutation and checks history through the engine. The semantic
+fingerprint is canonical JSON of the level's ordered IDs, titles, tiers, words,
+facts and red herrings: collision-free, independent of whitespace/object-key
+order, and not a runtime hash. A removed or changed level drops only its
+unfinished attempt. Historical summaries, share rows and achievements survive.
 
-See [F1/F2 evidence](docs/gate-log.md), [product contract](docs/product-contract.md),
-[architecture](docs/architecture.md) and [acceptance matrix](docs/acceptance-matrix.md).
-F1's independent decision is PASS. F2 is pending independent review; F3 has
-not started. Clipboard integration remains F4, browser PRNG execution F6.
+Valid wallet, achievements, results, Daily outcomes and settings are salvaged
+independently. Invalid individual entries are omitted with a notice; malformed
+root/version resets to fresh defaults. Corrupt finalized records retain ID/date
+or level reward locks to prevent fresh payouts; valid history repairs missing
+progression flags. A wholly invalid history locks rewards until confirmed Reset.
+Reset restores 150 coins, empty attempts/history/Daily, system theme and haptics
+on. Full theme/haptics controls and clipboard integration belong to F4.
+
+Daily index uses UTC midnights made from **local calendar components**, relative
+to **2026-01-01**. Pool index is normalized `dayIndex % 8`; seed is
+`(dayIndex % 2147483646) + 1`. Epoch seed is 1; 2026-10-28 is index 300, board 5,
+seed 301. Campaign seeds use the new attempt's serial modulo that range, plus 1.
+Park–Miller and Fisher–Yates are unchanged; VM golden vectors remain in
+`tool/check_prng.dart`. Actual browser PRNG execution remains F6.
+
+Content contract pin: **`d9acbd52de0e198dd109a4859299318db3f465f5`**;
+commit `pubspec.lock`. Frozen source commit:
+**`8b84f2d6c75cb807fba9db19cba707f963e02020`**. Required blobs:
+`pack1.json` **`5efa3c88c769f74eee872860766681f5c2cc1c64`**,
+`daily.json` **`5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6`**.
+Do not edit or reserialize those fixtures. Runtime assets/SDK fonts are bundled;
+there is no backend, analytics, ads, billing or runtime content network.
+
+See [gate log](docs/gate-log.md) and [F3 evidence](docs/evidence/f3).
+F1/F2 are accepted; **F3 is PENDING independent review**. F4 has not started.
+Windows desktop compilation is unavailable on this host without Visual Studio;
+Android builds work, with nonfatal Java native-access warnings.

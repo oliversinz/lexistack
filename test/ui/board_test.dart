@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lexistack/core/game.dart';
 import 'package:lexistack/ui/app.dart';
+import 'package:lexistack/app/storage.dart';
+
+import '../support/progress_fixture.dart' show TestClock;
+
 import 'package:lexistack/ui/board_screen.dart';
 
 import '../app_test.dart' show TestBundle;
@@ -20,8 +24,18 @@ Future<void> tapVisible(WidgetTester tester, Finder finder) async {
   await tester.pumpAndSettle();
 }
 
-Future<void> enterBoard(WidgetTester tester) async {
-  await tester.pumpWidget(LexiStackApp(bundle: TestBundle()));
+Future<void> enterBoard(
+  WidgetTester tester, {
+  MemoryProgressStorage? store,
+  TestClock? clock,
+}) async {
+  await tester.pumpWidget(
+    LexiStackApp(
+      bundle: TestBundle(),
+      storage: store ?? MemoryProgressStorage(),
+      clock: (clock ?? TestClock()).call,
+    ),
+  );
   await tester.pumpAndSettle();
   await tester.scrollUntilVisible(
     find.text('Explore collection'),
@@ -30,7 +44,7 @@ Future<void> enterBoard(WidgetTester tester) async {
   );
   await tapVisible(tester, find.text('Explore collection'));
   await tapVisible(tester, find.text('Table Talk'));
-  await tapVisible(tester, find.text('Play / Resume preview'));
+  await tapVisible(tester, find.text('Play / Resume'));
 }
 
 Finder tile(String word) => find.byKey(ValueKey('tile-$word'));
@@ -171,9 +185,9 @@ void main() {
       viewport(tester, const Size(390, 844));
       await enterBoard(tester);
       final attempt = game(tester);
-      await tapVisible(tester, find.text('Category Peek'));
+      await tapVisible(tester, find.text('Category Peek · 40'));
       expect(find.text('Peek: BREAKFAST BAKES'), findsOneWidget);
-      await tapVisible(tester, find.text('Pair Magnet'));
+      await tapVisible(tester, find.text('Pair Magnet · 30'));
       expect(attempt.pairs, hasLength(1));
       await pendingLoss(tester);
       expect(attempt.status, GameStatus.lostPendingDecision);
@@ -184,7 +198,7 @@ void main() {
       expect(find.text(attempt.level.redHerrings.first.note), findsNothing);
       expect(find.byKey(const Key('tile-grid')), findsNothing);
       await tapVisible(tester, find.text('Back to level'));
-      await tapVisible(tester, find.text('Play / Resume preview'));
+      await tapVisible(tester, find.text('Play / Resume'));
       expect(identical(game(tester), attempt), isTrue);
       expect(find.text('Out of lives · Your choice'), findsOneWidget);
       final order = attempt.order;
@@ -210,32 +224,24 @@ void main() {
       expect(find.text(attempt.level.redHerrings.first.note), findsOneWidget);
       expect(find.byKey(const Key('rescue')), findsNothing);
       await tapVisible(tester, find.text('Back to level'));
-      await tapVisible(tester, find.text('Play / Resume preview'));
+      await tapVisible(tester, find.text('View saved result'));
       expect(game(tester).status, GameStatus.lostFinal);
       expect(tester.takeException(), isNull);
     },
   );
 
   testWidgets(
-    'all four real groups win; replay is explicit and active reset confirms',
+    'all four real groups win; active attempt resumes and replay is explicit',
     (tester) async {
       viewport(tester, const Size(390, 844));
       await enterBoard(tester);
       final original = game(tester);
       await tapVisible(tester, tile('TOAST'));
       await tapVisible(tester, find.text('Back to level'));
-      await tapVisible(tester, find.text('Play / Resume preview'));
+      await tapVisible(tester, find.text('Play / Resume'));
       expect(identical(game(tester), original), isTrue);
       expect(original.selection, hasLength(1));
-      await tapVisible(tester, find.text('New attempt'));
-      await tester.tap(find.text('Keep playing'));
-      await tester.pumpAndSettle();
-      expect(identical(game(tester), original), isTrue);
-      await tapVisible(tester, find.text('New attempt'));
-      await tester.tap(find.text('Start new attempt'));
-      await tester.pumpAndSettle();
-      expect(identical(game(tester), original), isFalse);
-      expect(game(tester).selection, isEmpty);
+      expect(find.text('New attempt'), findsNothing);
       for (final category in game(tester).level.categories) {
         await submitWords(tester, category.tiles.map((t) => t.text).toList());
       }

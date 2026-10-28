@@ -1,23 +1,29 @@
 import 'package:flutter/foundation.dart';
 import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
-import '../core/game.dart';
+import '../core/daily.dart';
 import 'board_controller.dart';
+import 'progress.dart';
+import 'progress_controller.dart';
+import 'storage.dart';
 
 class CatalogController extends ChangeNotifier {
-  CatalogController({required this.loadCatalog});
+  CatalogController({
+    required this.loadCatalog,
+    required this.storage,
+    required this.clock,
+  });
 
   final Future<ValidationReport> Function() loadCatalog;
+  final ProgressStorage storage;
+  final LocalClock clock;
+  ProgressController? progress;
   ValidationReport? report;
   String? error;
   bool loading = false;
   bool _disposed = false;
-  final Map<String, BoardController> _attempts = {};
-
-  BoardController boardFor(Level level) => _attempts.putIfAbsent(
-    level.id,
-    () => BoardController(Game(level, seed: 20261028)),
-  );
+  BoardController boardFor(Attempt attempt) =>
+      BoardController(progress!, attempt);
 
   Future<void> load() async {
     if (loading) return;
@@ -30,6 +36,20 @@ class CatalogController extends ChangeNotifier {
       if (_disposed) return;
       report = loaded;
       if (!loaded.isValid) error = formatReport(loaded);
+      if (loaded.isValid && progress == null) {
+        final player = ProgressController(
+          catalog: loaded.catalog!,
+          storage: storage,
+          clock: clock,
+        );
+        await player.load();
+        if (_disposed) {
+          player.dispose();
+          return;
+        }
+        progress = player;
+        player.addListener(notifyListeners);
+      }
     } on FormatException catch (failure) {
       if (_disposed) return;
       error = failure.message;
@@ -42,9 +62,8 @@ class CatalogController extends ChangeNotifier {
   @override
   void dispose() {
     _disposed = true;
-    for (final board in _attempts.values) {
-      board.dispose();
-    }
+    progress?.removeListener(notifyListeners);
+    progress?.dispose();
     super.dispose();
   }
 }

@@ -4,6 +4,7 @@ import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
 import 'prng.dart';
 import 'scoring.dart';
+import 'saved_value.dart';
 
 enum GameStatus { playing, won, lostPendingDecision, lostFinal }
 
@@ -15,6 +16,8 @@ enum Rejection {
   noChange,
   noEligibleCategory,
   livesFull,
+  unaffordable,
+  staleAttempt,
 }
 
 sealed class GameOutcome {
@@ -64,6 +67,145 @@ final class Game {
     _random.shuffle(_order);
   }
 
+  Game._restored(this.level, this.seed, int rngState)
+    : _random = StableRandom(rngState),
+      _tiles = {for (final tile in level.tiles) tile.id: tile},
+      _order = [];
+
+  /// Re-evaluate history through the real transitions, then restore only data
+  /// whose references and cross-field invariants have been checked. Historical
+  /// hints may refer to subsequently solved categories.
+  factory Game.restore(Level level, Object? value) {
+    final data = savedMap(value);
+    final seed = savedInt(data['seed'], 1, StableRandom.modulus - 1);
+    final rng = savedInt(data['rng'], 1, StableRandom.modulus - 1);
+    final status = GameStatus.values
+        .where((s) => s.name == data['status'])
+        .firstOrNull;
+    requireSaved(status != null, 'Unknown game status');
+    final lives = savedInt(data['lives'], 0, 4);
+    final mistakes = savedInt(data['mistakes'], 0, 1820);
+    final extras = savedInt(data['extraLives'], 0, mistakes);
+    final combo = savedInt(data['combo'], 0, 4);
+    requireSaved(lives == 4 + extras - mistakes, 'Impossible life arithmetic');
+    final replay = Game(level, seed: seed);
+    for (final raw in savedList(data['guesses'])) {
+      requireSaved(!replay.isFinal, 'Guesses after victory');
+      final row = savedMap(raw);
+      final ids = savedStrings(row['ids']);
+      final tiers = savedList(row['tiers'])
+          .map((t) => savedInt(t, 1, 4))
+          .toList();
+      final correct = savedBool(row['correct']);
+      requireSaved(ids.length == 4 && tiers.length == 4);
+      requireSaved(
+        ids.every(replay._eligible),
+        'Guessed solved or unknown tile',
+      );
+      requireSaved(
+        jsonEncode(tiers) ==
+            jsonEncode(
+              ids.map((id) => replay.tile(id).difficultyTier).toList(),
+            ),
+      );
+      if (replay.status == GameStatus.lostPendingDecision) replay.extraLife();
+      replay.deselect();
+      for (final id in ids) {
+        replay.toggle(id);
+      }
+      final outcome = replay.submit();
+      requireSaved(
+        outcome is Solved || outcome is Mismatch,
+        'Duplicate evaluated guess',
+      );
+      requireSaved((outcome is Solved) == correct, 'Wrong guess correctness');
+    }
+    requireSaved(replay.mistakes == mistakes && replay.combo == combo);
+    requireSaved(
+      replay.extraLivesUsed <= extras,
+      'Impossible rescue chronology',
+    );
+    requireSaved(
+      replay.solvedIds.length == 4
+          ? status == GameStatus.won
+          : status != GameStatus.won,
+    );
+    requireSaved(
+      lives == 0
+          ? status == GameStatus.lostPendingDecision ||
+                status == GameStatus.lostFinal
+          : status == GameStatus.playing || status == GameStatus.won,
+    );
+    final solved = savedStrings(data['solved']);
+    requireSaved(
+      jsonEncode(solved) == jsonEncode(replay.solvedIds),
+      'Solved chronology mismatch',
+    );
+    final wrong = savedStrings(data['wrong']);
+    requireSaved(
+      wrong.length == replay.wrongSignatures.length &&
+          wrong.every(replay.wrongSignatures.contains),
+    );
+    final order = savedStrings(data['order']);
+    // Length alone is insufficient: savedStrings also requires unique IDs.
+    requireSaved(
+      order.length == replay.order.length && order.every(replay.order.contains),
+      'Board is not an unsolved permutation',
+    );
+    final selection = savedStrings(data['selection']);
+    requireSaved(selection.length <= 4 && selection.every(order.contains));
+    if (lives == 0) {
+      requireSaved(
+        jsonEncode(selection) == jsonEncode(replay.selection),
+        'Pending selection changed',
+      );
+    }
+    final game = Game._restored(level, seed, rng);
+    game._order.addAll(order);
+    game._selection.addAll(selection);
+    game._solved.addAll(solved);
+    game._guesses.addAll(replay.guesses);
+    game._wrongSignatures.addAll(wrong);
+    final categories = {for (final c in level.categories) c.id: c};
+    for (final entry in savedMap(data['pairs']).entries) {
+      final pair = savedStrings(entry.value);
+      final category = categories[entry.key];
+      requireSaved(category != null && pair.length == 2);
+      requireSaved(pair.every((id) => category!.tiles.any((t) => t.id == id)));
+      requireSaved(pair.contains(category!.tiles.first.id), 'Impossible pair');
+      game._pairs[entry.key] = List.unmodifiable(pair);
+    }
+    final peeked = savedStrings(data['peeked']);
+    requireSaved(peeked.every(categories.containsKey));
+    game._peeked.addAll(peeked);
+    game._status = status!;
+    game._lives = lives;
+    game._mistakes = mistakes;
+    game._combo = combo;
+    game._extraLivesUsed = extras;
+    return game;
+  }
+
+  Map<String, Object?> snapshot() => {
+    'seed': seed,
+    'rng': rngState,
+    'status': status.name,
+    'lives': lives,
+    'mistakes': mistakes,
+    'combo': combo,
+    'extraLives': extraLivesUsed,
+    'order': order,
+    'selection': selection,
+    'solved': solvedIds,
+    'wrong': wrongSignatures.toList(),
+    'pairs': pairs,
+    'peeked': peekedIds.toList(),
+    'guesses': [
+      for (final g in guesses)
+        {'ids': g.tileIds, 'tiers': g.tiers, 'correct': g.correct},
+    ],
+  };
+
   final Level level;
   final int seed;
   final StableRandom _random;
@@ -91,6 +233,13 @@ final class Game {
   bool get isFinal =>
       _status == GameStatus.won || _status == GameStatus.lostFinal;
   bool get canSubmit => _status == GameStatus.playing && _selection.length == 4;
+  bool get canPair =>
+      _status == GameStatus.playing &&
+      remainingCategories.any((c) => !_pairs.containsKey(c.id));
+  bool get canPeek =>
+      _status == GameStatus.playing &&
+      remainingCategories.any((c) => !_peeked.contains(c.id));
+  bool get canExtraLife => !isFinal && _lives < 4;
   List<String> get order => List.unmodifiable(_order);
   List<String> get selection => List.unmodifiable(_selection);
   List<String> get solvedIds => List.unmodifiable(_solved);

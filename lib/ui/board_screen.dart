@@ -3,8 +3,9 @@ import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
 import '../app/board_controller.dart';
 import '../core/game.dart';
+import 'progress_status.dart';
 
-class BoardScreen extends StatelessWidget {
+class BoardScreen extends StatefulWidget {
   const BoardScreen({
     super.key,
     required this.controller,
@@ -13,28 +14,18 @@ class BoardScreen extends StatelessWidget {
   final BoardController controller;
   final int number;
 
-  Future<void> _restart(BuildContext context) async {
-    if (!controller.game.isFinal) {
-      final confirmed = await showDialog<bool>(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: const Text('Start a new attempt?'),
-          content: const Text('This replaces your current in-memory attempt.'),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context, false),
-              child: const Text('Keep playing'),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, true),
-              child: const Text('Start new attempt'),
-            ),
-          ],
-        ),
-      );
-      if (confirmed != true) return;
-    }
-    controller.newAttempt();
+  @override
+  State<BoardScreen> createState() => _BoardScreenState();
+}
+
+class _BoardScreenState extends State<BoardScreen> {
+  BoardController get controller => widget.controller;
+  int get number => widget.number;
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -42,7 +33,7 @@ class BoardScreen extends StatelessWidget {
     listenable: controller,
     builder: (context, _) {
       final game = controller.game;
-      final playing = game.status == GameStatus.playing;
+      final playing = game.status == GameStatus.playing && controller.active;
       final text = Theme.of(context).textTheme;
       return Scaffold(
         appBar: AppBar(title: Text('$number · ${game.level.title}')),
@@ -57,10 +48,13 @@ class BoardScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text(
-                      'F2 PREVIEW · IN MEMORY ONLY',
-                      style: text.labelMedium,
-                    ),
+                    ProgressStatus(controller: controller.progress),
+                    if (controller.date != null)
+                      Text('Daily ${controller.date}'),
+                    if (controller.expired)
+                      const Text(
+                        'A new day has begun. Return Home to open today’s Daily.',
+                      ),
                     const SizedBox(height: 12),
                     Semantics(
                       label: '${game.lives} of 4 lives',
@@ -87,7 +81,8 @@ class BoardScreen extends StatelessWidget {
                       style: text.titleMedium,
                     ),
                     const SizedBox(height: 8),
-                    if (game.status == GameStatus.lostPendingDecision)
+                    if (game.status == GameStatus.lostPendingDecision &&
+                        !controller.expired)
                       _PendingDecision(controller: controller)
                     else if (game.isFinal) ...[
                       Text(
@@ -102,6 +97,12 @@ class BoardScreen extends StatelessWidget {
                           key: const Key('win-stars'),
                           style: text.titleLarge,
                         ),
+                      Text(
+                        '+${controller.result?.reward ?? 0} coins awarded for this attempt',
+                      ),
+                      Text(
+                        '${controller.progress.state.gamesPlayed} games played · ${controller.progress.state.wins} wins',
+                      ),
                       const SizedBox(height: 12),
                     ] else
                       Semantics(
@@ -190,35 +191,31 @@ class BoardScreen extends StatelessWidget {
                         child: const Text('Submit'),
                       ),
                       const SizedBox(height: 20),
-                      const Text('Hint effects · F2 preview: no coins'),
+                      const Text(
+                        'Boosters · Coins are charged only on success',
+                      ),
                       const SizedBox(height: 8),
                       Wrap(
                         spacing: 8,
                         runSpacing: 8,
                         children: [
                           OutlinedButton(
-                            onPressed:
-                                game.remainingCategories.any(
-                                  (c) => !game.pairs.containsKey(c.id),
-                                )
+                            onPressed: controller.canPair
                                 ? controller.pairMagnet
                                 : null,
-                            child: const Text('Pair Magnet'),
+                            child: const Text('Pair Magnet · 30'),
                           ),
                           OutlinedButton(
-                            onPressed:
-                                game.remainingCategories.any(
-                                  (c) => !game.peekedIds.contains(c.id),
-                                )
+                            onPressed: controller.canPeek
                                 ? controller.categoryPeek
                                 : null,
-                            child: const Text('Category Peek'),
+                            child: const Text('Category Peek · 40'),
                           ),
                           OutlinedButton(
-                            onPressed: game.lives < 4
+                            onPressed: controller.canExtraLife
                                 ? controller.extraLife
                                 : null,
-                            child: const Text('Extra Life'),
+                            child: const Text('Extra Life · 60'),
                           ),
                         ],
                       ),
@@ -235,14 +232,20 @@ class BoardScreen extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 12),
                           child: Text(hint.note),
                         ),
+                      if (controller.result != null) ...[
+                        const SizedBox(height: 16),
+                        SelectableText(
+                          controller.result!.shareText,
+                          key: const Key('share-data'),
+                        ),
+                      ],
                     ],
                     const SizedBox(height: 20),
-                    OutlinedButton(
-                      onPressed: () => _restart(context),
-                      child: Text(
-                        game.isFinal ? 'Replay · New attempt' : 'New attempt',
+                    if (game.isFinal && controller.date == null)
+                      OutlinedButton(
+                        onPressed: controller.newAttempt,
+                        child: const Text('Replay · New attempt'),
                       ),
-                    ),
                     const SizedBox(height: 8),
                     TextButton(
                       onPressed: () => Navigator.pop(context),
@@ -280,12 +283,16 @@ class _PendingDecision extends StatelessWidget {
           const SizedBox(height: 16),
           FilledButton(
             key: const Key('rescue'),
-            onPressed: controller.extraLife,
+            onPressed: controller.canExtraLife ? controller.extraLife : null,
             child: const Text(
-              'Rescue / Extra Life\n(F2 preview: no coins)',
+              'Rescue / Extra Life · 60 coins',
               textAlign: TextAlign.center,
             ),
           ),
+          if (!controller.canExtraLife)
+            const Text(
+              'Not enough coins to rescue. You can still accept the loss.',
+            ),
           const SizedBox(height: 8),
           OutlinedButton(
             key: const Key('reveal-loss'),

@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lexistack/ui/app.dart';
+import 'package:lexistack/app/storage.dart';
 
 class TestBundle extends CachingAssetBundle {
   final files = {
-    for (final name in ['manifest.json', 'pack1.json'])
+    for (final name in ['manifest.json', 'pack1.json', 'daily.json'])
       'assets/levels/$name': File('assets/levels/$name').readAsStringSync(),
   };
 
@@ -37,12 +38,19 @@ void main() {
   testWidgets(
     'actual app shows production metadata and navigates Home / pack / level / back',
     (tester) async {
-      await tester.pumpWidget(LexiStackApp(bundle: TestBundle()));
+      await tester.pumpWidget(
+        LexiStackApp(
+          bundle: TestBundle(),
+          storage: MemoryProgressStorage(),
+          clock: () => DateTime(2026, 10, 28),
+        ),
+      );
       await tester.pumpAndSettle();
+      await reveal(tester, 'Explore collection');
       expect(find.text('Everyday Echoes'), findsOneWidget);
       expect(find.text('8 level entries · Available offline'), findsOneWidget);
-      await reveal(tester, 'F2 PLAYABLE PREVIEW');
-      expect(find.text('F2 PLAYABLE PREVIEW'), findsOneWidget);
+      await reveal(tester, 'Reset progress');
+      expect(find.text('Reset progress'), findsOneWidget);
       await reveal(tester, 'Explore collection', -200);
       await tester.tap(find.text('Explore collection'));
       await tester.pumpAndSettle();
@@ -68,7 +76,13 @@ void main() {
     final bundle = TestBundle();
     final original = bundle.files['assets/levels/pack1.json']!;
     bundle.files['assets/levels/pack1.json'] = '{broken';
-    await tester.pumpWidget(LexiStackApp(bundle: bundle));
+    await tester.pumpWidget(
+      LexiStackApp(
+        bundle: bundle,
+        storage: MemoryProgressStorage(),
+        clock: () => DateTime(2026, 10, 28),
+      ),
+    );
     await tester.pumpAndSettle();
     expect(find.text('Collection could not load'), findsOneWidget);
     expect(find.textContaining('json.syntax'), findsOneWidget);
@@ -84,7 +98,13 @@ void main() {
 
   testWidgets('missing bundled file is named without crashing', (tester) async {
     final bundle = TestBundle()..files.remove('assets/levels/pack1.json');
-    await tester.pumpWidget(LexiStackApp(bundle: bundle));
+    await tester.pumpWidget(
+      LexiStackApp(
+        bundle: bundle,
+        storage: MemoryProgressStorage(),
+        clock: () => DateTime(2026, 10, 28),
+      ),
+    );
     await tester.pumpAndSettle();
     expect(
       find.textContaining('Cannot read bundled asset assets/levels/pack1.json'),
@@ -108,15 +128,26 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
-      await tester.pumpWidget(LexiStackApp(bundle: TestBundle()));
+      await tester.pumpWidget(
+        LexiStackApp(
+          bundle: TestBundle(),
+          storage: MemoryProgressStorage(),
+          clock: () => DateTime(2026, 10, 28),
+        ),
+      );
       await tester.pumpAndSettle();
       await reveal(tester, 'Explore collection');
       await tester.tap(find.text('Explore collection'));
       await tester.pumpAndSettle();
       await reveal(tester, 'Hidden in Plain Sight');
-      await tester.tap(find.text('Hidden in Plain Sight'));
+      final locked = tester.widget<ListTile>(
+        find.byKey(const ValueKey('level-pack1_lvl08')),
+      );
+      expect(locked.onTap, isNull);
+      await reveal(tester, 'Table Talk', -200);
+      await tester.tap(find.text('Table Talk'));
       await tester.pumpAndSettle();
-      expect(find.text('Everyday Echoes · Level 8'), findsOneWidget);
+      expect(find.text('Everyday Echoes · Level 1'), findsOneWidget);
       await reveal(tester, 'Back to collection');
       await tester.tap(find.text('Back to collection'));
       await tester.pumpAndSettle();

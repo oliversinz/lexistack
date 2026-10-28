@@ -1,3 +1,4 @@
 {
-  "campaign": ["pack1.json"]
+  "campaign": ["pack1.json"],
+  "daily": "daily.json"
 }

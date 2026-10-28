@@ -10,6 +10,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   final manifest = File('assets/levels/manifest.json').readAsStringSync();
   final contents = File('assets/levels/pack1.json').readAsStringSync();
+  final daily = File('assets/levels/daily.json').readAsStringSync();
   Map<String, dynamic> fixture() =>
       jsonDecode(contents) as Map<String, dynamic>;
   ValidationReport check({
@@ -17,7 +18,7 @@ void main() {
     ValidationMode mode = ValidationMode.partial,
   }) => validateCatalog(
     manifestContents: manifest,
-    files: {'pack1.json': pack ?? contents},
+    files: {'pack1.json': pack ?? contents, 'daily.json': daily},
     mode: mode,
   );
 
@@ -26,11 +27,11 @@ void main() {
     () {
       final report = check();
       expect(report.diagnostics, isEmpty);
-      expect(report.totalLevels, 8);
-      expect(report.totalCategories, 32);
-      expect(report.totalTiles, 128);
+      expect(report.totalLevels, 16);
+      expect(report.totalCategories, 64);
+      expect(report.totalTiles, 256);
       expect(report.meetsStrictMinimum, isFalse);
-      final pack = report.catalog!.packs.single;
+      final pack = report.catalog!.packs.first;
       expect(pack.schemaVersion, 2);
       expect(pack.id, 'pack1');
       expect(pack.title, 'Everyday Echoes');
@@ -65,7 +66,7 @@ void main() {
       final report = await loadAssetCatalog(rootBundle);
       expect(report.diagnostics, isEmpty);
       expect(
-        report.catalog!.packs.single.levels.last.title,
+        report.catalog!.packs.first.levels.last.title,
         'Hidden in Plain Sight',
       );
     },
@@ -76,17 +77,30 @@ void main() {
       'b.json',
       'a.json',
     ]);
-    expect(parseManifest(manifest).value!.daily, isNull);
+    expect(parseManifest(manifest).value!.daily, 'daily.json');
   });
 
   test(
-    'partial succeeds and strict identifies both missing final requirements',
+    'partial succeeds; strict rejects campaign count but Daily is installed',
     () {
       expect(check().exitCode, 0);
       final strict = check(mode: ValidationMode.strict);
       expect(strict.exitCode, 1);
       expect(
         strict.errors.map((d) => d.code),
+        contains('catalog.campaignCount'),
+      );
+      expect(
+        strict.errors.map((d) => d.code),
+        isNot(contains('catalog.dailyMissing')),
+      );
+      final legacy = validateCatalog(
+        manifestContents: '{"campaign":["pack1.json"]}',
+        files: {'pack1.json': contents},
+        mode: ValidationMode.strict,
+      );
+      expect(
+        legacy.errors.map((d) => d.code),
         containsAll(['catalog.campaignCount', 'catalog.dailyMissing']),
       );
     },
@@ -187,7 +201,7 @@ void main() {
   test('candidate replacement excludes its old copy; addition checks cross-file duplicates', () {
     final replacement = validateCatalog(
       manifestContents: manifest,
-      files: {'pack1.json': contents},
+      files: {'pack1.json': contents, 'daily.json': daily},
       mode: ValidationMode.candidate,
       candidateContents: contents,
     );
@@ -204,7 +218,7 @@ void main() {
     }
     final addition = validateCatalog(
       manifestContents: manifest,
-      files: {'pack1.json': contents},
+      files: {'pack1.json': contents, 'daily.json': daily},
       mode: ValidationMode.candidate,
       candidateContents: jsonEncode(candidate),
     );

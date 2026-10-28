@@ -1,5 +1,5 @@
 name: lexistack
-description: Offline word connections. F1 foundation and Android baseline.
+description: Offline word connections with campaign and daily progress.
 publish_to: none
 version: 0.1.0+1
 
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  shared_preferences: ^2.5.6
   lexistack_content_contract:
     git:
       url: https://github.com/oliversinz/lexistack-content.git
@@ -25,3 +26,4 @@ flutter:
   assets:
     - assets/levels/manifest.json
     - assets/levels/pack1.json
+    - assets/levels/daily.json
