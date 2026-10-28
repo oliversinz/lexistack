@@ -1,0 +1,6 @@
+Time: 2026-10-28T16:47:09.8389403+01:00
+Directory: C:\Codex\LexiStack
+Command: & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+Exit code: 0

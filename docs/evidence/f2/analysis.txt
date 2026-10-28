@@ -1,0 +1,11 @@
+Time: 2026-10-28T16:51:22.1766394+01:00
+Directory: C:\Codex\LexiStack
+Command: dart analyze
+Analyzing LexiStack...
+
+   info - tool\check_prng.dart:3:8 - Can't use a relative path to import a library in 'lib'. Try fixing the relative path or changing the import to a 'package:' import. - avoid_relative_lib_imports
+   info - tool\check_prng.dart:54:5 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - tool\check_prng.dart:62:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+
+3 issues found.
+Exit code: 0

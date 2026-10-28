@@ -1,0 +1,26 @@
+Time: 2026-10-28T17:01:44.5282732+01:00
+Directory: C:\Codex\LexiStack
+Command: Get-FileHash prompts/F2-engine-vertical-slice.md -Algorithm SHA256 | Format-List
+Get-FileHash prompts/F1-foundation.md -Algorithm SHA256 | Format-List
+Get-FileHash build/app/outputs/flutter-apk/app-debug.apk -Algorithm SHA256 | Format-List
+git -C C:/Users/olive/AppData/Local/Pub/Cache/git/lexistack-content-d9acbd52de0e198dd109a4859299318db3f465f5 rev-parse HEAD
+git reflog show --date=iso codex/f2-engine-vertical-slice
+
+Algorithm : SHA256
+Hash      : B85EE92F70BBC9ABA785FC3DD5F61A21D251AB8CC477B7A73DF74E52F1419795
+Path      : C:\Codex\LexiStack\prompts\F2-engine-vertical-slice.md
+
+
+Algorithm : SHA256
+Hash      : 90235B35C135E2663668FC6DAAD8A860822087D8ADF058F779CD83D45AA2838B
+Path      : C:\Codex\LexiStack\prompts\F1-foundation.md
+
+
+Algorithm : SHA256
+Hash      : FE3684EF831EEC71A993F53A6FC54755BB04CB80FF0D973A56DA253FD39BBE1B
+Path      : C:\Codex\LexiStack\build\app\outputs\flutter-apk\app-debug.apk
+
+d9acbd52de0e198dd109a4859299318db3f465f5
+08e261c codex/f2-engine-vertical-slice@{2026-10-28 16:55:54 +0100}: commit: Implement F2 deterministic engine and playable preview
+0db3406 codex/f2-engine-vertical-slice@{2026-10-28 16:37:32 +0100}: branch: Created from HEAD
+Exit code: 0

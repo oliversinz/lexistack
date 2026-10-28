@@ -1,0 +1,126 @@
+Time: 2026-10-28T16:47:00.7014259+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter test --reporter expanded
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/app_test.dart
+00:00 +0: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +1: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +2: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +3: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +4: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +5: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +6: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +7: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +8: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +9: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +10: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +11: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +12: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +13: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +14: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +15: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +16: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +17: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +18: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +19: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +20: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +21: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +21: C:/Codex/LexiStack/test/core/prng_test.dart: ENG-11 independent fixed PRNG vectors and default board order
+Seed 1: [16807, 282475249, 1622650073, 984943658, 1144108930, 470211272, 101027544, 1457850878] OK
+Seed 42: [705894, 1126542223, 1579310009, 565444343, 807934826, 421520601, 2095673201, 1100194760] OK
+Seed 20261028: [1224681370, 1736512742, 1266892064, 354559643, 1964283123, 440342930, 614976948, 78772025] OK
+Seed 2147483646: [2147466840, 1865008398, 524833574, 1162539989, 1003374717, 1677272375, 2046456103, 689632769] OK
+F2 default seed board indexes: [11, 15, 6, 0, 12, 13, 1, 7, 14, 8, 5, 3, 9, 4, 2, 10]; state 1470087647 OK
+00:00 +22: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +23: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +24: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +25: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +26: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +27: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +28: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +29: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +30: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +31: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +32: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +33: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +34: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:01 +35: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:01 +36: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:02 +37: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:02 +38: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(390.0, 844.0) and enlarged text
+00:02 +39: C:/Codex/LexiStack/test/ui/board_test.dart: actual UI One Away and reversed duplicate are distinct from mismatch
+00:03 +40: C:/Codex/LexiStack/test/ui/board_test.dart: actual UI One Away and reversed duplicate are distinct from mismatch
+00:03 +41: C:/Codex/LexiStack/test/ui/board_test.dart: actual long-press drag to tile and tray adds without release toggle
+00:04 +42: C:/Codex/LexiStack/test/ui/board_test.dart: pending loss conceals even peeked solutions, resumes on navigation, rescue and final reveal
+00:06 +43: C:/Codex/LexiStack/test/ui/board_test.dart: all four real groups win; replay is explicit and active reset confirms
+00:08 +44: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.element (package:flutter_test/src/controller.dart:888:30)
+#2      WidgetController.ensureVisible (package:flutter_test/src/controller.dart:2389:32)
+#3      tapVisible (file:///C:/Codex/LexiStack/test/ui/board_test.dart:10:16)
+#4      enterBoard (file:///C:/Codex/LexiStack/test/ui/board_test.dart:26:9)
+<asynchronous suspension>
+#5      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/ui/board_test.dart:257:9)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:09 +44 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text [E]
+  Test failed. See exception logs above.
+  The test description was: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+
+00:09 +44 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.element (package:flutter_test/src/controller.dart:888:30)
+#2      WidgetController.ensureVisible (package:flutter_test/src/controller.dart:2389:32)
+#3      tapVisible (file:///C:/Codex/LexiStack/test/ui/board_test.dart:10:16)
+#4      enterBoard (file:///C:/Codex/LexiStack/test/ui/board_test.dart:26:9)
+<asynchronous suspension>
+#5      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/ui/board_test.dart:257:9)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:09 +44 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text [E]
+  Test failed. See exception logs above.
+  The test description was: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+
+00:09 +44 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:12 +45 -2: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+  C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+Exit code: 1

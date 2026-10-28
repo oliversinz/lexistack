@@ -1,0 +1,687 @@
+2026-10-28T16:47:33.0382628+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+Exit code: 0
+2026-10-28T16:47:33.1822438+01:00 adb -s emulator-5554 shell input swipe 540 2100 540 550 400
+Exit code: 0
+2026-10-28T16:47:33.6909712+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-window.xml
+UI hierchary dumped to: /sdcard/f2-window.xml
+Exit code: 0
+2026-10-28T16:47:36.6141997+01:00 adb -s emulator-5554 pull /sdcard/f2-window.xml .git/f2-window.xml
+/sdcard/f2-window.xml: 1 file pulled, 0 skipped. 6.0 MB/s (23662 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:47:54.9239433+01:00 adb -s emulator-5554 logcat -c
+Exit code: 0
+2026-10-28T16:47:55.1782863+01:00 adb -s emulator-5554 shell input tap 412 1100
+Exit code: 0
+2026-10-28T16:47:55.2571757+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-window.xml
+ERROR: null root node returned by UiTestAutomationBridge.
+Exit code: 0
+2026-10-28T16:47:58.1797070+01:00 adb -s emulator-5554 pull /sdcard/f2-window.xml .git/f2-window.xml
+/sdcard/f2-window.xml: 1 file pulled, 0 skipped. 5.5 MB/s (23662 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:48:16.4162555+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-home.xml
+UI hierchary dumped to: /sdcard/f2-home.xml
+Exit code: 0
+2026-10-28T16:48:18.9183704+01:00 adb -s emulator-5554 pull /sdcard/f2-home.xml .git/f2-home.xml
+/sdcard/f2-home.xml: 1 file pulled, 0 skipped. 3.7 MB/s (9675 bytes in 0.002s)
+Exit code: 0
+2026-10-28T16:48:19.6600248+01:00 adb -s emulator-5554 pull /sdcard/f2-home.png docs/evidence/f2/android-home.png
+adb: error: failed to stat remote object '/sdcard/f2-home.png': No such file or directory
+Exit code: 1
+2026-10-28T16:48:34.4840882+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-home.png
+Exit code: 0
+2026-10-28T16:48:34.9903728+01:00 adb -s emulator-5554 pull /sdcard/f2-home.png docs/evidence/f2/android-home.png
+/sdcard/f2-home.png: 1 file pulled, 0 skipped. 20.8 MB/s (182268 bytes in 0.008s)
+Exit code: 0
+2026-10-28T16:49:03.8607991+01:00 adb -s emulator-5554 shell input tap 360 1450
+Exit code: 0
+2026-10-28T16:49:04.0758207+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-pack.xml
+UI hierchary dumped to: /sdcard/f2-pack.xml
+Exit code: 0
+2026-10-28T16:49:06.4158913+01:00 adb -s emulator-5554 pull /sdcard/f2-pack.xml .git/f2-pack.xml
+/sdcard/f2-pack.xml: 1 file pulled, 0 skipped. 6.2 MB/s (13568 bytes in 0.002s)
+Exit code: 0
+2026-10-28T16:49:26.4903829+01:00 adb -s emulator-5554 shell input tap 540 780
+Exit code: 0
+2026-10-28T16:49:26.6352677+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-level.xml
+UI hierchary dumped to: /sdcard/f2-level.xml
+Exit code: 0
+2026-10-28T16:49:28.9617266+01:00 adb -s emulator-5554 pull /sdcard/f2-level.xml .git/f2-level.xml
+/sdcard/f2-level.xml: 1 file pulled, 0 skipped. 3.7 MB/s (9911 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:49:41.5684878+01:00 adb -s emulator-5554 shell input tap 540 1355
+Exit code: 0
+2026-10-28T16:49:41.7244921+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-board.xml
+UI hierchary dumped to: /sdcard/f2-board.xml
+Exit code: 0
+2026-10-28T16:49:44.0777643+01:00 adb -s emulator-5554 pull /sdcard/f2-board.xml .git/f2-board.xml
+/sdcard/f2-board.xml: 1 file pulled, 0 skipped. 6.2 MB/s (19934 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:49:44.2101644+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-board.png
+Exit code: 0
+2026-10-28T16:49:44.6694733+01:00 adb -s emulator-5554 pull /sdcard/f2-board.png docs/evidence/f2/android-board.png
+/sdcard/f2-board.png: 1 file pulled, 0 skipped. 20.3 MB/s (129272 bytes in 0.006s)
+Exit code: 0
+2026-10-28T16:49:55.2530303+01:00 adb -s emulator-5554 shell input touchscreen draganddrop 160 824 413 824 900
+Exit code: 0
+2026-10-28T16:49:56.2755663+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-drag-tile.xml
+UI hierchary dumped to: /sdcard/f2-drag-tile.xml
+Exit code: 0
+2026-10-28T16:49:58.5229807+01:00 adb -s emulator-5554 pull /sdcard/f2-drag-tile.xml docs/evidence/f2/android-drag-tile.xml
+/sdcard/f2-drag-tile.xml: 1 file pulled, 0 skipped. 6.0 MB/s (19934 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:49:58.6827202+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-drag-tile.png
+Exit code: 0
+2026-10-28T16:49:59.0881798+01:00 adb -s emulator-5554 pull /sdcard/f2-drag-tile.png docs/evidence/f2/android-drag-tile.png
+/sdcard/f2-drag-tile.png: 1 file pulled, 0 skipped. 29.7 MB/s (129272 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:50:24.6994291+01:00 adb -s emulator-5554 shell input touchscreen motionevent DOWN 160 824
+Exit code: 0
+2026-10-28T16:50:25.5227269+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 300 824
+Exit code: 0
+2026-10-28T16:50:25.5947568+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 413 824
+Exit code: 0
+2026-10-28T16:50:25.6583519+01:00 adb -s emulator-5554 shell input touchscreen motionevent UP 413 824
+Exit code: 0
+2026-10-28T16:50:25.7262010+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-drag-tile-held.xml
+UI hierchary dumped to: /sdcard/f2-drag-tile-held.xml
+Exit code: 0
+2026-10-28T16:50:27.9138440+01:00 adb -s emulator-5554 pull /sdcard/f2-drag-tile-held.xml docs/evidence/f2/android-drag-tile-held.xml
+/sdcard/f2-drag-tile-held.xml: 1 file pulled, 0 skipped. 6.1 MB/s (19950 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:50:28.0601756+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-drag-tile-held.png
+Exit code: 0
+2026-10-28T16:50:28.4689758+01:00 adb -s emulator-5554 pull /sdcard/f2-drag-tile-held.png docs/evidence/f2/android-drag-tile-held.png
+/sdcard/f2-drag-tile-held.png: 1 file pulled, 0 skipped. 28.4 MB/s (134820 bytes in 0.005s)
+Exit code: 0
+2026-10-28T16:50:56.2934162+01:00 adb -s emulator-5554 shell input touchscreen motionevent DOWN 920 1620
+Exit code: 0
+2026-10-28T16:50:57.1235763+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 920 1790
+Exit code: 0
+2026-10-28T16:50:57.1944934+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 540 1860
+Exit code: 0
+2026-10-28T16:50:57.2613408+01:00 adb -s emulator-5554 shell input touchscreen motionevent UP 540 1860
+Exit code: 0
+2026-10-28T16:50:57.3284186+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-drag-tray.xml
+UI hierchary dumped to: /sdcard/f2-drag-tray.xml
+Exit code: 0
+2026-10-28T16:50:59.4938755+01:00 adb -s emulator-5554 pull /sdcard/f2-drag-tray.xml docs/evidence/f2/android-drag-tray.xml
+/sdcard/f2-drag-tray.xml: 1 file pulled, 0 skipped. 6.0 MB/s (19958 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:50:59.6470344+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-drag-tray.png
+Exit code: 0
+2026-10-28T16:51:00.0820466+01:00 adb -s emulator-5554 pull /sdcard/f2-drag-tray.png docs/evidence/f2/android-drag-tray.png
+/sdcard/f2-drag-tray.png: 1 file pulled, 0 skipped. 18.4 MB/s (137264 bytes in 0.007s)
+Exit code: 0
+2026-10-28T16:51:00.1683243+01:00 adb -s emulator-5554 shell input tap 790 2030
+Exit code: 0
+2026-10-28T16:51:00.2577677+01:00 adb -s emulator-5554 shell input tap 920 824
+Exit code: 0
+2026-10-28T16:51:00.3558894+01:00 adb -s emulator-5554 shell input tap 665 1089
+Exit code: 0
+2026-10-28T16:51:00.4650418+01:00 adb -s emulator-5554 shell input tap 665 1620
+Exit code: 0
+2026-10-28T16:51:00.5646795+01:00 adb -s emulator-5554 shell input tap 920 1354
+Exit code: 0
+2026-10-28T16:51:00.6627920+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-selected.png
+Exit code: 0
+2026-10-28T16:51:01.1329918+01:00 adb -s emulator-5554 pull /sdcard/f2-selected.png docs/evidence/f2/android-selected.png
+/sdcard/f2-selected.png: 1 file pulled, 0 skipped. 25.2 MB/s (141256 bytes in 0.005s)
+Exit code: 0
+2026-10-28T16:51:01.2130480+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T16:51:01.2992238+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-solved.xml
+UI hierchary dumped to: /sdcard/f2-solved.xml
+Exit code: 0
+2026-10-28T16:51:03.5933560+01:00 adb -s emulator-5554 pull /sdcard/f2-solved.xml docs/evidence/f2/android-solved.xml
+/sdcard/f2-solved.xml: 1 file pulled, 0 skipped. 5.8 MB/s (17853 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:51:03.6775335+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f2-solved.png
+Exit code: 0
+2026-10-28T16:51:04.0971764+01:00 adb -s emulator-5554 pull /sdcard/f2-solved.png docs/evidence/f2/android-solved.png
+/sdcard/f2-solved.png: 1 file pulled, 0 skipped. 31.6 MB/s (149540 bytes in 0.005s)
+Exit code: 0
+2026-10-28T16:52:13.7382084+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:52:16.0076441+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.3 MB/s (17853 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:52:16.1603895+01:00 adb -s emulator-5554 shell input tap 666 1196
+Exit code: 0
+2026-10-28T16:52:16.2340836+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:52:18.4597807+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.8 MB/s (17873 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:52:18.5431040+01:00 adb -s emulator-5554 shell input tap 414 1462
+Exit code: 0
+2026-10-28T16:52:18.6304284+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:52:20.8459284+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.0 MB/s (17881 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:52:20.9302006+01:00 adb -s emulator-5554 shell input tap 160 1727
+Exit code: 0
+2026-10-28T16:52:21.0147502+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:52:23.2636425+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.7 MB/s (17889 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:52:23.3288527+01:00 adb -s emulator-5554 shell input tap 666 1727
+Exit code: 0
+2026-10-28T16:52:23.4124748+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:52:25.6989708+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.5 MB/s (17894 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:52:25.7794036+01:00 adb -s emulator-5554 shell input tap 540 2296
+Exit code: 0
+2026-10-28T16:52:25.8822906+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:52:28.2304347+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.3 MB/s (16151 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:53:20.3457523+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:22.5564634+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 6.2 MB/s (16151 bytes in 0.002s)
+Exit code: 0
+2026-10-28T16:53:22.6747495+01:00 adb -s emulator-5554 shell input tap 160 1569
+Exit code: 0
+2026-10-28T16:53:22.7466869+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:24.9195747+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.6 MB/s (16171 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:53:24.9998825+01:00 adb -s emulator-5554 shell input tap 414 1834
+Exit code: 0
+2026-10-28T16:53:25.0843557+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:27.3095149+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.6 MB/s (16179 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:53:27.3846907+01:00 adb -s emulator-5554 shell input tap 666 1834
+Exit code: 0
+2026-10-28T16:53:27.4669588+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:29.6756360+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.4 MB/s (16186 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:53:29.7389906+01:00 adb -s emulator-5554 shell input tap 920 1834
+Exit code: 0
+2026-10-28T16:53:29.8192616+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:32.0151869+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 5.1 MB/s (16192 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:53:32.0870541+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 850 350
+Exit code: 0
+2026-10-28T16:53:32.5309825+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:35.5450278+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.5 MB/s (15370 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:53:35.6235872+01:00 adb -s emulator-5554 shell input tap 540 1369
+Exit code: 0
+2026-10-28T16:53:35.8193996+01:00 adb -s emulator-5554 shell input swipe 1000 600 1000 2100 350
+Exit code: 0
+2026-10-28T16:53:36.2938996+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:53:38.6818048+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.5 MB/s (14078 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:54:40.0057944+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:42.2599284+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.6 MB/s (14078 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:54:42.3932942+01:00 adb -s emulator-5554 shell input tap 160 1942
+Exit code: 0
+2026-10-28T16:54:42.4689948+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:44.7070036+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.4 MB/s (14101 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:54:44.7844210+01:00 adb -s emulator-5554 shell input tap 414 1942
+Exit code: 0
+2026-10-28T16:54:44.8629560+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:47.0759589+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.0 MB/s (14111 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:54:47.1662798+01:00 adb -s emulator-5554 shell input tap 666 1942
+Exit code: 0
+2026-10-28T16:54:47.2497243+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:49.4613710+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.6 MB/s (14119 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:54:49.5294380+01:00 adb -s emulator-5554 shell input tap 920 1942
+Exit code: 0
+2026-10-28T16:54:49.6150029+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:51.8749633+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.6 MB/s (14125 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:54:51.9448386+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 850 350
+Exit code: 0
+2026-10-28T16:54:52.3835663+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:54.6535494+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.7 MB/s (13247 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:54:54.7197175+01:00 adb -s emulator-5554 shell input tap 540 1369
+Exit code: 0
+2026-10-28T16:54:54.8010424+01:00 adb -s emulator-5554 shell input swipe 1000 600 1000 2100 350
+Exit code: 0
+2026-10-28T16:54:55.6096014+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-win.png
+Exit code: 0
+2026-10-28T16:54:56.0965073+01:00 adb -s emulator-5554 pull /sdcard/android-win.png docs/evidence/f2/android-win.png
+/sdcard/android-win.png: 1 file pulled, 0 skipped. 27.5 MB/s (240265 bytes in 0.008s)
+Exit code: 0
+2026-10-28T16:54:56.1905689+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:54:58.4252726+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.3 MB/s (11314 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:55:07.5051889+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+Exit code: 0
+2026-10-28T16:55:08.9754537+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+Exit code: 0
+2026-10-28T16:55:09.0986479+01:00 adb -s emulator-5554 shell input swipe 540 2100 540 550 400
+Exit code: 0
+2026-10-28T16:55:09.6561313+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-final-launcher.xml
+UI hierchary dumped to: /sdcard/f2-final-launcher.xml
+Exit code: 0
+2026-10-28T16:55:12.2067276+01:00 adb -s emulator-5554 pull /sdcard/f2-final-launcher.xml .git/f2-final-launcher.xml
+/sdcard/f2-final-launcher.xml: 1 file pulled, 0 skipped. 4.8 MB/s (14031 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:55:35.2910638+01:00 adb -s emulator-5554 shell input swipe 540 2100 540 550 400
+Exit code: 0
+2026-10-28T16:55:35.8691726+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-launcher2.xml
+UI hierchary dumped to: /sdcard/f2-launcher2.xml
+Exit code: 0
+2026-10-28T16:55:38.2852653+01:00 adb -s emulator-5554 pull /sdcard/f2-launcher2.xml .git/f2-launcher2.xml
+/sdcard/f2-launcher2.xml: 1 file pulled, 0 skipped. 7.4 MB/s (23661 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:55:54.2605207+01:00 adb -s emulator-5554 shell input tap 412 1100
+Exit code: 0
+2026-10-28T16:55:55.2015809+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+ERROR: null root node returned by UiTestAutomationBridge.
+Exit code: 0
+2026-10-28T16:55:57.4724274+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 2.5 MB/s (11314 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:55:57.5800295+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 850 350
+Exit code: 0
+2026-10-28T16:55:58.0122880+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:56:01.2910203+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 2.9 MB/s (9675 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:56:01.3880451+01:00 adb -s emulator-5554 shell input tap 361 1450
+Exit code: 0
+2026-10-28T16:56:01.5866222+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:56:03.9581572+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.7 MB/s (13568 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:56:04.0360854+01:00 adb -s emulator-5554 shell input tap 540 782
+Exit code: 0
+2026-10-28T16:56:04.1174278+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:56:06.4372106+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.2 MB/s (9911 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:56:06.5076264+01:00 adb -s emulator-5554 shell input tap 540 1355
+Exit code: 0
+2026-10-28T16:56:06.5968033+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:56:08.9244463+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.9 MB/s (14122 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:56:47.4219814+01:00 adb -s emulator-5554 shell input touchscreen motionevent DOWN 160 824
+Exit code: 0
+2026-10-28T16:56:48.2516724+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 300 824
+Exit code: 0
+2026-10-28T16:56:48.3223846+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 413 824
+Exit code: 0
+2026-10-28T16:56:48.3882394+01:00 adb -s emulator-5554 shell input touchscreen motionevent UP 413 824
+Exit code: 0
+2026-10-28T16:56:48.4538574+01:00 adb -s emulator-5554 shell input touchscreen motionevent DOWN 920 1620
+Exit code: 0
+2026-10-28T16:56:49.2359580+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 920 1790
+Exit code: 0
+2026-10-28T16:56:49.3003757+01:00 adb -s emulator-5554 shell input touchscreen motionevent MOVE 540 1860
+Exit code: 0
+2026-10-28T16:56:49.3695105+01:00 adb -s emulator-5554 shell input touchscreen motionevent UP 540 1860
+Exit code: 0
+2026-10-28T16:56:49.8124986+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-final-drags.png
+Exit code: 0
+2026-10-28T16:56:50.1782570+01:00 adb -s emulator-5554 pull /sdcard/android-final-drags.png docs/evidence/f2/android-final-drags.png
+/sdcard/android-final-drags.png: 1 file pulled, 0 skipped. 21.4 MB/s (137387 bytes in 0.006s)
+Exit code: 0
+2026-10-28T16:56:50.3145065+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:56:52.5368513+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.6 MB/s (14146 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:57:15.7067365+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:57:17.8925548+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.9 MB/s (14146 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:57:18.0196917+01:00 adb -s emulator-5554 shell input tap 794 2033
+Exit code: 0
+2026-10-28T16:57:18.1018336+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:57:20.3713629+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.1 MB/s (14122 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:57:20.4541228+01:00 adb -s emulator-5554 shell input tap 920 824
+Exit code: 0
+2026-10-28T16:57:20.5435818+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:57:22.7920570+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.7 MB/s (14129 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:57:22.8764874+01:00 adb -s emulator-5554 shell input tap 666 1089
+Exit code: 0
+2026-10-28T16:57:22.9639128+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:57:25.1909525+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.1 MB/s (14138 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:57:25.2676122+01:00 adb -s emulator-5554 shell input tap 666 1620
+Exit code: 0
+2026-10-28T16:57:25.3507875+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+2026-10-28T16:57:25.9521180+01:00 adb -s emulator-5554 shell getprop ro.build.version.release
+16
+Exit code: 0
+2026-10-28T16:57:26.1008219+01:00 adb -s emulator-5554 shell getprop ro.build.version.sdk
+36
+Exit code: 0
+2026-10-28T16:57:26.1791716+01:00 adb -s emulator-5554 shell wm size
+Physical size: 1080x2424
+Exit code: 0
+2026-10-28T16:57:26.2790433+01:00 adb -s emulator-5554 shell wm density
+Physical density: 420
+Exit code: 0
+2026-10-28T16:57:26.3784764+01:00 adb -s emulator-5554 emu avd name
+Pixel_10
+
+OK
+
+Exit code: 0
+2026-10-28T16:57:26.4450053+01:00 adb -s emulator-5554 logcat -s ActivityTaskManager:I AndroidRuntime:E flutter:I
+--------- beginning of system
+10-28 16:47:54.329   751  2148 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+--------- beginning of main
+10-28 16:47:55.580  8420  8461 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 16:47:55.814  8420  8468 I flutter : The Dart VM service is listening on http://127.0.0.1:46845/Z9gRaGtGTog=/
+10-28 16:47:59.094   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s304ms
+10-28 16:47:59.094   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s304ms
+10-28 16:55:07.048   751   783 W ActivityTaskManager: Force removing ActivityRecord{222922780 u0 de.cloudwards.lexistack/.MainActivity t9 f}}: app died, no saved state
+10-28 16:55:07.699   751   774 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-28 16:55:07.722   751   774 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 16:55:52.932   751  2152 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 16:55:54.087  9615  9638 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 16:55:54.330  9615  9655 I flutter : The Dart VM service is listening on http://127.0.0.1:41193/j-2d9FbYp4A=/
+10-28 16:55:57.816   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s893ms
+10-28 16:55:57.818   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +4s893ms
+Exit code: -1
+2026-10-28T16:58:39.1446408+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:58:41.4804716+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.8 MB/s (14154 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:58:41.9902861+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-mismatch.png
+Exit code: 0
+2026-10-28T16:58:42.4262244+01:00 adb -s emulator-5554 pull /sdcard/android-mismatch.png docs/evidence/f2/android-mismatch.png
+/sdcard/android-mismatch.png: 1 file pulled, 0 skipped. 27.6 MB/s (146467 bytes in 0.005s)
+Exit code: 0
+2026-10-28T16:58:42.5272967+01:00 adb -s emulator-5554 logcat -d -s ActivityTaskManager:I AndroidRuntime:E flutter:I
+--------- beginning of system
+10-28 16:47:54.329   751  2148 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+--------- beginning of main
+10-28 16:47:55.580  8420  8461 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 16:47:55.814  8420  8468 I flutter : The Dart VM service is listening on http://127.0.0.1:46845/Z9gRaGtGTog=/
+10-28 16:47:59.094   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s304ms
+10-28 16:47:59.094   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s304ms
+10-28 16:55:07.048   751   783 W ActivityTaskManager: Force removing ActivityRecord{222922780 u0 de.cloudwards.lexistack/.MainActivity t9 f}}: app died, no saved state
+10-28 16:55:07.699   751   774 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-28 16:55:07.722   751   774 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 16:55:52.932   751  2152 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 16:55:54.087  9615  9638 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 16:55:54.330  9615  9655 I flutter : The Dart VM service is listening on http://127.0.0.1:41193/j-2d9FbYp4A=/
+10-28 16:55:57.816   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s893ms
+10-28 16:55:57.818   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +4s893ms
+Exit code: 0
+2026-10-28T16:58:59.9861111+01:00 adb -s emulator-5554 shell input tap 790 2030
+Exit code: 0
+2026-10-28T16:59:00.1186129+01:00 adb -s emulator-5554 shell input tap 920 824
+Exit code: 0
+2026-10-28T16:59:00.2072389+01:00 adb -s emulator-5554 shell input tap 413 1620
+Exit code: 0
+2026-10-28T16:59:00.2928822+01:00 adb -s emulator-5554 shell input tap 413 1354
+Exit code: 0
+2026-10-28T16:59:00.4022057+01:00 adb -s emulator-5554 shell input tap 160 1089
+Exit code: 0
+2026-10-28T16:59:00.4987507+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T16:59:00.5832648+01:00 adb -s emulator-5554 shell input tap 790 2030
+Exit code: 0
+2026-10-28T16:59:00.6647321+01:00 adb -s emulator-5554 shell input tap 665 1089
+Exit code: 0
+2026-10-28T16:59:00.7531999+01:00 adb -s emulator-5554 shell input tap 665 1354
+Exit code: 0
+2026-10-28T16:59:00.8466206+01:00 adb -s emulator-5554 shell input tap 160 1620
+Exit code: 0
+2026-10-28T16:59:00.9328787+01:00 adb -s emulator-5554 shell input tap 413 1089
+Exit code: 0
+2026-10-28T16:59:01.0205665+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T16:59:01.4746290+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-pending-loss.png
+Exit code: 0
+2026-10-28T16:59:01.8584523+01:00 adb -s emulator-5554 pull /sdcard/android-pending-loss.png docs/evidence/f2/android-pending-loss.png
+/sdcard/android-pending-loss.png: 1 file pulled, 0 skipped. 26.1 MB/s (126357 bytes in 0.005s)
+Exit code: 0
+2026-10-28T16:59:01.9640282+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:59:04.1414958+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 2.1 MB/s (7453 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:59:17.6449422+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:59:19.8658733+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 1.9 MB/s (7453 bytes in 0.004s)
+Exit code: 0
+2026-10-28T16:59:19.9946962+01:00 adb -s emulator-5554 shell input tap 540 1486
+Exit code: 0
+2026-10-28T16:59:20.0750018+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:59:22.4375899+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.0 MB/s (9911 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:59:22.5143690+01:00 adb -s emulator-5554 shell input tap 540 1355
+Exit code: 0
+2026-10-28T16:59:22.5938252+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:59:24.9227852+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 2.4 MB/s (7453 bytes in 0.003s)
+Exit code: 0
+2026-10-28T16:59:24.9907211+01:00 adb -s emulator-5554 shell input tap 540 946
+Exit code: 0
+2026-10-28T16:59:25.4297888+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-rescue.png
+Exit code: 0
+2026-10-28T16:59:25.8231817+01:00 adb -s emulator-5554 pull /sdcard/android-rescue.png docs/evidence/f2/android-rescue.png
+/sdcard/android-rescue.png: 1 file pulled, 0 skipped. 26.2 MB/s (142766 bytes in 0.005s)
+Exit code: 0
+2026-10-28T16:59:25.9083665+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T16:59:28.1509349+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.3 MB/s (14146 bytes in 0.003s)
+Exit code: 0
+2026-10-28T17:00:10.1928346+01:00 adb -s emulator-5554 shell input tap 790 2030
+Exit code: 0
+2026-10-28T17:00:10.3553515+01:00 adb -s emulator-5554 shell input tap 665 1620
+Exit code: 0
+2026-10-28T17:00:10.4881932+01:00 adb -s emulator-5554 shell input tap 665 824
+Exit code: 0
+2026-10-28T17:00:10.6048827+01:00 adb -s emulator-5554 shell input tap 920 1620
+Exit code: 0
+2026-10-28T17:00:10.7015037+01:00 adb -s emulator-5554 shell input tap 160 1354
+Exit code: 0
+2026-10-28T17:00:10.8001152+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T17:00:10.9163113+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T17:00:13.1392786+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 2.8 MB/s (7453 bytes in 0.003s)
+Exit code: 0
+2026-10-28T17:00:13.2728776+01:00 adb -s emulator-5554 shell input tap 540 1103
+Exit code: 0
+2026-10-28T17:00:13.7158759+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-final-reveal.png
+Exit code: 0
+2026-10-28T17:00:14.1041656+01:00 adb -s emulator-5554 pull /sdcard/android-final-reveal.png docs/evidence/f2/android-final-reveal.png
+/sdcard/android-final-reveal.png: 1 file pulled, 0 skipped. 41.1 MB/s (238902 bytes in 0.006s)
+Exit code: 0
+2026-10-28T17:00:14.1988954+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T17:00:16.3997073+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.3 MB/s (11398 bytes in 0.003s)
+Exit code: 0
+2026-10-28T17:00:16.4888406+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 750 400
+Exit code: 0
+2026-10-28T17:00:17.3301949+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-red-herrings.png
+Exit code: 0
+2026-10-28T17:00:17.7610932+01:00 adb -s emulator-5554 pull /sdcard/android-red-herrings.png docs/evidence/f2/android-red-herrings.png
+/sdcard/android-red-herrings.png: 1 file pulled, 0 skipped. 32.1 MB/s (238820 bytes in 0.007s)
+Exit code: 0
+2026-10-28T17:00:17.8386481+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T17:00:20.0389974+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.0 MB/s (10647 bytes in 0.003s)
+Exit code: 0
+2026-10-28T17:01:36.2027291+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T17:01:38.3781360+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.6 MB/s (10647 bytes in 0.002s)
+Exit code: 0
+2026-10-28T17:01:38.4952990+01:00 adb -s emulator-5554 shell input tap 540 2104
+Exit code: 0
+2026-10-28T17:01:38.5642522+01:00 adb -s emulator-5554 shell input swipe 1000 600 1000 2100 350
+Exit code: 0
+2026-10-28T17:01:38.9925894+01:00 adb -s emulator-5554 shell input tap 920 824
+Exit code: 0
+2026-10-28T17:01:39.0737960+01:00 adb -s emulator-5554 shell input tap 665 1089
+Exit code: 0
+2026-10-28T17:01:39.1818672+01:00 adb -s emulator-5554 shell input tap 665 1620
+Exit code: 0
+2026-10-28T17:01:39.3016635+01:00 adb -s emulator-5554 shell input tap 413 1620
+Exit code: 0
+2026-10-28T17:01:39.4202373+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T17:01:39.9133935+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-one-away-rechecked.png
+Exit code: 0
+2026-10-28T17:01:40.4565836+01:00 adb -s emulator-5554 pull /sdcard/android-one-away-rechecked.png docs/evidence/f2/android-one-away-rechecked.png
+/sdcard/android-one-away-rechecked.png: 1 file pulled, 0 skipped. 19.5 MB/s (144252 bytes in 0.007s)
+Exit code: 0
+2026-10-28T17:01:40.5951717+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T17:01:41.0905271+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-duplicate-rechecked.png
+Exit code: 0
+2026-10-28T17:01:41.5930525+01:00 adb -s emulator-5554 pull /sdcard/android-duplicate-rechecked.png docs/evidence/f2/android-duplicate-rechecked.png
+/sdcard/android-duplicate-rechecked.png: 1 file pulled, 0 skipped. 24.6 MB/s (140464 bytes in 0.005s)
+Exit code: 0
+2026-10-28T17:01:41.6788874+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T17:01:43.9188291+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 4.8 MB/s (14145 bytes in 0.003s)
+Exit code: 0
+2026-10-28T17:03:44.0864166+01:00 adb -s emulator-5554 shell input tap 790 2030
+Exit code: 0
+2026-10-28T17:03:44.2300707+01:00 adb -s emulator-5554 shell input tap 920 824
+Exit code: 0
+2026-10-28T17:03:44.3231889+01:00 adb -s emulator-5554 shell input tap 665 1089
+Exit code: 0
+2026-10-28T17:03:44.4181719+01:00 adb -s emulator-5554 shell input tap 665 1620
+Exit code: 0
+2026-10-28T17:03:44.5037516+01:00 adb -s emulator-5554 shell input tap 920 1354
+Exit code: 0
+2026-10-28T17:03:44.9865514+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-final-selected-correct.png
+Exit code: 0
+2026-10-28T17:03:45.3965025+01:00 adb -s emulator-5554 pull /sdcard/android-final-selected-correct.png docs/evidence/f2/android-final-selected-correct.png
+/sdcard/android-final-selected-correct.png: 1 file pulled, 0 skipped. 26.1 MB/s (142379 bytes in 0.005s)
+Exit code: 0
+2026-10-28T17:03:45.5496783+01:00 adb -s emulator-5554 shell input tap 540 2190
+Exit code: 0
+2026-10-28T17:03:45.9957692+01:00 adb -s emulator-5554 shell screencap -p /sdcard/android-final-solved.png
+Exit code: 0
+2026-10-28T17:03:46.4023230+01:00 adb -s emulator-5554 pull /sdcard/android-final-solved.png docs/evidence/f2/android-final-solved.png
+/sdcard/android-final-solved.png: 1 file pulled, 0 skipped. 30.0 MB/s (151729 bytes in 0.005s)
+Exit code: 0
+2026-10-28T17:03:46.4827165+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f2-current.xml
+UI hierchary dumped to: /sdcard/f2-current.xml
+Exit code: 0
+2026-10-28T17:03:48.6945814+01:00 adb -s emulator-5554 pull /sdcard/f2-current.xml .git/f2-current.xml
+/sdcard/f2-current.xml: 1 file pulled, 0 skipped. 3.4 MB/s (13485 bytes in 0.004s)
+Exit code: 0
+2026-10-28T17:03:48.8159476+01:00 adb -s emulator-5554 logcat -d -s ActivityTaskManager:I AndroidRuntime:E flutter:I
+--------- beginning of system
+10-28 16:47:54.329   751  2148 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+--------- beginning of main
+10-28 16:47:55.580  8420  8461 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 16:47:55.814  8420  8468 I flutter : The Dart VM service is listening on http://127.0.0.1:46845/Z9gRaGtGTog=/
+10-28 16:47:59.094   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s304ms
+10-28 16:47:59.094   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s304ms
+10-28 16:55:07.048   751   783 W ActivityTaskManager: Force removing ActivityRecord{222922780 u0 de.cloudwards.lexistack/.MainActivity t9 f}}: app died, no saved state
+10-28 16:55:07.699   751   774 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-28 16:55:07.722   751   774 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 16:55:52.932   751  2152 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 16:55:54.087  9615  9638 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 16:55:54.330  9615  9655 I flutter : The Dart VM service is listening on http://127.0.0.1:41193/j-2d9FbYp4A=/
+10-28 16:55:57.816   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s893ms
+10-28 16:55:57.818   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +4s893ms
+Exit code: 0

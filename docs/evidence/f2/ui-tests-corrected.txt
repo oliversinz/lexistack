@@ -1,0 +1,23 @@
+Time: 2026-10-28T16:48:00.3270681+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter test test/ui --reporter expanded
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/ui/board_test.dart
+00:00 +0: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:01 +1: actual UI One Away and reversed duplicate are distinct from mismatch
+00:03 +2: actual long-press drag to tile and tray adds without release toggle
+00:03 +3: pending loss conceals even peeked solutions, resumes on navigation, rescue and final reveal
+00:05 +4: all four real groups win; replay is explicit and active reset confirms
+00:07 +5: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:09 +6: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:11 +7: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:13 +8: All tests passed!
+Exit code: 0

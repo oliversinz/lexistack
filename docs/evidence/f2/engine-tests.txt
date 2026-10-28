@@ -1,0 +1,46 @@
+Time: 2026-10-28T16:44:26.6947125+01:00
+Directory: C:\Codex\LexiStack
+Command: flutter test test/core --reporter expanded
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/core/game_test.dart
+00:00 +0: C:/Codex/LexiStack/test/core/game_test.dart: ENG-01/11 fresh state and independently derived board order
+00:00 +1: C:/Codex/LexiStack/test/core/game_test.dart: ENG-04 exact match on separate fresh instance 1
+00:00 +2: C:/Codex/LexiStack/test/core/game_test.dart: ENG-05/06 fresh instance 2 One Away, reversed duplicate, mismatch
+00:00 +3: C:/Codex/LexiStack/test/core/game_test.dart: ENG-02 selection guards and immutable exposed collections
+00:00 +4: C:/Codex/LexiStack/test/core/prng_test.dart: ENG-11 independent fixed PRNG vectors and default board order
+00:00 +5: C:/Codex/LexiStack/test/core/prng_test.dart: ENG-11 independent fixed PRNG vectors and default board order
+00:00 +6: C:/Codex/LexiStack/test/core/prng_test.dart: ENG-11 independent fixed PRNG vectors and default board order
+Seed 1: [16807, 282475249, 1622650073, 984943658, 1144108930, 470211272, 101027544, 1457850878] OK
+Seed 42: [705894, 1126542223, 1579310009, 565444343, 807934826, 421520601, 2095673201, 1100194760] OK
+Seed 20261028: [1224681370, 1736512742, 1266892064, 354559643, 1964283123, 440342930, 614976948, 78772025] OK
+Seed 2147483646: [2147466840, 1865008398, 524833574, 1162539989, 1003374717, 1677272375, 2046456103, 689632769] OK
+F2 default seed board indexes: [11, 15, 6, 0, 12, 13, 1, 7, 14, 8, 5, 3, 9, 4, 2, 10]; state 1470087647 OK
+00:00 +7: C:/Codex/LexiStack/test/core/game_test.dart: ENG-07/08 pending loss hides reveals, rescue preserves the same attempt
+00:00 +7 -1: C:/Codex/LexiStack/test/core/game_test.dart: ENG-07/08 pending loss hides reveals, rescue preserves the same attempt [E]
+  Expected: ['MERCURY']
+    Actual: ['OAK']
+     Which: at location [0] is 'OAK' instead of 'MERCURY'
+
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\core\game_test.dart 292:7                      main.<fn>
+
+00:00 +7 -1: C:/Codex/LexiStack/test/core/game_test.dart: ENG-09/10 correct combo, reset, ordered history, four solves finalize once
+00:00 +8 -1: C:/Codex/LexiStack/test/core/game_test.dart: booster targeting, stable pairs, peek tier order and legal rejection
+00:00 +9 -1: C:/Codex/LexiStack/test/core/game_test.dart: stars use actual mistakes even after repeated life restoration
+00:00 +10 -1: C:/Codex/LexiStack/test/core/game_test.dart: ENG-12 exact campaign and Daily share, finalized only, no duplicate rows
+00:00 +11 -1: C:/Codex/LexiStack/test/core/game_test.dart: all eight installed frozen levels are solvable by their intended groups
+00:00 +12 -1: C:/Codex/LexiStack/test/core/game_test.dart: PRNG rejects seeds outside its documented range
+00:00 +13 -1: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/core/game_test.dart: ENG-07/08 pending loss hides reveals, rescue preserves the same attempt
+Exit code: 1

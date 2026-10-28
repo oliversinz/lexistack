@@ -1,0 +1,8 @@
+Time: 2026-10-28T16:56:53.1768090+01:00
+Directory: C:\Codex\LexiStack
+Command: git rev-parse HEAD; git hash-object --no-filters assets/levels/pack1.json; git rev-parse HEAD:prompts/F2-engine-vertical-slice.md; git hash-object --no-filters prompts/F2-engine-vertical-slice.md; git diff 0db340691267896f636daa8fcc92b9edeb7a13c6 -- pubspec.yaml pubspec.lock assets/levels docs/product-contract.md docs/architecture.md docs/feature-roadmap.md docs/acceptance-matrix.md docs/reference-content-lock.md
+08e261ce7ec6dc819a4e735a17595689aa128cff
+5efa3c88c769f74eee872860766681f5c2cc1c64
+c150b03e173c774b7c51592b1a7d803f49b0a771
+c150b03e173c774b7c51592b1a7d803f49b0a771
+Exit code: 0

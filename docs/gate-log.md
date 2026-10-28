@@ -2,8 +2,13 @@
 
 ## F1 — Foundation & Android baseline
 
-**Reviewer decision: PENDING.** This is implementation evidence, not gate acceptance.
-Scope submitted: **ARC-01–04, CNT-01–04, UI-01, PLT-01–02**. F2 has not started.
+**Independent reviewer decision: PASS, 2026-10-28.** This later decision was
+externally communicated in the supplied F2 execution prompt, linked to F1 final
+commit [`0db340691267896f636daa8fcc92b9edeb7a13c6`](https://github.com/oliversinz/lexistack/commit/0db340691267896f636daa8fcc92b9edeb7a13c6).
+It is not an implementing-agent self-awarded pass. The original run evidence
+below is preserved, including its then-pending review status.
+Scope submitted: **ARC-01–04, CNT-01–04, UI-01, PLT-01–02**. At the end of that
+original run, F2 had not started.
 
 Run: 2026-10-28, approximately 15:53–16:15 Europe/Berlin (UTC+01:00).
 Agent: Codex / GPT-6; exact model build and reasoning setting were not exposed.
@@ -157,3 +162,182 @@ The generated APK and build caches are ignored, not committed.
 Also noticed: the seed's `CHECKSUMS.sha256` lists absent prompt files and the
 old planning README. It remains the original seed record; it is not a current
 application checksum manifest.
+
+## F2 — Pure-Dart engine and playable Android vertical slice
+
+**Reviewer decision: PENDING independent review. Implementation complete.**
+F3 has not started. No push, merge, history rewrite, wallet or persistence.
+
+Run: 2026-10-28, Europe/Berlin. Branch created at 16:37:32; Android verification
+continued through approximately 17:03. Initial inspection/contract reading
+preceded the retained command logs. Agent: Codex / GPT-6; exact model build and
+reasoning setting were not exposed. Human interventions: **0**.
+
+Starting F1 SHA: `0db340691267896f636daa8fcc92b9edeb7a13c6`, matching fetched
+`origin/main`. Working branch: **`codex/f2-engine-vertical-slice`**.
+Implementation commit: **`08e261ce7ec6dc819a4e735a17595689aa128cff`**.
+The following evidence-only commit completes this record; its full SHA and
+final clean status are reported in the final chat response. Main stays at F1.
+
+### Deliverable and provenance
+
+`lib/core/game.dart` encapsulates one attempt with typed outcomes, stable shared
+`Tile.id` identities, ordered evaluated history, wrong-set signatures, combos,
+four statuses and terminal mutation guards. `prng.dart`, `scoring.dart` and
+`share.dart` provide deterministic shuffle, lifetime-mistake stars and the
+contract-exact finalized-only campaign/Daily formatter. Core imports no Flutter,
+I/O, storage or platform APIs. No dependencies were added.
+
+The catalog controller retains a `BoardController` per visited level. This small
+`ChangeNotifier` translates engine outcomes into feedback; the UI never writes
+engine state. Home → collection → details → Play resumes the same in-memory
+attempt, including pending/final results. New attempt/replay is explicit;
+replacing an unfinished attempt has a confirmation. The eight installed levels
+are labelled preview play; nothing claims durable progress or unlocks.
+
+`LongPressDraggable<String>` and `DragTarget<String>` send source/target IDs to
+the additive domain transition. Tap uses the same selection rules, and release
+does not perform another toggle. All three deterministic hint effects are
+labelled **F2 preview: no coins**. Pending loss hides unsolved solutions and
+even previously peeked titles; rescue preserves order, selection and history.
+
+PRNG: Park–Miller `state * 16807 % 2147483647`, seed range 1…2147483646;
+all intermediate values are exact integers below 2^46. Descending Fisher–Yates
+uses `next() % (i + 1)`. Initial F2 seed **20261028**, source indexes
+**11,15,6,0,12,13,1,7,14,8,5,3,9,4,2,10**, final RNG state **1470087647**.
+Four fixed-seed vectors and this board order were calculated separately with
+PowerShell BigInteger, then checked by a direct Dart VM probe and the tests.
+The Android starting board visibly matches the documented order.
+
+Exact supplied F2 prompt: [prompts/F2-engine-vertical-slice.md](../prompts/F2-engine-vertical-slice.md).
+SHA-256: **`B85EE92F70BBC9ABA785FC3DD5F61A21D251AB8CC477B7A73DF74E52F1419795`**.
+Working bytes and committed Git blob match. `.gitattributes` disables newline
+conversion for archived prompts. Both supplied, previously untracked F1/F2
+prompt files were archived unchanged; the newly supplied F1 file is not a
+retroactive claim that F1 originally ran from that file.
+
+`pubspec.yaml` and `pubspec.lock` are unchanged. The resolved package cache HEAD
+is **`d9acbd52de0e198dd109a4859299318db3f465f5`** at the existing
+`lexistack-content.git` / `packages/lexistack_content_contract` pin.
+`pack1.json` remains blob **`5efa3c88c769f74eee872860766681f5c2cc1c64`**.
+Manifest, benchmark JSON, product/architecture/roadmap/acceptance/content-lock
+documents and other repositories were not changed. Experiment E's repository
+locator was corrected as authorized; C/D history is preserved.
+
+### Commands and coverage
+
+Raw commands, stdout/stderr and native exit codes are in [evidence/f2](evidence/f2).
+Text-log line endings/trailing whitespace are normalized for Git; screenshots
+are unedited device captures. The Android logging gap described below is not
+represented as a complete command transcript.
+
+| Command | Exit | Evidence/result |
+|---|---:|---|
+| `flutter doctor -v` | 0 | `doctor.txt`: Flutter 3.47.8, Dart 3.13.7, SDK 36.1.0; Windows 11 10.0.26300.9711; Visual Studio absent |
+| `flutter emulators --launch Pixel_10` | 0 | `emulator-start.txt` |
+| `flutter test --reporter expanded` before implementation | 0 | `baseline-tests.txt`: all **25 F1 tests** pass |
+| `flutter pub get` | 0 | `pub-get.txt`; pin/lock unchanged |
+| `dart run tool/validate_levels.dart --partial` | 0 | `partial.txt`: 8 levels / 32 groups / 128 tile positions, zero errors/warnings |
+| `dart run tool/validate_levels.dart` | **1 expected** | `strict.txt`: one campaign pack and missing Daily; full catalog is not passing |
+| `docs/evidence/f2/prng-oracle.ps1` | 0 | `prng-oracle.txt`: independent BigInteger calculation |
+| `dart run tool/check_prng.dart` | 0 | `prng-vm.txt`: four fixed vectors plus board order |
+| `dart analyze` final | 0 | `analysis-final.txt`: **No issues found** |
+| `flutter test --reporter expanded` final | 0 | `tests-final.txt`: **47 passed** (25 F1 + 14 core + 8 actual-app workflows) |
+| `flutter build apk --debug` final | 0 | `apk-final.txt`: Gradle 11.4 s; first build also succeeded |
+| `adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk` | 0 | `android-commands.txt`: final APK installed; first install also succeeded |
+| `git diff --cached --check` | 0 | Checked before source and evidence commits |
+
+Observed F2 probes pass: **ENG-01–10**, **ENG-11 VM portion**, **ENG-12 pure
+formatter portion**, **UI-02**, **PLT-03**. This is implementation evidence,
+not the independent gate decision. **ENG-11 browser execution remains F6;
+ENG-12 clipboard integration remains F4.** No remaining failed or environment-
+blocked F2 probe. F3 economy/recovery/Daily acceptance is not yet applicable.
+
+Tests include the required separate fresh-instance planet/metal oracle;
+full-state comparisons on illegal/duplicate actions; drag cap and ordering;
+terminal idempotence; pair targeting/peek order and no-eligible rejection;
+same-attempt rescue, mistakes-based stars after restores; exact share strings;
+and intended-group solutions for all eight real installed levels. Actual-app
+tests use installed pack1 bytes, exercise navigation, taps, both drag targets,
+peek/pair effects, real title/trivia, win, pending navigation/rescue/reveal and
+explicit replay. Layouts 360×640, 390×844 and centered 1280×800 at 1.3× text
+complete those flows without framework overflow; tile targets are ≥48×48.
+
+### Android observations
+
+Pixel_10, serial `emulator-5554`, Android **16 / API 36**, x86_64,
+1080×2424, 420 dpi. Both APK versions were opened by tapping LexiStack in the
+real Android launcher, not `flutter run`. Logcat records MAIN/LAUNCHER from
+`com.google.android.apps.nexuslauncher`: first launch 16:47:54, fully drawn
+**5.304 s**; final-APK launch 16:55:52, fully drawn **4.893 s**. Reinstallation
+stopped the prior process; the corresponding “app died, no saved state” entry
+is at APK replacement, not an observed gameplay crash. No Flutter exception or
+AndroidRuntime crash appears in the captured filtered log.
+
+Observed device sequence:
+
+- Home → collection → Table Talk → Play. Actual initial order matches the
+  default-seed reference; no solutions disclosed.
+- Native pointer DOWN, 700 ms hold, MOVE, UP from VOLLEY to PEARL selects both;
+  DEUCE to tray adds the third. Both were repeated on the final APK. No release
+  toggling or extra life loss. `input touchscreen draganddrop` alone initially
+  produced no selection change; the held pointer sequence succeeded.
+- Four touch taps solve BREAKFAST BAKES and reveal its exact fact. The first APK
+  was played through all four groups to a zero-mistake, three-star win. The
+  final APK repeated the correct solve after one wrong guess, preserving three
+  lives. Between builds only two-word tile layout and duplicate semantics were
+  refined; the engine was unchanged.
+- On the final APK, TOAST/WAFFLE/MUFFIN/FORK gives One Away; repeating it shows
+  Already guessed with three lives. TOAST/WAFFLE/FORK/SPOON gives normal
+  mismatch. Two further distinct wrong sets reach zero lives, with no solutions.
+- Navigating back and reopening still shows pending loss. Rescue returns the
+  same board and retained WAFFLE/SPOON/LOVE/PAPER selection at one life and four
+  mistakes. A fifth wrong guess returns to pending; explicit Reveal/Accept Loss
+  alone reveals all four categories, facts and red-herring text. Replay then
+  starts a separate fresh attempt.
+
+Selected inspected, unedited captures:
+[final drag](evidence/f2/android-final-drags.png),
+[selected correct set](evidence/f2/android-final-selected-correct.png),
+[final solved group](evidence/f2/android-final-solved.png),
+[full win](evidence/f2/android-win.png),
+[pending loss](evidence/f2/android-pending-loss.png),
+[rescued attempt](evidence/f2/android-rescue.png),
+[final reveal](evidence/f2/android-final-reveal.png),
+[red-herring section](evidence/f2/android-red-herrings.png).
+Original screenshots and selected accessibility XML snapshots are also retained.
+Booster Pair/Peek and all eight levels were tested in Dart/widgets; these two
+booster buttons and levels 2–8 were **not** individually played on Android.
+No browser runtime, process-restart persistence or clipboard operation is claimed.
+Final APK SHA-256: **`FE3684EF831EEC71A993F53A6FC54755BB04CB80FF0D973A56DA253FD39BBE1B`**.
+
+### Corrections and limits
+
+- First core run: 13 passed, 1 failed. The synthetic red-herring oracle called
+  OAK “unused” although a wrong row included it. Changed that test-only decoy
+  to WHITE; production prioritization and frozen content were unchanged.
+- First combined run: 45 passed, 2 failed. The enlarged-mobile test helper
+  tried to ensure visibility of a lazily unbuilt Play button. Added actual
+  scrolling before the tap; all three layout workflows then passed. No layout
+  exception was reported. One patch failed to match a formatter-adjusted line
+  and was reapplied; no partial source edit was lost.
+- Intermediate analysis exited 0 with three informational tool-script lints.
+  Changed its import to `package:` and explicitly allowed CLI printing.
+  Final analysis has zero issues. Android XML also exposed duplicate empty tap
+  semantics; excluded the inner gesture detector from semantics. Two-word tile
+  phrases now use separate whole-word lines for legibility.
+- During Android startup, an immediate UI dump returned a null root while the
+  app was loading; a later dump succeeded. One screenshot command hit a
+  PowerShell `-p` parameter ambiguity. Explicit argument arrays corrected it.
+- A diagnostic wrapper consumed logcat `-d` as PowerShell's `Debug` parameter,
+  leaving a streaming logcat process holding the evidence file. Concurrent
+  commands around the first two final-APK wrong guesses emitted file-lock
+  errors; their raw transcript is incomplete. Inspected the actual process
+  command line, stopped only that logcat process (PID 37624), then reran the
+  bounded capture with an explicit argument array. The One Away and duplicate
+  operations were repeated with logging working; pending/rescue/reveal and the
+  final correct solve were captured after recovery. No user intervention.
+- Gradle's Java native-access warnings remain nonfatal. Windows desktop build
+  tooling is absent and is not an F2 requirement. Browser PRNG comparison and
+  clipboard integration are deliberately deferred. No unresolved F2 app defect
+  was observed; independent review remains **PENDING**.
