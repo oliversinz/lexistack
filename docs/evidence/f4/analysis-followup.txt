@@ -1,0 +1,6 @@
+Analyzing LexiStack...
+
+warning - test\ui\f4_layout_test.dart:9:8 - Unused import: 'package:lexistack/ui/home_screen.dart'. Try removing the import directive. - unused_import
+
+1 issue found.
+EXIT: 2

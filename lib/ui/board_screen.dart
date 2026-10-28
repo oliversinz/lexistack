@@ -236,34 +236,24 @@ class _BoardScreenState extends State<BoardScreen>
                           ),
                         ),
                       const SizedBox(height: 16),
-                      AnimatedBuilder(
-                        animation: shake,
-                        builder: (context, child) => Transform.translate(
-                          offset: Offset(
-                            math.sin(shake.value * math.pi * 6) *
-                                4 *
-                                (1 - shake.value),
-                            0,
-                          ),
-                          child: child,
-                        ),
-                        child: GridView.count(
-                          key: const Key('tile-grid'),
-                          crossAxisCount: 4,
-                          mainAxisSpacing: 6,
-                          crossAxisSpacing: 6,
-                          childAspectRatio: .95,
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          children: [
-                            for (final id in game.order)
-                              _BoardTile(
-                                tile: game.tile(id),
-                                controller: controller,
-                                act: act,
-                              ),
-                          ],
-                        ),
+                      GridView.count(
+                        key: const Key('tile-grid'),
+                        crossAxisCount: 4,
+                        mainAxisSpacing: 6,
+                        crossAxisSpacing: 6,
+                        childAspectRatio: .95,
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        children: [
+                          for (final id in game.order)
+                            _BoardTile(
+                              key: ValueKey(id),
+                              tile: game.tile(id),
+                              controller: controller,
+                              act: act,
+                              shake: shake,
+                            ),
+                        ],
                       ),
                       const SizedBox(height: 12),
                       DragTarget<String>(
@@ -491,13 +481,16 @@ class _CategoryCard extends StatelessWidget {
 
 class _BoardTile extends StatefulWidget {
   const _BoardTile({
+    super.key,
     required this.tile,
     required this.controller,
     required this.act,
+    required this.shake,
   });
   final Tile tile;
   final BoardController controller;
   final BoardAction act;
+  final Animation<double> shake;
 
   @override
   State<_BoardTile> createState() => _BoardTileState();
@@ -517,59 +510,73 @@ class _BoardTileState extends State<_BoardTile> {
       (pair) => pair.contains(tile.id),
     );
     final colors = Theme.of(context).colorScheme;
-    Widget face({bool hovering = false}) => AnimatedScale(
-      scale: selected ? .96 : 1,
-      duration: motionDuration(context, 120),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
-        decoration: BoxDecoration(
-          color: selected ? colors.primary : colors.surfaceContainerHighest,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: focused
-                ? colors.onSurface
-                : hovering || selected
-                ? colors.primary
-                : colors.outlineVariant,
-            width: focused || selected ? 3 : 1,
-          ),
+    Widget face({bool hovering = false}) => AnimatedBuilder(
+      animation: widget.shake,
+      builder: (context, child) => Transform.translate(
+        offset: Offset(
+          selected
+              ? math.sin(widget.shake.value * math.pi * 6) *
+                    4 *
+                    (1 - widget.shake.value)
+              : 0,
+          0,
         ),
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    tile.text.replaceAll(' ', '\n'),
-                    maxLines: 2,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 14,
-                      color: selected ? colors.onPrimary : colors.onSurface,
-                    ),
-                  ),
-                ),
-                if (pairIndex >= 0)
-                  Text(
-                    'Pair ${pairIndex + 1}',
-                    style: TextStyle(
-                      fontSize: 11,
-                      color: selected ? colors.onPrimary : colors.onSurface,
-                    ),
-                  ),
-              ],
+        child: child,
+      ),
+      child: AnimatedScale(
+        scale: selected ? .96 : 1,
+        duration: motionDuration(context, 120),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
+          decoration: BoxDecoration(
+            color: selected ? colors.primary : colors.surfaceContainerHighest,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: focused
+                  ? colors.onSurface
+                  : hovering || selected
+                  ? colors.primary
+                  : colors.outlineVariant,
+              width: focused || selected ? 3 : 1,
             ),
-            if (selected)
-              Positioned(
-                right: 0,
-                top: 0,
-                child: Icon(Icons.check, size: 12, color: colors.onPrimary),
+          ),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      tile.text.replaceAll(' ', '\n'),
+                      maxLines: 2,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14,
+                        color: selected ? colors.onPrimary : colors.onSurface,
+                      ),
+                    ),
+                  ),
+                  if (pairIndex >= 0)
+                    Text(
+                      'Pair ${pairIndex + 1}',
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: selected ? colors.onPrimary : colors.onSurface,
+                      ),
+                    ),
+                ],
               ),
-          ],
+              if (selected)
+                Positioned(
+                  right: 0,
+                  top: 0,
+                  child: Icon(Icons.check, size: 12, color: colors.onPrimary),
+                ),
+            ],
+          ),
         ),
       ),
     );

@@ -1,0 +1,15 @@
+COMMAND: Get-FileHash -Algorithm SHA256 prompts/F4-complete-ux-interaction.md
+
+Algorithm : SHA256
+Hash      : 0AAE7FCB0B7DCFECB7A0C0EF97EF1C6291A017184E80D854295AF0E97D64D2A7
+Path      : C:\Codex\LexiStack\prompts\F4-complete-ux-interaction.md
+
+
+prompts/F4-complete-ux-interaction.md: text: unset
+
+Algorithm : SHA256
+Hash      : B4BDD309B319F3A1B874F686B80C494774F50EB6CBF4C0C4CE36AC3F6D92436D
+Path      : C:\Codex\LexiStack\build\app\outputs\flutter-apk\app-debug.apk
+
+
+d9acbd52de0e198dd109a4859299318db3f465f5

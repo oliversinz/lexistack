@@ -1,0 +1,29 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/ui/f4_test.dart
+00:00 +0: UI-08 actual clipboard Campaign golden, repeated copy and reopen do not pay
+00:05 +1: UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss copy
+00:08 +2: UI-08 Daily exact clipboard payload and saved fallback
+00:09 +3: UI-08 waits for successful platform transfer; failed copy never reports success
+00:11 +4: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+00:12 +5: UI-12 enabled haptics map only successful outcomes, including rescue and rejected fifth/duplicate
+00:15 +6: UI-09/12 disabled haptics suppress wrong solve booster rescue after reconstruction
+00:17 +7: UI-05 exhausted and unaffordable boosters remain disabled with no state change
+00:17 +8: UI-12 platform haptic failure cannot roll back a successful purchase
+Haptic feedback unavailable: PlatformException(unsupported, null, null, null)
+00:18 +9: UI-09 F3-R01 blocks settings and wallet then restores dark/haptics from retry
+00:18 +10: UI-03 Statistics finalized-only empty and completed values; back and Settings links
+00:20 +11: UI-11 tile semantics unique, selected state and touch targets; four slots and lives
+00:20 +12: UI-11 auditable normal-text contrast in both themes and all tiers
+00:20 +13: UI-06/12 motion reduced=false never repeats settlement when interrupted
+00:21 +14: UI-06/12 motion reduced=true never repeats settlement when interrupted
+00:22 +15: All tests passed!
+EXIT: 0

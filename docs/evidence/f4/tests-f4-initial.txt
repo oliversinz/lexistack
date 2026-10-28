@@ -1,0 +1,122 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/ui/f4_test.dart
+00:00 +0: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 actual clipboard Campaign golden, repeated copy and reopen do not pay
+00:02 +1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 actual clipboard Campaign golden, repeated copy and reopen do not pay
+00:05 +2: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 actual clipboard Campaign golden, repeated copy and reopen do not pay
+00:05 +3: C:/Codex/LexiStack/test/ui/board_test.dart: actual long-press drag to tile and tray adds without release toggle
+00:06 +4: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss copy
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following _TypeError was thrown running a test:
+Null check operator used on a null value
+
+When the exception was thrown, this was the stack:
+#0      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/ui/f4_test.dart:113:29)
+<asynchronous suspension>
+#1      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#2      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss
+  copy
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:08 +4 -1: C:/Codex/LexiStack/test/ui/board_test.dart: pending loss conceals even peeked solutions, resumes on navigation, rescue and final reveal
+00:08 +4 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss copy [E]
+  Test failed. See exception logs above.
+  The test description was: UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss copy
+
+00:10 +5 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 Daily exact clipboard payload and saved fallback
+00:11 +6 -1: C:/Codex/LexiStack/test/ui/board_test.dart: all four real groups win; active attempt resumes and replay is explicit
+00:12 +7 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 waits for successful platform transfer; failed copy never reports success
+00:13 +8 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:15 +8 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.element (package:flutter_test/src/controller.dart:888:30)
+#2      WidgetController.dragUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2489:38)
+<asynchronous suspension>
+#3      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#4      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2439:7)
+<asynchronous suspension>
+#5      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#6      tapVisible (file:///C:/Codex/LexiStack/test/ui/board_test.dart:15:5)
+<asynchronous suspension>
+#7      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/ui/f4_test.dart:228:9)
+<asynchronous suspension>
+#8      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#9      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:15 +8 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:15 +8 -2: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle [E]
+  Test failed. See exception logs above.
+  The test description was: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+
+00:18 +9 -2: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-12 enabled haptics map only successful outcomes, including rescue and rejected fifth/duplicate
+00:18 +10 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:18 +10 -2: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-12 platform haptic failure cannot roll back a successful purchase
+Haptic feedback unavailable: PlatformException(unsupported, null, null, null)
+00:18 +11 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:18 +12 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:20 +13 -2: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:21 +13 -2: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-11 tile semantics unique, selected state and touch targets; four slots and lives
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: Tristate:<Tristate.isTrue>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/ui/f4_test.dart:418:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///C:/Codex/LexiStack/test/ui/f4_test.dart line 418
+The test description was:
+  UI-11 tile semantics unique, selected state and touch targets; four slots and lives
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:21 +13 -3: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:21 +13 -3: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-11 tile semantics unique, selected state and touch targets; four slots and lives [E]
+  Test failed. See exception logs above.
+  The test description was: UI-11 tile semantics unique, selected state and touch targets; four slots and lives
+
+00:21 +14 -3: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:22 +15 -3: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-06/12 motion reduced=false never repeats settlement when interrupted
+00:23 +16 -3: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:24 +17 -3: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:26 +18 -3: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/ui/f4_test.dart: UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss copy
+  C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+  C:/Codex/LexiStack/test/ui/f4_test.dart: UI-11 tile semantics unique, selected state and touch targets; four slots and lives
+EXIT: 1

@@ -1,0 +1,2012 @@
+2026-10-28T19:41:18.8022908+01:00 adb -s emulator-5554 shell getprop ro.build.version.release
+16
+EXIT: 0
+2026-10-28T19:41:18.8935859+01:00 adb -s emulator-5554 shell getprop ro.build.version.sdk
+36
+EXIT: 0
+2026-10-28T19:41:18.9692153+01:00 adb -s emulator-5554 emu avd name
+Pixel_10
+
+OK
+
+EXIT: 0
+2026-10-28T19:41:19.0352130+01:00 adb -s emulator-5554 shell wm size
+Physical size: 1080x2424
+EXIT: 0
+2026-10-28T19:41:19.1280822+01:00 adb -s emulator-5554 shell wm density
+Physical density: 420
+EXIT: 0
+2026-10-28T19:41:19.2277317+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T19:41:21.9007134+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T19:41:22.0421367+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T19:41:22.8819964+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/launcher.png
+adb: error: failed to stat remote object '/sdcard/f4-screen.png': No such file or directory
+EXIT: 1
+2026-10-28T19:41:22.9755256+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:41:25.6337471+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/launcher.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 8.1 MB/s (23662 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:41:39.9472603+01:00 adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T19:41:40.0472627+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:41:41.5704204+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/home-initial.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 43.3 MB/s (581290 bytes in 0.013s)
+EXIT: 0
+2026-10-28T19:41:41.6934889+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+ERROR: null root node returned by UiTestAutomationBridge.
+EXIT: 0
+2026-10-28T19:41:43.8578168+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/home-initial.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (23662 bytes in 0.007s)
+EXIT: 0
+2026-10-28T19:42:03.9737841+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:42:04.3951624+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-home-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 32.8 MB/s (197701 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:42:04.5161233+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:42:06.7695472+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-home-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.0 MB/s (12889 bytes in 0.002s)
+EXIT: 0
+2026-10-28T19:44:11.5033592+01:00 adb -s emulator-5554 shell input tap 1017 215
+EXIT: 0
+2026-10-28T19:44:11.7437154+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:44:12.2755023+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 31.3 MB/s (197037 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:44:12.4195336+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:44:14.7148812+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (12765 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:45:07.4190808+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:45:09.5898733+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.2 MB/s (12765 bytes in 0.002s)
+EXIT: 0
+2026-10-28T19:45:09.6748478+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:45:09.9994536+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 42.1 MB/s (154428 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:45:10.0904426+01:00 adb -s emulator-5554 shell input tap 540 934
+EXIT: 0
+2026-10-28T19:45:10.1830939+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:45:12.5480448+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (12765 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:45:12.6260498+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:45:13.0480048+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 24.0 MB/s (154282 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:48:33.0986200+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T19:48:35.6143920+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T19:48:35.7547988+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T19:48:36.3177897+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:48:38.9604687+01:00 adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T19:48:52.3259399+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:48:54.7563911+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-home-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (12889 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:48:54.8768956+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:48:55.2906163+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-home-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 33.8 MB/s (197538 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:48:55.4118790+01:00 adb -s emulator-5554 shell input tap 1017 215
+EXIT: 0
+2026-10-28T19:48:55.6065427+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:48:58.0181421+01:00 adb -s emulator-5554 shell input tap 540 1754
+EXIT: 0
+2026-10-28T19:48:58.1063998+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:00.3714503+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-reset-confirm.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.2 MB/s (6610 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:49:00.4516532+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:49:00.8897251+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-reset-confirm.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 28.6 MB/s (150212 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:49:10.8774622+01:00 adb -s emulator-5554 shell input tap 750 1425
+EXIT: 0
+2026-10-28T19:49:10.9890968+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:13.4361531+01:00 adb -s emulator-5554 shell input tap 1017 215
+EXIT: 0
+2026-10-28T19:49:13.5291962+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:15.8738256+01:00 adb -s emulator-5554 shell input tap 540 934
+EXIT: 0
+2026-10-28T19:49:15.9704123+01:00 adb -s emulator-5554 shell input tap 925 1230
+EXIT: 0
+2026-10-28T19:49:16.1194719+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:18.4478340+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-off.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:49:18.5698149+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:49:19.0204767+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-off.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 27.0 MB/s (154259 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:49:19.1319030+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:49:19.2420694+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:21.5939655+01:00 adb -s emulator-5554 shell input tap 540 819
+EXIT: 0
+2026-10-28T19:49:21.6893600+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:24.0185928+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-board-fresh.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (15196 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:49:24.0921095+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:49:24.4932688+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-board-fresh.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 31.4 MB/s (137620 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:49:48.6532050+01:00 adb -s emulator-5554 shell input motionevent DOWN 666 1320
+EXIT: 0
+2026-10-28T19:49:49.4345015+01:00 adb -s emulator-5554 shell input motionevent MOVE 413 1585
+EXIT: 0
+2026-10-28T19:49:49.6688874+01:00 adb -s emulator-5554 shell input motionevent UP 413 1585
+EXIT: 0
+2026-10-28T19:49:49.7411707+01:00 adb -s emulator-5554 shell input tap 413 1320
+EXIT: 0
+2026-10-28T19:49:49.8374360+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:52.0207485+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-drag-selected.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (15220 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:49:52.1345727+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:49:52.5310053+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-drag-selected.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 26.8 MB/s (145293 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:49:52.6459114+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 1200 400
+EXIT: 0
+2026-10-28T19:49:53.1441762+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:49:55.4158205+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-booster-controls.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (14611 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:49:55.4965502+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:49:55.8831241+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-booster-controls.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 25.6 MB/s (147135 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:50:33.9602955+01:00 adb -s emulator-5554 shell input tap 242 1715
+EXIT: 0
+2026-10-28T19:50:34.0410577+01:00 adb -s emulator-5554 shell input tap 682 1715
+EXIT: 0
+2026-10-28T19:50:34.1640221+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2100 350
+EXIT: 0
+2026-10-28T19:50:34.5974491+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:50:36.7883767+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-before-restart.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.8 MB/s (15232 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:50:36.8936848+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:50:37.2996872+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-before-restart.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 28.5 MB/s (147807 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:50:37.4226760+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+15164
+EXIT: 0
+2026-10-28T19:50:37.5197740+01:00 adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT: 0
+2026-10-28T19:50:37.6667389+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+EXIT: 1
+2026-10-28T19:50:37.8039847+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T19:50:37.9315618+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T19:50:38.4331668+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:50:40.8849224+01:00 adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T19:50:48.3103951+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+15654
+EXIT: 0
+2026-10-28T19:50:48.4062852+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:50:50.7738234+01:00 adb -s emulator-5554 shell input tap 540 819
+EXIT: 0
+2026-10-28T19:50:50.9554900+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:50:53.3878868+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-after-restart.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.5 MB/s (15244 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:50:53.5080375+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:50:53.8727133+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-after-restart.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 37.9 MB/s (149583 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:50:53.9708442+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:50:54.0748722+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:50:56.4318225+01:00 adb -s emulator-5554 shell input tap 1017 215
+EXIT: 0
+2026-10-28T19:50:56.5209791+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:50:58.8630474+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-restored.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:50:58.9402568+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:50:59.3503052+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-restored.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 27.1 MB/s (154459 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:50:59.4439900+01:00 adb -s emulator-5554 shell run-as de.cloudwards.lexistack ls files/datastore
+FlutterSharedPreferences.preferences_pb
+EXIT: 0
+2026-10-28T19:51:48.9746832+01:00 adb -s emulator-5554 shell run-as de.cloudwards.lexistack base64 files/datastore/FlutterSharedPreferences.preferences_pb
+Cq8UChJsZXhpc3RhY2sucHJvZ3Jlc3MSmBQqlRR7InZlcnNpb24iOjEsImNvaW5zIjo4MCwic2Vx
+dWVuY2UiOjIsImNhbXBhaWduIjp7fSwicmVzdWx0cyI6W10sImRhaWx5Ijp7fSwiYXR0ZW1wdHMi
+Olt7ImlkIjoiYTEiLCJsZXZlbElkIjoicGFjazFfbHZsMDEiLCJkYXRlIjpudWxsLCJlbnRlcmVk
+IjoyLCJmaW5nZXJwcmludCI6IltcInBhY2sxX2x2bDAxXCIsXCJwYWNrMVwiLFwiVGFibGUgVGFs
+a1wiLFtcImcxXCIsXCJCUkVBS0ZBU1QgQkFLRVNcIiwxLFwiQSBiYWdlbCBpcyB0cmFkaXRpb25h
+bGx5IGJvaWxlZCBiZWZvcmUgYmFraW5nLCB3aGljaCBoZWxwcyBjcmVhdGUgaXRzIGNoZXd5IGNy
+dXN0LlwiLFtcIltcXFwicGFjazFfbHZsMDFcXFwiLFxcXCJnMVxcXCIsMF1cIixcIlRPQVNUXCIs
+MV0sW1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImcxXFxcIiwxXVwiLFwiV0FGRkxFXCIsMV0s
+W1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImcxXFxcIiwyXVwiLFwiTVVGRklOXCIsMV0sW1wi
+W1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImcxXFxcIiwzXVwiLFwiQkFHRUxcIiwxXV0sW1wiZzJc
+IixcIktJVENIRU4gVVRFTlNJTFNcIiwyLFwiQSBsYWRsZSBoYXMgYSBkZWVwIGJvd2wgZGVzaWdu
+ZWQgZm9yIGxpZnRpbmcgYW5kIHNlcnZpbmcgbGlxdWlkcyBzdWNoIGFzIHNvdXAuXCIsW1wiW1xc
+XCJwYWNrMV9sdmwwMVxcXCIsXFxcImcyXFxcIiwwXVwiLFwiRk9SS1wiLDJdLFtcIltcXFwicGFj
+azFfbHZsMDFcXFwiLFxcXCJnMlxcXCIsMV1cIixcIlNQT09OXCIsMl0sW1wiW1xcXCJwYWNrMV9s
+dmwwMVxcXCIsXFxcImcyXFxcIiwyXVwiLFwiS05JRkVcIiwyXSxbXCJbXFxcInBhY2sxX2x2bDAx
+XFxcIixcXFwiZzJcXFwiLDNdXCIsXCJMQURMRVwiLDJdXSxbXCJnM1wiLFwiVEVOTklTIFRFUk1T
+XCIsMyxcIkluIHRlbm5pcyBzY29yaW5nLCBsb3ZlIG1lYW5zIHplcm8gYW5kIGRldWNlIGlzIGEg
+dGllIGF0IGZvcnR5IHBvaW50cyBlYWNoLlwiLFtcIltcXFwicGFjazFfbHZsMDFcXFwiLFxcXCJn
+M1xcXCIsMF1cIixcIlNFUlZFXCIsM10sW1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImczXFxc
+IiwxXVwiLFwiTE9WRVwiLDNdLFtcIltcXFwicGFjazFfbHZsMDFcXFwiLFxcXCJnM1xcXCIsMl1c
+IixcIkRFVUNFXCIsM10sW1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImczXFxcIiwzXVwiLFwi
+Vk9MTEVZXCIsM11dLFtcImc0XCIsXCJQQUlSUyBXSVRIIEpBTVwiLDQsXCJMb2dqYW0gb3JpZ2lu
+YXRlZCBhcyBhIHRlcm0gZm9yIHRpbWJlciBvYnN0cnVjdGluZyB3YXRlcndheXMgYmVmb3JlIGJl
+Y29taW5nIGEgbWV0YXBob3IuXCIsW1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImc0XFxcIiww
+XVwiLFwiVFJBRkZJQ1wiLDRdLFtcIltcXFwicGFjazFfbHZsMDFcXFwiLFxcXCJnNFxcXCIsMV1c
+IixcIlBBUEVSXCIsNF0sW1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImc0XFxcIiwyXVwiLFwi
+TE9HXCIsNF0sW1wiW1xcXCJwYWNrMV9sdmwwMVxcXCIsXFxcImc0XFxcIiwzXVwiLFwiUEVBUkxc
+Iiw0XV0sW1tbXCJTRVJWRVwiXSxcIlNFUlZFIGNvdWxkIGRlc2NyaWJlIG9mZmVyaW5nIGJyZWFr
+ZmFzdCwgYnV0IExPVkUsIERFVUNFIGFuZCBWT0xMRVkgZ2l2ZSBpdCBhIHByZWNpc2UgdGVubmlz
+IGhvbWUuXCJdXV0iLCJnYW1lIjp7InNlZWQiOjIsInJuZyI6MjI5NjE1OTc0LCJzdGF0dXMiOiJw
+bGF5aW5nIiwibGl2ZXMiOjQsIm1pc3Rha2VzIjowLCJjb21ibyI6MCwiZXh0cmFMaXZlcyI6MCwi
+b3JkZXIiOlsiW1wicGFjazFfbHZsMDFcIixcImcxXCIsMl0iLCJbXCJwYWNrMV9sdmwwMVwiLFwi
+ZzJcIiwxXSIsIltcInBhY2sxX2x2bDAxXCIsXCJnMlwiLDBdIiwiW1wicGFjazFfbHZsMDFcIixc
+ImczXCIsMV0iLCJbXCJwYWNrMV9sdmwwMVwiLFwiZzRcIiwxXSIsIltcInBhY2sxX2x2bDAxXCIs
+XCJnMVwiLDBdIiwiW1wicGFjazFfbHZsMDFcIixcImczXCIsM10iLCJbXCJwYWNrMV9sdmwwMVwi
+LFwiZzRcIiwwXSIsIltcInBhY2sxX2x2bDAxXCIsXCJnM1wiLDJdIiwiW1wicGFjazFfbHZsMDFc
+IixcImc0XCIsM10iLCJbXCJwYWNrMV9sdmwwMVwiLFwiZzJcIiwyXSIsIltcInBhY2sxX2x2bDAx
+XCIsXCJnMVwiLDFdIiwiW1wicGFjazFfbHZsMDFcIixcImcyXCIsM10iLCJbXCJwYWNrMV9sdmww
+MVwiLFwiZzFcIiwzXSIsIltcInBhY2sxX2x2bDAxXCIsXCJnM1wiLDBdIiwiW1wicGFjazFfbHZs
+MDFcIixcImc0XCIsMl0iXSwic2VsZWN0aW9uIjpbIltcInBhY2sxX2x2bDAxXCIsXCJnM1wiLDNd
+IiwiW1wicGFjazFfbHZsMDFcIixcImc0XCIsM10iLCJbXCJwYWNrMV9sdmwwMVwiLFwiZzFcIiww
+XSJdLCJzb2x2ZWQiOltdLCJ3cm9uZyI6W10sInBhaXJzIjp7ImcxIjpbIltcInBhY2sxX2x2bDAx
+XCIsXCJnMVwiLDBdIiwiW1wicGFjazFfbHZsMDFcIixcImcxXCIsMV0iXX0sInBlZWtlZCI6WyJn
+MSJdLCJndWVzc2VzIjpbXX19XSwiZGFpbHlBdHRlbXB0IjpudWxsLCJiZXN0RGFpbHlTdHJlYWsi
+OjAsInNldHRpbmdzIjp7InRoZW1lIjoiZGFyayIsImhhcHRpY3MiOmZhbHNlfSwicmV0aXJlZElk
+cyI6W10sInJld2FyZExvY2tzIjpbXSwidW5hdmFpbGFibGVEYWlseSI6W119
+EXIT: 0
+2026-10-28T19:53:00.5623040+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:53:00.6668093+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:03.0078823+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (12889 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:53:03.1595353+01:00 adb -s emulator-5554 shell input tap 540 820
+EXIT: 0
+2026-10-28T19:53:03.2472001+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:53:03.6981715+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:05.9160949+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.4 MB/s (15244 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:53:06.0037037+01:00 adb -s emulator-5554 shell input tap 794 2264
+EXIT: 0
+2026-10-28T19:53:06.0977749+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:53:06.5632119+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:08.8848816+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (15220 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:53:08.9615442+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T19:53:09.0638267+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:11.3716931+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (15227 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:53:11.4680424+01:00 adb -s emulator-5554 shell input tap 920 1585
+EXIT: 0
+2026-10-28T19:53:11.5716107+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:13.8982103+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (15236 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:53:13.9827206+01:00 adb -s emulator-5554 shell input tap 160 1054
+EXIT: 0
+2026-10-28T19:53:14.0829266+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:16.3656677+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (15245 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:53:16.4444915+01:00 adb -s emulator-5554 shell input tap 666 1054
+EXIT: 0
+2026-10-28T19:53:16.5437701+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:53:16.9927229+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:19.2828857+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (14635 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:53:19.3594304+01:00 adb -s emulator-5554 shell input tap 540 1453
+EXIT: 0
+2026-10-28T19:53:19.4529014+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:53:19.9036217+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:22.2176636+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-one-away.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (15253 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:53:22.3392369+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:53:22.7599367+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-one-away.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 23.3 MB/s (156591 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:53:50.1411700+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:53:50.6589881+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:53.0631242+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (14247 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:53:53.2449651+01:00 adb -s emulator-5554 shell input tap 540 1506
+EXIT: 0
+2026-10-28T19:53:53.3535276+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:53:53.8425421+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:53:56.3893020+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-already-guessed.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (15243 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:53:56.5400442+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:53:57.0714879+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-already-guessed.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 19.8 MB/s (152999 bytes in 0.007s)
+EXIT: 0
+2026-10-28T19:53:57.2185572+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:53:57.7068335+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:00.3217703+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (14247 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:00.4274155+01:00 adb -s emulator-5554 shell input tap 794 1348
+EXIT: 0
+2026-10-28T19:54:00.5469497+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:54:01.0391525+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:03.5294477+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.9 MB/s (15220 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:54:03.6592455+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T19:54:03.7945243+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:06.2978781+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (15227 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:06.3941654+01:00 adb -s emulator-5554 shell input tap 920 1585
+EXIT: 0
+2026-10-28T19:54:06.5155584+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:08.9768024+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (15236 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:09.0734942+01:00 adb -s emulator-5554 shell input tap 666 1054
+EXIT: 0
+2026-10-28T19:54:09.1872907+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:11.6251501+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (15243 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:11.7317022+01:00 adb -s emulator-5554 shell input tap 414 1054
+EXIT: 0
+2026-10-28T19:54:11.8508935+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:54:12.3352232+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:14.7677771+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (14246 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:54:14.8765977+01:00 adb -s emulator-5554 shell input tap 540 1506
+EXIT: 0
+2026-10-28T19:54:14.9883100+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:54:15.4616993+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:17.8498908+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.5 MB/s (14246 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:54:17.9616410+01:00 adb -s emulator-5554 shell input tap 794 1348
+EXIT: 0
+2026-10-28T19:54:18.0704678+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:54:18.5390215+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:20.8769648+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (15220 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:20.9620856+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T19:54:21.0706751+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:23.3530791+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (15227 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:23.4399226+01:00 adb -s emulator-5554 shell input tap 666 1054
+EXIT: 0
+2026-10-28T19:54:23.5487759+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:25.9253112+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (15234 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:26.0176865+01:00 adb -s emulator-5554 shell input tap 666 1850
+EXIT: 0
+2026-10-28T19:54:26.1247266+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:28.9212660+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (15242 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:29.0130962+01:00 adb -s emulator-5554 shell input tap 920 1320
+EXIT: 0
+2026-10-28T19:54:29.1802047+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:54:29.6447746+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:32.0388516+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.1 MB/s (14246 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:54:32.1281586+01:00 adb -s emulator-5554 shell input tap 540 1506
+EXIT: 0
+2026-10-28T19:54:32.2323216+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:54:32.6926650+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:35.1089963+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (14246 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:54:35.1937810+01:00 adb -s emulator-5554 shell input tap 794 1348
+EXIT: 0
+2026-10-28T19:54:35.2948009+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:54:35.7594514+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:38.0647830+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (15220 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:38.1627962+01:00 adb -s emulator-5554 shell input tap 920 1585
+EXIT: 0
+2026-10-28T19:54:38.2771172+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:40.6267998+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (15228 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:54:40.7387830+01:00 adb -s emulator-5554 shell input tap 414 1054
+EXIT: 0
+2026-10-28T19:54:40.8648949+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:43.3061386+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (15236 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:54:43.3907510+01:00 adb -s emulator-5554 shell input tap 920 1054
+EXIT: 0
+2026-10-28T19:54:43.4913860+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:45.7681428+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (15243 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:54:45.8493644+01:00 adb -s emulator-5554 shell input tap 160 1320
+EXIT: 0
+2026-10-28T19:54:45.9493176+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:54:46.4034179+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:48.7317866+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.5 MB/s (14246 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:54:48.8093466+01:00 adb -s emulator-5554 shell input tap 540 1506
+EXIT: 0
+2026-10-28T19:54:48.9013317+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:54:51.1587164+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-pending-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.4 MB/s (7054 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:54:51.2465935+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:54:51.6758228+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-pending-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 16.9 MB/s (114440 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:55:05.2433375+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T19:55:07.2920184+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T19:55:07.4204862+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T19:55:08.0535406+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:10.5697259+01:00 adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T19:55:19.8295981+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+16701
+EXIT: 0
+2026-10-28T19:55:19.9476226+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:22.2904848+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (12889 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:22.4097897+01:00 adb -s emulator-5554 shell input tap 540 820
+EXIT: 0
+2026-10-28T19:55:22.5823733+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:25.0056249+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-pending-final-apk.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.6 MB/s (7054 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:25.1254761+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:55:25.4950741+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-pending-final-apk.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 20.1 MB/s (114042 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:55:25.5836412+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:27.8239822+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.0 MB/s (7054 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:27.9109856+01:00 adb -s emulator-5554 shell input tap 540 966
+EXIT: 0
+2026-10-28T19:55:28.0072906+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:30.3179752+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-paid-rescue.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.2 MB/s (15244 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:30.3989016+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:55:30.8435922+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-paid-rescue.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 29.7 MB/s (154169 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:55:30.9330821+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:55:31.3698925+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:33.6333971+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (13207 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:33.7114724+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T19:55:33.8044752+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:55:34.2522415+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:36.5444078+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (15220 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:36.6218353+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T19:55:36.7160978+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:38.9874062+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (15227 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:39.0755136+01:00 adb -s emulator-5554 shell input tap 920 1585
+EXIT: 0
+2026-10-28T19:55:39.1752074+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:41.4578004+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.7 MB/s (15236 bytes in 0.002s)
+EXIT: 0
+2026-10-28T19:55:41.5300494+01:00 adb -s emulator-5554 shell input tap 160 1054
+EXIT: 0
+2026-10-28T19:55:41.6483721+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:43.9071472+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (15245 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:43.9928541+01:00 adb -s emulator-5554 shell input tap 414 1850
+EXIT: 0
+2026-10-28T19:55:44.0962006+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:55:44.5401739+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:46.8055887+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (13208 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:55:46.8865851+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T19:55:46.9885670+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:55:49.3237935+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-solved-one.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (14214 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:55:49.4133801+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:55:49.8510023+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-solved-one.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 32.2 MB/s (165749 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:56:03.7493873+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:56:04.2132214+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:06.4241173+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (13157 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:56:06.5622366+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T19:56:06.6470563+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:56:07.0900049+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:09.3152910+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (14214 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:56:09.3962163+01:00 adb -s emulator-5554 shell input tap 414 1374
+EXIT: 0
+2026-10-28T19:56:09.4863891+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:11.7485197+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (14233 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:56:11.8372854+01:00 adb -s emulator-5554 shell input tap 160 1374
+EXIT: 0
+2026-10-28T19:56:11.9476892+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:14.2496029+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (14241 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:56:14.3424771+01:00 adb -s emulator-5554 shell input tap 160 1906
+EXIT: 0
+2026-10-28T19:56:14.4382982+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:16.7214505+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.0 MB/s (14249 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:56:16.8019152+01:00 adb -s emulator-5554 shell input tap 414 1906
+EXIT: 0
+2026-10-28T19:56:16.9064152+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:56:17.3701561+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:19.6060373+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (13185 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:56:19.6836457+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T19:56:19.7764879+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:22.0307542+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-two-solved-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (13598 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:56:22.1582971+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:56:22.6923035+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-two-solved-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 32.7 MB/s (181502 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:56:22.7890233+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:56:22.9015436+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:25.2728170+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (12889 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:56:25.3524846+01:00 adb -s emulator-5554 shell input tap 1017 216
+EXIT: 0
+2026-10-28T19:56:25.4608791+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:27.8025498+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.1 MB/s (12766 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:56:27.9019905+01:00 adb -s emulator-5554 shell input tap 540 778
+EXIT: 0
+2026-10-28T19:56:28.0518785+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:56:28.1626309+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:30.5332003+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.1 MB/s (12889 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:56:30.6213133+01:00 adb -s emulator-5554 shell input tap 540 820
+EXIT: 0
+2026-10-28T19:56:30.7175487+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:56:33.0599661+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-two-solved-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (13610 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:56:33.1419925+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:56:33.5769955+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-two-solved-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 31.7 MB/s (184682 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:57:30.6514545+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:57:31.1793657+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:33.6779672+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (12472 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:57:33.8526798+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T19:57:33.9549450+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:57:34.4246828+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:36.8830868+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (13610 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:57:36.9889196+01:00 adb -s emulator-5554 shell input tap 666 1960
+EXIT: 0
+2026-10-28T19:57:37.1243707+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:39.6125386+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.6 MB/s (13617 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:57:39.7161465+01:00 adb -s emulator-5554 shell input tap 160 1695
+EXIT: 0
+2026-10-28T19:57:39.8270866+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:42.3213245+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (13624 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:57:42.4457164+01:00 adb -s emulator-5554 shell input tap 160 1960
+EXIT: 0
+2026-10-28T19:57:42.5706961+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:45.0178761+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (13632 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:57:45.1191739+01:00 adb -s emulator-5554 shell input tap 666 1695
+EXIT: 0
+2026-10-28T19:57:45.2401626+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:57:45.7478231+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:48.2215567+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.8 MB/s (12501 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:57:48.3178121+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T19:57:48.4308619+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:57:48.8985467+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:51.3660187+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.4 MB/s (11854 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:57:51.4645197+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T19:57:51.5835504+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T19:57:52.0702437+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:54.4955433+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (12972 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:57:54.5894169+01:00 adb -s emulator-5554 shell input tap 414 2015
+EXIT: 0
+2026-10-28T19:57:54.7130085+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:57.0922877+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (12997 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:57:57.1836338+01:00 adb -s emulator-5554 shell input tap 160 2015
+EXIT: 0
+2026-10-28T19:57:57.2879481+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:57:59.7175641+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (13005 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:57:59.8193429+01:00 adb -s emulator-5554 shell input tap 920 2015
+EXIT: 0
+2026-10-28T19:57:59.9324783+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:02.3409282+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (13011 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:02.4272054+01:00 adb -s emulator-5554 shell input tap 666 2015
+EXIT: 0
+2026-10-28T19:58:02.5399712+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:58:03.0030257+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:05.3247277+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (11883 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:05.4082314+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T19:58:05.5010117+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:07.7751001+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-win-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (11223 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:58:07.9109802+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:58:08.3914632+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-win-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 32.3 MB/s (225132 bytes in 0.007s)
+EXIT: 0
+2026-10-28T19:58:08.4905425+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:10.7185915+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.0 MB/s (11223 bytes in 0.002s)
+EXIT: 0
+2026-10-28T19:58:10.7912970+01:00 adb -s emulator-5554 shell input tap 540 990
+EXIT: 0
+2026-10-28T19:58:10.8914953+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:13.2295953+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-copy-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (11583 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:13.3130699+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:58:13.7151818+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-copy-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 32.4 MB/s (208551 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:58:13.7978620+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T19:58:14.2423172+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:17.3456097+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-result-details-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (9440 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:17.4276489+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:58:17.8341131+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-result-details-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 30.2 MB/s (202706 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:58:41.7234412+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:58:41.8542485+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:44.1719973+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (12887 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:44.2905187+01:00 adb -s emulator-5554 shell input tap 891 216
+EXIT: 0
+2026-10-28T19:58:44.3764109+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:46.7214915+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-stats-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.1 MB/s (10241 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:46.8547777+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:58:47.2913820+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-stats-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 18.5 MB/s (117626 bytes in 0.006s)
+EXIT: 0
+2026-10-28T19:58:47.4051077+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:58:47.4943253+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:49.8695901+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (12887 bytes in 0.004s)
+EXIT: 0
+2026-10-28T19:58:49.9448283+01:00 adb -s emulator-5554 shell input tap 1017 216
+EXIT: 0
+2026-10-28T19:58:50.0453521+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:52.3872621+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.1 MB/s (12766 bytes in 0.002s)
+EXIT: 0
+2026-10-28T19:58:52.4722503+01:00 adb -s emulator-5554 shell input tap 540 935
+EXIT: 0
+2026-10-28T19:58:52.5617189+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:54.8389735+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:54.9226620+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:58:55.3283107+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 28.6 MB/s (154682 bytes in 0.005s)
+EXIT: 0
+2026-10-28T19:58:55.4146655+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T19:58:55.5036511+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:58:57.8573899+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (12887 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:58:57.9416063+01:00 adb -s emulator-5554 shell input tap 891 216
+EXIT: 0
+2026-10-28T19:58:58.0699766+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T19:59:00.4029543+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-stats-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (10241 bytes in 0.003s)
+EXIT: 0
+2026-10-28T19:59:00.4937788+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T19:59:00.9297314+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-stats-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 25.6 MB/s (116971 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:00:10.7474109+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T20:00:10.9268304+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:00:13.3664760+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-home-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.9 MB/s (12887 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:00:13.5108140+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:00:13.9631730+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-home-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 29.0 MB/s (197368 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:00:14.1176131+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:00:16.4264901+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (12887 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:00:16.5715117+01:00 adb -s emulator-5554 shell input tap 912 1780
+EXIT: 0
+2026-10-28T20:00:16.6889345+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:00:19.1660252+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-packs-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.0 MB/s (7723 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:00:19.2786824+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:00:19.8228901+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-packs-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 4.1 MB/s (96137 bytes in 0.022s)
+EXIT: 0
+2026-10-28T20:00:19.9762360+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:00:22.3596601+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.1 MB/s (7723 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:00:22.4511325+01:00 adb -s emulator-5554 shell input tap 540 935
+EXIT: 0
+2026-10-28T20:00:22.5675437+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:00:24.9597096+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-levels-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (13930 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:00:25.0574443+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:00:25.5808614+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-levels-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 5.4 MB/s (186189 bytes in 0.033s)
+EXIT: 0
+2026-10-28T20:00:25.7239221+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:00:28.0461216+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.3 MB/s (13930 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:01:05.5913791+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:07.7251380+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 7.2 MB/s (13930 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:01:07.8384941+01:00 adb -s emulator-5554 shell input tap 540 814
+EXIT: 0
+2026-10-28T20:01:07.9092743+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:10.2638364+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-level-entry-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.8 MB/s (10526 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:01:10.4055291+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:01:10.8658031+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-level-entry-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 19.4 MB/s (105979 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:01:10.9672884+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:13.2025602+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (10526 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:01:13.2843771+01:00 adb -s emulator-5554 shell input tap 540 1208
+EXIT: 0
+2026-10-28T20:01:13.3868154+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:15.7686582+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-win-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (11223 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:01:15.8552681+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:01:16.3145683+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-win-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 33.4 MB/s (224485 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:01:16.4002932+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:01:16.8406106+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:19.1033353+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-result-details-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (9440 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:01:19.1765757+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:01:19.5848667+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-result-details-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 34.0 MB/s (202242 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:01:50.6915080+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:52.9998213+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.4 MB/s (9440 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:01:53.1474988+01:00 adb -s emulator-5554 shell input tap 540 2104
+EXIT: 0
+2026-10-28T20:01:53.2473398+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:01:53.7149015+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:01:56.1103618+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-replay-fresh.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (15179 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:01:56.2599365+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:01:56.6913883+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-replay-fresh.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 21.1 MB/s (135507 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:02:30.4272335+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:02:32.6600781+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.5 MB/s (15179 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:02:32.7829479+01:00 adb -s emulator-5554 shell input tap 160 1054
+EXIT: 0
+2026-10-28T20:02:32.8599598+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:02:35.0754056+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.6 MB/s (15202 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:02:35.1571498+01:00 adb -s emulator-5554 shell input tap 414 1054
+EXIT: 0
+2026-10-28T20:02:35.2350332+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:02:35.6752204+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:02:37.8658013+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (13180 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:02:49.9242005+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:02:52.0689001+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-booster-final-state.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (13180 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:02:52.1609843+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:02:52.5604489+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-booster-final-state.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 23.8 MB/s (152052 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:03:06.5618807+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:03:08.7925871+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (13180 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:03:08.9149145+01:00 adb -s emulator-5554 shell input tap 242 1663
+EXIT: 0
+2026-10-28T20:03:09.0006722+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:03:09.4592806+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:03:11.7223818+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-state-before-update.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (15214 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:03:11.8561500+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:03:12.2744332+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-state-before-update.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 27.9 MB/s (142908 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:03:12.3696722+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T20:03:14.3739226+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T20:03:14.5312363+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T20:03:15.0300983+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:03:17.6409928+01:00 adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T20:03:31.0658746+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:03:33.8342008+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (12886 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:03:33.9496817+01:00 adb -s emulator-5554 shell input tap 540 820
+EXIT: 0
+2026-10-28T20:03:34.0463503+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:03:36.6555614+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-before-stop.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (15225 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:03:36.7661514+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:03:37.1601086+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-before-stop.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 21.6 MB/s (144529 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:03:37.2607959+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+18638
+EXIT: 0
+2026-10-28T20:03:37.3491660+01:00 adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT: 0
+2026-10-28T20:03:37.5312321+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+EXIT: 1
+2026-10-28T20:03:37.6641676+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T20:03:37.8233177+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T20:03:38.3802712+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:03:40.8673566+01:00 adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T20:04:03.1775944+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+EXIT: 1
+2026-10-28T20:04:03.2791904+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:05.5544089+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (14031 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:04:13.0158524+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:15.3094674+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/launcher-recheck.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (14031 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:04:15.4183349+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:04:16.3562665+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/launcher-recheck.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 62.0 MB/s (1384084 bytes in 0.021s)
+EXIT: 0
+2026-10-28T20:04:27.0443725+01:00 adb -s emulator-5554 shell input swipe 500 2100 500 600 350
+EXIT: 0
+2026-10-28T20:04:27.5230618+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:29.9068964+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.6 MB/s (23661 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:04:30.0305877+01:00 adb -s emulator-5554 shell input tap 412 1120
+EXIT: 0
+2026-10-28T20:04:30.1107995+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+ERROR: null root node returned by UiTestAutomationBridge.
+EXIT: 0
+2026-10-28T20:04:32.5652221+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+18975
+EXIT: 0
+2026-10-28T20:04:32.6801050+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+ERROR: null root node returned by UiTestAutomationBridge.
+EXIT: 0
+2026-10-28T20:04:34.9086648+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.1 MB/s (23661 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:04:44.7558209+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:47.0287648+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (12886 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:04:47.1367185+01:00 adb -s emulator-5554 shell input tap 540 820
+EXIT: 0
+2026-10-28T20:04:47.3041211+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:49.7825649+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-after-stop.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (15225 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:04:49.9096269+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:04:50.3200792+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-after-stop.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 25.4 MB/s (144236 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:04:50.4206855+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:04:50.8629912+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:53.1522841+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.5 MB/s (13187 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:04:53.2391970+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T20:04:53.3249455+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:04:53.7825262+01:00 adb -s emulator-5554 shell input motionevent DOWN 666 1054
+EXIT: 0
+2026-10-28T20:04:54.5978542+01:00 adb -s emulator-5554 shell input motionevent MOVE 540 2085
+EXIT: 0
+2026-10-28T20:04:54.8479909+01:00 adb -s emulator-5554 shell input motionevent UP 540 2085
+EXIT: 0
+2026-10-28T20:04:54.9399204+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:04:57.2844696+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-drag-tray-final.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (15215 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:04:57.3683227+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:04:57.7951981+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-drag-tray-final.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 29.1 MB/s (140559 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:05:30.5509258+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:05:31.0044923+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:33.2454897+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (13176 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:05:33.3746458+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T20:05:33.4711793+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:05:33.9214868+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:36.2111782+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 7.4 MB/s (15210 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:05:36.2881784+01:00 adb -s emulator-5554 shell input tap 160 1054
+EXIT: 0
+2026-10-28T20:05:36.3755291+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:38.6249755+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.9 MB/s (15217 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:05:38.7110728+01:00 adb -s emulator-5554 shell input tap 920 1850
+EXIT: 0
+2026-10-28T20:05:38.8086221+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:41.1233259+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (15226 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:05:41.2274100+01:00 adb -s emulator-5554 shell input tap 414 1850
+EXIT: 0
+2026-10-28T20:05:41.3388762+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:43.7371508+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (15235 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:05:43.8189303+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T20:05:43.9152705+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:05:44.3656467+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:46.6573521+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (13201 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:05:46.7339507+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T20:05:46.8265972+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:05:47.2862380+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:49.5672066+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (13192 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:05:49.6471695+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T20:05:49.7383509+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:05:50.1994928+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:52.4623287+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.9 MB/s (15210 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:05:52.5434805+01:00 adb -s emulator-5554 shell input tap 160 1054
+EXIT: 0
+2026-10-28T20:05:52.6333069+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:54.8958977+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (15217 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:05:54.9740432+01:00 adb -s emulator-5554 shell input tap 920 1850
+EXIT: 0
+2026-10-28T20:05:55.0676074+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:57.3880460+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (15226 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:05:57.4719115+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T20:05:57.5692798+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:05:59.9160046+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (15233 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:05:59.9966775+01:00 adb -s emulator-5554 shell input tap 160 1320
+EXIT: 0
+2026-10-28T20:06:00.0991220+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:06:00.5664822+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:02.8832282+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (13191 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:06:02.9659949+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T20:06:03.0608972+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:06:03.5310366+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:05.8524120+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (13191 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:05.9277583+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T20:06:06.0285638+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:06:06.4769882+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:08.7591004+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (15210 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:06:08.8343820+01:00 adb -s emulator-5554 shell input tap 160 1054
+EXIT: 0
+2026-10-28T20:06:08.9230114+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:11.1982311+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (15217 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:06:11.2832051+01:00 adb -s emulator-5554 shell input tap 414 1320
+EXIT: 0
+2026-10-28T20:06:11.3861580+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:13.7317747+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (15224 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:13.8075029+01:00 adb -s emulator-5554 shell input tap 414 1585
+EXIT: 0
+2026-10-28T20:06:13.9027161+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:16.1880331+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.2 MB/s (15232 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:16.2716842+01:00 adb -s emulator-5554 shell input tap 920 1585
+EXIT: 0
+2026-10-28T20:06:16.3703138+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:06:16.8220456+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:19.1376548+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (13192 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:19.2171420+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T20:06:19.3112840+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:06:19.7744521+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:22.0524990+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (13192 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:06:22.1357547+01:00 adb -s emulator-5554 shell input tap 794 1243
+EXIT: 0
+2026-10-28T20:06:22.2292763+01:00 adb -s emulator-5554 shell input swipe 1000 500 1000 2200 350
+EXIT: 0
+2026-10-28T20:06:22.6907502+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:24.9689635+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (15210 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:25.0471731+01:00 adb -s emulator-5554 shell input tap 920 1850
+EXIT: 0
+2026-10-28T20:06:25.1411785+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:27.4072408+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (15218 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:27.4947292+01:00 adb -s emulator-5554 shell input tap 160 1320
+EXIT: 0
+2026-10-28T20:06:27.5897984+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:29.8647404+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (15226 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:29.9418574+01:00 adb -s emulator-5554 shell input tap 666 1585
+EXIT: 0
+2026-10-28T20:06:30.0341365+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:32.2819063+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (15233 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:32.3598726+01:00 adb -s emulator-5554 shell input tap 666 1850
+EXIT: 0
+2026-10-28T20:06:32.4508349+01:00 adb -s emulator-5554 shell input swipe 1000 2100 1000 500 350
+EXIT: 0
+2026-10-28T20:06:32.8959662+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:35.1794835+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (13190 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:35.2647873+01:00 adb -s emulator-5554 shell input tap 540 1400
+EXIT: 0
+2026-10-28T20:06:35.3674067+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:06:37.6052768+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-pending-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.2 MB/s (7118 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:06:37.7256457+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:06:38.3466704+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-pending-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 15.0 MB/s (130483 bytes in 0.008s)
+EXIT: 0
+2026-10-28T20:10:37.4447235+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:10:39.6636179+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.1 MB/s (7118 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:10:39.8062976+01:00 adb -s emulator-5554 shell input tap 540 1476
+EXIT: 0
+2026-10-28T20:10:39.9001027+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:10:42.2612904+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-level-entry-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 1.5 MB/s (12886 bytes in 0.008s)
+EXIT: 0
+2026-10-28T20:10:42.4421052+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:10:42.9253875+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-level-entry-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 25.0 MB/s (196806 bytes in 0.007s)
+EXIT: 0
+2026-10-28T20:10:43.0313311+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T20:10:43.1844589+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T20:10:43.3680913+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:10:45.8034703+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.6 MB/s (23661 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:10:45.9100186+01:00 adb -s emulator-5554 shell input tap 158 1686
+EXIT: 0
+2026-10-28T20:10:46.0058196+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:10:50.3266284+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-final-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 6.9 MB/s (29324 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:10:50.4213838+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:10:50.8524151+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-final-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 28.5 MB/s (213910 bytes in 0.007s)
+EXIT: 0
+2026-10-28T20:10:50.9647167+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:10:53.2420060+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 7.5 MB/s (29324 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:10:58.8082118+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T20:10:58.9174719+01:00 adb -s emulator-5554 shell input swipe 540 2200 540 500 450
+EXIT: 0
+2026-10-28T20:10:59.5191764+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:01.8285048+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/launcher-current.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (14031 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:11:01.9386856+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:02.8920891+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/launcher-current.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 28.6 MB/s (1383804 bytes in 0.046s)
+EXIT: 0
+2026-10-28T20:11:08.0465241+01:00 adb -s emulator-5554 shell input swipe 540 2200 540 500 450
+EXIT: 0
+2026-10-28T20:11:08.6896080+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:11.1105198+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 7.1 MB/s (23662 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:11:11.2579763+01:00 adb -s emulator-5554 shell input tap 412 1120
+EXIT: 0
+2026-10-28T20:11:11.3553214+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:13.8582038+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-reopened.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (12886 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:11:13.9745623+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:14.3811228+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-reopened.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 32.8 MB/s (195919 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:11:19.5523154+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:21.7634627+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.6 MB/s (12886 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:11:21.8612294+01:00 adb -s emulator-5554 shell input tap 1017 216
+EXIT: 0
+2026-10-28T20:11:21.9778020+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:24.3065519+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-final-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.6 MB/s (12766 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:11:24.4300353+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:24.8641795+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-final-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 24.6 MB/s (153690 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:11:24.9602413+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:27.1730596+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:11:27.2499879+01:00 adb -s emulator-5554 shell input tap 540 778
+EXIT: 0
+2026-10-28T20:11:27.3416980+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:29.6723289+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-settings-final-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.8 MB/s (12766 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:11:29.7713996+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:30.2491765+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-settings-final-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 28.0 MB/s (153657 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:11:30.3352494+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:32.5542282+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:11:32.6292992+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:11:32.7219650+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:35.0864041+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-home-final-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (12886 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:11:35.1689720+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:35.5945547+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-home-final-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 29.4 MB/s (196413 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:11:35.6831607+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:37.8735984+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.1 MB/s (12886 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:11:37.9447611+01:00 adb -s emulator-5554 shell input tap 540 820
+EXIT: 0
+2026-10-28T20:11:38.0301628+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:40.3692215+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-pending-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 1.6 MB/s (7118 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:11:40.4518091+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:40.8942266+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-pending-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 26.2 MB/s (129119 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:11:40.9767521+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:43.1897245+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (7118 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:11:43.2659892+01:00 adb -s emulator-5554 shell input tap 540 1229
+EXIT: 0
+2026-10-28T20:11:43.3668071+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:11:45.6271056+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-loss-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.8 MB/s (10858 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:11:45.7122717+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:11:46.1431431+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-loss-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 25.9 MB/s (216419 bytes in 0.008s)
+EXIT: 0
+2026-10-28T20:12:20.1340943+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:22.3259141+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (10858 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:22.4219250+01:00 adb -s emulator-5554 shell input tap 540 914
+EXIT: 0
+2026-10-28T20:12:22.4975308+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:24.6966432+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-loss-copy.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (11218 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:24.8232873+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:12:25.2653674+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-loss-copy.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 30.8 MB/s (221645 bytes in 0.007s)
+EXIT: 0
+2026-10-28T20:12:25.3676898+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:27.5848299+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.1 MB/s (11218 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:27.6635762+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:12:27.7567103+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:30.1404568+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.9 MB/s (12887 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:12:30.2232441+01:00 adb -s emulator-5554 shell input tap 891 216
+EXIT: 0
+2026-10-28T20:12:30.3292772+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:32.7006196+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-stats-final-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (10239 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:32.7811711+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:12:33.1841097+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-stats-final-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 30.1 MB/s (120184 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:12:33.2684264+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:35.4716267+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.1 MB/s (10239 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:35.5470030+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:12:35.6299325+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:37.9922430+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.0 MB/s (12887 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:12:38.0732290+01:00 adb -s emulator-5554 shell input tap 912 1780
+EXIT: 0
+2026-10-28T20:12:38.1764667+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:40.5397166+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-packs-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.0 MB/s (7723 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:12:40.6346895+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:12:41.0764275+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-packs-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 15.9 MB/s (96496 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:12:41.1749989+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:43.4291744+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.3 MB/s (7723 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:43.5054607+01:00 adb -s emulator-5554 shell input tap 540 935
+EXIT: 0
+2026-10-28T20:12:43.6088901+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:12:45.9404603+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-levels-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (13928 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:12:46.0258683+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:12:46.4480551+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-levels-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 31.2 MB/s (185644 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:12:59.7519211+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:01.9911284+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (13928 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:13:02.1138091+01:00 adb -s emulator-5554 shell input tap 540 814
+EXIT: 0
+2026-10-28T20:13:02.1973681+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:04.5487248+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-level-entry-light.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (10524 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:13:04.6746399+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:13:05.0615060+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-level-entry-light.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 25.0 MB/s (105419 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:13:05.1485355+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:07.3513444+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 1.3 MB/s (10524 bytes in 0.008s)
+EXIT: 0
+2026-10-28T20:13:07.4375039+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:13:07.5330315+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:09.9103010+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (13928 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:09.9958053+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:13:10.0991815+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:12.4714570+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.6 MB/s (7723 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:12.5557020+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:13:12.6530257+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:15.0380190+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (12887 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:13:15.1230423+01:00 adb -s emulator-5554 shell input tap 1017 216
+EXIT: 0
+2026-10-28T20:13:15.2270180+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:17.5662399+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:17.6553177+01:00 adb -s emulator-5554 shell input tap 540 935
+EXIT: 0
+2026-10-28T20:13:17.7660859+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:20.0828944+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (12766 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:20.1668665+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:13:20.2697974+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:22.6215246+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (12887 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:22.7061829+01:00 adb -s emulator-5554 shell input tap 891 216
+EXIT: 0
+2026-10-28T20:13:22.8035394+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:25.1571338+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-stats-final-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 1.7 MB/s (10239 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:13:25.2392639+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:13:25.6699061+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-stats-final-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 21.7 MB/s (119978 bytes in 0.005s)
+EXIT: 0
+2026-10-28T20:13:25.7611117+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:27.9785506+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (10239 bytes in 0.002s)
+EXIT: 0
+2026-10-28T20:13:28.0575445+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT: 0
+2026-10-28T20:13:28.1501466+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:30.5224765+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (12887 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:30.5985010+01:00 adb -s emulator-5554 shell input tap 540 2279
+EXIT: 0
+2026-10-28T20:13:30.7012768+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:33.0286960+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 5.0 MB/s (13928 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:33.1093162+01:00 adb -s emulator-5554 shell input tap 540 814
+EXIT: 0
+2026-10-28T20:13:33.2090460+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:35.5371895+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-level-entry-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (10524 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:13:35.6230061+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:13:36.0694413+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-level-entry-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 18.1 MB/s (105259 bytes in 0.006s)
+EXIT: 0
+2026-10-28T20:13:36.1550719+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:38.3481656+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml .git/f4-window.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (10524 bytes in 0.003s)
+EXIT: 0
+2026-10-28T20:13:38.4221099+01:00 adb -s emulator-5554 shell input tap 540 1208
+EXIT: 0
+2026-10-28T20:13:38.5168578+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4-window.xml
+UI hierchary dumped to: /sdcard/f4-window.xml
+EXIT: 0
+2026-10-28T20:13:40.8575845+01:00 adb -s emulator-5554 pull /sdcard/f4-window.xml docs/evidence/f4/android-final-loss-dark.xml
+/sdcard/f4-window.xml: 1 file pulled, 0 skipped. 2.9 MB/s (10858 bytes in 0.004s)
+EXIT: 0
+2026-10-28T20:13:40.9465792+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4-screen.png
+EXIT: 0
+2026-10-28T20:13:41.3663858+01:00 adb -s emulator-5554 pull /sdcard/f4-screen.png docs/evidence/f4/android-final-loss-dark.png
+/sdcard/f4-screen.png: 1 file pulled, 0 skipped. 31.6 MB/s (217149 bytes in 0.007s)
+EXIT: 0

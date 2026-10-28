@@ -1,0 +1,4 @@
+COMMAND: git hash-object --no-filters assets/levels/pack1.json
+START: 2026-10-28T19:54:46.7858271+01:00
+5efa3c88c769f74eee872860766681f5c2cc1c64
+EXIT: 0

@@ -49,7 +49,7 @@ class StatsScreen extends StatelessWidget {
           for (final (index, count) in state.winMistakeBuckets.indexed)
             Semantics(
               label:
-                  '${index == 4 ? '4 or more' : index} mistakes: $count wins',
+                  '${index == 4 ? '4 or more mistakes' : counted(index, 'mistake')}: ${counted(count, 'win')}',
               child: ExcludeSemantics(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8),

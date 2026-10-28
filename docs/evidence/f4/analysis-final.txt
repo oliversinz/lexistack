@@ -1,0 +1,5 @@
+COMMAND: dart analyze
+START: 2026-10-28T20:01:25.0119638+01:00
+Analyzing LexiStack...
+No issues found!
+EXIT: 0

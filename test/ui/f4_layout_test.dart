@@ -50,7 +50,13 @@ Catalog fourPacks() {
                             categoryId: c.id,
                             ordinal: t.ordinal,
                             difficultyTier: t.difficultyTier,
-                            text: t.text,
+                            // A real ten-letter synonym for a small amount.
+                            text:
+                                i == 7 &&
+                                    c.difficultyTier == 2 &&
+                                    t.ordinal == 3
+                                ? 'SMATTERING'
+                                : t.text,
                           ),
                       ],
                     ),
@@ -195,13 +201,13 @@ void main() {
           final store = MemoryProgressStorage();
           final p = await fixture.player(store: store, catalog: catalog);
           p.setSettings(theme: dark ? 'dark' : 'light');
-          // Level 4 has two-word tiles and a ten-letter word in the real fixture.
-          for (final level in catalog.packs.first.levels.take(3)) {
+          // The final fixture combines whole-word phrases and a ten-letter tile.
+          for (final level in catalog.packs.first.levels.take(7)) {
             final b = BoardController(p, p.enterCampaign(level)!);
             fixture.win(b);
             b.dispose();
           }
-          p.enterCampaign(catalog.packs.first.levels[3]);
+          p.enterCampaign(catalog.packs.first.levels[7]);
           await p.flush();
           await fixtureApp(t, catalog, store);
           if (size.width > 520) {
@@ -210,6 +216,9 @@ void main() {
             expect(frame.center.dx, size.width / 2);
           }
           await tapVisible(t, find.text('Continue Campaign'));
+          expect(find.text('CLOVE\nHITCH'), findsOneWidget);
+          expect(find.text('SHEET\nBEND'), findsOneWidget);
+          expect(find.text('SMATTERING'), findsOneWidget);
           final categories = board(t).game.level.categories;
           for (final c in categories.take(2)) {
             await submitWords(t, c.tiles.map((x) => x.text).toList());

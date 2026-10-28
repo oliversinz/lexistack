@@ -8,6 +8,7 @@ import 'board_screen.dart';
 import 'common.dart';
 import 'progress_status.dart';
 import 'share_button.dart';
+import 'theme.dart';
 
 void openAttempt(
   BuildContext context,
@@ -158,7 +159,7 @@ class PackScreen extends StatelessWidget {
                             ? 'In progress'
                             : player.resultFor(level.id) != null
                             ? 'Finished'
-                            : 'Ready to play'} · Best ${player.state.campaign[level.id]?.bestStars ?? 0} stars'
+                            : 'Ready to play'} · Best ${counted(player.state.campaign[level.id]?.bestStars ?? 0, 'star')}'
                       : 'Locked · Win stage $index',
                 ),
                 trailing: Icon(
@@ -238,7 +239,9 @@ class LevelEntryScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
-          Text('Best ${player.state.campaign[level.id]?.bestStars ?? 0} stars'),
+          Text(
+            'Best ${counted(player.state.campaign[level.id]?.bestStars ?? 0, 'star')}',
+          ),
           FilledButton(
             onPressed: !player.unlocked(level)
                 ? null

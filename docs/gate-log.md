@@ -636,3 +636,216 @@ original F3 and F3-R01 evidence remains preserved.
   Local `main` was advanced with `git merge --ff-only`; this acceptance record
   is the sole change in the subsequent documentation commit. No history was
   rewritten. **F4 has not been started or assigned.**
+
+## F4 — Complete UX and interaction integration
+
+**Implementation complete; quality gate: PENDING independent review.**
+These PASS entries are observed execution results, not independent acceptance.
+No F5 work, merge, main push, rebase, force-push or history rewrite.
+
+Run: **2026-10-28**, Europe/Berlin. Contract/prompt inspection preceded the
+first retained command at **19:35:14 +01:00**; Android observations continued
+through the final publication checks. Agent: Codex / GPT-6; exact model build
+and reasoning setting unavailable. **Human interventions during F4: 0.**
+
+Accepted starting local/remote main:
+**`ecd08104d0d54bd2ae23d063c2f3f7e0ba45f06e`**.
+Branch: **`codex/f4-complete-ux-interaction`**. Initial implementation commit:
+**`cc8ae21cc46fd341fc2eb6cc9c2ee863bc710726`**. This final follow-up commit
+contains the verified motion/copy refinements, strengthened layout tests and
+complete evidence. Its exact publication SHA and remote equality are reported
+in the execution handoff (a commit cannot contain its own hash). Main remains
+at the accepted F3 commit. Review branch:
+[GitHub](https://github.com/oliversinz/lexistack/tree/codex/f4-complete-ux-interaction).
+
+### Delivered behavior and boundaries
+
+Home prioritizes Continue and separates Daily/date/status/streak, collections,
+Statistics and Settings. A manifest-driven Campaign selector supports independent
+packs; level entries distinguish locks, active/pending, results and explicit
+replay. All-won Continue opens that selector. No fabricated shipping packs.
+Stats uses finalized Progress aggregates and labels all five mistake buckets.
+Settings persists System/Light/Dark and haptics, explains local storage, and
+confirms Reset before clearing routes and restoring exact defaults.
+
+The board retains actual tap and additive long-press drag, four lives and tier
+slots, peek/pair feedback, selection tray, shuffle/deselect/submit and priced
+boosters with disabled reasons. Final results show exact rewards, facts and
+prioritized red herrings. Pending loss omits unsolved tiles/titles/facts and
+sharing from both visual and semantic trees. Saved summaries still copy when
+board details cannot be recovered. Flutter Clipboard.setData receives the
+existing exact formatter; success appears only after completion, failure is
+reported, and repeat copies/reopening cannot settle again.
+
+MaterialApp uses persisted themeMode without recreating the shared controller
+or route-owned board handles. HapticFeedback calls occur only after successful
+action outcomes: selectionClick / mediumImpact / heavyImpact / lightImpact.
+Disabled, rejected, duplicate and no-op actions emit none. Platform errors are
+caught without affecting settlement. Motion: 120 ms selection scale/check,
+300 ms selected-tile shake, 350 ms category reveal and 220 ms result entry;
+OS disableAnimations removes ornament without changing transitions. Tile focus
+is visible and keyboard activation uses the same action. Wide views center the
+entire app at 460 px. Compact screens scroll deliberately to their controls.
+
+SDK/platform fonts only, offline; no third-party font assets, license claims,
+new dependencies or runtime downloads. The optional custom-font aesthetic was
+not added. Content schema/pin/lockfile, frozen JSON, pure rules, date/economy
+policy and persistence codec are unchanged. The only application-layer change
+is the small stale-finalized-handle replay guard described below.
+
+### Commands and execution results
+
+All Flutter/Dart commands ran from `C:\Codex\LexiStack` in PowerShell.
+Logs: [evidence/f4](evidence/f4). Final logs carry literal command/time/exit;
+intermediate diagnostic logs are retained with their real failures. Only
+trailing spaces and line endings in text logs were normalized for Git.
+
+| Command | Exit | Observed result |
+|---|---:|---|
+| `flutter --version` | 0 | Flutter 3.47.8 stable, framework 737ba8f885, engine cf636b1dfb |
+| `dart --version` | 0 | Dart 3.13.7 windows_x64 |
+| `flutter doctor -v` | 0 | Android SDK 36.1.0 ready; Visual Studio/C++ missing |
+| `flutter emulators` / `flutter emulators --launch Pixel_10` | 0 / 0 | Existing emulator launched before implementation |
+| `flutter test --reporter expanded` baseline | 0 | **122 passed**, accepted F1–F3/F3-R01 baseline |
+| `flutter pub get` | 0 | Exact Git pin and resolved lock identity retained |
+| `dart run tool/validate_levels.dart --partial` | 0 | **16 levels, 64 groups, 256 positions; 0 errors/warnings** |
+| `dart run tool/validate_levels.dart` | **1 expected** | Only insufficient campaign file count; Daily present, not missing |
+| `dart analyze` final | 0 | No issues |
+| `flutter test --reporter expanded` final | 0 | **150 passed**, including all 122 prior tests with UX-only adaptations |
+| `dart run tool/check_prng.dart` | 0 | Four PRNG vectors and F2 shuffled order unchanged |
+| `flutter build apk --debug` final | 0 | Gradle 12.3 s; debug APK built |
+| `git hash-object --no-filters assets/levels/pack1.json` | 0 | `5efa3c88c769f74eee872860766681f5c2cc1c64` |
+| `git hash-object --no-filters assets/levels/daily.json` | 0 | `5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6` |
+
+Content package URL `https://github.com/oliversinz/lexistack-content.git`,
+path `packages/lexistack_content_contract`, pin/resolved/cache HEAD:
+**`d9acbd52de0e198dd109a4859299318db3f465f5`**.
+Final APK SHA-256:
+**`b4bdd309b319f3a1b874f686b80c494774f50eb6cbf4c0c4ce36ac3f6d92436d`**.
+
+| Acceptance ID | Execution | Evidence |
+|---|---|---|
+| UI-03 | PASS | Actual-app Home/Campaign/level/Board/result/Daily/Stats/Settings/back; four-pack fixture locks and all-won fallback |
+| UI-04 | PASS | Four hearts/slots, real selection, submit cap, shuffle/deselect, hints and scroll after two solves |
+| UI-05 | PASS | Charged effects/wallet, exhausted Peek, unaffordable boosters, terminal guards and Android paid rescue |
+| UI-06 | PASS | One Away/mismatch/duplicate, real facts, selected-only shake and interruption-safe reveal tests |
+| UI-07 | PASS | Peeked pending reconstruction, complete semantic spoiler checks, same-state rescue, explicit irreversible reveal |
+| UI-08 | PASS | Exact Campaign/Daily/loss platform payloads, pending absence, awaited failure/success, repeat copy and fallback |
+| UI-09 | PASS | Immediate persisted themes/haptics, live route/handle identity, cancelled/confirmed reset, stale handle and F3-R01 |
+| UI-10 | PASS | 360×640/1.3, 390×844/1 and 1.3, 1280×800/1.3, both themes; long category, CLOVE HITCH/SHEET BEND and ten-letter SMATTERING fixture |
+| UI-11 | PASS | Unique tile semantics/selected state, tier labels, >=48 targets, keyboard action/focus, palette ratios >=4.5:1 |
+| UI-12 F4 | PASS | Actual channel mapping/suppression/reconstruction/errors, reduced-motion tests and inspected Android PNGs |
+| PLT-03 | PASS | Native Android taps, held-pointer tile-to-tile and tile-to-tray, purchases, pending/rescue/results |
+| PLT-04 | PASS | am force-stop, absent PID, launcher new PID; exact board/hint/selection/wallet and settings restored |
+| UI-12 final six PNGs / PLT-06–08 F6 portions | NOT YET APPLICABLE | No final canonical PNG set, browser PRNG execution, release packaging or release-readiness claim |
+
+Critical regressions rerun: two-fresh-instance ENG oracle; PRNG goldens;
+50/30/15 first-win and one-time +5 practice; Daily same-date/rollover/DST/leap/
+streak; pending spoilers; PER-04 duplicate-known-ID rejection; ordered writes;
+and F3-R01 failed read never writes defaults. Actual-app recovery hides wallet,
+Play/Settings/Reset/save retry until a successful read restores dark/haptics-off.
+Existing assertion changes concern Play/Resume labels, singular grammar, moving
+Reset into Settings and explicitly scrolling both drag endpoints into view.
+No behavioral coverage was removed. The four-pack fixture is test-only and is
+not claimed to satisfy production catalog validation.
+
+### Android and visual observations
+
+Pixel_10 / emulator-5554, Android **16/API 36**, x86_64, **1080×2424 at 420 dpi**.
+APKs installed with `adb -s emulator-5554 install -r ...app-debug.apk` (exit 0)
+and launched by tapping the real launcher icon, not flutter run or am start.
+[android-commands.txt](evidence/f4/android-commands.txt) records native commands,
+coordinates and exits; XML companions retain actual accessibility trees.
+
+- Held pointer DOWN 700 ms, MOVE, UP from VOLLEY to PEARL selected both; tapping
+  TOAST made three. Pair Magnet and Peek charged 150→120→80 and marked the
+  actual pair/title. Force-stop removed **15164** (pidof exit 1); launcher
+  produced **15654**, restoring the same ordered selection/board/hints, 80 coins,
+  dark theme and haptics-off. [Restored state](evidence/f4/android-restored-state.json)
+  is a read-only decode of Android's real DataStore document, not injected data.
+- Four distinct wrong guesses entered pending; repeating the first set left
+  three lives and one evaluated mistake. Pending concealed even the peeked
+  title. Reinstall/launcher retained pending. Rescue charged **80→20**, restored
+  one life, and retained selection/order/guesses. Solving all groups then paid
+  **15** (35 coins), one star, four lifetime mistakes and one finalized game.
+  Reopened result retained the same payout. Copy result displayed successful
+  platform completion on Android; exact payload bytes are independently tested
+  through the Flutter platform channel, not claimed as Android clipboard reads.
+- On the final APK, an explicit replay with paid pair/selection survived another
+  force-stop: **18638→18975**, with pidof exit 1 between. The launcher transition
+  swallowed an early drawer swipe; observing Home and opening the drawer again
+  launched the app. After relaunch: same TOAST/BAGEL selection and pair, 5 coins,
+  dark theme/haptics-off. A real long-press LOG→tray added exactly one tile.
+- That replay then reached pending loss through four distinct wrong guesses.
+  Both themes concealed answers; with 5 coins, rescue was visibly unavailable.
+  Explicit acceptance revealed answers, awarded zero, and changed Statistics
+  to two games / one win / 50%. Android Copy result again reported success;
+  reopening retained 5 coins. Final captures verify singular star/win/mistake
+  semantics and the restored haptics-off setting.
+- [Logcat](evidence/f4/android-logcat.txt) confirms MAIN/LAUNCHER starts from
+  nexuslauncher and both force-stop/PID sequences. The available filtered ring
+  buffer contains no Flutter exception or AndroidRuntime crash. Debug fully
+  drawn observations were 3.981 s for the first measured restart and 5.252 s
+  for the final measured restart (8.332 s immediately after the final install).
+  These are emulator debug observations, not release performance claims.
+- Light/dark Home, pack/level affordances, selected board/boosters, two solved
+  categories, pending loss, finalized results/facts/red herrings, Statistics and
+  Settings were inspected from unedited emulator PNGs. See representative
+  [Home](evidence/f4/android-home-light.png),
+  [dark Home](evidence/f4/android-home-dark.png),
+  [packs](evidence/f4/android-packs-dark.png),
+  [two solved/light](evidence/f4/android-two-solved-light.png),
+  [two solved/dark](evidence/f4/android-two-solved-dark.png),
+  [pending/light](evidence/f4/android-final-pending-light.png),
+  [pending/dark](evidence/f4/android-final-pending-dark.png),
+  [win](evidence/f4/android-win-light.png),
+  [facts/red herrings](evidence/f4/android-result-details-light.png),
+  [final loss](evidence/f4/android-final-loss-copy.png),
+  [Stats](evidence/f4/android-stats-final-dark.png),
+  [Settings](evidence/f4/android-settings-final-dark.png),
+  [before final stop](evidence/f4/android-final-before-stop.png) and
+  [after final stop](evidence/f4/android-final-after-stop.png).
+  Earlier intermediate screenshots may precede final grammar/selected-shake
+  refinements; the final APK lifecycle and touch probes use the final binary.
+  Redundant exploratory captures were omitted; retained PNGs are unedited.
+
+### Corrections, limits and provenance
+
+- Regression tests caught UI route builders recreating board handles on theme/
+  wallet rebuilds, losing feedback/replay state. A route now constructs exactly
+  one handle; a test changes themes above an active board and asserts identity.
+- Inspection found an old finalized handle could call newAttempt after Reset.
+  The minimal guard requires its finalized result still to exist. An actual-app
+  regression resets from Settings then invokes that stale handle and asserts
+  no attempt or wallet mutation. Core rules and persistence were not altered.
+- Visual/semantic review corrected singular game/mistake/star/win copy and
+  merged booster semantics. Motion now shakes selected tiles only. The layout
+  fixture was strengthened to actually contain two-word and ten-letter tiles.
+- Intermediate failures included a Category import collision, nullable test
+  theme mode, semantics-handle cleanup, test scroll/focus assumptions and the
+  route lifetime defect. Final analyzer and all 150 tests pass. A patch context
+  mismatch changed no files; the corrected patch applied normally.
+- A PowerShell wrapper initially interpreted adb `-p` as a common parameter;
+  the wrapper was corrected. Android startup sometimes returned a null UI root
+  until loading finished. Captures taken before a transition settled were
+  replaced with settled captures; screenshots are not image-edited. Semantic
+  label grouping required matching the observed full label in native probes.
+  One extra Back sequence reached the launcher and opened Android Settings;
+  its missing Light control stopped the probe without changing any setting.
+  Relaunching LexiStack and observing each route corrected the probe.
+  No human rescue or manual source/data repair was requested.
+- No known unresolved F4 defect or required environment-blocked check remains.
+  Emulator screenshots cannot prove subjective vibration strength; mapping and
+  suppression are platform-channel tests. Daily date edges, injected storage
+  failures and desktop-width layouts are automated tests, not Android-clock
+  manipulations or browser execution. Visual Studio is absent; no Windows build
+  attempted. Java native-access warnings remain nonfatal. Eight Daily boards
+  rotate; three additional campaign packs and final release work remain F5/F6.
+
+Exact supplied prompt preserved at
+[prompts/F4-complete-ux-interaction.md](../prompts/F4-complete-ux-interaction.md).
+Working and Git-blob SHA-256:
+**`0aae7fcb0b7dcfecb7a0c0ef97ef1c6291a017184e80d854295af0e97d64d2a7`**.
+`.gitattributes` reports prompt text unset (`-text`), protecting its original
+bytes. No authoritative contract, acceptance matrix or immutable asset changed.
+**Quality gate remains PENDING independent review. F5 has not started.**

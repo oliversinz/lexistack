@@ -1,0 +1,6 @@
+Analyzing LexiStack...
+
+  error - lib\ui\board_screen.dart:440:9 - The name 'Category' is defined in the libraries 'package:flutter/src/foundation/annotations.dart (via package:flutter/foundation.dart)' and 'package:lexistack_content_contract/src/models.dart (via package:lexistack_content_contract/lexistack_content_contract.dart)'. Try using 'as prefix' for one of the import directives, or hiding the name from all but one of the imports. - ambiguous_import
+
+1 issue found.
+EXIT: 3

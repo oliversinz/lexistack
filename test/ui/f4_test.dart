@@ -551,6 +551,41 @@ void main() {
 
   for (final reduced in [false, true]) {
     testWidgets(
+      'UI-06 wrong shake affects selected tiles only, reduced=$reduced',
+      (t) async {
+        viewport(t, const Size(390, 844));
+        t.platformDispatcher.accessibilityFeaturesTestValue =
+            FakeAccessibilityFeatures(disableAnimations: reduced);
+        addTearDown(t.platformDispatcher.clearAccessibilityFeaturesTestValue);
+        await enterBoard(t);
+        for (final word in wrongs.first) {
+          await tapVisible(t, tile(word));
+        }
+        await t.ensureVisible(find.byKey(const Key('submit')));
+        await t.pumpAndSettle();
+        await t.tap(find.byKey(const Key('submit')));
+        await t.pump();
+        await t.pump(const Duration(milliseconds: 75));
+        double offset(String word) => t
+            .widget<Transform>(
+              find
+                  .descendant(of: tile(word), matching: find.byType(Transform))
+                  .first,
+            )
+            .transform
+            .getTranslation()
+            .x;
+        expect(offset('TOAST').abs(), reduced ? 0 : greaterThan(0));
+        expect(offset('SERVE'), 0);
+        expect(board(t).game.lives, 3);
+        await t.pump(const Duration(milliseconds: 300));
+        expect(offset('TOAST'), closeTo(0, .001));
+        await tapVisible(t, find.byKey(const Key('submit')));
+        expect(board(t).game.lives, 3);
+        expect(board(t).game.guesses.length, 1);
+      },
+    );
+    testWidgets(
       'UI-06/12 motion reduced=$reduced never repeats settlement when interrupted',
       (t) async {
         viewport(t, const Size(390, 844));

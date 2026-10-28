@@ -1,0 +1,68 @@
+COMMAND: adb -s emulator-5554 logcat -d -v threadtime ActivityTaskManager:I ActivityManager:I flutter:V AndroidRuntime:E '*:S' (retained app/runtime lines only; available ring buffer)
+10-28 19:01:50.929   751  1823 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:01:51.458   751   784 I ActivityManager: Start proc 13879:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 19:01:52.649 13879 13904 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 19:01:52.780 13879 13910 I flutter : The Dart VM service is listening on http://127.0.0.1:39163/hNZ9fAI2MFw=/
+10-28 19:01:56.032   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s116ms
+10-28 19:01:56.032   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s116ms
+10-28 19:41:20.258   751   783 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=-1: installPackageLI
+10-28 19:41:20.265   751   783 I ActivityManager: Killing 13879:de.cloudwards.lexistack/u0a227 (adj 0): stop de.cloudwards.lexistack due to installPackageLI
+10-28 19:41:20.275   751   783 W ActivityTaskManager: Force removing ActivityRecord{57545957 u0 de.cloudwards.lexistack/.MainActivity t15 f}}: app died, no saved state
+10-28 19:41:20.309   751   810 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=0: pkg removed
+10-28 19:41:40.043   751  2164 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:41:40.110   751   784 I ActivityManager: Start proc 14614:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 19:41:41.616 14614 14660 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 19:41:41.735 14614 14666 I flutter : The Dart VM service is listening on http://127.0.0.1:35421/8O0_PDvVSa4=/
+10-28 19:41:45.600   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +6s105ms
+10-28 19:41:45.600   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +6s105ms
+10-28 19:48:34.213   751   783 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=-1: installPackageLI
+10-28 19:48:34.216   751   783 I ActivityManager: Killing 14614:de.cloudwards.lexistack/u0a227 (adj 0): stop de.cloudwards.lexistack due to installPackageLI
+10-28 19:48:34.221   751   783 W ActivityTaskManager: Force removing ActivityRecord{41122113 u0 de.cloudwards.lexistack/.MainActivity t16 f}}: app died, no saved state
+10-28 19:48:34.245   751   810 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=0: pkg removed
+10-28 19:48:38.541   751   839 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:48:38.572   751   784 I ActivityManager: Start proc 15164:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 19:48:40.085 15164 15186 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 19:48:40.291 15164 15192 I flutter : The Dart VM service is listening on http://127.0.0.1:35355/pXJidWbWYfA=/
+10-28 19:48:44.212   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s686ms
+10-28 19:48:44.213   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s686ms
+10-28 19:50:37.062   751  2157 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=0: from pid 15606
+10-28 19:50:37.064   751  2157 I ActivityManager: Killing 15164:de.cloudwards.lexistack/u0a227 (adj 0): stop de.cloudwards.lexistack due to from pid 15606
+10-28 19:50:37.066   751  2157 W ActivityTaskManager: Force removing ActivityRecord{79395902 u0 de.cloudwards.lexistack/.MainActivity t17 f}}: app died, no saved state
+10-28 19:50:40.437   751   841 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:50:40.472   751   784 I ActivityManager: Start proc 15654:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 19:50:41.281 15654 15674 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 19:50:41.420 15654 15680 I flutter : The Dart VM service is listening on http://127.0.0.1:43365/_pfaCC0xgG4=/
+10-28 19:50:44.409   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +3s981ms
+10-28 19:50:44.409   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +3s981ms
+10-28 19:55:06.161   751   783 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=-1: installPackageLI
+10-28 19:55:06.168   751   783 I ActivityManager: Killing 15654:de.cloudwards.lexistack/u0a227 (adj 0): stop de.cloudwards.lexistack due to installPackageLI
+10-28 19:55:06.171   751   783 W ActivityTaskManager: Force removing ActivityRecord{16626703 u0 de.cloudwards.lexistack/.MainActivity t18 f}}: app died, no saved state
+10-28 19:55:06.213   751   810 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=0: pkg removed
+10-28 19:55:10.144   751  2159 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:55:10.188   751   784 I ActivityManager: Start proc 16701:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 19:55:11.423 16701 16722 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 19:55:11.578 16701 16728 I flutter : The Dart VM service is listening on http://127.0.0.1:44719/s1XY9IvZ87k=/
+10-28 19:55:15.213   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s78ms
+10-28 19:55:15.214   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s78ms
+10-28 20:03:13.199   751   783 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=-1: installPackageLI
+10-28 20:03:13.205   751   783 I ActivityManager: Killing 16701:de.cloudwards.lexistack/u0a227 (adj 0): stop de.cloudwards.lexistack due to installPackageLI
+10-28 20:03:13.208   751   783 W ActivityTaskManager: Force removing ActivityRecord{203393962 u0 de.cloudwards.lexistack/.MainActivity t19 f}}: app died, no saved state
+10-28 20:03:13.237   751   810 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=0: pkg removed
+10-28 20:03:17.299   751   767 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 20:03:17.495   751   784 I ActivityManager: Start proc 18638:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 20:03:20.455 18638 18713 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 20:03:20.955 18638 18719 I flutter : The Dart VM service is listening on http://127.0.0.1:41615/l62pHu4vuQE=/
+10-28 20:03:25.564   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +8s332ms
+10-28 20:03:25.564   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +8s332ms
+10-28 20:03:36.891   751  1166 I ActivityManager: Force stopping de.cloudwards.lexistack appid=10227 user=0: from pid 18833
+10-28 20:03:36.893   751  1166 I ActivityManager: Killing 18638:de.cloudwards.lexistack/u0a227 (adj 0): stop de.cloudwards.lexistack due to from pid 18833
+10-28 20:03:36.899   751  1166 W ActivityTaskManager: Force removing ActivityRecord{108110197 u0 de.cloudwards.lexistack/.MainActivity t20 f}}: app died, no saved state
+10-28 20:04:29.586   751  1817 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 20:04:29.650   751   784 I ActivityManager: Start proc 18975:de.cloudwards.lexistack/u0a227 for next-top-activity {de.cloudwards.lexistack/de.cloudwards.lexistack.MainActivity}
+10-28 20:04:30.652 18975 19012 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 20:04:30.829 18975 19018 I flutter : The Dart VM service is listening on http://127.0.0.1:39407/lBGFweQ0dUg=/
+10-28 20:04:34.829   751   773 I ActivityTaskManager: Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s252ms
+10-28 20:04:34.833   751   773 I ActivityTaskManager: Fully drawn de.cloudwards.lexistack/.MainActivity: +5s252ms
+10-28 20:10:42.606   751  1296 I ActivityTaskManager: moveTaskToBack: Task{55b9f7b #21 type=standard I=de.cloudwards.lexistack/.MainActivity}
+10-28 20:11:10.823   751  1830 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+EXIT: 0

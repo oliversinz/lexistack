@@ -1,0 +1,13 @@
+Analyzing LexiStack...
+
+  error - test\ui\f4_test.dart:235:69 - The property 'name' can't be unconditionally accessed because the receiver can be 'null'. Try making the access conditional (using '?.') or adding a null check to the target ('!'). - unchecked_use_of_nullable_value
+warning - test\ui\f4_test.dart:8:8 - Unused import: 'package:lexistack/app/board_controller.dart'. Try removing the import directive. - unused_import
+warning - test\ui\f4_test.dart:11:8 - Unused import: 'package:lexistack/ui/app.dart'. Try removing the import directive. - unused_import
+warning - test\ui\f4_test.dart:16:8 - Unused import: 'package:lexistack_content_contract/lexistack_content_contract.dart'. Try removing the import directive. - unused_import
+warning - test\ui\f4_test.dart:18:8 - Unused import: '../app_test.dart'. Try removing the import directive. - unused_import
+   info - test\ui\f4_test.dart:5:8 - The import of 'package:flutter/semantics.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - test\ui\f4_test.dart:116:12 - 'pipelineOwner' is deprecated and shouldn't be used. Interact with the pipelineOwner tree rooted at RendererBinding.rootPipelineOwner instead. Or instead of accessing the SemanticsOwner of any PipelineOwner interact with the SemanticsBinding directly. This feature was deprecated after v3.10.0-12.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - test\ui\f4_test.dart:338:15 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+
+8 issues found.
+EXIT: 3

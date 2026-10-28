@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "theme": "dark",
+    "haptics": false
+  },
+  "attemptId": "a1",
+  "coins": 80,
+  "game": {
+    "seed": 2,
+    "rng": 229615974,
+    "status": "playing",
+    "lives": 4,
+    "mistakes": 0,
+    "combo": 0,
+    "extraLives": 0,
+    "order": [
+      "[\"pack1_lvl01\",\"g1\",2]",
+      "[\"pack1_lvl01\",\"g2\",1]",
+      "[\"pack1_lvl01\",\"g2\",0]",
+      "[\"pack1_lvl01\",\"g3\",1]",
+      "[\"pack1_lvl01\",\"g4\",1]",
+      "[\"pack1_lvl01\",\"g1\",0]",
+      "[\"pack1_lvl01\",\"g3\",3]",
+      "[\"pack1_lvl01\",\"g4\",0]",
+      "[\"pack1_lvl01\",\"g3\",2]",
+      "[\"pack1_lvl01\",\"g4\",3]",
+      "[\"pack1_lvl01\",\"g2\",2]",
+      "[\"pack1_lvl01\",\"g1\",1]",
+      "[\"pack1_lvl01\",\"g2\",3]",
+      "[\"pack1_lvl01\",\"g1\",3]",
+      "[\"pack1_lvl01\",\"g3\",0]",
+      "[\"pack1_lvl01\",\"g4\",2]"
+    ],
+    "selection": [
+      "[\"pack1_lvl01\",\"g3\",3]",
+      "[\"pack1_lvl01\",\"g4\",3]",
+      "[\"pack1_lvl01\",\"g1\",0]"
+    ],
+    "solved": [],
+    "wrong": [],
+    "pairs": {
+      "g1": [
+        "[\"pack1_lvl01\",\"g1\",0]",
+        "[\"pack1_lvl01\",\"g1\",1]"
+      ]
+    },
+    "peeked": [
+      "g1"
+    ],
+    "guesses": []
+  },
+  "captured": "After force-stop/launcher relaunch PID 15654"
+}
