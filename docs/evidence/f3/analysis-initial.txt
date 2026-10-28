@@ -1,0 +1,7 @@
+Analyzing LexiStack...
+
+  error - lib\ui\catalog_screens.dart:199:49 - The argument type 'Level' can't be assigned to the parameter type 'Attempt'.  - argument_type_not_assignable
+   info - lib\app\progress_controller.dart:92:86 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+
+2 issues found.
+EXIT: 3

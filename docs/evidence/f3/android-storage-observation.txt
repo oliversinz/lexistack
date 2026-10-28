@@ -1,0 +1,7 @@
+The read-only command below was executed during the replay observation (exit 0):
+adb -s emulator-5554 exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb
+PowerShell 7 redirected native bytes to .git/f3-prefs.pb. The UTF-8 JSON value
+starting at {"version" was parsed with ConvertFrom-Json. Selected fields are in
+android-replay-storage.txt. It records completed a1 (+50) and active replay a4,
+170 coins, version 1, system theme and haptics true. This was read-only; no save
+bytes or Android clock were changed for the demonstration.

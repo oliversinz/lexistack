@@ -1,0 +1,4 @@
+
+Algorithm : SHA256
+Hash      : 47ED8D78FB743350E24086E20156EFC57543A28B4F024DEBEF82BF998570B68C
+Path      : C:\Codex\LexiStack\build\app\outputs\flutter-apk\app-debug.apk

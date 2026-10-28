@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "coins": 170,
+  "sequence": 4,
+  "settings": {
+    "theme": "system",
+    "haptics": true
+  },
+  "finalized": {
+    "id": "a1",
+    "levelId": "pack1_lvl01",
+    "reward": 50
+  },
+  "active": {
+    "id": "a4",
+    "levelId": "pack1_lvl01",
+    "entered": 4
+  }
+}

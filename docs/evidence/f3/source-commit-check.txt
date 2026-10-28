@@ -1,0 +1,12 @@
+git diff --cached --check
+prompts/F3-progression-economy-daily-persistence.md:5: trailing whitespace.
++**Executor:** Codex Desktop on Windows / PowerShell
+prompts/F3-progression-economy-daily-persistence.md:6: trailing whitespace.
++**Repository:** `C:\Codex\LexiStack` → `https://github.com/oliversinz/lexistack`
+prompts/F3-progression-economy-daily-persistence.md:7: trailing whitespace.
++**Accepted starting `main` commit:** `9928bd5895e9258bdadb79580bc41497482181d9`
+prompts/F3-progression-economy-daily-persistence.md:8: trailing whitespace.
++**Feature branch:** `codex/f3-progression-economy-persistence`
+EXIT: 2 (supplied prompt Markdown hard-break spaces preserved)
+git diff --cached --check -- . :!prompts/F3-progression-economy-daily-persistence.md
+EXIT: 0

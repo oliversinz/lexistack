@@ -1,0 +1,9 @@
+2026-10-28T18:21:00.6039021+01:00 > dart run tool/validate_levels.dart
+LexiStack schema v2: STRICT
+ERROR [catalog.campaignCount] assets/levels/manifest.json $.campaign: Strict mode requires at least four campaign files; found 1.
+pack1.json [pack1]: 8 levels, 32 groups, 128 tile positions
+daily.json [daily, Daily]: 8 levels, 32 groups, 128 tile positions
+Totals: 2 packs, 16 levels, 64 groups, 256 tile positions; 1 errors, 0 warnings.
+Strict minimum: FAIL; initial benchmark (4×8 campaign + 8 daily): NOT MET.
+INVALID.
+EXIT: 1

@@ -363,3 +363,196 @@ Final APK SHA-256: **`FE3684EF831EEC71A993F53A6FC54755BB04CB80FF0D973A56DA253FD3
   tooling is absent and is not an F2 requirement. Browser PRNG comparison and
   clipboard integration are deliberately deferred. No unresolved F2 app defect
   was observed; independent review remains **PENDING**.
+
+## F3 — Progression, economy, Daily and defensive persistence
+
+**Reviewer decision: PENDING independent review. Implementation complete.**
+No F4 work, merge, push to main, force-push or history rewrite.
+
+Run: **2026-10-28**, Europe/Berlin; retained tool logs start **17:57:58 +01:00**;
+Android observations **18:22–18:34**. Initial prompt/contract inspection preceded
+the first retained command. Agent: Codex / GPT-6; exact model build and reasoning
+setting were not exposed. **Human interventions: 0.**
+
+Accepted starting main: **`9928bd5895e9258bdadb79580bc41497482181d9`**, matching
+fetched origin/main. Branch: **`codex/f3-progression-economy-persistence`**.
+Ending implementation commit: **`06753f8cdc92e76bb8a209186b3c6a5c323b3195`**.
+Its evidence-only successor completes this record; the final full publication
+SHA and remote equality are reported in the final execution response. Main
+remains at the accepted starting commit. Publication is for independent review.
+
+### Implementation and provenance
+
+Pure `core/game.dart` snapshots replay evaluated guesses through the existing
+engine and validate IDs, order, chronology, hints, counters and status.
+`core/daily.dart` provides injected-clock civil-day arithmetic. `app/progress.dart`
+owns the version-1 codec, historical summaries and independent section salvage;
+`ProgressController` owns reward settlement, progression, Daily policy, statistics
+and serial writes. Board handles forward the existing touch/drag operations;
+listeners are disposed when their board route closes. No second wallet or parser.
+
+One `SharedPreferencesAsync` key **`lexistack.progress`** (Android default
+DataStore backend), with an injected asynchronous store and failure/delay fake.
+Every accepted transition captures JSON before enqueueing. A failed write is
+caught and shown as unsaved; Retry and later writes remain usable. `flush()`
+drains queued work. No hard power-loss durability or tamper-proof storage claim.
+Attempt IDs use a persisted monotonic counter. Finalization, payout, best stars,
+unlocks and one unique history insertion happen synchronously before saving.
+Reload/result rendering never credits money. Practice is capped per level.
+
+Daily: UTC midnights from local civil components, epoch 2026-01-01; normalized
+pool index `dayIndex % 8`, seed `(dayIndex % 2147483646) + 1`, range
+1…2147483646. Goldens include epoch seed 1, 2026-01-09 seed 9, 2026-10-28 seed
+301, pre-epoch seed 2147483646, DST cases and 2028 leap day. Campaign seeds use
+new attempt serial modulo the same range, plus 1. Park–Miller/Fisher–Yates and
+all F2 golden sequences are unchanged.
+
+Fingerprint: canonical JSON array of stable level/category/tile IDs, source
+order, titles, tiers, words, facts and red herrings. This collision-free semantic
+encoding ignores source JSON whitespace/key order and uses no runtime hash.
+Bad/missing/changed unfinished boards are discarded individually. Valid wallet,
+achievements, unrelated attempts, historical summaries, Daily outcomes and
+settings are retained independently. Bad finalized records retain ID/date or
+level reward locks; valid history reconciles progression flags without payout.
+A wholly invalid history locks rewards until confirmed Reset. Unsupported or
+unreadable roots reset with a notice. Reset uses system theme/haptics-on defaults.
+
+Exact prompt archived unchanged at
+[prompts/F3-progression-economy-daily-persistence.md](../prompts/F3-progression-economy-daily-persistence.md).
+Working and committed SHA-256 both:
+**`05d19438bfa68270fd1457c217d6512407a8148fa76e6c9a35d13a2b4d9bf20d`**.
+Pinned contract/cache HEAD remains **`d9acbd52de0e198dd109a4859299318db3f465f5`**.
+`pack1.json`: **`5efa3c88c769f74eee872860766681f5c2cc1c64`**;
+`daily.json`: **`5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6`**.
+Daily was downloaded as raw bytes from the locked source commit. Only the two
+installed files are listed in the temporary manifest. No other source repository,
+contract, acceptance matrix or immutable JSON was changed. The only added direct
+runtime dependency is `shared_preferences` 2.5.6, required by F3; its platform
+packages are locked transitives.
+
+### Commands and observed acceptance coverage
+
+Raw outputs, literal commands for final checks, exits and unedited captures:
+[evidence/f3](evidence/f3). Text evidence preserves output content; only trailing
+whitespace/line endings are normalized for Git. Preliminary test files identify
+their specific test command in this record; final logs include command headers.
+
+| Command | Exit | Evidence/result |
+|---|---:|---|
+| `flutter --version`, `dart --version`, `flutter doctor -v` | 0 each | Flutter 3.47.8, Dart 3.13.7, SDK 36.1.0; Android ready, Visual Studio absent |
+| `flutter emulators`, `flutter emulators --launch Pixel_10` | 0 each | Emulator launched before implementation |
+| `flutter test --reporter expanded` before changes | 0 | `baseline-tests.txt`: **47 F1/F2 tests** |
+| `flutter pub get` | 0 | `pub-get.txt`; package pin unchanged |
+| `dart run tool/validate_levels.dart --partial` | 0 | `partial.txt`: **16 levels / 64 groups / 256 positions; 0 errors/warnings** |
+| `dart run tool/validate_levels.dart` | **1 expected** | `strict.txt`: campaign count only; Daily no longer missing |
+| `dart run tool/check_prng.dart` | 0 | `prng-vm.txt`: unchanged four vectors and F2 board order |
+| `dart analyze` final | 0 | `analysis-final.txt`: no issues |
+| `flutter test --reporter expanded` final | 0 | `tests-final.txt`: **117 passed** |
+| `flutter build apk --debug` initial / final | 0 / 0 | `apk-initial.txt`, `apk-final.txt`: 45.7 / 13.3 seconds Gradle |
+| `git hash-object --no-filters assets/levels/pack1.json` | 0 | `pack1-identity.txt`: locked blob |
+| `git hash-object --no-filters assets/levels/daily.json` | 0 | `daily-identity.txt`: locked blob |
+| `adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk` | 0 twice | `android-commands.txt`: both built APKs installed |
+| `git diff --cached --check` source commit | **2** | Only four original Markdown hard-break lines in the immutable prompt |
+| `git diff --cached --check -- . :!prompts/F3-progression-economy-daily-persistence.md` | 0 | Prompt preserved; all implementation changes pass |
+
+Observed implementation probes: **PASS ECO-01–09, DAY-01–06, PER-01–09,
+PLT-04**, plus prior F1/F2 regression coverage (ARC, applicable CNT, ENG,
+UI-01/02, PLT-01–03). These are execution results, **not gate acceptance**.
+No remaining failed or environment-blocked F3 probe. Settings toggles, full
+Stats/Settings/UX, clipboard and polish remain F4; browser PRNG execution F6.
+
+Tests independently assert 50/30/15 rewards, 0–5 lifetime mistakes, two paid
+rescues, +5 once across failures/replays/restarts, independent synthetic packs,
+Continue priority/all-won, full-state rejection invariants, Daily cycles/streaks,
+catalog-independent statistics, exact snapshot/next-shuffle behavior, corrupt
+root/sections and 31 targeted game corruptions. **PER-04 replaces one known
+unsolved ID with a second copy of another known ID while preserving length**;
+only that attempt is dropped. Delayed storage holds the first write and proves
+later writes cannot start early. Failure/retry and cancelled/confirmed Reset,
+including reopening, are exercised. Widget tests use the production app with
+injected storage/clock and actual bundled JSON at all three required sizes;
+360×640 at 1.3× text remains usable without overflow.
+
+Legitimate prior-test adaptations: production content totals now include Daily;
+legacy missing-Daily rejection is still checked with its own campaign-only
+fixture. The all-installed-level solver now covers 16 levels. Fresh stage 8 is
+asserted locked and navigation uses unlocked stage 1. Free-preview labels became
+real prices, pending rescue now pays 60, and final results reopen explicitly.
+The old active-attempt replacement test became same-attempt resume/explicit
+finished replay; destructive global Reset now has cancellation/confirmation
+coverage. No engine oracle, touch/drag assertion or layout scenario was removed.
+
+### Genuine Android observations
+
+Pixel_10, emulator-5554, Android 16 / API 36, x86_64, 1080×2424 at 420 dpi.
+Both APKs were opened by tapping the observed LexiStack launcher icon; logcat
+records MAIN/LAUNCHER from `com.google.android.apps.nexuslauncher`. Initial debug
+cold launch was **5.256 s** to fully drawn; subsequent new processes were
+**4.045 s**, **4.042 s**, and final APK **4.207 s**. No Flutter exception or
+AndroidRuntime crash appears in the filtered log. Force-removal messages match
+intentional force-stop/reinstall, not spontaneous crashes.
+
+- Home → collection → stage 1 → Play. Held native pointer DOWN 700 ms, MOVE,
+  UP from VOLLEY to PEARL selected both; tapping TOAST made three, without a
+  release toggle. Pair Magnet charged 30 (150→120) and marked TOAST/WAFFLE.
+  Leaving/re-entering retained the selection, hint and board.
+- **`am force-stop de.cloudwards.lexistack`** removed PID **11780**; `pidof`
+  returned exit **1** (no process). Launcher tap created PID **12138**.
+  Continue restored the same board, ordered three-tile selection, hint and
+  **120 coins**. The unedited before/after PNGs and accessibility XML agree.
+- Solved all four real groups via taps: three stars, **+50**, **170 coins**,
+  one finalized game. A second force-stop removed PID **12138**; launcher
+  created **12529**. Selector showed best three stars and unlocked stage 2.
+  Reopening stage 1's saved result retained 170 coins and one finalized game.
+  Explicit replay created **a4**, distinct from completed **a1**; a read-only
+  extraction of the app's actual DataStore value confirms both IDs.
+- Bought Category Peek (170→130); four distinct wrong guesses entered pending
+  loss. Repeating the first wrong set cost no additional life. Pending hid even
+  the peeked title. Paid rescue charged **60** (130→70), kept the same attempt,
+  four lifetime mistakes and selection, and restored one life.
+- Daily displayed **2026-10-28**, board **5 / Keeping Time**. Same-date exit and
+  re-entry yielded the same semantic tree. No physical clock manipulation.
+- After installing the final APK, launcher PID **13369** restored 70 coins,
+  one finalized game, the rescued campaign state and the same unfinished Daily.
+  The final source differs from the scenario APK only by a fallback-result
+  explanatory line; all final tests and the APK build passed.
+
+Visually inspected, unedited screenshots:
+[Home](evidence/f3/android-home.png),
+[before process stop](evidence/f3/android-before-restart.png),
+[after new process](evidence/f3/android-after-restart.png),
+[campaign win](evidence/f3/android-campaign-win.png),
+[reopened result](evidence/f3/android-result-reopened.png),
+[pending loss](evidence/f3/android-pending-loss.png),
+[paid rescue](evidence/f3/android-paid-rescue.png),
+[Daily](evidence/f3/android-daily.png).
+Final APK SHA-256:
+**`47ed8d78fb743350e24086e20156efc57543a28b4f024debef82bf998570b68c`**.
+Daily wins/rewards/midnight/DST, multiple replay payouts, unaffordable rescue,
+Reset and injected storage failures were tested in Dart/widgets, not claimed as
+manual Android scenarios. No web runtime or Windows desktop build was run.
+
+### Corrections, limitations and interventions
+
+- Initial partial integration analysis exited 3 for the old Level→board call
+  against the new Attempt interface. Wiring the real UI fixed it. Subsequent
+  brace-style informational lints were fixed; final analysis has zero issues.
+  Controller tests (17), expanded recovery tests (63), initial full suite (116),
+  recovery/UI follow-up (61), and final full suite (117) all exited 0.
+- One combined delete/add patch was rejected before application; a separate
+  write succeeded. One PowerShell replacement command had a quote parse error
+  before any file changed; used a structured patch instead. A transient Windows
+  mapped-file error prevented formatting one file once; retry succeeded.
+- Final self-inspection tightened version typing (reject 1.0), prevented
+  cross-section ID reuse, rejected restored locked-stage attempts, and disposed
+  board listeners on route removal. A floating-version regression was added.
+- The original prompt intentionally contains four trailing Markdown hard-break
+  spaces; unrestricted diff-check reports them. They remain unchanged as
+  required; the exact-prompt exclusion passes for all other changes.
+- Emulator launcher transition swallowed one immediate swipe after reinstall;
+  reading the actual UI and repeating it opened the app drawer. Gradle's Java
+  native-access warnings remain nonfatal. Visual Studio is absent. There was no
+  required F3 environment block and no user rescue.
+- No known blocking F3 defect remains. Local preferences are not a database or
+  a hard power-loss guarantee. Eight Daily boards rotate. Full F4 UX and F6
+  browser equivalence remain deliberately unimplemented. **Gate stays PENDING.**

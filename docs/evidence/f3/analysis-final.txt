@@ -1,0 +1,4 @@
+2026-10-28T18:32:11.6061190+01:00 > dart analyze
+Analyzing LexiStack...
+No issues found!
+EXIT: 0

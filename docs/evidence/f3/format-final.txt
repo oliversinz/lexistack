@@ -1,0 +1,5 @@
+2026-10-28T18:32:10.2826944+01:00 > dart format lib test
+Formatted lib\ui\catalog_screens.dart
+Formatted test\app\persistence_test.dart
+Formatted 30 files (2 changed) in 0.17 seconds.
+EXIT: 0

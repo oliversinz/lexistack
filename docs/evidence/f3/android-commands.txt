@@ -1,0 +1,561 @@
+2026-10-28T18:21:58.6102323+01:00 > adb -s emulator-5554 version
+Android Debug Bridge version 1.0.41
+Version 37.0.1-15733141
+Installed as C:\Users\olive\AppData\Local\Android\sdk\platform-tools\adb.exe
+Running on Windows 10.0.26300
+EXIT: 0
+2026-10-28T18:21:58.6637943+01:00 > adb -s emulator-5554 shell getprop ro.build.version.release
+16
+EXIT: 0
+2026-10-28T18:21:58.7270311+01:00 > adb -s emulator-5554 shell getprop ro.build.version.sdk
+36
+EXIT: 0
+2026-10-28T18:21:58.7903237+01:00 > adb -s emulator-5554 shell wm size
+Physical size: 1080x2424
+EXIT: 0
+2026-10-28T18:21:58.8704011+01:00 > adb -s emulator-5554 shell wm density
+Physical density: 420
+EXIT: 0
+2026-10-28T18:21:58.9413455+01:00 > adb -s emulator-5554 emu avd name
+Pixel_10
+
+OK
+
+EXIT: 0
+2026-10-28T18:21:58.9885200+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T18:21:59.0702727+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:22:03.4359224+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (14031 bytes in 0.005s)
+EXIT: 0
+2026-10-28T18:22:11.6368747+01:00 > adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T18:22:14.1135287+01:00 > adb -s emulator-5554 logcat -c
+EXIT: 0
+2026-10-28T18:22:14.4058737+01:00 > adb -s emulator-5554 shell input swipe 540 2100 540 600 500
+EXIT: 0
+2026-10-28T18:22:15.0727244+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:22:17.5100735+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 6.0 MB/s (23662 bytes in 0.004s)
+EXIT: 0
+2026-10-28T18:22:31.4338296+01:00 > adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T18:22:39.5601365+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:22:42.1748912+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (12900 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:22:42.3276869+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:22:42.8034827+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-home.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 25.1 MB/s (205623 bytes in 0.008s)
+EXIT: 0
+2026-10-28T18:23:02.1120138+01:00 > adb -s emulator-5554 shell input tap 360 2050
+EXIT: 0
+2026-10-28T18:23:02.2868482+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:23:04.6620871+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (13932 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:23:20.5724259+01:00 > adb -s emulator-5554 shell input tap 510 850
+EXIT: 0
+2026-10-28T18:23:20.6948008+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:23:23.0116526+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 2.8 MB/s (9794 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:23:28.7306670+01:00 > adb -s emulator-5554 shell input tap 520 1240
+EXIT: 0
+2026-10-28T18:23:28.8402850+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:23:31.1980116+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.5 MB/s (14111 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:23:31.3425573+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+11780
+EXIT: 0
+2026-10-28T18:23:51.0293146+01:00 > adb -s emulator-5554 shell input touchscreen motionevent DOWN 666 1110
+EXIT: 0
+2026-10-28T18:23:51.8133350+01:00 > adb -s emulator-5554 shell input touchscreen motionevent MOVE 414 1375
+EXIT: 0
+2026-10-28T18:23:52.0789713+01:00 > adb -s emulator-5554 shell input touchscreen motionevent UP 414 1375
+EXIT: 0
+2026-10-28T18:23:52.1443630+01:00 > adb -s emulator-5554 shell input tap 414 1110
+EXIT: 0
+2026-10-28T18:23:52.2470377+01:00 > adb -s emulator-5554 shell input swipe 980 2140 980 1470 500
+EXIT: 0
+2026-10-28T18:23:52.8422753+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:23:55.0598093+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (13138 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:24:01.2630807+01:00 > adb -s emulator-5554 shell input tap 240 1760
+EXIT: 0
+2026-10-28T18:24:01.3594002+01:00 > adb -s emulator-5554 shell input tap 520 2250
+EXIT: 0
+2026-10-28T18:24:01.4437890+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:24:03.7814097+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (9794 bytes in 0.002s)
+EXIT: 0
+2026-10-28T18:24:12.2073175+01:00 > adb -s emulator-5554 shell input tap 520 1240
+EXIT: 0
+2026-10-28T18:24:12.3230322+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:24:14.6323273+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 6.2 MB/s (14151 bytes in 0.002s)
+EXIT: 0
+2026-10-28T18:24:14.7657034+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:24:15.1369957+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-before-restart.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 34.0 MB/s (136522 bytes in 0.004s)
+EXIT: 0
+2026-10-28T18:24:15.2181655+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+11780
+EXIT: 0
+2026-10-28T18:24:15.2893981+01:00 > adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT: 0
+2026-10-28T18:24:15.4120224+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+EXIT: 1
+2026-10-28T18:24:15.4950937+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T18:24:15.6025224+01:00 > adb -s emulator-5554 shell input swipe 540 2100 540 600 500
+EXIT: 0
+2026-10-28T18:24:16.2358638+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:24:18.6374373+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 7.6 MB/s (23662 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:24:24.4414467+01:00 > adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T18:24:31.5523528+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:24:33.8938752+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 5.5 MB/s (12900 bytes in 0.002s)
+EXIT: 0
+2026-10-28T18:24:34.0191539+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+12138
+EXIT: 0
+2026-10-28T18:24:40.5337866+01:00 > adb -s emulator-5554 shell input tap 520 1000
+EXIT: 0
+2026-10-28T18:24:40.7392541+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:24:43.1700951+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (14151 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:24:43.3187574+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:24:43.7199431+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-after-restart.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 25.8 MB/s (136522 bytes in 0.005s)
+EXIT: 0
+2026-10-28T18:24:43.7960266+01:00 > adb -s emulator-5554 shell run-as de.cloudwards.lexistack ls files/datastore
+FlutterSharedPreferences.preferences_pb
+EXIT: 0
+2026-10-28T18:24:59.0847114+01:00 > adb -s emulator-5554 shell input tap 800 2050
+EXIT: 0
+2026-10-28T18:24:59.1922923+01:00 > adb -s emulator-5554 shell input tap 160 840
+EXIT: 0
+2026-10-28T18:24:59.2884790+01:00 > adb -s emulator-5554 shell input tap 414 1110
+EXIT: 0
+2026-10-28T18:24:59.3992366+01:00 > adb -s emulator-5554 shell input tap 920 1375
+EXIT: 0
+2026-10-28T18:24:59.5318313+01:00 > adb -s emulator-5554 shell input tap 414 1640
+EXIT: 0
+2026-10-28T18:24:59.6169228+01:00 > adb -s emulator-5554 shell input tap 520 2200
+EXIT: 0
+2026-10-28T18:24:59.7457610+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:25:01.9954974+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (13466 bytes in 0.004s)
+EXIT: 0
+2026-10-28T18:25:12.8307481+01:00 > adb -s emulator-5554 shell input tap 160 1215
+EXIT: 0
+2026-10-28T18:25:12.9376855+01:00 > adb -s emulator-5554 shell input tap 414 1215
+EXIT: 0
+2026-10-28T18:25:13.0403728+01:00 > adb -s emulator-5554 shell input tap 160 1745
+EXIT: 0
+2026-10-28T18:25:13.1311106+01:00 > adb -s emulator-5554 shell input tap 414 1745
+EXIT: 0
+2026-10-28T18:25:13.2344530+01:00 > adb -s emulator-5554 shell input tap 520 2300
+EXIT: 0
+2026-10-28T18:25:13.3306434+01:00 > adb -s emulator-5554 shell input swipe 980 2140 980 1680 500
+EXIT: 0
+2026-10-28T18:25:13.9190535+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:25:16.1348767+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (12887 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:25:22.2296532+01:00 > adb -s emulator-5554 shell input tap 160 1045
+EXIT: 0
+2026-10-28T18:25:22.3397677+01:00 > adb -s emulator-5554 shell input tap 665 1045
+EXIT: 0
+2026-10-28T18:25:22.4341648+01:00 > adb -s emulator-5554 shell input tap 160 1310
+EXIT: 0
+2026-10-28T18:25:22.5350194+01:00 > adb -s emulator-5554 shell input tap 665 1310
+EXIT: 0
+2026-10-28T18:25:22.6324424+01:00 > adb -s emulator-5554 shell input tap 520 1880
+EXIT: 0
+2026-10-28T18:25:22.7389622+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:25:24.9850210+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (12640 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:25:33.8617984+01:00 > adb -s emulator-5554 shell input tap 160 1420
+EXIT: 0
+2026-10-28T18:25:33.9593367+01:00 > adb -s emulator-5554 shell input tap 414 1420
+EXIT: 0
+2026-10-28T18:25:34.0469902+01:00 > adb -s emulator-5554 shell input tap 665 1420
+EXIT: 0
+2026-10-28T18:25:34.1331947+01:00 > adb -s emulator-5554 shell input tap 920 1420
+EXIT: 0
+2026-10-28T18:25:34.2299305+01:00 > adb -s emulator-5554 shell input tap 520 1990
+EXIT: 0
+2026-10-28T18:25:34.3251501+01:00 > adb -s emulator-5554 shell input swipe 980 500 980 2200 600
+EXIT: 0
+2026-10-28T18:25:35.0163716+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:25:37.2387886+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (11685 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:25:37.3813404+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:25:37.8014543+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-campaign-win.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 24.8 MB/s (254896 bytes in 0.010s)
+EXIT: 0
+2026-10-28T18:25:37.8831346+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+12138
+EXIT: 0
+2026-10-28T18:25:37.9658701+01:00 > adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT: 0
+2026-10-28T18:25:38.0677332+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+EXIT: 1
+2026-10-28T18:25:38.1711203+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T18:25:38.3151813+01:00 > adb -s emulator-5554 shell input swipe 540 2100 540 600 500
+EXIT: 0
+2026-10-28T18:25:39.0092880+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:25:41.5176779+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 7.1 MB/s (23662 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:25:48.8928090+01:00 > adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T18:25:56.0115376+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:25:58.4214221+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (12902 bytes in 0.004s)
+EXIT: 0
+2026-10-28T18:25:58.5644198+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+12529
+EXIT: 0
+2026-10-28T18:26:05.4317677+01:00 > adb -s emulator-5554 shell input tap 360 2050
+EXIT: 0
+2026-10-28T18:26:05.6389168+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:26:08.0016205+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (13950 bytes in 0.004s)
+EXIT: 0
+2026-10-28T18:26:08.1525666+01:00 > adb -s emulator-5554 shell input tap 510 850
+EXIT: 0
+2026-10-28T18:26:08.2369222+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:26:10.5645126+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (10527 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:26:49.3057680+01:00 > adb -s emulator-5554 shell input tap 520 1240
+EXIT: 0
+2026-10-28T18:26:49.4158557+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:26:51.7801472+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (11685 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:26:51.9235973+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:26:52.3319933+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-result-reopened.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 33.4 MB/s (254239 bytes in 0.007s)
+EXIT: 0
+2026-10-28T18:26:52.4171178+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T18:26:52.5744718+01:00 > adb -s emulator-5554 shell input tap 520 1380
+EXIT: 0
+2026-10-28T18:26:52.6786566+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:26:55.1234666+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (14111 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:27:08.5260626+01:00 > adb -s emulator-5554 shell input swipe 980 2140 980 1470 500
+EXIT: 0
+2026-10-28T18:27:09.1431302+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:27:11.4110720+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 6.1 MB/s (13112 bytes in 0.002s)
+EXIT: 0
+2026-10-28T18:27:16.4643482+01:00 > adb -s emulator-5554 shell input tap 680 1760
+EXIT: 0
+2026-10-28T18:27:16.5712500+01:00 > adb -s emulator-5554 shell input swipe 980 500 980 2200 600
+EXIT: 0
+2026-10-28T18:27:17.2674016+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:27:19.5182574+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (14081 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:27:31.4164285+01:00 > adb -s emulator-5554 shell input tap 414 1720
+EXIT: 0
+2026-10-28T18:27:31.5036591+01:00 > adb -s emulator-5554 shell input tap 160 1460
+EXIT: 0
+2026-10-28T18:27:31.5848268+01:00 > adb -s emulator-5554 shell input tap 920 1195
+EXIT: 0
+2026-10-28T18:27:31.6863343+01:00 > adb -s emulator-5554 shell input tap 160 1720
+EXIT: 0
+2026-10-28T18:27:31.7950726+01:00 > adb -s emulator-5554 shell input tap 520 2290
+EXIT: 0
+2026-10-28T18:27:31.8711975+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:27:34.0291809+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (14126 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:27:45.2804338+01:00 > adb -s emulator-5554 shell input tap 520 2290
+EXIT: 0
+2026-10-28T18:27:45.3763978+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:27:47.5316095+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 5.2 MB/s (14116 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:27:47.6528642+01:00 > adb -s emulator-5554 shell input tap 800 2130
+EXIT: 0
+2026-10-28T18:27:47.7201340+01:00 > adb -s emulator-5554 shell input tap 414 1720
+EXIT: 0
+2026-10-28T18:27:47.8612194+01:00 > adb -s emulator-5554 shell input tap 160 1460
+EXIT: 0
+2026-10-28T18:27:47.9659904+01:00 > adb -s emulator-5554 shell input tap 160 1720
+EXIT: 0
+2026-10-28T18:27:48.0976741+01:00 > adb -s emulator-5554 shell input tap 665 1720
+EXIT: 0
+2026-10-28T18:27:48.2478474+01:00 > adb -s emulator-5554 shell input tap 520 2290
+EXIT: 0
+2026-10-28T18:27:48.3366471+01:00 > adb -s emulator-5554 shell input tap 800 2130
+EXIT: 0
+2026-10-28T18:27:48.4908899+01:00 > adb -s emulator-5554 shell input tap 414 1720
+EXIT: 0
+2026-10-28T18:27:48.6196702+01:00 > adb -s emulator-5554 shell input tap 160 1720
+EXIT: 0
+2026-10-28T18:27:48.8328972+01:00 > adb -s emulator-5554 shell input tap 665 1195
+EXIT: 0
+2026-10-28T18:27:48.9374588+01:00 > adb -s emulator-5554 shell input tap 665 930
+EXIT: 0
+2026-10-28T18:27:49.0989739+01:00 > adb -s emulator-5554 shell input tap 520 2290
+EXIT: 0
+2026-10-28T18:27:49.2461933+01:00 > adb -s emulator-5554 shell input tap 800 2130
+EXIT: 0
+2026-10-28T18:27:49.3496739+01:00 > adb -s emulator-5554 shell input tap 160 1460
+EXIT: 0
+2026-10-28T18:27:49.5020466+01:00 > adb -s emulator-5554 shell input tap 665 1720
+EXIT: 0
+2026-10-28T18:27:49.6097396+01:00 > adb -s emulator-5554 shell input tap 920 930
+EXIT: 0
+2026-10-28T18:27:49.7669028+01:00 > adb -s emulator-5554 shell input tap 920 1460
+EXIT: 0
+2026-10-28T18:27:49.9011148+01:00 > adb -s emulator-5554 shell input tap 520 2290
+EXIT: 0
+2026-10-28T18:27:50.0295918+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:27:52.2633390+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 2.2 MB/s (7055 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:27:52.3399023+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:27:52.7375027+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-pending-loss.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 21.9 MB/s (114238 bytes in 0.005s)
+EXIT: 0
+2026-10-28T18:27:59.3955159+01:00 > adb -s emulator-5554 shell input tap 520 960
+EXIT: 0
+2026-10-28T18:27:59.4938629+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:28:01.6700917+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 6.0 MB/s (14116 bytes in 0.002s)
+EXIT: 0
+2026-10-28T18:28:01.7937681+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:28:02.1649220+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-paid-rescue.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 27.4 MB/s (139672 bytes in 0.005s)
+EXIT: 0
+2026-10-28T18:28:02.2376108+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T18:28:02.3189708+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T18:28:02.4135006+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T18:28:02.5232864+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:28:04.8710414+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (12901 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:28:14.1020855+01:00 > adb -s emulator-5554 shell input tap 520 1350
+EXIT: 0
+2026-10-28T18:28:14.1966457+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:28:16.5080231+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 6.8 MB/s (14105 bytes in 0.002s)
+EXIT: 0
+2026-10-28T18:28:16.6207647+01:00 > adb -s emulator-5554 shell screencap -p /sdcard/f3-capture.png
+EXIT: 0
+2026-10-28T18:28:16.9682675+01:00 > adb -s emulator-5554 pull /sdcard/f3-capture.png C:/Codex/LexiStack/docs/evidence/f3/android-daily.png
+/sdcard/f3-capture.png: 1 file pulled, 0 skipped. 39.7 MB/s (140041 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:28:17.0458134+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T18:28:17.1181383+01:00 > adb -s emulator-5554 shell input tap 520 1350
+EXIT: 0
+2026-10-28T18:28:17.2026740+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:28:19.5388462+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (14105 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:28:19.6793833+01:00 > adb -s emulator-5554 logcat -d -v time ActivityTaskManager:I AndroidRuntime:E flutter:I *:S
+--------- beginning of system
+10-28 18:22:30.652 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:22:31.156 W/ActivityTaskManager(  751): Activity top resumed state loss timeout for ActivityRecord{260527566 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t6}
+10-28 18:22:31.156 W/ActivityTaskManager(  751): Activity pause timeout for ActivityRecord{260527566 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t6}
+--------- beginning of main
+10-28 18:22:32.628 I/flutter (11780): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:22:32.822 I/flutter (11780): The Dart VM service is listening on http://127.0.0.1:41385/Oqggw1_twVE=/
+10-28 18:22:35.895 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s256ms
+10-28 18:22:35.895 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +5s256ms
+10-28 18:24:14.461 W/ActivityTaskManager(  751): Force removing ActivityRecord{169781490 u0 de.cloudwards.lexistack/.MainActivity t11 f}}: app died, no saved state
+10-28 18:24:14.703 W/ActivityTaskManager(  751): callingPackage for (uid=-1, pid=0) has no WPC
+10-28 18:24:14.710 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 18:24:23.645 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:24:24.437 I/flutter (12138): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:24:24.600 I/flutter (12138): The Dart VM service is listening on http://127.0.0.1:36337/faDz3DvuBQQ=/
+10-28 18:24:27.681 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s45ms
+10-28 18:24:27.682 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s45ms
+10-28 18:25:37.140 W/ActivityTaskManager(  751): Force removing ActivityRecord{232891155 u0 de.cloudwards.lexistack/.MainActivity t12 f}}: app died, no saved state
+10-28 18:25:37.411 W/ActivityTaskManager(  751): callingPackage for (uid=-1, pid=0) has no WPC
+10-28 18:25:37.423 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 18:25:48.114 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:25:48.983 I/flutter (12529): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:25:49.124 I/flutter (12529): The Dart VM service is listening on http://127.0.0.1:45849/k_gfodH-Sfo=/
+10-28 18:25:52.145 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s42ms
+10-28 18:25:52.145 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s42ms
+EXIT: 0
+2026-10-28T18:33:11.3404367+01:00 > adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT: 0
+2026-10-28T18:33:13.1641553+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT: 0
+2026-10-28T18:33:13.4070158+01:00 > adb -s emulator-5554 shell input swipe 540 2100 540 600 500
+EXIT: 0
+2026-10-28T18:33:14.0655674+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:33:16.6015139+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (14031 bytes in 0.004s)
+EXIT: 0
+2026-10-28T18:33:22.7339351+01:00 > adb -s emulator-5554 shell input swipe 540 2100 540 600 500
+EXIT: 0
+2026-10-28T18:33:23.3496700+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:33:25.6905781+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 7.1 MB/s (23661 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:33:36.0033153+01:00 > adb -s emulator-5554 shell input tap 412 1100
+EXIT: 0
+2026-10-28T18:33:43.1027698+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:33:45.4671155+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (12901 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:33:45.5943513+01:00 > adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+13369
+EXIT: 0
+2026-10-28T18:34:03.0505397+01:00 > adb -s emulator-5554 shell input tap 520 1000
+EXIT: 0
+2026-10-28T18:34:03.2591692+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:34:05.7269153+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (14121 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:34:05.8737813+01:00 > adb -s emulator-5554 shell input keyevent KEYCODE_BACK
+EXIT: 0
+2026-10-28T18:34:05.9755996+01:00 > adb -s emulator-5554 shell input tap 520 1350
+EXIT: 0
+2026-10-28T18:34:06.0859984+01:00 > adb -s emulator-5554 shell uiautomator dump /sdcard/f3-window.xml
+UI hierchary dumped to: /sdcard/f3-window.xml
+EXIT: 0
+2026-10-28T18:34:08.4351349+01:00 > adb -s emulator-5554 pull /sdcard/f3-window.xml C:/Codex/LexiStack/.git/f3-window.xml
+/sdcard/f3-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (14105 bytes in 0.003s)
+EXIT: 0
+2026-10-28T18:34:08.5280905+01:00 > adb -s emulator-5554 logcat -d -v time ActivityTaskManager:I AndroidRuntime:E flutter:I *:S
+--------- beginning of system
+10-28 18:22:30.652 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:22:31.156 W/ActivityTaskManager(  751): Activity top resumed state loss timeout for ActivityRecord{260527566 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t6}
+10-28 18:22:31.156 W/ActivityTaskManager(  751): Activity pause timeout for ActivityRecord{260527566 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t6}
+--------- beginning of main
+10-28 18:22:32.628 I/flutter (11780): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:22:32.822 I/flutter (11780): The Dart VM service is listening on http://127.0.0.1:41385/Oqggw1_twVE=/
+10-28 18:22:35.895 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s256ms
+10-28 18:22:35.895 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +5s256ms
+10-28 18:24:14.461 W/ActivityTaskManager(  751): Force removing ActivityRecord{169781490 u0 de.cloudwards.lexistack/.MainActivity t11 f}}: app died, no saved state
+10-28 18:24:14.703 W/ActivityTaskManager(  751): callingPackage for (uid=-1, pid=0) has no WPC
+10-28 18:24:14.710 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 18:24:23.645 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:24:24.437 I/flutter (12138): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:24:24.600 I/flutter (12138): The Dart VM service is listening on http://127.0.0.1:36337/faDz3DvuBQQ=/
+10-28 18:24:27.681 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s45ms
+10-28 18:24:27.682 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s45ms
+10-28 18:25:37.140 W/ActivityTaskManager(  751): Force removing ActivityRecord{232891155 u0 de.cloudwards.lexistack/.MainActivity t12 f}}: app died, no saved state
+10-28 18:25:37.411 W/ActivityTaskManager(  751): callingPackage for (uid=-1, pid=0) has no WPC
+10-28 18:25:37.423 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 18:25:48.114 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:25:48.983 I/flutter (12529): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:25:49.124 I/flutter (12529): The Dart VM service is listening on http://127.0.0.1:45849/k_gfodH-Sfo=/
+10-28 18:25:52.145 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s42ms
+10-28 18:25:52.145 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s42ms
+10-28 18:33:11.972 W/ActivityTaskManager(  751): Force removing ActivityRecord{160821031 u0 de.cloudwards.lexistack/.MainActivity t13 f}}: app died, no saved state
+10-28 18:33:12.779 W/ActivityTaskManager(  751): callingPackage for (uid=-1, pid=0) has no WPC
+10-28 18:33:12.823 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-28 18:33:35.194 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 18:33:36.166 I/flutter (13369): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-28 18:33:36.297 I/flutter (13369): The Dart VM service is listening on http://127.0.0.1:34181/UtYFPmdu334=/
+10-28 18:33:39.396 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s207ms
+10-28 18:33:39.396 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s207ms
+EXIT: 0

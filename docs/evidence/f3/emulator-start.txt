@@ -1,0 +1,2 @@
+2026-10-28T17:58:31.4835132+01:00 > flutter emulators --launch Pixel_10
+EXIT: 0

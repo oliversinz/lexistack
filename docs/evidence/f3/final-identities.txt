@@ -1,0 +1,14 @@
+2026-10-28T18:38:15.2560248+01:00 Final identity checks
+git hash-object --no-filters assets/levels/pack1.json
+5efa3c88c769f74eee872860766681f5c2cc1c64
+EXIT: 0
+git hash-object --no-filters assets/levels/daily.json
+5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6
+EXIT: 0
+git rev-parse main origin/main HEAD
+9928bd5895e9258bdadb79580bc41497482181d9
+9928bd5895e9258bdadb79580bc41497482181d9
+06753f8cdc92e76bb8a209186b3c6a5c323b3195
+EXIT: 0
+git diff 9928bd5895e9258bdadb79580bc41497482181d9 HEAD -- docs/product-contract.md docs/architecture.md docs/feature-roadmap.md docs/acceptance-matrix.md docs/reference-content-lock.md docs/experiment-e-protocol.md AGENTS.md assets/levels/pack1.json
+EXIT: 0 (no changes)
