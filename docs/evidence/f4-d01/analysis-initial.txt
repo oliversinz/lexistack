@@ -1,0 +1,22 @@
+PS> dart analyze
+Analyzing LexiStack...
+
+  error - lib\ui\catalog_screens.dart:7:8 - Target of URI doesn't exist: 'board_screen.dart'. Try creating the file referenced by the URI, or try using a URI for a file that does exist. - uri_does_not_exist
+  error - lib\ui\catalog_screens.dart:25:14 - The function 'BoardScreen' isn't defined. Try importing the library that defines 'BoardScreen', correcting the name to the name of an existing function, or defining a function named 'BoardScreen'. - undefined_function
+  error - test\ui\board_test.dart:9:8 - Target of URI doesn't exist: 'package:lexistack/ui/board_screen.dart'. Try creating the file referenced by the URI, or try using a URI for a file that does exist. - uri_does_not_exist
+  error - test\ui\board_test.dart:52:14 - The name 'BoardScreen' isn't a type, so it can't be used as a type argument. Try correcting the name to an existing type, or defining a type named 'BoardScreen'. - non_type_as_type_argument
+  error - test\ui\board_test.dart:52:39 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\f4_layout_test.dart:7:8 - Target of URI doesn't exist: 'package:lexistack/ui/board_screen.dart'. Try creating the file referenced by the URI, or try using a URI for a file that does exist. - uri_does_not_exist
+  error - test\ui\f4_layout_test.dart:184:26 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\f4_test.dart:9:8 - Target of URI doesn't exist: 'package:lexistack/ui/board_screen.dart'. Try creating the file referenced by the URI, or try using a URI for a file that does exist. - uri_does_not_exist
+  error - test\ui\f4_test.dart:180:24 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\f4_test.dart:223:42 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\f4_test.dart:263:42 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\f4_test.dart:278:26 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\f4_test.dart:351:42 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - test\ui\progress_test.dart:8:8 - Target of URI doesn't exist: 'package:lexistack/ui/board_screen.dart'. Try creating the file referenced by the URI, or try using a URI for a file that does exist. - uri_does_not_exist
+  error - test\ui\progress_test.dart:17:14 - The name 'BoardScreen' isn't a type, so it can't be used as a type argument. Try correcting the name to an existing type, or defining a type named 'BoardScreen'. - non_type_as_type_argument
+  error - test\ui\progress_test.dart:17:39 - Undefined name 'BoardScreen'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+
+16 issues found.
+EXIT CODE: 3

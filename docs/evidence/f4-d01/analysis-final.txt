@@ -1,0 +1,4 @@
+PS> dart analyze
+Analyzing LexiStack...
+No issues found!
+EXIT CODE: 0

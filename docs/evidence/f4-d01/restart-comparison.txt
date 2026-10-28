@@ -1,0 +1,12 @@
+Initial whole-attempt comparison: EXIT 1 (AssertionError). The entered counter and sequence advance on Continue, by existing controller design.
+Revised comparison below includes every game/persistence field; only navigation recency is allowed to advance.
+PASS attempt id identical
+PASS attempt levelId identical
+PASS attempt date identical
+PASS attempt entered advances by 1
+PASS attempt fingerprint identical
+PASS attempt game identical
+PID 23280 -> 23898
+Wallet 80; theme dark; haptics false. Exact board state, selection order, hints and results restored.
+EXIT CODE: 0
+Final independent recheck: entire decoded documents equal after asserting and normalizing only sequence +1 and attempt.entered +1. EXIT CODE: 0

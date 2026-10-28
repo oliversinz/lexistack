@@ -1,0 +1,23 @@
+Prompt: prompts/F4-D01-paper-arcade-redesign.md
+Working file == Git blob (binary comparison): PASS
+SHA-256: ba7937572361928f51c47c1ba5810d9a1453fcf4966ae81193b852bca3aa4dc0
+PS> git check-attr text -- prompts/F4-D01-paper-arcade-redesign.md
+prompts/F4-D01-paper-arcade-redesign.md: text: unset
+EXIT CODE: 0
+PS> git hash-object --no-filters assets/levels/pack1.json
+5efa3c88c769f74eee872860766681f5c2cc1c64
+EXIT CODE: 0
+PS> git hash-object --no-filters assets/levels/daily.json
+5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6
+EXIT CODE: 0
+PS> git diff cac39ad9697a52f480168222ddb6848fe2f40fd7 HEAD --name-only -- lib/core lib/app lib/infrastructure assets/levels pubspec.lock docs/product-contract.md docs/architecture.md docs/acceptance-matrix.md docs/feature-roadmap.md docs/reference-content-lock.md docs/evidence/f4
+EXIT CODE: 0
+PS> git rev-parse HEAD
+86ea4997b218032824d69834768a4c7f0dc3f667
+EXIT CODE: 0
+PS> git ls-remote origin refs/heads/main refs/heads/codex/f4-complete-ux-interaction
+cac39ad9697a52f480168222ddb6848fe2f40fd7	refs/heads/codex/f4-complete-ux-interaction
+ecd08104d0d54bd2ae23d063c2f3f7e0ba45f06e	refs/heads/main
+EXIT CODE: 0
+Final debug APK SHA-256: a84541646e65f2df0647eb538fb6f63cf29330fb4d414d729d5732e6e386d6ff
+Content dependency and resolved lock remain d9acbd52de0e198dd109a4859299318db3f465f5; no lockfile diff.

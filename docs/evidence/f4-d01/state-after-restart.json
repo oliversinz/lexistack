@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "coins": 80,
+  "sequence": 3,
+  "campaign": {},
+  "results": [],
+  "daily": {},
+  "attempts": [
+    {
+      "id": "a1",
+      "levelId": "pack1_lvl01",
+      "date": null,
+      "entered": 3,
+      "fingerprint": "[\"pack1_lvl01\",\"pack1\",\"Table Talk\",[\"g1\",\"BREAKFAST BAKES\",1,\"A bagel is traditionally boiled before baking, which helps create its chewy crust.\",[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"TOAST\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"WAFFLE\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"MUFFIN\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",3]\",\"BAGEL\",1]],[\"g2\",\"KITCHEN UTENSILS\",2,\"A ladle has a deep bowl designed for lifting and serving liquids such as soup.\",[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"FORK\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"SPOON\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",2]\",\"KNIFE\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",3]\",\"LADLE\",2]],[\"g3\",\"TENNIS TERMS\",3,\"In tennis scoring, love means zero and deuce is a tie at forty points each.\",[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"SERVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"LOVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",2]\",\"DEUCE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",3]\",\"VOLLEY\",3]],[\"g4\",\"PAIRS WITH JAM\",4,\"Logjam originated as a term for timber obstructing waterways before becoming a metaphor.\",[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\",\"TRAFFIC\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\",\"PAPER\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",2]\",\"LOG\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",3]\",\"PEARL\",4]],[[[\"SERVE\"],\"SERVE could describe offering breakfast, but LOVE, DEUCE and VOLLEY give it a precise tennis home.\"]]]",
+      "game": {
+        "seed": 2,
+        "rng": 229615974,
+        "status": "playing",
+        "lives": 4,
+        "mistakes": 0,
+        "combo": 2,
+        "extraLives": 0,
+        "order": [
+          "[\"pack1_lvl01\",\"g3\",1]",
+          "[\"pack1_lvl01\",\"g4\",1]",
+          "[\"pack1_lvl01\",\"g3\",3]",
+          "[\"pack1_lvl01\",\"g4\",0]",
+          "[\"pack1_lvl01\",\"g3\",2]",
+          "[\"pack1_lvl01\",\"g4\",3]",
+          "[\"pack1_lvl01\",\"g3\",0]",
+          "[\"pack1_lvl01\",\"g4\",2]"
+        ],
+        "selection": [
+          "[\"pack1_lvl01\",\"g3\",1]",
+          "[\"pack1_lvl01\",\"g4\",1]"
+        ],
+        "solved": [
+          "g1",
+          "g2"
+        ],
+        "wrong": [],
+        "pairs": {
+          "g3": [
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g3\",1]"
+          ]
+        },
+        "peeked": [
+          "g3"
+        ],
+        "guesses": [
+          {
+            "ids": [
+              "[\"pack1_lvl01\",\"g1\",0]",
+              "[\"pack1_lvl01\",\"g1\",1]",
+              "[\"pack1_lvl01\",\"g1\",2]",
+              "[\"pack1_lvl01\",\"g1\",3]"
+            ],
+            "tiers": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "correct": true
+          },
+          {
+            "ids": [
+              "[\"pack1_lvl01\",\"g2\",0]",
+              "[\"pack1_lvl01\",\"g2\",1]",
+              "[\"pack1_lvl01\",\"g2\",2]",
+              "[\"pack1_lvl01\",\"g2\",3]"
+            ],
+            "tiers": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "correct": true
+          }
+        ]
+      }
+    }
+  ],
+  "dailyAttempt": null,
+  "bestDailyStreak": 0,
+  "settings": {
+    "theme": "dark",
+    "haptics": false
+  },
+  "retiredIds": [],
+  "rewardLocks": [],
+  "unavailableDaily": []
+}

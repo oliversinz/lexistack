@@ -1,0 +1,3 @@
+PS> git hash-object --no-filters assets/levels/pack1.json
+5efa3c88c769f74eee872860766681f5c2cc1c64
+EXIT CODE: 0

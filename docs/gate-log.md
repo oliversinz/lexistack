@@ -849,3 +849,199 @@ Working and Git-blob SHA-256:
 `.gitattributes` reports prompt text unset (`-text`), protecting its original
 bytes. No authoritative contract, acceptance matrix or immutable asset changed.
 **Quality gate remains PENDING independent review. F5 has not started.**
+
+## F4-D01 — PENDING independent re-review (2026-10-28)
+
+Independent-review-triggered visual correction on the existing
+`codex/f4-complete-ux-interaction` branch. Reviewed start:
+`cac39ad9697a52f480168222ddb6848fe2f40fd7`; completed implementation:
+**`86ea4997b218032824d69834768a4c7f0dc3f667`**. This record and its evidence are
+the following evidence commit; that commit is the review tip. No history was
+rewritten. Accepted `main` stays at `ecd08104d0d54bd2ae23d063c2f3f7e0ba45f06e`.
+This is an implementation report, not independent acceptance. F5/F6 not started.
+
+### Design and actual visual review
+
+Compared the original unedited [F4 evidence](evidence/f4) with the new PNGs
+below using image viewing tools. The former green, rounded Material panels
+and vertically stacked board status are replaced by warm paper, midnight ink,
+violet/lilac actions, coral editorial edges and tactile offset tile faces.
+Yellow/green/blue/purple category identities and labels remain unchanged.
+
+- Home: original four-token emblem and Fraunces masthead, compact invitation,
+  prominent Continue with real campaign progress, coral-edged Daily edition
+  and a numbered collection spine. Continue and Daily are visible at 390×844.
+- Campaign/levels: real collection progress and a compact, staggered connected
+  stage trail with numbers, earned stars and text/icon states. Locked stages
+  remain disabled; View Result and Replay remain separate actions.
+- Board: compact hearts/mistakes/tiers, cream or midnight word tokens and a
+  SafeArea-aware persistent selection tray/Submit/Shuffle/Deselect/Boosters
+  dock. The newest solved fact opens; earlier facts remain expandable. The
+  priced booster bar scrolls independently of the primary action.
+- Outcomes: prominent real stars/reward and distinct Copy action; pending
+  decision uses a coral edge and explicit irreversible reveal wording without
+  answer leakage. Stats retain honest finalized-only numbers; Settings use
+  clear theme selectors and the persisted haptic switch.
+- Dark mode uses the same geometry and typography with midnight/lilac. Visual
+  inspection confirms visible Submit, legible tiles and a coherent game
+  identity across both themes. Premium aesthetic acceptance remains the
+  independent reviewer's decision.
+
+Fraunces + DM Sans are bundled offline, with both OFL files. Authoritative
+[Google Fonts source revision](https://github.com/google/fonts/tree/9862abc066c9b83bf84c3e8ed1fc2d8d48f9bbf0/ofl)
+and byte hashes are in [font-provenance.txt](evidence/f4-d01/font-provenance.txt).
+No font acquisition limitation, runtime download or new package dependency.
+
+### Commands, regression coverage and geometry
+
+PowerShell, `C:\Codex\LexiStack`. Flutter **3.47.8**, Dart **3.13.7**,
+Windows **10.0.26300.9711**, SDK **36.1.0**, Android emulator **37.2.12.0**,
+Java **25.0.3**. Agent: Codex; exact model/effort, token cost and reviewer time
+are not exposed. Baseline log was created at 20:32:12 CET; final Android review
+finished around 21:05 CET. These are evidence timestamps, not a measured total
+task-runtime claim. No browser execution or Windows build is claimed.
+
+| Command | Exit | Result / log under `evidence/f4-d01/` |
+|---|---:|---|
+| `flutter --version` | 0 | `flutter-version.txt` |
+| `dart --version` | 0 | `dart-version.txt` |
+| `flutter doctor -v` | 0 | `doctor.txt`; only Visual Studio/C++ absent |
+| `flutter pub get` | 0 | `pub-get.txt`; dependency lock unchanged |
+| `flutter test --reporter expanded` baseline | 0 | **150 passed**, `baseline-tests.txt` |
+| `dart run tool/validate_levels.dart --partial` | 0 | 2 packs / 16 levels / 64 groups / 256 positions, **0 errors, 0 warnings**, `validator-partial.txt` |
+| `dart run tool/validate_levels.dart` | **1 expected** | Only `catalog.campaignCount`: 1 installed campaign file, minimum 4; `validator-strict.txt` |
+| `dart analyze` final | 0 | No issues, `analysis-final.txt` |
+| `flutter test --reporter expanded` final | 0 | **153 passed**, `tests-final.txt` |
+| `flutter test test/ui/f4_d01_test.dart --dart-define=CAPTURE=true --reporter expanded` | 0 | **3 passed**, real fonts/icons and PNGs, `tests-ergonomics-final.txt` |
+| `dart run tool/check_prng.dart` | 0 | VM goldens unchanged, `prng-vm.txt` |
+| `flutter build apk --debug` final | 0 | `apk-final.txt` |
+| `git hash-object --no-filters assets/levels/pack1.json` | 0 | `5efa3c88c769f74eee872860766681f5c2cc1c64` |
+| `git hash-object --no-filters assets/levels/daily.json` | 0 | `5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6` |
+
+All 150 earlier tests remain; only presentation assertions changed (collection
+progress copy, Settings tooltip and disabled stage `InkWell` instead of
+`ListTile`). Three new tests assert actual rectangles, hit testing, interactions
+and real theme/selected-tile colors. No behavioral checks removed. Coverage:
+UI-03 four independent test packs/navigation/replay; UI-04–07 tile cap, both
+drags, boosters, exact charging, feedback, expandable facts and pending spoilers;
+UI-08 exact clipboard payload/awaited errors/idempotence; UI-09 persistence,
+Reset/stale handles and F3-R01 no-overwrite; UI-10 long categories, CLOVE HITCH,
+SHEET BEND, SMATTERING, enlarged text and wide layouts; UI-11 semantics, 48 px
+targets, focus and >=4.5:1 actual text colors; UI-12 haptic mapping/suppression,
+reduced motion and interrupted settlement. All prior core/economy/Daily/calendar/
+streak/PER-04/ordered-write regressions ran in the full suite.
+
+Measured logical coordinates, including simulated 24 px top/bottom OS insets:
+
+| Viewport | Tile-grid bounds | Submit bounds | Dock bounds | Observation |
+|---|---|---|---|---|
+| 390×844, 1× | (16,200)–(374,533) | (272.7,718)–(374,770) | (0,707)–(390,820) | All 16 tiles and Submit hit-testable; scroll offset **0** before/after real four-tile selection and submission |
+| 360×640, 1.3× | (16,215)–(344,476) | (233.9,511)–(344,563) | (0,497)–(360,616) | Real long-press tray drag, four-tile Submit, one/two solves and old-fact expansion; secondary area can scroll while selected tiles and dock stay visible |
+
+The normal-play assertion does not use `ensureVisible` or scroll. The small
+test explicitly scrolls the secondary area after solves, checks every remaining
+tile above the dock and checks Submit within the SafeArea. No overlap/overflow
+or hidden primary action was observed.
+
+### Android interactions and unedited screenshot index
+
+Pixel_10 / emulator-5554, Android **16/API 36**, **1080×2424 at 420 dpi**
+(approximately **411.43×923.43 logical pixels**, device ratio 2.625).
+Native PNGs below are this device size, **not 390×844**. Exact reference sizes
+are the explicitly labeled Flutter widget captures with bundled fonts/icons.
+The emulator was available and used early; APK install and actual launcher
+icon starts succeeded. [Native commands](evidence/f4-d01/android-commands.txt)
+record coordinates, timestamps and exit codes; XML companions retain semantics.
+Successful installation, tap/drag, screenshots, force-stop and launcher input
+commands exited 0; `pidof` while stopped exited 1 as expected.
+
+- Preserved the old installed progress across upgrade, then backed it up and
+  used the real confirmed Settings Reset for this probe. The raw backup remains
+  outside Git at `%TEMP%\lexistack-f4-d01-baseline-preferences.pb`.
+- Tap toggling worked. Held DOWN for 750 ms then MOVE/UP from VOLLEY to PEARL
+  selected exactly two; TOAST to the tray added exactly one. Solved two actual
+  groups, then Pair Magnet and Peek charged **150→120→80**, marking LOVE/SERVE
+  and the real tennis title. Dark theme and haptics-off were set through UI.
+- Force-stop/relaunch changed PID **23280→23898**. The same unfinished game,
+  ordered LOVE/PAPER selection, pair/peek hints, 80 coins, dark theme and disabled
+  haptics returned. [Comparison](evidence/f4-d01/restart-comparison.txt) checks
+  decoded real DataStore state before/after. Existing navigation recency counters
+  advance on Continue; every game field and all other saved root fields match.
+- One Away cost one life; repeating it showed Already Guessed with no extra
+  loss. Four distinct wrong guesses reached pending. Native XML concealed
+  unrevealed titles/tiles; Rescue charged **80→20**, preserving the attempt.
+  Completing both remaining groups produced **one star / four mistakes / +15**,
+  35 coins and one finalized win. Copy reported platform success.
+- Explicit Replay made a fresh board. Four wrong guesses reached pending with
+  unaffordable rescue (35 coins). Reveal finalized the loss, paid **0**, and
+  Stats showed **2 games / 1 win / 50%**, with one win in the 4+ bucket. Copy
+  again reported success. Exact clipboard bytes are platform-channel golden
+  tests, not a claim of reading the Android clipboard.
+
+Every required final artifact below was opened and visually inspected:
+
+| Screen/state | Artifact |
+|---|---|
+| Home light/dark | [home-light.png](evidence/f4-d01/home-light.png), [home-dark.png](evidence/f4-d01/home-dark.png) |
+| Collection / stage trail | [campaign.png](evidence/f4-d01/campaign.png), [levels.png](evidence/f4-d01/levels.png) |
+| Fresh / actionable selection (native) | [board-fresh.png](evidence/f4-d01/board-fresh.png), [board-selected.png](evidence/f4-d01/board-selected.png) |
+| Exact 390×844 widget capture | [fresh](evidence/f4-d01/board-fresh-widget-390.png), [selected](evidence/f4-d01/board-selected-widget-390.png), [Home](evidence/f4-d01/home-widget-390.png) |
+| Exact 360×640 / 1.3× widget capture | [board-small.png](evidence/f4-d01/board-small.png), [after two solves](evidence/f4-d01/board-small-two-solved.png) |
+| Two solved / dark play | [board-two-solved.png](evidence/f4-d01/board-two-solved.png), [board-dark.png](evidence/f4-d01/board-dark.png) |
+| Pending / victory / final loss | [pending-loss.png](evidence/f4-d01/pending-loss.png), [victory.png](evidence/f4-d01/victory.png), [finalized-loss.png](evidence/f4-d01/finalized-loss.png) |
+| Supporting screens | [stats.png](evidence/f4-d01/stats.png), [settings.png](evidence/f4-d01/settings.png) |
+| Native drag and paid feedback | [tile target](evidence/f4-d01/drag-to-tile.png), [tray target](evidence/f4-d01/drag-to-tray.png), [boosters](evidence/f4-d01/boosters-paid.png), [rescue](evidence/f4-d01/paid-rescue.png) |
+| Process restart / copy | [before](evidence/f4-d01/before-restart.png), [after](evidence/f4-d01/after-restart.png), [copy success](evidence/f4-d01/victory-copy.png) |
+
+Light two-solved, drag, campaign and initial level PNGs precede the final minor
+Home progress/disabled-text refinement; their depicted layouts did not change.
+Fresh/selected, dark, restart, rescue, victory/loss and Stats use the final APK.
+PNG files were not image-edited. Old F4 evidence remains byte-unchanged.
+
+### Corrections, limits and provenance
+
+- Initial implementation tests caught masthead and paired/two-word tile
+  overflow, an invalid decorated SwitchListTile background and changed widget
+  identities (127 passed / 23 failed, exit 1). Corrections made layouts compact
+  and adapted only presentation expectations. A later 149/1 result caught
+  duplicate word semantics from the tray; merged tray semantics fixed it.
+- A Python Windows encoding mistake temporarily made board source unreadable
+  (analyzer exit 3); UTF-8 writing repaired it. A remaining brace-style info
+  was fixed; final analyzer has no issues.
+- Screenshot-test image work initially hung in fake async; its own tester was
+  stopped (exit 79). Moving the entire capture/IO into `runAsync` and loading
+  the SDK MaterialIcons font produced the passing, inspectable final captures.
+- Early Android transition/cold-start screenshots were recaptured after the
+  real UI appeared; one draft transition is retained. A backup probe used an
+  obsolete XML path and a denied shell-copy destination; binary `exec-out`
+  captured the actual DataStore instead. Concurrent UI dumps caused a shell
+  UIAutomator crash; serializing probes fixed it. The retained
+  [logcat](evidence/f4-d01/android-logcat.txt) identifies **PID 23716,
+  com.android.commands.uiautomator.Launcher**, with `already registered`, not an
+  app crash. No Flutter exception or LexiStack process crash was observed.
+- The first restart comparison incorrectly required navigation counters not
+  to change (exit 1); the corrected oracle checks their exact +1 advance and
+  equality of all actual game/persistence fields (exit 0). No state was edited
+  to pass. Initial failure logs are retained rather than replaced by passes.
+- No known unresolved required F4-D01 defect or blocked required check remains
+  in this implementation report. Visual Studio/C++ is absent; no Windows build
+  attempted. Gradle native-access warnings are nonfatal. Emulator evidence
+  cannot establish perceived vibration strength; channel tests cover mapping.
+  Browser PRNG/release checks remain F6 work. Production still has one Campaign
+  pack and eight rotating Daily boards; Strict failure remains expected for F5.
+- Human interventions: **one independent-review-triggered corrective assignment
+  (F4-D01), zero mid-run human rescue/repair or additional approvals**. This
+  correction is not counted as a new feature phase or a self-accepted gate.
+
+Final debug APK SHA-256 (binary not committed):
+`a84541646e65f2df0647eb538fb6f63cf29330fb4d414d729d5732e6e386d6ff`.
+Content dependency pin/resolved-ref remains
+**`d9acbd52de0e198dd109a4859299318db3f465f5`**. No core, application, storage,
+reference JSON, manifest, lockfile or authoritative contract changes.
+[provenance.txt](evidence/f4-d01/provenance.txt) records the unchanged paths and
+pre-publication refs. The exact supplied
+[redesign prompt](../prompts/F4-D01-paper-arcade-redesign.md) is preserved with
+`-text`; binary comparison confirms working file equals the Git blob. SHA-256:
+**`ba7937572361928f51c47c1ba5810d9a1453fcf4966ae81193b852bca3aa4dc0`**.
+
+**F4 remains PENDING independent re-review. No merge/push to main; no F5/F6.**

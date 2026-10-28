@@ -1,0 +1,27 @@
+Google Fonts repository revision: 9862abc066c9b83bf84c3e8ed1fc2d8d48f9bbf0
+https://raw.githubusercontent.com/google/fonts/9862abc066c9b83bf84c3e8ed1fc2d8d48f9bbf0/ofl/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf -> assets/fonts/fraunces.ttf
+
+Algorithm : SHA256
+Hash      : 177FF6C0F14E5550A3C624247CD1189611D4EB65D000B14944C63D967958ABBB
+Path      : C:\Codex\LexiStack\assets\fonts\fraunces.ttf
+
+
+https://raw.githubusercontent.com/google/fonts/9862abc066c9b83bf84c3e8ed1fc2d8d48f9bbf0/ofl/fraunces/OFL.txt -> assets/fonts/fraunces-OFL.txt
+
+Algorithm : SHA256
+Hash      : BDF4C22802EAF804F998195871C6B8938AAC2AC14B2D78A8BD66A6F1ECED833B
+Path      : C:\Codex\LexiStack\assets\fonts\fraunces-OFL.txt
+
+
+https://raw.githubusercontent.com/google/fonts/9862abc066c9b83bf84c3e8ed1fc2d8d48f9bbf0/ofl/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf -> assets/fonts/dmsans.ttf
+
+Algorithm : SHA256
+Hash      : 8CD08D97E89C24D0AA92EDD2F0F4C8EE6195EEE9B7C9F154865A58B02F0C1C0D
+Path      : C:\Codex\LexiStack\assets\fonts\dmsans.ttf
+
+
+https://raw.githubusercontent.com/google/fonts/9862abc066c9b83bf84c3e8ed1fc2d8d48f9bbf0/ofl/dmsans/OFL.txt -> assets/fonts/dmsans-OFL.txt
+
+Algorithm : SHA256
+Hash      : 9AF36190332437F5ECD09974DE43C1F7C77A310A996CDD8CEB25628B458840E1
+Path      : C:\Codex\LexiStack\assets\fonts\dmsans-OFL.txt
