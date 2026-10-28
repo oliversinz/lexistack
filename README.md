@@ -1,32 +1,90 @@
-# LexiStack5 — Sequential Development Experiment E
+# LexiStack — F1 foundation
 
-**Repository seed / planning documents only.** This package does not contain a Flutter app, runnable tests, an Android build or a Content Studio Dart package. Those are produced in the separately approved implementation runs.
+A genuine Flutter Android app with Home → collection → level-details navigation.
+This build includes **Everyday Echoes: eight level entries**, loaded from the
+frozen schema v2 JSON. Gameplay, economy, saves and Daily are later phases;
+there is no playable board yet.
 
-## Goal
+## Run on Windows
 
-Build the same offline Flutter Android-first game specified by the optimized LexiStack Genesis, but via six autonomous, independently reviewed feature runs. Keep technical engineering separate from level authorship and assess reproducibility, correctness, architecture and review overhead.
+Verified with Flutter **3.47.8**, Dart **3.13.7**, Android SDK **36.1.0** and the
+**Pixel_10** Android 16 emulator. Use PowerShell from this repository:
 
-## Read first
+```powershell
+flutter --version
+dart --version
+flutter doctor -v
+flutter pub get
+flutter emulators
+flutter emulators --launch Pixel_10
+flutter run -d emulator-5554
+```
 
-- `docs/product-contract.md` — complete final game rules and UX requirements.
-- `docs/architecture.md` — two-repository integration and code separation.
-- `docs/feature-roadmap.md` — P0 prerequisite and F1–F6 progression.
-- `docs/acceptance-matrix.md` — phase-specific independent probes.
-- `docs/reference-content-lock.md` — exact frozen 40-level source.
-- `docs/content-studio-handoff.md` — minimal shared pure-Dart contract required before F1.
-- `docs/experiment-e-protocol.md` — comparison method and evidence.
-- `AGENTS.md` — concise agent startup instructions.
-- `.gitattributes` — enforce LF for benchmark JSON on Windows checkout.
-- `prompts/CS0-content-contract.md` — bootstrap prompt for the separate Studio package (first technical dependency).
-- `prompts/F1-foundation.md` — first app phase prompt **draft**, runnable only after P0.
+Use the emulator ID shown by your installation. Flutter and Git must be on PATH.
+Android licenses must be accepted (`flutter doctor --android-licenses`).
 
-## Status
+## Check and build
 
-- Architecture and six-phase roadmap: accepted planning baseline.
-- Reference JSON source: selected, but **actual files not copied** and **full Dart validator not yet independently run**.
-- Content Studio shared package URL and pinned commit: **not yet available**.
-- F1: **not started**.
+```powershell
+dart run tool/validate_levels.dart --partial
+dart run tool/validate_levels.dart
+dart run tool/validate_levels.dart assets/levels/pack1.json
+dart analyze
+flutter test
+flutter build apk --debug
+git hash-object --no-filters assets/levels/pack1.json
+```
 
-Do not claim Flutter tests, Android launcher checks or content strict validation were performed by this planning archive.
+Partial validation passes with 8 levels / 32 groups / 128 tile positions.
+Strict validation **exits 1 as expected in F1**: three campaign packs and Daily
+are intentionally absent. The candidate command reports a replacement preview
+and never writes assets. An external candidate path with a new pack ID is
+validated as an addition against the installed catalog.
 
-After F1, replace this README's planning-only status with genuine Windows setup/run/test/build instructions and retain links to the stable contracts.
+The debug APK is `build/app/outputs/flutter-apk/app-debug.apk`. To verify a
+launcher start independently of `flutter run`:
+
+```powershell
+$adb = "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe"
+& $adb devices -l
+& $adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+& $adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+```
+
+Open the emulator's app drawer and tap **LexiStack**. In the recorded run, the
+first debug cold launch took 5.360 seconds to reach Android's fully-drawn event;
+a warm launcher reopen reused the process and showed the previous screen.
+If startup seems slow, inspect `adb logcat` before diagnosing an app failure.
+
+## Boundaries and content
+
+- `lib/infrastructure/asset_catalog.dart` reads bundled strings; the shared
+  package owns all parsing, models and validation.
+- `lib/app/catalog_controller.dart` uses SDK `ChangeNotifier` for loading,
+  diagnostics and retry. `lib/ui/` contains navigation and the theme.
+- The pure Dart content package is pinned to
+  `d9acbd52de0e198dd109a4859299318db3f465f5` at
+  [lexistack-content](https://github.com/oliversinz/lexistack-content),
+  subdirectory `packages/lexistack_content_contract`; commit `pubspec.lock`.
+  There are no game-rule placeholders; the pure Dart engine starts in F2.
+- The only installed pack comes from LexiStack3 commit
+  `8b84f2d6c75cb807fba9db19cba707f963e02020`. Its Git blob must remain
+  `5efa3c88c769f74eee872860766681f5c2cc1c64`. Do not edit or reserialize it.
+- Runtime content and SDK typography/icons are local. No font downloads or
+  third-party font files are used. Flutter exposes its SDK license notices.
+  There is no backend, runtime content fetching, analytics or persistence.
+  Android debug manifests retain Flutter's development-tool Internet permission.
+- Future imports must follow the assigned phase and
+  [reference lock](docs/reference-content-lock.md). Do not add absent files to
+  the partial manifest. New Studio-authored content is outside this experiment.
+
+A missing or malformed asset shows its filename/location and a Retry action.
+Restore the exact asset and rebuild; retry cannot repair a damaged APK.
+Git access is needed at dependency-resolution time. Preserve the pin instead of
+substituting a branch when resolution fails. This host lacks Visual Studio, so
+Windows desktop builds were not attempted; F1 has Android scaffolding only.
+Java/Gradle emitted native-access warnings, but the debug build succeeded.
+
+See [F1 evidence](docs/gate-log.md), [product contract](docs/product-contract.md),
+[architecture](docs/architecture.md) and [acceptance matrix](docs/acceptance-matrix.md).
+The independent reviewer decides acceptance. F2 has not started.
