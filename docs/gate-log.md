@@ -607,3 +607,32 @@ Contracts, frozen assets, dependency pin and prior evidence are unchanged.
 One post-review corrective request; no mid-pass human rescue. Nonfatal Gradle
 native-access warnings persist. No known remaining F3-R01 defect or required
 environment block; browser execution remains outside this correction.
+
+## F3 — Independent acceptance and main integration (2026-10-28)
+
+**Independent reviewer decision: PASS, 2026-10-28.** This final decision
+supersedes the earlier PENDING and CORRECTION REQUIRED entries above; all
+original F3 and F3-R01 evidence remains preserved.
+
+- Accepted final F3 commit: `7e03eaad8ee8731c57d2f4df3f3b4485ee605d1c`.
+- Accepted scope: **ECO-01–09, DAY-01–06, PER-01–09 and PLT-04**.
+- **F3-R01**, the high-priority storage-read recovery defect, is confirmed fixed.
+  No additional blocking defects or correction runs are required.
+- One post-review corrective run; **zero human interventions during the
+  original autonomous F3 run**.
+- Final implementation evidence: [122 passing Flutter tests](evidence/f3-r01/tests.txt),
+  [clean analyzer](evidence/f3-r01/analysis.txt),
+  [successful Android debug build](evidence/f3-r01/apk.txt), and the previous
+  [Android process-restart evidence](evidence/f3/android-commands.txt), including
+  [before](evidence/f3/android-before-restart.png) and
+  [after](evidence/f3/android-after-restart.png) screenshots.
+- Independent review examined actual GitHub source, regression tests, command
+  evidence and Android screenshots. **Flutter tests were not independently
+  rerun.** Storage-read failure injection was verified in controller/widget
+  tests, **not on Android**.
+- Integration verified a clean tree, fetched remote references, and confirmed
+  local/remote `main` at `9928bd5895e9258bdadb79580bc41497482181d9` and
+  local/remote `codex/f3-progression-economy-persistence` at the accepted F3 SHA.
+  Local `main` was advanced with `git merge --ff-only`; this acceptance record
+  is the sole change in the subsequent documentation commit. No history was
+  rewritten. **F4 has not been started or assigned.**
