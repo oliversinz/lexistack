@@ -165,6 +165,28 @@ application checksum manifest.
 
 ## F2 — Pure-Dart engine and playable Android vertical slice
 
+**Independent reviewer decision: PASS, 2026-10-28.**
+Accepted implementation/evidence commit:
+[`0f3640d3cea8bd4553314d833d9ea939652aba1e`](https://github.com/oliversinz/lexistack/commit/0f3640d3cea8bd4553314d833d9ea939652aba1e).
+This independent decision was communicated by the user after review; it is not
+an implementing-agent self-awarded pass.
+
+Verified scope: **ENG-01–10, ENG-11 VM portion, ENG-12 formatter portion,
+UI-02 and PLT-03**. Review basis: GitHub source inspection, versioned command
+evidence, Android screenshots and gesture logs, plus independent mathematical
+verification of PRNG golden vectors. Flutter tests/builds were **not
+independently rerun by the reviewer**.
+
+No blocking defects or corrective run required. Browser PRNG execution remains
+F6; clipboard integration remains F4. Minor UI grammar/polish findings may be
+addressed in F4. F3 has not started.
+
+### Original implementation record
+
+The evidence below is preserved as a historical record. Its pending-review
+status and Git-state statements describe the implementation run before this
+acceptance and subsequent publication/integration.
+
 **Reviewer decision: PENDING independent review. Implementation complete.**
 F3 has not started. No push, merge, history rewrite, wallet or persistence.
 

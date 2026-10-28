@@ -106,7 +106,16 @@ Files split by **responsibility**, not arbitrary line counts. Avoid another mono
 
 ## 6. Agent handoff and change control
 
-Repository sources (`AGENTS.md` -> product contract -> architecture -> roadmap -> acceptance matrix) are the only authoritative between-run memory. At the start of each phase the agent reads those files, checks the **actual Git state**, reproduces previous gate tests and implements only the phase scope. The coding agent may commit changes but not push, force-push or rewrite history. Product and architecture contracts are not silently changed by implementation agents.
+Repository sources (`AGENTS.md` -> product contract -> architecture -> roadmap -> acceptance matrix) are the only authoritative between-run memory. At the start of each phase the agent reads those files, checks the **actual Git state**, reproduces previous gate tests and implements only the phase scope. Product and architecture contracts are not silently changed by implementation agents.
+
+**Git handoff for F3–F6:**
+
+- Start each feature phase from the latest accepted `main`, with a clean working tree, on a dedicated `codex/fN-*` feature branch.
+- Complete implementation, tests, evidence and local commits autonomously, then push the completed feature branch to `origin` for independent review.
+- Never merge into or push `main` before explicit independent quality-gate approval.
+- After explicit approval, fast-forward `main` to the accepted feature commit using `git merge --ff-only`, then push `main`.
+- Never force-push or rewrite history.
+- Do not start the next feature before the previous gate is accepted. The next phase still requires an explicit assignment.
 
 Each phase emits one concise evidence record: version/model/effort, commit, clean/dirty tree, actual commands with exit codes, emulator observations, defects and interventions. Independent review records pass/fail. See `experiment-e-protocol.md`.
 

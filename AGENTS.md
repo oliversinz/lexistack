@@ -13,6 +13,16 @@ You are implementing **only the phase explicitly assigned in the current user pr
 
 Environment is **Windows / PowerShell**, with Android as primary target and Flutter/Dart. Early emulator verification is mandatory when available. Keep core game rules pure Dart and content parsing in the pinned external `lexistack_content_contract` package. Use minimal standard Flutter state management (`ChangeNotifier`) and few justified dependencies. No unrequested backend, analytics, ads, billing, runtime LLM/network or content authoring.
 
-Before acting: inspect actual Git state, installed tools, active phase and pinned content package. During the phase: implement autonomously, commit coherent checkpoints, run focused and earlier-gate regressions. Do **not** push or rewrite history. Do not state that a skipped or environment-blocked test passed.
+Before acting: inspect actual Git state, installed tools, active phase and pinned content package. During the phase: implement autonomously, commit coherent checkpoints, run focused and earlier-gate regressions. Follow the Git workflow below. Do not state that a skipped or environment-blocked test passed.
 
 At the end: report commit SHA, clean/dirty tree, exact commands and exit codes, tests, actual emulator/browser evidence, remaining defects, environment issues and human interventions. Independent review—not your report—decides whether the phase gate has passed.
+
+## Git workflow for F3–F6
+
+- Start each feature phase from the latest accepted `main`, with a clean working tree, and create a dedicated `codex/fN-*` feature branch.
+- Complete implementation, tests, evidence and local commits autonomously on that branch.
+- Push the completed feature branch to `origin` for independent review.
+- Never merge into or push `main` before explicit independent quality-gate approval.
+- After explicit approval, fast-forward `main` to the accepted feature commit using `git merge --ff-only`, then push `main`.
+- Never force-push or rewrite history.
+- Do not start the next feature before the previous gate is accepted; acceptance alone does not assign the next phase.
