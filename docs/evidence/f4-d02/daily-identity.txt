@@ -1,0 +1,4 @@
+PS> git hash-object --no-filters assets/levels/daily.json
+START: 2026-10-28T21:32:34.5676159+01:00
+5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6
+EXIT CODE: 0

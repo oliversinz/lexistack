@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 22),
-          Text('Good words.\nGreat company.', style: text.displaySmall),
+          const Text('Good words.\nGreat company.', style: homeHeroStyle),
           const SizedBox(height: 8),
           const Text('Sixteen words. Four connections. Your move.'),
           const SizedBox(height: 20),

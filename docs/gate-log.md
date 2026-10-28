@@ -1045,3 +1045,133 @@ pre-publication refs. The exact supplied
 **`ba7937572361928f51c47c1ba5810d9a1453fcf4966ae81193b852bca3aa4dc0`**.
 
 **F4 remains PENDING independent re-review. No merge/push to main; no F5/F6.**
+
+## F4-D02 — Typography Refinement (PENDING independent review, 2026-10-28)
+
+Narrow independent-review-triggered correction, continuing on
+`codex/f4-complete-ux-interaction` from reviewed
+**`fa1ba33b2a00b67dcbf28420cfcc68fd72b5300c`**. Local and remote starting refs
+matched; the only initial untracked file was the supplied execution prompt.
+`origin/main` remains **`ecd08104d0d54bd2ae23d063c2f3f7e0ba45f06e`**.
+The review commit is the commit introducing this section and its evidence.
+No main changes, history rewriting or F5/F6 work.
+
+### Change and typography audit
+
+Only three production files changed: `lib/ui/theme.dart`, `common.dart` and
+`home_screen.dart`. Generic heading slots and functional AppBar titles now use
+DM Sans at weight 700, retaining their existing sizes, line heights and spacing.
+Two named explicit styles keep Fraunces at weight 600 only for the Home
+`LexiStack` wordmark (23 px) and `Good words. Great company.` hero (32 px).
+
+| Role | Effective font |
+|---|---|
+| Home wordmark and hero | Fraunces, explicit exceptions |
+| Daily date, all functional AppBar/section/result/pending headings | DM Sans |
+| Statistics metrics, stage numerals, counters, coins and rewards | DM Sans |
+| Tiles, actions, boosters, facts, settings and body text | DM Sans |
+
+Both font binaries and OFL texts are unchanged. No wording, palette, emblem,
+geometry, gameplay, economy, progression, clipboard, persistence, content,
+manifest, package pin or lockfile changes. F4/F4-D01 prompts and evidence remain
+untouched. No new font, dependency or typography framework.
+
+Compared the untouched [D01 Home](evidence/f4-d01/home-light.png),
+[Stats](evidence/f4-d01/stats.png), [Settings](evidence/f4-d01/settings.png) and
+other prior screen captures with the after images below. All new PNGs were
+opened with image viewing tools. Daily dates and metrics now have clean sans
+digits; navigation and section headings match the functional UI. The two
+editorial brand accents remain visually distinct in both themes. No layout
+adjustment was needed. Existing single-line ellipsis for a constrained Board
+title/selection summary at 360 px with enlarged text remains; it does not cover
+tiles or the Submit action.
+
+### Tests and command evidence
+
+Commands ran in PowerShell from `C:\Codex\LexiStack`; logs in
+[evidence/f4-d02](evidence/f4-d02). Flutter **3.47.8**, Dart **3.13.7** remain
+installed; the existing Pixel_10 emulator was connected before editing.
+Baseline testing began at 21:28:48 CET; device smoke ended at 21:36:46 CET.
+These are evidence timestamps, not total task-runtime measurements. Agent:
+Codex; exact model/effort, token cost and reviewer time are not exposed.
+
+| Actual command | Exit | Result / log |
+|---|---:|---|
+| `flutter pub get` | 0 | `pub-get.txt`; lockfile unchanged |
+| `dart run tool/validate_levels.dart --partial` | 0 | **16 levels, 0 errors/warnings**, `validator-partial.txt` |
+| `dart run tool/validate_levels.dart` | **1 expected** | Only `catalog.campaignCount` (1 installed, 4 required); `validator-strict.txt` |
+| `dart analyze` | 0 | No issues; `analysis.txt` |
+| `flutter test --reporter expanded` before edits | 0 | **153 passed**; `tests-baseline.txt` |
+| `flutter test --reporter expanded` final | 0 | **155 passed**; `tests-final.txt` |
+| `flutter test test/ui/f4_d01_test.dart --reporter expanded` | 0 | **3 passed**; `tests-ergonomics.txt` |
+| `flutter test test/ui/f4_d02_test.dart --dart-define=CAPTURE=true --reporter expanded` | 0 | **2 passed**, six viewport/theme combinations; `typography-captures.txt` |
+| `dart run tool/check_prng.dart` | 0 | VM goldens pass; `prng-vm.txt` |
+| `flutter build apk --debug` | 0 | Debug APK built; `apk.txt` |
+| `git hash-object --no-filters assets/levels/pack1.json` | 0 | `5efa3c88c769f74eee872860766681f5c2cc1c64` |
+| `git hash-object --no-filters assets/levels/daily.json` | 0 | `5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6` |
+
+New `test/ui/f4_d02_test.dart` loads the actual bundled fonts and SDK icons,
+checks merged `RenderParagraph` styles across Home, Campaign, levels, Board,
+victory, Stats, Settings and Reset dialog, and asserts both explicit Fraunces
+exceptions. It checks unclipped Daily/hero/metric text and hit-testable tiles/dock
+at **360×640/1.3×, 390×844/1× and 1280×800/1.3× in both themes**. Existing test
+files/assertions are unchanged; all ENG/ECO/DAY/PER, F3-R01, clipboard, motion,
+haptic, drag, contrast and accessibility regressions remain in the full suite.
+
+D01 geometry remains identical: at 390×844 all 16 tiles occupy
+`(16,200)–(374,533)`, Submit `(272.7,718)–(374,770)`, scroll offset **0**.
+At 360×640/1.3× Submit is `(233.9,511)–(344,563)` inside SafeArea `y=24..616`;
+the dock stays fixed through real tray drag and one/two solves. The D02 tests
+also exercise the dock in both themes. No old screenshot capture was overwritten.
+
+### Android smoke and selected unedited screenshots
+
+Installed with `adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk`
+(exit **0**), then tapped the actual launcher icon. Pixel_10 / Android 16 API 36,
+native **1080×2424, 420 dpi** (about 411.43×923.43 logical pixels).
+[android-commands.txt](evidence/f4-d02/android-commands.txt) records successful
+native commands/exits. The unchanged D01 capture helper was reused with its
+output directory redirected to `f4-d02`; XML companions retain actual semantics.
+
+Opened Home/Daily, switched Light→Dark through Settings, navigated Campaign and
+the level trail, viewed the saved finalized loss, inspected Stats, then resumed
+stage 2. Tapped BENCH/STOOL/SOFA/CHAIR: actionable Submit remained visible;
+submission showed **Correct! SEATS AROUND THE HOUSE**, retaining the prior one
+mistake and 35 coins. [android-solve.xml](evidence/f4-d02/android-solve.xml)
+records the solve. The saved result retained zero payout and Stats 2 games /
+1 win / 50%. Deep booster/replay/process-kill/drag probes were **not rerun on
+device** in this typography-only correction; their automated regressions passed
+and D01 native evidence is retained. No browser run or release build claimed.
+
+| Inspected artifact | Capture type |
+|---|---|
+| [Home light](evidence/f4-d02/android-home-light.png), [Home dark](evidence/f4-d02/android-home-dark.png), including Daily heading | Native Android |
+| [Level trail](evidence/f4-d02/android-levels-dark.png), [selected Board](evidence/f4-d02/android-board-dark.png) | Native Android |
+| [Finalized result](evidence/f4-d02/android-result-dark.png), [Statistics](evidence/f4-d02/android-stats-dark.png), [Settings](evidence/f4-d02/android-settings-dark.png) | Native Android |
+| [Home light](evidence/f4-d02/widget-home-light-390.png), [Home dark](evidence/f4-d02/widget-home-dark-390.png) | Exact 390×844 widget captures, actual fonts |
+| [Small Board](evidence/f4-d02/widget-board-dark-360-1.3.png) | Exact 360×640 / 1.3× widget capture |
+| [Wide Statistics](evidence/f4-d02/widget-stats-light-1280-1.3.png) | Exact 1280×800 / 1.3× widget capture, centered 460 px frame |
+
+### Corrections, limitations and prompt identity
+
+All new typography checks passed on the first execution; no code self-correction
+or existing assertion change was necessary. One native probe requested the
+nonexistent label `View Result` and stopped before input (exit 1); the observed
+`View saved result` label succeeded. The initial post-launch dump still showed
+the launcher; the next observation waited for the real Home before capture.
+The [time-bounded logcat](evidence/f4-d02/android-logcat.txt) confirms the launcher
+start and contains no Flutter exception, overflow or app crash during this smoke.
+Gradle native-access warnings are nonfatal; no required check was environment
+blocked. No unresolved typography defect observed; independent review is pending.
+
+Human interventions: **one F4-D02 independent-review correction assignment,
+zero mid-run rescue/repair/approval prompts** (second design correction after
+D01, not a new phase). Content pin/resolved-ref remains
+`d9acbd52de0e198dd109a4859299318db3f465f5`.
+[provenance.txt](evidence/f4-d02/provenance.txt) records unchanged paths and APK
+SHA-256 `09aea5c221f4cd398350f1fcd1a34493a8775547d3be86fb2a8a5549df0ae7b3`.
+The supplied [exact prompt](../prompts/F4-D02-typography-refinement.md) was staged
+before code edits; its bytes equal the Git blob under the existing `-text` rule.
+SHA-256: **`1ee0d2b70ed5fe3f68f5b392344246c15cdfae122ef5be8ade3c7fa2bcebffde`**.
+
+**F4 remains PENDING independent approval. No merge/push to main; no F5/F6.**

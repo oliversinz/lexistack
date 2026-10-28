@@ -1,0 +1,5 @@
+PS> dart analyze
+START: 2026-10-28T21:31:19.2267418+01:00
+Analyzing LexiStack...
+No issues found!
+EXIT CODE: 0

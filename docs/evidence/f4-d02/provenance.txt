@@ -1,0 +1,12 @@
+Reviewed start: fa1ba33b2a00b67dcbf28420cfcc68fd72b5300c
+Staged prompt bytes == supplied file: PASS
+Prompt SHA-256: 1ee0d2b70ed5fe3f68f5b392344246c15cdfae122ef5be8ade3c7fa2bcebffde
+PS> git ls-remote origin refs/heads/main refs/heads/codex/f4-complete-ux-interaction
+fa1ba33b2a00b67dcbf28420cfcc68fd72b5300c	refs/heads/codex/f4-complete-ux-interaction
+ecd08104d0d54bd2ae23d063c2f3f7e0ba45f06e	refs/heads/main
+EXIT CODE: 0
+PS> git diff HEAD --name-only -- assets/fonts assets/levels pubspec.yaml pubspec.lock lib/core lib/app lib/infrastructure docs/evidence/f4 docs/evidence/f4-d01
+
+EXIT CODE: 0
+Content dependency pin/resolved-ref unchanged: d9acbd52de0e198dd109a4859299318db3f465f5
+APK SHA-256: 09aea5c221f4cd398350f1fcd1a34493a8775547d3be86fb2a8a5549df0ae7b3

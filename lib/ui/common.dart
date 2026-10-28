@@ -24,7 +24,7 @@ class CatalogPage extends StatelessWidget {
                 Flexible(
                   child: FittedBox(
                     fit: BoxFit.scaleDown,
-                    child: Text('LexiStack'),
+                    child: Text('LexiStack', style: wordmarkStyle),
                   ),
                 ),
               ],

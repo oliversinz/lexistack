@@ -17,6 +17,22 @@ const tierColors = [
 ];
 const tierInk = ink;
 
+// Fraunces is reserved for these two editorial brand roles.
+const wordmarkStyle = TextStyle(
+  fontFamily: 'Fraunces',
+  fontSize: 23,
+  height: 1.12,
+  fontWeight: FontWeight.w600,
+  letterSpacing: -.8,
+);
+const homeHeroStyle = TextStyle(
+  fontFamily: 'Fraunces',
+  fontSize: 32,
+  height: 1.12,
+  fontWeight: FontWeight.w600,
+  letterSpacing: -.8,
+);
+
 ThemeData lexistackTheme({Brightness brightness = Brightness.light}) {
   final dark = brightness == Brightness.dark;
   final colors = ColorScheme(
@@ -47,11 +63,11 @@ ThemeData lexistackTheme({Brightness brightness = Brightness.light}) {
     useMaterial3: true,
     fontFamily: 'DM Sans',
   );
-  TextStyle display(double size) => TextStyle(
-    fontFamily: 'Fraunces',
+  TextStyle heading(double size) => TextStyle(
+    fontFamily: 'DM Sans',
     fontSize: size,
     height: 1.12,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w700,
     letterSpacing: -.8,
     color: colors.onSurface,
   );
@@ -59,10 +75,10 @@ ThemeData lexistackTheme({Brightness brightness = Brightness.light}) {
   return base.copyWith(
     scaffoldBackgroundColor: colors.surface,
     textTheme: base.textTheme.copyWith(
-      displaySmall: display(32),
-      headlineMedium: display(28),
-      headlineSmall: display(26),
-      titleLarge: display(22),
+      displaySmall: heading(32),
+      headlineMedium: heading(28),
+      headlineSmall: heading(26),
+      titleLarge: heading(22),
       titleMedium: base.textTheme.titleMedium!.copyWith(
         fontWeight: FontWeight.w700,
       ),
@@ -75,7 +91,7 @@ ThemeData lexistackTheme({Brightness brightness = Brightness.light}) {
     appBarTheme: AppBarTheme(
       backgroundColor: colors.surface,
       foregroundColor: colors.onSurface,
-      titleTextStyle: display(23),
+      titleTextStyle: heading(23),
       centerTitle: false,
       scrolledUnderElevation: 0,
     ),
