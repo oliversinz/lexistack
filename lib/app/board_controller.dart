@@ -69,7 +69,8 @@ class BoardController extends ChangeNotifier {
   GameOutcome revealLoss() => _apply((g) => g.revealLoss());
 
   void newAttempt() {
-    if (date != null || !game.isFinal) return;
+    // Reset removes the finalized record too; an old handle cannot start a replay.
+    if (date != null || !game.isFinal || result == null) return;
     final next = progress.enterCampaign(game.level, replay: true);
     if (next == null) return;
     _attempt = next;

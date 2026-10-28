@@ -49,8 +49,8 @@ void main() {
       await reveal(tester, 'Explore collection');
       expect(find.text('Everyday Echoes'), findsOneWidget);
       expect(find.text('8 level entries · Available offline'), findsOneWidget);
-      await reveal(tester, 'Reset progress');
-      expect(find.text('Reset progress'), findsOneWidget);
+      await reveal(tester, 'Settings');
+      expect(find.text('Settings'), findsOneWidget);
       await reveal(tester, 'Explore collection', -200);
       await tester.tap(find.text('Explore collection'));
       await tester.pumpAndSettle();

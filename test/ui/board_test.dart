@@ -44,7 +44,7 @@ Future<void> enterBoard(
   );
   await tapVisible(tester, find.text('Explore collection'));
   await tapVisible(tester, find.text('Table Talk'));
-  await tapVisible(tester, find.text('Play / Resume'));
+  await tapVisible(tester, find.textContaining(RegExp(r'^(Play|Resume)$')));
 }
 
 Finder tile(String word) => find.byKey(ValueKey('tile-$word'));
@@ -162,6 +162,11 @@ void main() {
       final tray = find.byKey(const Key('selection-tray'));
       await tester.ensureVisible(tray);
       await tester.pumpAndSettle();
+      // The four group slots increase the scroll extent; expose the source too.
+      await tester.ensureVisible(tile('DEUCE'));
+      await tester.pumpAndSettle();
+      expect(tile('DEUCE').hitTestable(), findsOneWidget);
+      expect(tray.hitTestable(), findsOneWidget);
       final second = await tester.startGesture(tester.getCenter(tile('DEUCE')));
       await tester.pump(const Duration(milliseconds: 600));
       await second.moveTo(tester.getCenter(tray));
@@ -198,7 +203,7 @@ void main() {
       expect(find.text(attempt.level.redHerrings.first.note), findsNothing);
       expect(find.byKey(const Key('tile-grid')), findsNothing);
       await tapVisible(tester, find.text('Back to level'));
-      await tapVisible(tester, find.text('Play / Resume'));
+      await tapVisible(tester, find.textContaining(RegExp(r'^(Play|Resume)$')));
       expect(identical(game(tester), attempt), isTrue);
       expect(find.text('Out of lives · Your choice'), findsOneWidget);
       final order = attempt.order;
@@ -238,7 +243,7 @@ void main() {
       final original = game(tester);
       await tapVisible(tester, tile('TOAST'));
       await tapVisible(tester, find.text('Back to level'));
-      await tapVisible(tester, find.text('Play / Resume'));
+      await tapVisible(tester, find.textContaining(RegExp(r'^(Play|Resume)$')));
       expect(identical(game(tester), original), isTrue);
       expect(original.selection, hasLength(1));
       expect(find.text('New attempt'), findsNothing);

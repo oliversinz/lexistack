@@ -1,4 +1,4 @@
-# LexiStack — F3 persistent offline game
+# LexiStack — F4 offline puzzle experience
 
 Find four groups of four words before exhausting four lives. Tap to toggle;
 hold and drag onto another tile to add both, or onto the tray to add one.
@@ -20,7 +20,23 @@ including pending loss. Finished levels require an explicit replay.
 - Daily permits one attempt per local civil date. Its first win pays the star
   reward **plus 25**. The eight-board pool repeats every eight days.
 - Finalized wins/losses count toward statistics; pending losses and abandoned
-  old-day Daily attempts do not. Home shows actual statistics and streaks.
+  old-day Daily attempts do not. Statistics shows win rate, perfect wins,
+  mistake buckets and Daily streaks.
+
+Home leads to Continue, Daily, Campaign collections, Statistics and Settings.
+Level entries distinguish Play, Resume, saved results and explicit Replay.
+When all installed levels are won, Continue opens the collection selector.
+Final results include facts, red-herring explanations and **Copy result**:
+Flutter's clipboard receives the exact spoiler-free emoji result. Copy errors
+are reported; pending decisions cannot share or expose unsolved answers.
+
+Settings persists System/Light/Dark appearance and Haptic Feedback. Selection,
+solve, mistake and successful booster actions trigger their respective SDK
+haptics; disabling the toggle suppresses them. Restrained selection, shake,
+group reveal and result animations respect the device's reduced-motion setting.
+All screens scroll on compact phones; wide viewports center a 460-pixel app.
+Typography uses offline Flutter/platform SDK fonts, with no third-party font
+assets, downloads or additional licenses. Custom font styling is not bundled.
 
 ## Run and verify on Windows
 
@@ -43,7 +59,7 @@ git hash-object --no-filters assets/levels/daily.json
 ```
 
 Partial validation: **16 levels / 64 groups / 256 tile positions**, zero errors
-and warnings. Strict validation **intentionally exits 1 in F3** because three
+and warnings. Strict validation **intentionally exits 1 in F4** because three
 campaign packs remain for F5; Daily is installed and valid. To validate an
 external candidate without changing assets:
 `dart run tool/validate_levels.dart path/to/candidate.json`. Matching pack IDs
@@ -94,7 +110,9 @@ root/version resets to fresh defaults. Corrupt finalized records retain ID/date
 or level reward locks to prevent fresh payouts; valid history repairs missing
 progression flags. A wholly invalid history locks rewards until confirmed Reset.
 Reset restores 150 coins, empty attempts/history/Daily, system theme and haptics
-on. Full theme/haptics controls and clipboard integration belong to F4.
+on. Reset requires confirmation and removes stale navigation. A failed storage
+read exposes only **Retry load**; gameplay, settings, reset and writes remain
+blocked until the existing data can be recovered.
 
 Daily index uses UTC midnights made from **local calendar components**, relative
 to **2026-01-01**. Pool index is normalized `dayIndex % 8`; seed is
@@ -111,7 +129,7 @@ commit `pubspec.lock`. Frozen source commit:
 Do not edit or reserialize those fixtures. Runtime assets/SDK fonts are bundled;
 there is no backend, analytics, ads, billing or runtime content network.
 
-See [gate log](docs/gate-log.md) and [F3 evidence](docs/evidence/f3).
-F1/F2 are accepted; **F3 is PENDING independent review**. F4 has not started.
+See [gate log](docs/gate-log.md) and [F4 evidence](docs/evidence/f4).
+F1–F3 are accepted; **F4 is PENDING independent review**. F5 has not started.
 Windows desktop compilation is unavailable on this host without Visual Studio;
 Android builds work, with nonfatal Java native-access warnings.

@@ -74,7 +74,7 @@ void main() {
       expect(find.text('Retry load'), findsNothing);
       expect(find.text('Retry save'), findsNothing);
       expect(find.text('170 coins'), findsOneWidget);
-      expect(find.textContaining('1 games played'), findsOneWidget);
+      expect(find.textContaining('1 game played'), findsOneWidget);
       expect(store.value, document);
       expect(store.writes, hasLength(writeCount));
       await tapVisible(t, find.text('Continue Campaign'));
@@ -237,6 +237,7 @@ void main() {
       await t.pumpAndSettle();
       await t.pageBack();
       await t.pumpAndSettle();
+      await tapVisible(t, find.byTooltip('Settings'));
       await tapVisible(t, find.text('Reset progress'));
       await t.tap(find.text('Cancel'));
       await t.pumpAndSettle();
