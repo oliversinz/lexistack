@@ -1175,3 +1175,38 @@ before code edits; its bytes equal the Git blob under the existing `-text` rule.
 SHA-256: **`1ee0d2b70ed5fe3f68f5b392344246c15cdfae122ef5be8ade3c7fa2bcebffde`**.
 
 **F4 remains PENDING independent approval. No merge/push to main; no F5/F6.**
+
+## F4 — Independent gate acceptance and main integration
+
+**Independent reviewer decision: PASS, 2026-10-28.** This acceptance supersedes
+the historical PENDING statuses above. Accepted final F4 commit:
+**`5fcb0a079201aa981089a66ee822a07a311d5c11`**.
+
+- **UI-03–12 and PLT-03/04 accepted for their F4 scope.** No remaining blocking
+  F4 defect.
+- **F4-D01 accepted:** independent-review-triggered complete Paper Arcade visual
+  redesign and gameplay ergonomics correction.
+- **F4-D02 accepted:** targeted typography refinement, with DM Sans for functional
+  UI and Fraunces limited to the Home wordmark and hero.
+- **Two post-review design correction runs; zero mid-run human interventions.**
+
+Final evidence comprises [155 passing Flutter tests](evidence/f4-d02/tests-final.txt),
+a [clean analyzer](evidence/f4-d02/analysis.txt), a successful
+[Android debug build](evidence/f4-d02/apk.txt), relevant Android interaction
+evidence, typography/layout tests, and genuine screenshots in both themes.
+All existing [F4](evidence/f4), [F4-D01](evidence/f4-d01) and
+[F4-D02](evidence/f4-d02) evidence is preserved.
+
+Independent review inspected actual source code, archived test output and
+Android screenshots. **Flutter tests/builds were not independently rerun.**
+Final F6 canonical screenshots, browser PRNG execution and release verification
+remain pending under F6; they are not implied by this F4 acceptance.
+
+Integration verified a clean tree, fetched origin, and confirmed local/remote
+main at `ecd08104d0d54bd2ae23d063c2f3f7e0ba45f06e` and the feature branch at the
+exact accepted F4 commit. Local main was fast-forwarded with
+`git merge --ff-only 5fcb0a079201aa981089a66ee822a07a311d5c11`.
+This acceptance record is the sole change in the following documentation commit;
+no application code, tests, fonts, licenses, dependencies, frozen assets or
+product contracts were changed. Tests/builds were not rerun for this
+documentation-only integration. **F5 has not started.**
