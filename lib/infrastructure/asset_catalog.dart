@@ -25,6 +25,6 @@ Future<ValidationReport> loadAssetCatalog(AssetBundle bundle) async {
     manifestContents: manifest,
     manifestSource: '$directory/manifest.json',
     files: files,
-    mode: ValidationMode.partial,
+    mode: ValidationMode.strict,
   );
 }

@@ -76,7 +76,7 @@ void main() {
       }
       await p.flush();
       await recreate(t, store);
-      await tapVisible(t, find.text('Explore collection'));
+      await tapVisible(t, find.text('Explore collection').first);
       await tapVisible(t, find.text('Table Talk'));
       await tapVisible(t, find.text('View saved result'));
       await tapVisible(t, find.byKey(const Key('copy-result')));

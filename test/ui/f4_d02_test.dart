@@ -42,7 +42,11 @@ void auditFonts(WidgetTester t) {
     final text = element.widget as Text;
     final brand =
         text.data == 'LexiStack' || text.data == 'Good words.\nGreat company.';
-    final rendered = paragraph(t, find.byWidget(text));
+    // Multiple pack cards reuse the same const Text widget; audit each element.
+    final rendered = paragraph(
+      t,
+      find.byElementPredicate((candidate) => identical(candidate, element)),
+    );
     expect(
       rendered.text.style!.fontFamily,
       brand ? 'Fraunces' : 'DM Sans',
@@ -120,7 +124,7 @@ void main() {
           font(t, 'Campaign', 'DM Sans');
           font(t, 'Follow your curiosity.', 'DM Sans');
           auditFonts(t);
-          await tapVisible(t, find.text('Explore collection'));
+          await tapVisible(t, find.text('Explore collection').first);
           font(t, 'Everyday Echoes', 'DM Sans');
           font(t, '01', 'DM Sans');
           auditFonts(t);

@@ -33,4 +33,7 @@ flutter:
   assets:
     - assets/levels/manifest.json
     - assets/levels/pack1.json
+    - assets/levels/pack2.json
+    - assets/levels/pack3.json
+    - assets/levels/pack4.json
     - assets/levels/daily.json

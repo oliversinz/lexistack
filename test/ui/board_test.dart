@@ -38,11 +38,11 @@ Future<void> enterBoard(
   );
   await tester.pumpAndSettle();
   await tester.scrollUntilVisible(
-    find.text('Explore collection'),
+    find.text('Explore collection').first,
     150,
     scrollable: find.byType(Scrollable).first,
   );
-  await tapVisible(tester, find.text('Explore collection'));
+  await tapVisible(tester, find.text('Explore collection').first);
   await tapVisible(tester, find.text('Table Talk'));
   await tapVisible(tester, find.textContaining(RegExp(r'^(Play|Resume)$')));
 }

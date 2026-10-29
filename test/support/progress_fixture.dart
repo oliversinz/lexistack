@@ -1,19 +1,12 @@
-import 'dart:io';
-
 import 'package:lexistack/app/board_controller.dart';
 import 'package:lexistack/app/progress_controller.dart';
 import 'package:lexistack/app/storage.dart';
 import 'package:lexistack/core/game.dart';
 import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
-Catalog installedCatalog() => validateCatalog(
-  manifestContents: File('assets/levels/manifest.json').readAsStringSync(),
-  files: {
-    for (final name in ['pack1.json', 'daily.json'])
-      name: File('assets/levels/$name').readAsStringSync(),
-  },
-  mode: ValidationMode.partial,
-).catalog!;
+import 'content_fixture.dart';
+
+export 'content_fixture.dart' show installedCatalog;
 
 class TestClock {
   TestClock([DateTime? date]) : value = date ?? DateTime(2026, 10, 28);

@@ -1,11 +1,12 @@
-import 'dart:io';
-
 import 'package:flutter_test/flutter_test.dart';
+
 import 'package:lexistack/core/game.dart';
 import 'package:lexistack/core/prng.dart';
 import 'package:lexistack/core/scoring.dart';
 import 'package:lexistack/core/share.dart';
 import 'package:lexistack_content_contract/lexistack_content_contract.dart';
+
+import '../support/content_fixture.dart';
 
 Level oracleLevel() {
   const words = [
@@ -410,18 +411,10 @@ void main() {
   });
 
   test(
-    'all sixteen installed frozen levels are solvable by their intended groups',
+    'all forty installed frozen levels are solvable by their intended groups',
     () {
-      final catalog = validateCatalog(
-        manifestContents: File('assets/levels/manifest.json')
-            .readAsStringSync(),
-        files: {
-          'pack1.json': File('assets/levels/pack1.json').readAsStringSync(),
-          'daily.json': File('assets/levels/daily.json').readAsStringSync(),
-        },
-        mode: ValidationMode.partial,
-      ).catalog!;
-      expect(catalog.packs.expand((p) => p.levels), hasLength(16));
+      final catalog = installedCatalog();
+      expect(catalog.packs.expand((p) => p.levels), hasLength(40));
       for (final level in catalog.packs.expand((p) => p.levels)) {
         final g = Game(level, seed: 20261028);
         solveRemaining(g);

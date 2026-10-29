@@ -6,19 +6,22 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:lexistack/infrastructure/asset_catalog.dart';
 import 'package:lexistack_content_contract/lexistack_content_contract.dart';
 
+import 'support/content_fixture.dart';
+
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  final manifest = File('assets/levels/manifest.json').readAsStringSync();
+  final manifest = installedManifest();
+  final files = installedFiles();
   final contents = File('assets/levels/pack1.json').readAsStringSync();
   final daily = File('assets/levels/daily.json').readAsStringSync();
   Map<String, dynamic> fixture() =>
       jsonDecode(contents) as Map<String, dynamic>;
   ValidationReport check({
     String? pack,
-    ValidationMode mode = ValidationMode.partial,
+    ValidationMode mode = ValidationMode.strict,
   }) => validateCatalog(
     manifestContents: manifest,
-    files: {'pack1.json': pack ?? contents, 'daily.json': daily},
+    files: {...files, 'pack1.json': pack ?? contents},
     mode: mode,
   );
 
@@ -27,10 +30,13 @@ void main() {
     () {
       final report = check();
       expect(report.diagnostics, isEmpty);
-      expect(report.totalLevels, 16);
-      expect(report.totalCategories, 64);
-      expect(report.totalTiles, 256);
-      expect(report.meetsStrictMinimum, isFalse);
+      expect(report.mode, ValidationMode.strict);
+      expect(report.isInitialBenchmark, isTrue);
+      expect(report.catalog!.packs, hasLength(5));
+      expect(report.totalLevels, 40);
+      expect(report.totalCategories, 160);
+      expect(report.totalTiles, 640);
+      expect(report.meetsStrictMinimum, isTrue);
       final pack = report.catalog!.packs.first;
       expect(pack.schemaVersion, 2);
       expect(pack.id, 'pack1');
@@ -65,6 +71,9 @@ void main() {
     () async {
       final report = await loadAssetCatalog(rootBundle);
       expect(report.diagnostics, isEmpty);
+      expect(report.mode, ValidationMode.strict);
+      expect(report.isInitialBenchmark, isTrue);
+      expect(report.catalog!.packs, hasLength(5));
       expect(
         report.catalog!.packs.first.levels.last.title,
         'Hidden in Plain Sight',
@@ -84,7 +93,18 @@ void main() {
     'partial succeeds; strict rejects campaign count but Daily is installed',
     () {
       expect(check().exitCode, 0);
-      final strict = check(mode: ValidationMode.strict);
+      final strict = validateCatalog(
+        manifestContents: '{"campaign":["pack1.json"],"daily":"daily.json"}',
+        files: {'pack1.json': contents, 'daily.json': daily},
+      );
+      final partial = validateCatalog(
+        manifestContents: '{"campaign":["pack1.json"],"daily":"daily.json"}',
+        files: {'pack1.json': contents, 'daily.json': daily},
+        mode: ValidationMode.partial,
+      );
+      expect(partial.diagnostics, isEmpty);
+      expect(partial.totalLevels, 16);
+      expect(formatReport(partial), contains('PARTIAL'));
       expect(strict.exitCode, 1);
       expect(
         strict.errors.map((d) => d.code),
@@ -201,7 +221,7 @@ void main() {
   test('candidate replacement excludes its old copy; addition checks cross-file duplicates', () {
     final replacement = validateCatalog(
       manifestContents: manifest,
-      files: {'pack1.json': contents, 'daily.json': daily},
+      files: files,
       mode: ValidationMode.candidate,
       candidateContents: contents,
     );
@@ -218,7 +238,7 @@ void main() {
     }
     final addition = validateCatalog(
       manifestContents: manifest,
-      files: {'pack1.json': contents, 'daily.json': daily},
+      files: files,
       mode: ValidationMode.candidate,
       candidateContents: jsonEncode(candidate),
     );

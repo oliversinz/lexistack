@@ -1,4 +1,4 @@
-# LexiStack — F4 offline puzzle experience
+# LexiStack — F5 full offline catalog
 
 Find four groups of four words before exhausting four lives. Tap to toggle;
 hold and drag onto another tile to add both, or onto the tray to add one.
@@ -58,9 +58,10 @@ git hash-object --no-filters assets/levels/pack1.json
 git hash-object --no-filters assets/levels/daily.json
 ```
 
-Partial validation: **16 levels / 64 groups / 256 tile positions**, zero errors
-and warnings. Strict validation **intentionally exits 1 in F4** because three
-campaign packs remain for F5; Daily is installed and valid. To validate an
+Strict validation: **40 levels / 160 groups / 640 tile positions**, zero errors
+and warnings; initial benchmark PASS. Four independent eight-stage Campaign
+packs and eight Daily boards are bundled. Partial mode remains available for
+deliberately incomplete development fixtures. To validate an
 external candidate without changing assets:
 `dart run tool/validate_levels.dart path/to/candidate.json`. Matching pack IDs
 are replacement previews; new IDs are additions. Future imports must follow
@@ -123,13 +124,13 @@ Park–Miller and Fisher–Yates are unchanged; VM golden vectors remain in
 
 Content contract pin: **`d9acbd52de0e198dd109a4859299318db3f465f5`**;
 commit `pubspec.lock`. Frozen source commit:
-**`8b84f2d6c75cb807fba9db19cba707f963e02020`**. Required blobs:
-`pack1.json` **`5efa3c88c769f74eee872860766681f5c2cc1c64`**,
-`daily.json` **`5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6`**.
+**`8b84f2d6c75cb807fba9db19cba707f963e02020`**. All six production blobs
+match the [reference lock](docs/reference-content-lock.md); see the
+[F5 identity report](docs/evidence/f5/content-identities.txt).
 Do not edit or reserialize those fixtures. Runtime assets/SDK fonts are bundled;
 there is no backend, analytics, ads, billing or runtime content network.
 
-See [gate log](docs/gate-log.md) and [F4 evidence](docs/evidence/f4).
-F1–F3 are accepted; **F4 is PENDING independent review**. F5 has not started.
+See [gate log](docs/gate-log.md) and [F5 evidence](docs/evidence/f5).
+F1–F4 are accepted; **F5 is PENDING independent review**. F6 has not started.
 Windows desktop compilation is unavailable on this host without Visual Studio;
 Android builds work, with nonfatal Java native-access warnings.

@@ -171,7 +171,7 @@ void main() {
           description: old.description,
           levels: [changed, ...old.levels.skip(1)],
         ),
-        catalog.packs.last,
+        ...catalog.packs.skip(1),
       ],
     );
     final p = await player(
