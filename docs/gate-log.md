@@ -1421,3 +1421,89 @@ Raw logs and upstream license whitespace are preserved deliberately. Review
 covers ARC-01–04, CNT-01–11, ENG-01–12, ECO-01–09, DAY-01–06, PER-01–09,
 UI-01–12 and PLT-01–08 through the evidence map; CAT editorial work and final
 comparative scoring remain independent. **Await independent F6 review.**
+
+## F6 — Independent gate acceptance and main integration
+
+**Gate: F6 — Android Release Candidate & Final Verification.**
+**Independent reviewer decision: PASS, October 29, 2026.** This acceptance
+supersedes the historical F6 PENDING implementation record above, which remains
+unchanged along with all previous F1–F5 entries. Accepted implementation/evidence
+commit: **`f18681b4688448d22ddacef3ef569dd2d5e8e25e`**.
+
+- **ARC-01–04, CNT-01–11, ENG-01–12, ECO-01–09, DAY-01–06, PER-01–09,
+  UI-01–12 and PLT-01–08 accepted** within the documented Android-first
+  experiment scope.
+- All six frozen production content Git blobs match the reference lock.
+  The Content Contract remains pinned to
+  **`d9acbd52de0e198dd109a4859299318db3f465f5`**. Final strict validation:
+  **40 levels, 160 categories, 640 tile positions, zero errors and warnings;
+  initial benchmark PASS**.
+- The final Flutter suite records **197 passing tests**, including all 195
+  previously accepted tests. Dart analyzer reports no issues. Flutter web and
+  Android debug/release APK builds succeeded. The accepted command results are
+  developer-executed, versioned evidence in [the F6 evidence index](evidence/f6/README.md).
+- Production PRNG golden vectors were compiled to JavaScript and executed in
+  actual **Chrome 156**, covering all eight values for seeds **1, 42, 20261028
+  and 2147483646**, expected shuffle order
+  `11,15,6,0,12,13,1,7,14,8,5,3,9,4,2,10` and final state **1470087647**.
+- Six canonical genuine Flutter screenshots were captured, dimension-checked
+  and visually reviewed, with supplementary scroll captures. The five phone
+  captures are 390×844; the desktop frame capture is 1280×800.
+- Android gameplay, touch/drag, boosters, pending loss, rescue, rewards,
+  settings, clipboard and offline operation were documented on **Pixel_10 /
+  Android 16**. Process-death recovery preserved active game state, selections,
+  hints, wallet and settings. Original Android user progress was restored and
+  verified **byte-for-byte**.
+- Missing web platform files, launcher branding, font licensing, symbol glyphs
+  and local web renderer dependencies were addressed. No game rules, economy,
+  persistence schema, reference content or core architecture changed.
+  **Zero human rescue interventions** occurred during autonomous F6 implementation.
+
+Independent review inspected GitHub source changes and commit ancestry; frozen
+content identities and the dependency pin; architecture and regression coverage;
+archived commands, build/test evidence and browser output; actual Android
+screenshots and lifecycle evidence; all six canonical Flutter screenshots and
+supporting captures; and serialized Android progress snapshots and recovery
+comparisons. **Flutter tests, Android operations and web builds were not
+independently re-executed on Windows.** The acceptance relies on the inspected,
+developer-executed evidence and retains the following non-blocking limitations:
+
+1. **Browser offline reload:** failed with `ERR_INTERNET_DISCONNECTED`.
+   The online web application and browser persistence worked. Offline reload
+   remains a known web/PWA limitation, not an accepted offline-browser capability.
+2. **Release signing:** the APK is release-mode compiled but signed with the
+   Android debug certificate. It is **not a production-signed Play Store release**.
+3. **Physical Android hardware:** not tested; emulator verification passed.
+4. **Windows desktop build:** not performed because the Windows C++ toolchain
+   is unavailable. Android/web were the required targets.
+5. **Flutter Chrome test runner:** failed due to test-runner/path issues.
+   The unchanged PRNG oracle was instead compiled and successfully executed in
+   real Chrome; the runner failure is not represented as a successful probe.
+6. **Persistence durability:** no transactional or hard power-loss guarantees
+   are claimed.
+7. **Editorial quality:** frozen content remains an engineering benchmark.
+   Separate Content Studio evaluation is outside the technical F6 gate.
+
+Integration preflight verified a clean working tree with no uncommitted or
+untracked user work, fetched origin, confirmed local/remote main at
+**`9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873`** and local/remote
+`codex/f6-android-release-candidate` at the exact accepted F6 commit, and verified
+fast-forward ancestry. The user explicitly authorized one documentation-only
+acceptance commit on that feature branch, its publication and verification,
+followed by `git merge --ff-only codex/f6-android-release-candidate` on main and
+publication of main. Both feature references are retained for the final identity
+check. No reset, rebase, squash, merge commit, force-push or history rewrite is
+authorized or needed.
+
+This acceptance record is the sole change after the accepted F6 implementation;
+protected contracts, Flutter source, tests, dependencies, JSON assets,
+screenshots and existing evidence remain unchanged. Tests and builds were
+**not rerun** for this documentation-only integration. The accepted F6 evidence
+is preserved under `docs/evidence/f6/`.
+
+**LexiStack5 Experiment E — all six implementation phases F1–F6 have passed
+independent technical gates.** The technical implementation experiment is
+complete. **The final comparative evaluation against LexiStack3 and LexiStack4
+remains pending.** No independent 100-point score or experiment winner is
+assigned, and the evaluation methodology is unchanged. No new development,
+Content Studio CS1 or C/D/E comparison is part of this integration.
