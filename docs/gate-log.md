@@ -1276,3 +1276,54 @@ plain-check prompt-only failure is retained. **CAT-01–04 editorial judgments a
 gate acceptance remain independent**; a ten-level review sample spans all five
 files. No unresolved application defect observed; browser PRNG, release audit
 and canonical screenshots remain assigned to F6.
+
+## F5 — Independent gate acceptance and main integration
+
+**Gate: F5 — Full Frozen Catalog & Regression Hardening.**
+**Independent reviewer decision: PASS, October 29, 2026.** This acceptance
+supersedes the historical PENDING implementation records above, which remain
+unchanged. Accepted implementation/evidence commit:
+**`147d9f865f9b1ad611d97537cce3c27367dbb5ae`**.
+
+- **CNT-01–11 accepted.** Frozen source identities independently verified for
+  all six production JSON assets. Exactly **32 Campaign + 8 Daily levels,
+  160 categories and 640 tile positions**; strict validation reports **zero
+  errors, zero warnings and initial benchmark PASS**. Candidate replacement
+  and addition behavior verified.
+- All four Campaign packs and independent unlock progression covered.
+  Existing version-1 savegame compatibility and content-fingerprint recovery
+  verified; **F3-R01** storage-read regression preserved. Existing engine,
+  economy, Daily, persistence and UI regression coverage retained.
+- Final implementation evidence documents [195 passing Flutter tests](evidence/f5/tests-shelf-final.txt),
+  a [clean analyzer](evidence/f5/analysis-shelf-fixed.txt) and a successful
+  [Android debug APK build](evidence/f5/apk-final.txt). [Android evidence](evidence/f5/README.md)
+  includes real gameplay, progression, paid boosters and process-death recovery.
+- The Campaign shelf's stale progress-counter defect was reproduced, corrected
+  and regression-tested within the autonomous F5 run. **No remaining blocking
+  F5 engineering defect identified; zero human rescue interventions** during
+  autonomous execution.
+
+Independent review inspected GitHub source changes, frozen content identities,
+mechanical invariants, tests, archived command evidence and Android screenshots.
+**Flutter tests and Android operations were not independently re-executed on
+Windows.** The editorial **CAT-01–04** spotcheck was considered separately from
+the technical engineering gate.
+
+Non-blocking editorial observation: in `pack4_lvl08`, the category
+`ANAGRAMS OF SPOT` includes the unchanged word `SPOT` itself. This remains a
+future Content Studio editorial concern, not authorization to modify the frozen
+benchmark dataset. Browser-executed PRNG verification, canonical screenshots,
+release-candidate verification and the final experiment evaluation remain
+assigned to **F6**.
+
+Integration preflight verified a clean working tree, fetched origin, confirmed
+local/remote main at `8b07d01443277b6c1af0201d481c9a1174412093` and local/remote
+`codex/f5-full-frozen-catalog` at the exact accepted F5 commit, and verified
+fast-forward ancestry. The user explicitly authorized publication of this
+acceptance commit on the feature branch, followed by
+`git merge --ff-only codex/f5-full-frozen-catalog` on main and publication of main.
+This acceptance record is the sole change after the accepted implementation;
+protected contracts, application source, JSON assets, dependencies and tests
+remain unchanged. Tests/builds were not rerun for this documentation-only
+integration; accepted evidence remains in `docs/evidence/f5/`.
+**F6 has not started.**
