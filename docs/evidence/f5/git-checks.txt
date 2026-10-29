@@ -1,0 +1,11 @@
+COMMAND: git diff --cached --check
+prompts/F5-full-frozen-catalog-regression-hardening.md:1: trailing whitespace.
++# LexiStack5 — F5: Full Frozen Catalog & Regression Hardening
+prompts/F5-full-frozen-catalog-regression-hardening.md:2: trailing whitespace.
++
+prompts/F5-full-frozen-catalog-regression-hardening.md:3: trailing whitespace.
++## Role and Mission
+EXIT: 2; 1534 output lines, all concerning exact CRLF prompt. Kept supplied bytes; checking with cr-at-eol below.
+COMMAND: git -c core.whitespace=cr-at-eol diff --cached --check
+EXIT: 0
+Final staged evidence check initially exited 2 for trailing spaces emitted by Gradle, Flutter test failure output and Android logcat. Trimmed line-end whitespace in F5 text logs only, preserving all messages and exit codes. Prompt/reference JSON/screenshots unchanged.

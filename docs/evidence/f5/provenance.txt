@@ -1,0 +1,24 @@
+COMMAND: git rev-parse HEAD main origin/main
+827892b28c1690e0385ce502596ba90089d2467b
+8b07d01443277b6c1af0201d481c9a1174412093
+8b07d01443277b6c1af0201d481c9a1174412093
+
+EXIT: 0
+COMMAND: git diff 8b07d01443277b6c1af0201d481c9a1174412093 HEAD -- docs/product-contract.md docs/architecture.md docs/acceptance-matrix.md docs/reference-content-lock.md docs/experiment-e-protocol.md docs/feature-roadmap.md pubspec.lock lib/core lib/app lib/ui
+
+
+EXIT: 0
+COMMAND: git -C C:/Users/olive/AppData/Local/Pub/Cache/git/lexistack-content-d9acbd52de0e198dd109a4859299318db3f465f5 rev-parse HEAD
+d9acbd52de0e198dd109a4859299318db3f465f5
+
+EXIT: 0
+COMMAND: git merge-base --is-ancestor 8b07d01443277b6c1af0201d481c9a1174412093 HEAD
+
+
+EXIT: 0
+COMMAND: git -c core.whitespace=cr-at-eol diff --check 8b07d01443277b6c1af0201d481c9a1174412093 HEAD
+
+
+EXIT: 0
+Attachment / working file / committed prompt bytes identical. SHA256: e34cf2a1e1d982287deff36e94bce745a23b11ef3e703bef48c7facc569b454f
+No copied application source from LexiStack3/4. Only locked assets/levels blobs read for import. No dependencies added; pubspec.lock unchanged.

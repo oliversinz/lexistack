@@ -1,0 +1,15 @@
+APK SHA256: dd2d6e973fbd3008822e9d71b4227311d7dfbef99b62967be7ba59559bc09ae4
+daily.json: bundled bytes MATCH; Git blob 5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6
+manifest.json: bundled bytes MATCH; Git blob 6d7cc02ec1f644e1cbb7c98a8bab7f9594c6020d
+pack1.json: bundled bytes MATCH; Git blob 5efa3c88c769f74eee872860766681f5c2cc1c64
+pack2.json: bundled bytes MATCH; Git blob 32ca5e922e3da3e2b22a42716de87a63e53492f8
+pack3.json: bundled bytes MATCH; Git blob fc88352362ea575e7c0f38670b0c7e81c24ec070
+pack4.json: bundled bytes MATCH; Git blob 54c09ae4c2f0a5d07b95addc42e80eacac33d2c6
+
+FINAL APK SHA256: 8ba58f3ae780a6a22559cd2206639d9905fdad15d7810769d810b15dcb4a31e4
+daily.json: final bundled bytes MATCH
+manifest.json: final bundled bytes MATCH
+pack1.json: final bundled bytes MATCH
+pack2.json: final bundled bytes MATCH
+pack3.json: final bundled bytes MATCH
+pack4.json: final bundled bytes MATCH

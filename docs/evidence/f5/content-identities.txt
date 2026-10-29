@@ -1,0 +1,8 @@
+Raw Git blob import via Python subprocess.check_output -> Path.write_bytes; no text conversion.
+Source commit: 8b84f2d6c75cb807fba9db19cba707f963e02020
+git hash-object --no-filters assets/levels/manifest.json -> 6d7cc02ec1f644e1cbb7c98a8bab7f9594c6020d; EXIT: 0; MATCH
+git hash-object --no-filters assets/levels/pack1.json -> 5efa3c88c769f74eee872860766681f5c2cc1c64; EXIT: 0; MATCH
+git hash-object --no-filters assets/levels/pack2.json -> 32ca5e922e3da3e2b22a42716de87a63e53492f8; EXIT: 0; MATCH
+git hash-object --no-filters assets/levels/pack3.json -> fc88352362ea575e7c0f38670b0c7e81c24ec070; EXIT: 0; MATCH
+git hash-object --no-filters assets/levels/pack4.json -> 54c09ae4c2f0a5d07b95addc42e80eacac33d2c6; EXIT: 0; MATCH
+git hash-object --no-filters assets/levels/daily.json -> 5ab06b73921c4a9992e6c9fe8c099ba4c2e4a2e6; EXIT: 0; MATCH

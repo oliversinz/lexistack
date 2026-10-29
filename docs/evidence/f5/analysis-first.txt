@@ -1,0 +1,7 @@
+Analyzing LexiStack...
+
+   info - test\support\candidate_fixture.dart:72:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+
+1 issue found.
+COMMAND: dart analyze
+EXIT: 0

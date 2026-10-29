@@ -1210,3 +1210,69 @@ This acceptance record is the sole change in the following documentation commit;
 no application code, tests, fonts, licenses, dependencies, frozen assets or
 product contracts were changed. Tests/builds were not rerun for this
 documentation-only integration. **F5 has not started.**
+
+## F5 — Full frozen catalog and regression hardening (PENDING independent review, 2026-10-29)
+
+**Implementation complete for submission; reviewer decision: PENDING independent
+review.** Started from clean accepted main
+`8b07d01443277b6c1af0201d481c9a1174412093` on
+`codex/f5-full-frozen-catalog`. Initial implementation checkpoint:
+`827892b28c1690e0385ce502596ba90089d2467b`. The submission is the subsequent commit
+containing this entry, the native-discovered shelf fix and the complete evidence;
+its exact published SHA is supplied in the final implementation report.
+No main integration or F6 work is authorized/performed.
+
+Imported frozen pack2–4 and the production manifest from source
+`8b84f2d6c75cb807fba9db19cba707f963e02020` using raw Git blob bytes. All six
+identities match the reference lock, including unchanged pack1/Daily. All files
+are explicitly bundled; the real Flutter asset loader now uses strict validation.
+Four Campaign packs × eight levels plus eight Daily levels give **40 levels,
+160 categories, 640 tile positions**. Strict validation: **zero errors/warnings,
+strict minimum PASS, initial benchmark PASS**. Package pin and resolved commit
+remain `d9acbd52de0e198dd109a4859299318db3f465f5`; no dependency changes.
+
+Observed coverage: **CNT-01–11**, all-pack unlock/Continue behavior, existing
+version-1 save compatibility, fingerprints, recovery and **F3-R01**, earlier
+ENG/ECO/DAY/PER/UI regression, and targeted Android probes. **195 tests pass**
+(baseline 155 retained). Exact commands/exits and failures/corrective reruns are
+in the [F5 evidence record](evidence/f5/README.md). Final successful commands:
+`flutter pub get`, both validator modes, replacement and valid addition CLI,
+`dart analyze` (no issues), `flutter test --reporter expanded`,
+`dart run tool/check_prng.dart`, `flutter build apk --debug` — all exit **0**.
+Conflicting candidate addition exits **1 as expected**; six before/after asset
+hashes remain identical. No second validator, migration, engine, economy,
+persistence, theme, font or protected contract change.
+
+Native verification found one real **UI-03/F5 defect**: returning to an already
+open Campaign shelf after winning left its progress counter stale. A failing
+widget regression reproduced it; a small `ListenableBuilder` correction makes
+that route observe the existing controller. The final 195-test suite, analyzer,
+APK build and real Android shelf-after-win check all pass after the fix.
+
+Pixel_10 / Android 16 API 36: actual launcher startup, all four shelf entries,
+real boards from pack2/3/4, drag/tap group solve, two perfect wins, independent
+stage-two unlocks, immediate shelf refresh, and process-death restore. The
+pre-existing save survived install/startup byte-identically. After paid hints,
+selection and shuffle in pack4, force-stop removed PID 23374; launcher relaunch
+created PID 24631. DataStore bytes and the resumed game snapshot were preserved,
+with **35 coins, four settled results, original history/settings and no duplicated
+payment/reward**. Genuine screenshots/XML and save comparisons are linked in the
+evidence record. Final debug APK SHA-256:
+`8ba58f3ae780a6a22559cd2206639d9905fdad15d7810769d810b15dcb4a31e4`.
+
+Recorded execution window: **2026-10-29 09:22–09:51 CET** for preflight through
+native verification (publication later). Windows `10.0.26300.9711`, Flutter
+**3.47.8**, Dart **3.13.7**, Android SDK **36.1.0**. Codex / GPT-6 family; exact
+model revision/effort and cost unavailable. **Zero human rescue interventions**.
+Self-corrected test targeting/compilation/lint and native probe coordination
+issues are explicitly recorded; no required probe remains environment-blocked.
+Visual Studio is absent; Java native-access build warnings are nonfatal.
+
+The supplied prompt file is archived byte-for-byte, including its CRLF under
+the existing `-text` rule. SHA-256:
+`e34cf2a1e1d982287deff36e94bce745a23b11ef3e703bef48c7facc569b454f`.
+Git whitespace checking passes with `core.whitespace=cr-at-eol`; the original
+plain-check prompt-only failure is retained. **CAT-01–04 editorial judgments and
+gate acceptance remain independent**; a ten-level review sample spans all five
+files. No unresolved application defect observed; browser PRNG, release audit
+and canonical screenshots remain assigned to F6.

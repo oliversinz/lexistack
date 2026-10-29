@@ -1,0 +1,11 @@
+LexiStack schema v2: PARTIAL
+pack1.json [pack1]: 8 levels, 32 groups, 128 tile positions
+pack2.json [pack2]: 8 levels, 32 groups, 128 tile positions
+pack3.json [pack3]: 8 levels, 32 groups, 128 tile positions
+pack4.json [pack4]: 8 levels, 32 groups, 128 tile positions
+daily.json [daily, Daily]: 8 levels, 32 groups, 128 tile positions
+Totals: 5 packs, 40 levels, 160 groups, 640 tile positions; 0 errors, 0 warnings.
+PARTIAL catalog validation; this is not final release acceptance.
+VALID (0 warnings).
+COMMAND: dart run tool/validate_levels.dart --partial
+EXIT: 0

@@ -1,0 +1,62 @@
+--------- beginning of main
+10-29 09:50:51.521 I/Zygote  (24631): Process 24631 created for de.cloudwards.lexistack
+10-29 09:50:51.521 I/wards.lexistack(24631): Late-enabling -Xcheck:jni
+10-29 09:50:51.549 I/wards.lexistack(24631): Using CollectorTypeCMC GC.
+10-29 09:50:51.550 W/wards.lexistack(24631): Unexpected CPU variant for x86: x86_64.
+10-29 09:50:51.550 W/wards.lexistack(24631): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-29 09:50:51.565 D/nativeloader(24631): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-29 09:50:51.669 D/ApplicationLoaders(24631): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-29 09:50:51.670 D/ApplicationLoaders(24631): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-29 09:50:51.807 D/nativeloader(24631): Configuring clns-9 for other apk /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/lib/x86_64:/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/de.cloudwards.lexistack
+10-29 09:50:51.830 V/GraphicsEnvironment(24631): Currently set values for:
+10-29 09:50:51.830 V/GraphicsEnvironment(24631):   angle_gl_driver_selection_pkgs=[]
+10-29 09:50:51.830 V/GraphicsEnvironment(24631):   angle_gl_driver_selection_values=[]
+10-29 09:50:51.830 V/GraphicsEnvironment(24631): de.cloudwards.lexistack is not listed in per-application setting
+10-29 09:50:51.830 V/GraphicsEnvironment(24631): ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+10-29 09:50:51.831 V/GraphicsEnvironment(24631): No special selections for ANGLE, returning default driver choice
+10-29 09:50:51.831 V/GraphicsEnvironment(24631): Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-29 09:50:51.910 I/DisplayManager(24631): Choreographer implicitly registered for the refresh rate.
+10-29 09:50:51.944 E/ashmem  (24631): Pinning is deprecated since Android Q. Please use trim or other methods.
+10-29 09:50:51.992 I/GFXSTREAM(24631): [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+10-29 09:50:51.993 I/GFXSTREAM(24631): [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+10-29 09:50:52.049 W/HWUI    (24631): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-29 09:50:52.050 W/HWUI    (24631): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-29 09:50:52.098 D/FlutterJNI(24631): Beginning load of flutter...
+10-29 09:50:52.101 I/ResourceExtractor(24631): Found extracted resources res_timestamp-1-1793263575104
+10-29 09:50:52.165 D/nativeloader(24631): Load /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!/lib/x86_64/libflutter.so using class loader ns clns-9 (caller=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk): ok
+10-29 09:50:52.169 D/FlutterJNI(24631): flutter (null) was loaded normally!
+10-29 09:50:52.178 D/skia    (24631): [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-29 09:50:52.247 W/wards.lexistack(24631): type=1400 audit(0.0:157): avc:  denied  { read } for  name="max_map_count" dev="proc" ino=85001 scontext=u:r:untrusted_app:s0:c227,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=de.cloudwards.lexistack
+10-29 09:50:52.283 D/DesktopExperienceFlags(24631): Toggle override initialized to: false
+10-29 09:50:52.283 D/DesktopModeFlags(24631): Toggle override initialized to: OVERRIDE_UNSET
+10-29 09:50:52.316 I/flutter (24631): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-29 09:50:52.476 I/flutter (24631): The Dart VM service is listening on http://127.0.0.1:36981/fb5_AEnmXcc=/
+10-29 09:50:52.613 D/nativeloader(24631): Load /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!/lib/x86_64/libdartjni.so using class loader ns clns-9 (caller=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!classes6.dex): ok
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityNodeInfo;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported,test-api) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityRecord;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden field Landroid/view/accessibility/AccessibilityNodeInfo;->mChildNodeIds:Landroid/util/LongArray; (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden method Landroid/util/LongArray;->get(I)J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.732 D/AccessibilityBridge(24631): Setting not found: accessibility_display_inversion_enabled, using default: 0
+10-29 09:50:52.753 D/FlutterRenderer(24631): Width is zero. 0,0
+10-29 09:50:52.757 D/CompatChangeReporter(24631): Compat change id reported: 377864165; UID 10227; state: ENABLED
+10-29 09:50:52.777 W/HWUI    (24631): Unknown dataspace 0
+10-29 09:50:54.356 I/Choreographer(24631): Skipped 93 frames!  The application may be doing too much work on its main thread.
+10-29 09:50:54.358 D/WindowOnBackDispatcher(24631): setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@267f9da
+10-29 09:50:54.379 I/wards.lexistack(24631): Compiler allocated 5082KB to compile void android.view.ViewRootImpl.performTraversals()
+10-29 09:50:54.396 I/WindowExtensionsImpl(24631): Initializing Window Extensions, vendor API level=9, activity embedding enabled=true
+10-29 09:50:54.463 D/VRI[MainActivity](24631): WindowInsets changed: 1080x2424 statusBars:[0,137,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,174,0,84]
+10-29 09:50:54.463 D/FlutterRenderer(24631): Width is zero. 0,0
+10-29 09:50:54.481 D/FlutterRenderer(24631): Width is zero. 0,0
+10-29 09:50:54.485 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:55.506 I/Choreographer(24631): Skipped 61 frames!  The application may be doing too much work on its main thread.
+10-29 09:50:55.513 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:55.564 D/WindowLayoutComponentImpl(24631): Register WindowLayoutInfoListener on Context=de.cloudwards.lexistack.MainActivity@bb753cf, of which baseContext=android.app.ContextImpl@1c46992
+10-29 09:50:55.568 I/HWUI    (24631): Davey! duration=1077ms; Flags=1, FrameTimelineVsyncId=192699, IntendedVsync=10152497822418, Vsync=10153514489044, InputEventId=0, HandleInputStart=10153527007700, AnimationStart=10153527029300, PerformTraversalsStart=10153527061200, DrawStart=10153540267400, FrameDeadline=10152514489084, FrameStartTime=10153526618400, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=10153540852900, SyncStart=10153541453000, IssueDrawCommandsStart=10153541837400, SwapBuffers=10153554320300, FrameCompleted=10153575872700, DequeueBufferDuration=19927000, QueueBufferDuration=761200, GpuCompleted=10153565630300, SwapBuffersCompleted=10153575872700, DisplayPresentTime=946, CommandSubmissionCompleted=10153554320300,
+10-29 09:50:55.572 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:55.614 D/InsetsController(24631): hide(ime())
+10-29 09:50:55.615 I/ImeTracker(24631): de.cloudwards.lexistack:4e273779: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-29 09:50:56.232 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:57.574 D/ProfileInstaller(24631): Installing profile for de.cloudwards.lexistack
+10-29 09:51:04.305 W/wards.lexistack(24631): userfaultfd: MOVE ioctl seems unsupported: Try again
+10-29 09:51:05.907 D/WindowOnBackDispatcher(24631): setTopOnBackInvokedCallback (unwrapped): io.flutter.embedding.android.FlutterActivity$1@3d4420

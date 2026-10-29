@@ -70,23 +70,26 @@ class PacksScreen extends StatelessWidget {
   const PacksScreen({super.key, required this.controller});
   final CatalogController controller;
   @override
-  Widget build(BuildContext context) => CatalogPage(
-    title: 'Campaign',
-    children: [
-      Text(
-        'Follow your curiosity.',
-        style: Theme.of(context).textTheme.headlineSmall,
-      ),
-      const SizedBox(height: 8),
-      const Text(
-        'Each collection is a fresh trail. Start with its first puzzle.',
-      ),
-      const SizedBox(height: 20),
-      for (final pack in controller.progress!.campaignPacks) ...[
-        PackCard(pack: pack, controller: controller),
-        const SizedBox(height: 16),
+  Widget build(BuildContext context) => ListenableBuilder(
+    listenable: controller,
+    builder: (context, _) => CatalogPage(
+      title: 'Campaign',
+      children: [
+        Text(
+          'Follow your curiosity.',
+          style: Theme.of(context).textTheme.headlineSmall,
+        ),
+        const SizedBox(height: 8),
+        const Text(
+          'Each collection is a fresh trail. Start with its first puzzle.',
+        ),
+        const SizedBox(height: 20),
+        for (final pack in controller.progress!.campaignPacks) ...[
+          PackCard(pack: pack, controller: controller),
+          const SizedBox(height: 16),
+        ],
       ],
-    ],
+    ),
   );
 }
 

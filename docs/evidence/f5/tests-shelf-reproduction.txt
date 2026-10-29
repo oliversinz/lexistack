@@ -1,0 +1,48 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/ui/f5_catalog_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _DescendantWidgetFinder:<Found 0 widgets with text "1 / 8 solved · Available offline"
+descending from widgets with type "PackCard" that are ancestors of widgets with text "World History
+& Myth": []>
+   Which: means none were found but one was expected
+The existing shelf route must refresh immediately after a win
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///C:/Codex/LexiStack/test/ui/f5_catalog_test.dart:131:11)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///C:/Codex/LexiStack/test/ui/f5_catalog_test.dart line 131
+The test description was:
+  F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:06 +0 -1: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards [E]
+  Test failed. See exception logs above.
+  The test description was: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+
+00:06 +0 -1: (tearDownAll)
+00:06 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+COMMAND: flutter test test/ui/f5_catalog_test.dart --plain-name 'F5 real bundle shelf' --reporter expanded
+EXIT: 1

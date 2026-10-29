@@ -1,0 +1,77 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/content_test.dart
+00:00 +0: C:/Codex/LexiStack/test/content_test.dart: production pack is schema v2 with eight complete levels and stable IDs
+00:00 +1: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-05/11 every production identity, order and intended solve
+00:00 +2: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-05/11 every production identity, order and intended solve
+00:00 +3: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-05/11 every production identity, order and intended solve
+00:00 +4: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-05/11 every production identity, order and intended solve
+00:00 +5: C:/Codex/LexiStack/test/content_test.dart: production assets load through the real Flutter asset bundle
+00:00 +6: C:/Codex/LexiStack/test/content_test.dart: production assets load through the real Flutter asset bundle
+00:00 +7: C:/Codex/LexiStack/test/content_test.dart: production assets load through the real Flutter asset bundle
+00:00 +8: C:/Codex/LexiStack/test/content_test.dart: production assets load through the real Flutter asset bundle
+00:00 +9: C:/Codex/LexiStack/test/content_test.dart: production assets load through the real Flutter asset bundle
+00:00 +10: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-06/07/08/09 rejects missing metadata with diagnostics
+00:00 +11: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-06/07/08/09 rejects missing metadata with diagnostics
+00:00 +12: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-06/07/08/09 rejects missing metadata with diagnostics
+00:00 +13: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-06/07/08/09 rejects missing metadata with diagnostics
+00:00 +14: C:/Codex/LexiStack/test/content_test.dart: partial succeeds; strict rejects campaign count but Daily is installed
+00:00 +15: C:/Codex/LexiStack/test/content_test.dart: partial succeeds; strict rejects campaign count but Daily is installed
+00:00 +16: C:/Codex/LexiStack/test/content_test.dart: partial succeeds; strict rejects campaign count but Daily is installed
+00:00 +17: C:/Codex/LexiStack/test/content_test.dart: partial succeeds; strict rejects campaign count but Daily is installed
+00:00 +18: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +19: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +20: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +21: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +22: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +23: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +24: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +25: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +26: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +27: C:/Codex/LexiStack/test/core/game_test.dart: all forty installed frozen levels are solvable by their intended groups
+00:00 +28: C:/Codex/LexiStack/test/content_test.dart: rejects duplicate category ID with an actionable location
+00:00 +29: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-06/07/08/09 rejects overlong word with diagnostics
+00:00 +30: C:/Codex/LexiStack/test/f5_content_test.dart: CNT-06/07/08/09 rejects overlong word with diagnostics
+00:00 +31: C:/Codex/LexiStack/test/content_test.dart: rejects three groups with an actionable location
+00:00 +32: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +33: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +34: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +35: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +36: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +37: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +38: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +39: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +40: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +41: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +42: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +43: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +44: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +45: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +46: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +47: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +48: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +49: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +50: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +51: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +52: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +53: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +54: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +55: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +56: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +57: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +58: C:/Codex/LexiStack/test/app_test.dart: malformed asset shows file diagnostics and retry recovers
+00:02 +59: C:/Codex/LexiStack/test/app_test.dart: missing bundled file is named without crashing
+00:02 +60: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(360.0, 640.0) and enlarged text
+00:02 +61: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(390.0, 844.0) and enlarged text
+00:03 +62: C:/Codex/LexiStack/test/app_test.dart: navigation remains reachable at Size(1280.0, 800.0) and enlarged text
+00:03 +63: All tests passed!
+COMMAND: flutter test test/content_test.dart test/f5_content_test.dart test/core/game_test.dart test/app_test.dart --reporter expanded
+EXIT: 0

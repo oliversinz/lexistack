@@ -116,11 +116,28 @@ void main() {
           find.text(pack.levels.first.categories.first.triviaFact),
           findsOneWidget,
         );
+        if (pack.id == 'pack3') {
+          for (final category in pack.levels.first.categories.skip(1)) {
+            await submitWords(t, category.tiles.map((t) => t.text).toList());
+          }
+          expect(board(t).game.status, GameStatus.won);
+        }
         for (var back = 0; back < 3; back++) {
           await t.pageBack();
           await t.pumpAndSettle();
         }
         expect(find.byType(PacksScreen), findsOneWidget);
+        if (pack.id == 'pack3') {
+          expect(
+            find.descendant(
+              of: card,
+              matching: find.text('1 / 8 solved · Available offline'),
+            ),
+            findsOneWidget,
+            reason:
+                'The existing shelf route must refresh immediately after a win',
+          );
+        }
         expect(t.takeException(), isNull);
       }
     },

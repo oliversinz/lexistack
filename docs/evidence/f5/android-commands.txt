@@ -1,0 +1,1063 @@
+2026-10-29T09:23:51.7751117+01:00 adb -s emulator-5554 emu avd name
+Pixel_10
+
+OK
+
+EXIT CODE: 0
+2026-10-29T09:23:51.8574997+01:00 adb -s emulator-5554 shell getprop ro.build.version.release
+16
+EXIT CODE: 0
+2026-10-29T09:23:51.9350236+01:00 adb -s emulator-5554 shell getprop ro.build.version.sdk
+36
+EXIT CODE: 0
+2026-10-29T09:23:52.0018206+01:00 adb -s emulator-5554 shell wm size
+Physical size: 1080x2424
+EXIT CODE: 0
+2026-10-29T09:23:52.0908387+01:00 adb -s emulator-5554 shell wm density
+Physical density: 420
+EXIT CODE: 0
+2026-10-29T09:23:52.1770486+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT CODE: 0
+2026-10-29T09:23:52.2657531+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:23:55.3221362+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (14031 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:24:19.4559438+01:00 adb -s emulator-5554 shell input swipe 540 2090 540 650 400
+EXIT CODE: 0
+2026-10-29T09:24:20.0081650+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:24:22.4806486+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 9.8 MB/s (23662 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:24:40.3108951+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:24:42.5981893+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 9.2 MB/s (23662 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:24:42.7154438+01:00 adb -s emulator-5554 shell input tap 412 1120
+EXIT CODE: 0
+2026-10-29T09:24:42.7928342+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:24:45.9558553+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.1 MB/s (10858 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:27:22.1020804+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:27:24.4025720+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (10858 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:27:24.4655733+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:27:25.0317669+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-before-upgrade.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 42.6 MB/s (217120 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:27:25.0988685+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:27:27.3268033+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (10858 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:27:27.4081068+01:00 adb -s emulator-5554 shell run-as de.cloudwards.lexistack ls shared_prefs
+ls: shared_prefs: No such file or directory
+EXIT CODE: 1
+2026-10-29T09:27:39.6780494+01:00 adb -s emulator-5554 shell run-as de.cloudwards.lexistack ls -R files
+files:
+datastore
+profileInstalled
+
+files/datastore:
+FlutterSharedPreferences.preferences_pb
+EXIT CODE: 0
+2026-10-29T09:27:39.7896001+01:00 adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT CODE: 0
+2026-10-29T09:35:51.2160616+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT CODE: 0
+2026-10-29T09:35:53.5401656+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT CODE: 0
+2026-10-29T09:35:53.6954886+01:00 adb -s emulator-5554 shell input swipe 540 2090 540 650 400
+EXIT CODE: 0
+2026-10-29T09:35:54.2539776+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:35:57.0660330+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (14031 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:36:04.8693137+01:00 adb -s emulator-5554 shell input swipe 540 2090 540 650 400
+EXIT CODE: 0
+2026-10-29T09:36:05.4147876+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:36:07.9811033+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.6 MB/s (23661 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:36:08.1165216+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:36:10.5213348+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 8.9 MB/s (23661 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:36:10.6012832+01:00 adb -s emulator-5554 shell input tap 412 1120
+EXIT CODE: 0
+2026-10-29T09:36:39.3399502+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:36:41.7929070+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (12536 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:36:41.9179356+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:36:44.1740000+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.6 MB/s (12536 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:36:44.2418993+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:36:44.7170309+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-upgraded-home.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 41.8 MB/s (232069 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:36:44.7886468+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:36:47.0780342+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (12536 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:12.2016375+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:14.4961225+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (12536 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:14.6020590+01:00 adb -s emulator-5554 shell input tap 907 1759
+EXIT CODE: 0
+2026-10-29T09:37:14.7858030+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:17.2258821+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (11841 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:17.2868456+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:37:17.6925837+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-campaign-top.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 43.0 MB/s (210085 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:37:17.7586585+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:19.9580449+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (11841 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:20.0286657+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:22.2183917+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (11841 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:40.3614449+01:00 adb -s emulator-5554 shell input swipe 540 2100 540 950 450
+EXIT CODE: 0
+2026-10-29T09:37:40.9336144+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:43.1810623+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (11087 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:37:43.2598920+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:37:43.6759130+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-campaign-bottom.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 34.6 MB/s (196826 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:37:43.7430945+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:45.9554166+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:46.0317545+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:48.2163623+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:51.7956637+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:54.0163202+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:37:54.1137915+01:00 adb -s emulator-5554 shell input tap 540 836
+EXIT CODE: 0
+2026-10-29T09:37:54.1916081+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:37:56.5223815+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.1 MB/s (8666 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:38:05.5964910+01:00 adb -s emulator-5554 shell input tap 510 718
+EXIT CODE: 0
+2026-10-29T09:38:05.7031570+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:08.0238233+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (7660 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:38:08.1136128+01:00 adb -s emulator-5554 shell input tap 540 1282
+EXIT CODE: 0
+2026-10-29T09:38:08.1881078+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:10.6490839+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.8 MB/s (18605 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:38:10.7154025+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:38:11.1039228+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack2-fresh.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 41.2 MB/s (198770 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:38:11.1698861+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:13.4234524+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.7 MB/s (18605 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:38:13.5035436+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:15.6757218+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.7 MB/s (18605 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:38:41.5586624+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:43.7625245+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.3 MB/s (18605 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:38:43.8744644+01:00 adb -s emulator-5554 shell input motionevent DOWN 160 1152
+EXIT CODE: 0
+2026-10-29T09:38:44.6992790+01:00 adb -s emulator-5554 shell input motionevent MOVE 666 930
+EXIT CODE: 0
+2026-10-29T09:38:44.9488798+01:00 adb -s emulator-5554 shell input motionevent UP 666 930
+EXIT CODE: 0
+2026-10-29T09:38:45.0146484+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:47.2455518+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.6 MB/s (18612 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:38:47.3135817+01:00 adb -s emulator-5554 shell input tap 414 930
+EXIT CODE: 0
+2026-10-29T09:38:47.3904688+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:49.6661247+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (18619 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:38:49.7390948+01:00 adb -s emulator-5554 shell input tap 920 1152
+EXIT CODE: 0
+2026-10-29T09:38:49.8232455+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:52.1141458+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.6 MB/s (18625 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:38:52.2278254+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:54.4084109+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.0 MB/s (18625 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:38:54.4730475+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:38:54.5636454+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:56.8322437+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (17995 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:38:56.8940845+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:38:57.2979032+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack2-solved-group.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 30.7 MB/s (216785 bytes in 0.007s)
+EXIT CODE: 0
+2026-10-29T09:38:57.3677256+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:38:59.5703334+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.6 MB/s (17995 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:39:17.6730513+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:19.8341813+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.9 MB/s (17995 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:39:19.9384478+01:00 adb -s emulator-5554 shell input tap 666 1258
+EXIT CODE: 0
+2026-10-29T09:39:20.0156268+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:22.2618728+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 8.0 MB/s (18007 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:39:22.3290058+01:00 adb -s emulator-5554 shell input tap 414 1034
+EXIT CODE: 0
+2026-10-29T09:39:22.4126066+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:24.6539786+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.6 MB/s (18012 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:39:24.7150034+01:00 adb -s emulator-5554 shell input tap 920 1034
+EXIT CODE: 0
+2026-10-29T09:39:24.7909777+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:27.0010446+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.3 MB/s (18017 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:39:27.0573874+01:00 adb -s emulator-5554 shell input tap 666 1480
+EXIT CODE: 0
+2026-10-29T09:39:27.1309447+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:29.3345020+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.8 MB/s (18020 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:39:29.4037478+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:39:29.4726175+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:31.7176299+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.0 MB/s (17298 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:39:45.7365242+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:47.9102676+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.5 MB/s (17298 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:39:47.9926581+01:00 adb -s emulator-5554 shell input tap 414 1410
+EXIT CODE: 0
+2026-10-29T09:39:48.0567628+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:50.2233436+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 8.8 MB/s (17311 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:39:50.2846074+01:00 adb -s emulator-5554 shell input tap 160 1410
+EXIT CODE: 0
+2026-10-29T09:39:50.3518322+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:52.5995418+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (17318 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:39:52.6633906+01:00 adb -s emulator-5554 shell input tap 160 1186
+EXIT CODE: 0
+2026-10-29T09:39:52.7438984+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:54.9788715+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.4 MB/s (17324 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:39:55.0442348+01:00 adb -s emulator-5554 shell input tap 414 1186
+EXIT CODE: 0
+2026-10-29T09:39:55.1232292+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:57.4053447+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.2 MB/s (17328 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:39:57.4751370+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:39:57.5485807+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:39:59.7759365+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.7 MB/s (16277 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:40:23.9272281+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:26.1437787+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.9 MB/s (16277 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:40:26.2283239+01:00 adb -s emulator-5554 shell input tap 414 1339
+EXIT CODE: 0
+2026-10-29T09:40:26.2956643+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:28.4692098+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.5 MB/s (16291 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:40:28.5263612+01:00 adb -s emulator-5554 shell input tap 920 1339
+EXIT CODE: 0
+2026-10-29T09:40:28.5863511+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:30.7401920+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.3 MB/s (16296 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:40:30.8024518+01:00 adb -s emulator-5554 shell input tap 666 1339
+EXIT CODE: 0
+2026-10-29T09:40:30.8804464+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:33.1273523+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.1 MB/s (16300 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:40:33.1877428+01:00 adb -s emulator-5554 shell input tap 160 1339
+EXIT CODE: 0
+2026-10-29T09:40:33.2641032+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:35.4663235+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.2 MB/s (16305 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:40:35.5359104+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:40:35.6117161+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:37.8548471+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.6 MB/s (12685 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:40:37.9117382+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:40:38.2902475+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack2-won.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 45.5 MB/s (236370 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:40:38.3504813+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:40.5184274+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.4 MB/s (12685 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:40:40.5807009+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:40:42.7156556+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.8 MB/s (12685 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:41:22.2317103+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:24.4291957+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.0 MB/s (12685 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:41:24.5206794+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT CODE: 0
+2026-10-29T09:41:24.6064248+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:26.9737623+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.0 MB/s (8047 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:41:27.0406590+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT CODE: 0
+2026-10-29T09:41:27.1239890+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:29.4649901+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.7 MB/s (8678 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:41:29.5277663+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:41:29.9340778+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack2-unlock.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 48.9 MB/s (227961 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:41:30.0001746+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:32.2032795+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (8678 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:41:32.2735875+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:34.4589968+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.8 MB/s (8678 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:41:34.5503737+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:36.7373412+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.4 MB/s (8678 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:41:36.8021951+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT CODE: 0
+2026-10-29T09:41:36.8814657+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:41:39.2338185+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.5 MB/s (11087 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:42:42.7319264+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:42:44.9543798+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:42:45.0259208+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:42:45.4011043+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-stale-shelf-before-fix.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 32.9 MB/s (196749 bytes in 0.006s)
+EXIT CODE: 0
+2026-10-29T09:42:45.4687021+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:42:47.6577958+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.4 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:43:30.7462769+01:00 adb -s emulator-5554 shell input tap 540 1492
+EXIT CODE: 0
+2026-10-29T09:43:30.8481748+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:43:33.1870709+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (8696 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:46:15.4246809+01:00 adb -s emulator-5554 install -r build/app/outputs/flutter-apk/app-debug.apk
+Performing Streamed Install
+Success
+EXIT CODE: 0
+2026-10-29T09:46:16.9930344+01:00 adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT CODE: 0
+2026-10-29T09:46:17.1688767+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT CODE: 0
+2026-10-29T09:46:25.2249863+01:00 adb -s emulator-5554 shell input swipe 540 2090 540 650 400
+EXIT CODE: 0
+2026-10-29T09:46:25.7553906+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:46:28.1377582+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.0 MB/s (23662 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:46:28.2585720+01:00 adb -s emulator-5554 shell input tap 412 1120
+EXIT CODE: 0
+2026-10-29T09:46:28.3319019+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+ERROR: null root node returned by UiTestAutomationBridge.
+EXIT CODE: 0
+2026-10-29T09:46:30.6496152+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 9.4 MB/s (23662 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:46:39.3959034+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:46:41.6687246+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.5 MB/s (12538 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:46:41.7616861+01:00 adb -s emulator-5554 shell input tap 907 1759
+EXIT CODE: 0
+2026-10-29T09:46:41.9351456+01:00 adb -s emulator-5554 shell input swipe 540 2100 540 950 450
+EXIT CODE: 0
+2026-10-29T09:46:42.4723587+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:46:44.7128599+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (11841 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:46:44.7848017+01:00 adb -s emulator-5554 shell input tap 540 1492
+EXIT CODE: 0
+2026-10-29T09:46:44.8621156+01:00 adb -s emulator-5554 shell input tap 510 718
+EXIT CODE: 0
+2026-10-29T09:46:44.9452317+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:46:47.1608235+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (11841 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:46:57.2155765+01:00 adb -s emulator-5554 shell input swipe 540 2100 540 950 450
+EXIT CODE: 0
+2026-10-29T09:46:57.7555448+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:46:59.9245186+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:47:08.2615806+01:00 adb -s emulator-5554 shell input tap 540 1492
+EXIT CODE: 0
+2026-10-29T09:47:08.3473691+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:10.6901059+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.6 MB/s (8696 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:47:20.0044356+01:00 adb -s emulator-5554 shell input tap 510 718
+EXIT CODE: 0
+2026-10-29T09:47:20.1181214+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:22.4305297+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.6 MB/s (7669 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:47:22.5288223+01:00 adb -s emulator-5554 shell input tap 540 1282
+EXIT CODE: 0
+2026-10-29T09:47:22.6099077+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:25.1421544+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.1 MB/s (18613 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:47:25.2079001+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:47:25.6314641+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack3-fresh.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 41.7 MB/s (200834 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:47:25.7014563+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:27.9369070+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.9 MB/s (18613 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:47:28.0023256+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:30.1912946+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.9 MB/s (18613 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:47:48.7202555+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:50.8934306+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.4 MB/s (18613 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:47:50.9917315+01:00 adb -s emulator-5554 shell input tap 666 706
+EXIT CODE: 0
+2026-10-29T09:47:51.0831991+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:53.3600479+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 8.4 MB/s (18614 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:47:53.4242449+01:00 adb -s emulator-5554 shell input tap 414 1376
+EXIT CODE: 0
+2026-10-29T09:47:53.5027248+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:55.7325138+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.1 MB/s (18619 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:47:55.8020257+01:00 adb -s emulator-5554 shell input tap 414 930
+EXIT CODE: 0
+2026-10-29T09:47:55.8797726+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:47:58.1388489+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.4 MB/s (18625 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:47:58.2020761+01:00 adb -s emulator-5554 shell input tap 160 930
+EXIT CODE: 0
+2026-10-29T09:47:58.2793889+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:00.5490264+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.7 MB/s (18631 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:00.6097439+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:48:00.6863443+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:02.9750387+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.3 MB/s (17981 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:03.0369967+01:00 adb -s emulator-5554 shell input tap 920 1480
+EXIT CODE: 0
+2026-10-29T09:48:03.1185628+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:05.3744218+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.1 MB/s (17998 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:05.4401738+01:00 adb -s emulator-5554 shell input tap 414 1480
+EXIT CODE: 0
+2026-10-29T09:48:05.5215374+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:07.7468194+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.6 MB/s (18003 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:07.8059238+01:00 adb -s emulator-5554 shell input tap 160 1480
+EXIT CODE: 0
+2026-10-29T09:48:07.8803959+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:10.0837999+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.1 MB/s (18009 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:10.1493312+01:00 adb -s emulator-5554 shell input tap 414 1258
+EXIT CODE: 0
+2026-10-29T09:48:10.2378021+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:12.4784277+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.8 MB/s (18013 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:48:12.5403905+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:48:12.6152192+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:14.8588820+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.9 MB/s (17301 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:48:14.9226003+01:00 adb -s emulator-5554 shell input tap 414 1410
+EXIT CODE: 0
+2026-10-29T09:48:14.9999731+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:17.2217450+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.6 MB/s (17320 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:17.2838291+01:00 adb -s emulator-5554 shell input tap 160 1186
+EXIT CODE: 0
+2026-10-29T09:48:17.3615165+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:19.5917938+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.5 MB/s (17327 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:19.6571266+01:00 adb -s emulator-5554 shell input tap 920 1186
+EXIT CODE: 0
+2026-10-29T09:48:19.7464180+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:22.0014860+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.8 MB/s (17337 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:22.0679832+01:00 adb -s emulator-5554 shell input tap 920 1410
+EXIT CODE: 0
+2026-10-29T09:48:22.1450935+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:24.3569411+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.2 MB/s (17347 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:24.4173102+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:48:24.4975229+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:26.7298211+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.3 MB/s (16274 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:48:26.7919134+01:00 adb -s emulator-5554 shell input tap 160 1339
+EXIT CODE: 0
+2026-10-29T09:48:26.8714682+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+2026-10-29T09:48:27.6563372+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+EXIT CODE: 137
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:29.0999800+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.4 MB/s (16279 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:48:29.1646740+01:00 adb -s emulator-5554 shell input tap 920 1339
+EXIT CODE: 0
+2026-10-29T09:48:29.2512533+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:31.4959598+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.3 MB/s (16286 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:48:31.5527521+01:00 adb -s emulator-5554 shell input tap 414 1339
+EXIT CODE: 0
+2026-10-29T09:48:31.6250128+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:33.8521811+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.8 MB/s (16291 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:33.9108929+01:00 adb -s emulator-5554 shell input tap 666 1339
+EXIT CODE: 0
+2026-10-29T09:48:33.9834396+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:36.2133065+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.0 MB/s (16295 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:36.2782862+01:00 adb -s emulator-5554 shell input tap 905 2162
+EXIT CODE: 0
+2026-10-29T09:48:36.3585247+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:38.6026052+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.9 MB/s (12681 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:38.6695691+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:48:39.0846746+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack3-won.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 33.1 MB/s (237142 bytes in 0.007s)
+EXIT CODE: 0
+2026-10-29T09:48:39.1535772+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:41.3540075+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.1 MB/s (12681 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:41.4233870+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:43.6089804+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.2 MB/s (12681 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:53.5221081+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:55.7362845+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.1 MB/s (12681 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:48:55.8410407+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT CODE: 0
+2026-10-29T09:48:55.9286361+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:48:58.2795704+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.4 MB/s (8056 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:48:58.3488631+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT CODE: 0
+2026-10-29T09:48:58.4312295+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:00.7718408+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.4 MB/s (8708 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:49:00.8341486+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:49:01.2368255+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack3-unlock.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 33.2 MB/s (238183 bytes in 0.007s)
+EXIT CODE: 0
+2026-10-29T09:49:01.3028131+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:03.5041043+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 2.6 MB/s (8708 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:49:03.5750328+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:05.7552701+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.7 MB/s (8708 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:49:05.8187283+01:00 adb -s emulator-5554 shell input tap 74 216
+EXIT CODE: 0
+2026-10-29T09:49:05.8949370+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:08.2665261+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:49:08.3207612+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:49:08.7254007+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-shelf-fixed.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 37.0 MB/s (195278 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:49:08.7928670+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:10.9993399+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.5 MB/s (11087 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:49:11.0625066+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:13.2510796+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 4.7 MB/s (11087 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:49:35.7501081+01:00 adb -s emulator-5554 shell input tap 540 2148
+EXIT CODE: 0
+2026-10-29T09:49:35.8447956+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:38.1659238+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.3 MB/s (8696 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:49:56.0956950+01:00 adb -s emulator-5554 shell input tap 510 718
+EXIT CODE: 0
+2026-10-29T09:49:56.1987648+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:49:58.5143354+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 3.2 MB/s (7669 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:49:58.6097235+01:00 adb -s emulator-5554 shell input tap 540 1282
+EXIT CODE: 0
+2026-10-29T09:49:58.6810162+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:01.0070453+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.8 MB/s (18620 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:18.8690819+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:21.0685110+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.7 MB/s (18620 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:21.1635430+01:00 adb -s emulator-5554 shell input tap 414 706
+EXIT CODE: 0
+2026-10-29T09:50:21.2377058+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:23.5066400+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.2 MB/s (18624 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:23.5701778+01:00 adb -s emulator-5554 shell input tap 203 1707
+EXIT CODE: 0
+2026-10-29T09:50:23.6447448+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:25.8566649+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.8 MB/s (18628 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:25.9194957+01:00 adb -s emulator-5554 shell input tap 540 1707
+EXIT CODE: 0
+2026-10-29T09:50:25.9963129+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:28.2219866+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.1 MB/s (19004 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:28.2823677+01:00 adb -s emulator-5554 shell input tap 208 2298
+EXIT CODE: 0
+2026-10-29T09:50:28.3606128+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:30.5869616+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.3 MB/s (19012 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:30.6385914+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:50:30.9736136+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack4-before-restart.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 46.1 MB/s (208406 bytes in 0.004s)
+EXIT CODE: 0
+2026-10-29T09:50:31.0363481+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:33.2244750+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.9 MB/s (19012 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:50:33.2931883+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+23374
+EXIT CODE: 0
+2026-10-29T09:50:33.5931478+01:00 adb -s emulator-5554 shell am force-stop de.cloudwards.lexistack
+EXIT CODE: 0
+AFTER force-stop: pidof output='' EXIT: 1 (1 expected, process absent)
+2026-10-29T09:50:33.7787130+01:00 adb -s emulator-5554 shell input keyevent KEYCODE_HOME
+EXIT CODE: 0
+2026-10-29T09:50:49.9147645+01:00 adb -s emulator-5554 shell input swipe 540 2090 540 650 400
+EXIT CODE: 0
+2026-10-29T09:50:50.4250755+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:50:52.7030460+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 9.6 MB/s (23662 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:50:52.8077144+01:00 adb -s emulator-5554 shell input tap 412 1120
+EXIT CODE: 0
+2026-10-29T09:51:04.2241089+01:00 adb -s emulator-5554 shell pidof de.cloudwards.lexistack
+24631
+EXIT CODE: 0
+2026-10-29T09:51:04.3176063+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:51:06.6144089+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 5.4 MB/s (12538 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:51:06.7095253+01:00 adb -s emulator-5554 shell input tap 540 846
+EXIT CODE: 0
+2026-10-29T09:51:06.8782126+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:51:09.4064229+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.0 MB/s (19016 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:51:09.4685452+01:00 adb -s emulator-5554 shell screencap -p /sdcard/f4d01-screen.png
+EXIT CODE: 0
+2026-10-29T09:51:09.8627984+01:00 adb -s emulator-5554 pull /sdcard/f4d01-screen.png C:/Codex/LexiStack/docs/evidence/f5/android-pack4-restored.png
+/sdcard/f4d01-screen.png: 1 file pulled, 0 skipped. 38.0 MB/s (209370 bytes in 0.005s)
+EXIT CODE: 0
+2026-10-29T09:51:09.9289834+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:51:12.1688815+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 6.2 MB/s (19016 bytes in 0.003s)
+EXIT CODE: 0
+2026-10-29T09:51:12.2408458+01:00 adb -s emulator-5554 shell uiautomator dump /sdcard/f4d01-window.xml
+UI hierchary dumped to: /sdcard/f4d01-window.xml
+EXIT CODE: 0
+2026-10-29T09:51:14.4442554+01:00 adb -s emulator-5554 pull /sdcard/f4d01-window.xml C:/Codex/LexiStack/docs/evidence/f5/current.xml
+/sdcard/f4d01-window.xml: 1 file pulled, 0 skipped. 7.4 MB/s (19016 bytes in 0.002s)
+EXIT CODE: 0
+2026-10-29T09:51:37.9200912+01:00 adb -s emulator-5554 logcat -d -v time --pid=24631
+--------- beginning of main
+10-29 09:50:51.521 I/Zygote  (24631): Process 24631 created for de.cloudwards.lexistack
+10-29 09:50:51.521 I/wards.lexistack(24631): Late-enabling -Xcheck:jni
+10-29 09:50:51.549 I/wards.lexistack(24631): Using CollectorTypeCMC GC.
+10-29 09:50:51.550 W/wards.lexistack(24631): Unexpected CPU variant for x86: x86_64.
+10-29 09:50:51.550 W/wards.lexistack(24631): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-29 09:50:51.565 D/nativeloader(24631): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-29 09:50:51.669 D/ApplicationLoaders(24631): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-29 09:50:51.670 D/ApplicationLoaders(24631): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-29 09:50:51.807 D/nativeloader(24631): Configuring clns-9 for other apk /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/lib/x86_64:/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/de.cloudwards.lexistack
+10-29 09:50:51.830 V/GraphicsEnvironment(24631): Currently set values for:
+10-29 09:50:51.830 V/GraphicsEnvironment(24631):   angle_gl_driver_selection_pkgs=[]
+10-29 09:50:51.830 V/GraphicsEnvironment(24631):   angle_gl_driver_selection_values=[]
+10-29 09:50:51.830 V/GraphicsEnvironment(24631): de.cloudwards.lexistack is not listed in per-application setting
+10-29 09:50:51.830 V/GraphicsEnvironment(24631): ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+10-29 09:50:51.831 V/GraphicsEnvironment(24631): No special selections for ANGLE, returning default driver choice
+10-29 09:50:51.831 V/GraphicsEnvironment(24631): Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-29 09:50:51.910 I/DisplayManager(24631): Choreographer implicitly registered for the refresh rate.
+10-29 09:50:51.944 E/ashmem  (24631): Pinning is deprecated since Android Q. Please use trim or other methods.
+10-29 09:50:51.992 I/GFXSTREAM(24631): [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+10-29 09:50:51.993 I/GFXSTREAM(24631): [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+10-29 09:50:52.049 W/HWUI    (24631): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-29 09:50:52.050 W/HWUI    (24631): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-29 09:50:52.098 D/FlutterJNI(24631): Beginning load of flutter...
+10-29 09:50:52.101 I/ResourceExtractor(24631): Found extracted resources res_timestamp-1-1793263575104
+10-29 09:50:52.165 D/nativeloader(24631): Load /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!/lib/x86_64/libflutter.so using class loader ns clns-9 (caller=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk): ok
+10-29 09:50:52.169 D/FlutterJNI(24631): flutter (null) was loaded normally!
+10-29 09:50:52.178 D/skia    (24631): [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-29 09:50:52.247 W/wards.lexistack(24631): type=1400 audit(0.0:157): avc:  denied  { read } for  name="max_map_count" dev="proc" ino=85001 scontext=u:r:untrusted_app:s0:c227,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=de.cloudwards.lexistack
+10-29 09:50:52.283 D/DesktopExperienceFlags(24631): Toggle override initialized to: false
+10-29 09:50:52.283 D/DesktopModeFlags(24631): Toggle override initialized to: OVERRIDE_UNSET
+10-29 09:50:52.316 I/flutter (24631): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-29 09:50:52.476 I/flutter (24631): The Dart VM service is listening on http://127.0.0.1:36981/fb5_AEnmXcc=/
+10-29 09:50:52.613 D/nativeloader(24631): Load /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!/lib/x86_64/libdartjni.so using class loader ns clns-9 (caller=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk!classes6.dex): ok
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityNodeInfo;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported,test-api) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityRecord;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden field Landroid/view/accessibility/AccessibilityNodeInfo;->mChildNodeIds:Landroid/util/LongArray; (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.723 I/wards.lexistack(24631): hiddenapi: Accessing hidden method Landroid/util/LongArray;->get(I)J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+10-29 09:50:52.732 D/AccessibilityBridge(24631): Setting not found: accessibility_display_inversion_enabled, using default: 0
+10-29 09:50:52.753 D/FlutterRenderer(24631): Width is zero. 0,0
+10-29 09:50:52.757 D/CompatChangeReporter(24631): Compat change id reported: 377864165; UID 10227; state: ENABLED
+10-29 09:50:52.777 W/HWUI    (24631): Unknown dataspace 0
+10-29 09:50:54.356 I/Choreographer(24631): Skipped 93 frames!  The application may be doing too much work on its main thread.
+10-29 09:50:54.358 D/WindowOnBackDispatcher(24631): setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@267f9da
+10-29 09:50:54.379 I/wards.lexistack(24631): Compiler allocated 5082KB to compile void android.view.ViewRootImpl.performTraversals()
+10-29 09:50:54.396 I/WindowExtensionsImpl(24631): Initializing Window Extensions, vendor API level=9, activity embedding enabled=true
+10-29 09:50:54.463 D/VRI[MainActivity](24631): WindowInsets changed: 1080x2424 statusBars:[0,137,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,174,0,84]
+10-29 09:50:54.463 D/FlutterRenderer(24631): Width is zero. 0,0
+10-29 09:50:54.481 D/FlutterRenderer(24631): Width is zero. 0,0
+10-29 09:50:54.485 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:55.506 I/Choreographer(24631): Skipped 61 frames!  The application may be doing too much work on its main thread.
+10-29 09:50:55.513 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:55.564 D/WindowLayoutComponentImpl(24631): Register WindowLayoutInfoListener on Context=de.cloudwards.lexistack.MainActivity@bb753cf, of which baseContext=android.app.ContextImpl@1c46992
+10-29 09:50:55.568 I/HWUI    (24631): Davey! duration=1077ms; Flags=1, FrameTimelineVsyncId=192699, IntendedVsync=10152497822418, Vsync=10153514489044, InputEventId=0, HandleInputStart=10153527007700, AnimationStart=10153527029300, PerformTraversalsStart=10153527061200, DrawStart=10153540267400, FrameDeadline=10152514489084, FrameStartTime=10153526618400, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=10153540852900, SyncStart=10153541453000, IssueDrawCommandsStart=10153541837400, SwapBuffers=10153554320300, FrameCompleted=10153575872700, DequeueBufferDuration=19927000, QueueBufferDuration=761200, GpuCompleted=10153565630300, SwapBuffersCompleted=10153575872700, DisplayPresentTime=946, CommandSubmissionCompleted=10153554320300,
+10-29 09:50:55.572 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:55.614 D/InsetsController(24631): hide(ime())
+10-29 09:50:55.615 I/ImeTracker(24631): de.cloudwards.lexistack:4e273779: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-29 09:50:56.232 D/FlutterJNI(24631): Sending viewport metrics to the engine.
+10-29 09:50:57.574 D/ProfileInstaller(24631): Installing profile for de.cloudwards.lexistack
+10-29 09:51:04.305 W/wards.lexistack(24631): userfaultfd: MOVE ioctl seems unsupported: Try again
+10-29 09:51:05.907 D/WindowOnBackDispatcher(24631): setTopOnBackInvokedCallback (unwrapped): io.flutter.embedding.android.FlutterActivity$1@3d4420
+EXIT CODE: 0
