@@ -30,7 +30,22 @@ flutter:
     - family: DM Sans
       fonts:
         - asset: assets/fonts/dmsans.ttf
+    # Flutter web initializes this fallback automatically. Reuse bundled DM Sans
+    # instead of fetching the SDK's default Roboto from Google Fonts.
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/dmsans.ttf
+    - family: LexiStack Symbols
+      fonts:
+        - asset: assets/fonts/symbols.ttf
+    - family: LexiStack Emoji
+      fonts:
+        - asset: assets/fonts/emoji.ttf
   assets:
+    - assets/fonts/fraunces-OFL.txt
+    - assets/fonts/dmsans-OFL.txt
+    - assets/fonts/symbols-OFL.txt
+    - assets/fonts/emoji-OFL.txt
     - assets/levels/manifest.json
     - assets/levels/pack1.json
     - assets/levels/pack2.json

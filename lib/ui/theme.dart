@@ -62,6 +62,7 @@ ThemeData lexistackTheme({Brightness brightness = Brightness.light}) {
     colorScheme: colors,
     useMaterial3: true,
     fontFamily: 'DM Sans',
+    fontFamilyFallback: const ['LexiStack Symbols', 'LexiStack Emoji'],
   );
   TextStyle heading(double size) => TextStyle(
     fontFamily: 'DM Sans',

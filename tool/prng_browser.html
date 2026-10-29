@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>LexiStack production PRNG golden vectors</title>
+<body data-result="running">
+<h1>Production StableRandom — browser golden vectors</h1>
+<pre id="output"></pre>
+<script>
+  // Test-only host for `dart compile js tool/check_prng.dart`.
+  // Expected numeric values live in the unchanged Dart oracle, not this HTML.
+  const lines = [];
+  const originalLog = console.log;
+  console.log = (...values) => {
+    const line = values.join(' ');
+    lines.push(line);
+    document.getElementById('output').textContent += line + '\n';
+    originalLog(...values);
+    if (lines.length === 5 && lines.every(value => value.endsWith(' OK'))) {
+      document.body.dataset.result = 'pass';
+    }
+  };
+  addEventListener('error', event => {
+    document.body.dataset.result = 'fail';
+    document.getElementById('output').textContent += event.message;
+  });
+</script>
+<script src="check_prng.js"></script>
+</body>
+</html>
