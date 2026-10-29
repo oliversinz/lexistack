@@ -1,0 +1,14 @@
+App baseline: 6a466ef347a3f1c17b1837fc210d9cd41a336065
+Approved release: ba005009089ca54a1d4c203f218e37cfaae62f6e releases/cs1-pack5-v1 (Pack 5 r02)
+All 9 release files (including SHA256SUMS) byte-identical to approved Git commit.
+SHA256 PASS RELEASE.md 3b9410c9d0b1e063bb25fccc4b5b14779d27ab055512d9c2ea4dc0b7caa45ec8
+SHA256 PASS daily.json cae28b16a0ea4efe7dbb13db3eca26dff776fc4f604753cc591d90df41947a08
+SHA256 PASS manifest.json a08da2ff944868dee79bbdcfe9662a6cd58354b54543a3b6a6a1583dd4ed4dac
+SHA256 PASS pack1.json d5e67008d5e7161fd6c41c0ac46530867f742f21f1cf042c74e6df7d69850e9a
+SHA256 PASS pack2.json 2847510b69daf99642e67407b593a7d67d17430d6a1167148d40f41a4bcbaf08
+SHA256 PASS pack3.json a9e5ca304a9ba01700df36c92aeb4425c618990975351a5596822a2e6c3157f9
+SHA256 PASS pack4.json 7315eef5e0650fe51d045dec1d712a786eed5d857aaa4f0e9bb6382f2b3807a4
+SHA256 PASS pack5.json 46e38caf79689b253b353fd52dd73b95fb84e9e721cff596dba56927f6ad708f
+Original pack1-4 and daily bytes unchanged from accepted app baseline and approved release.
+pubspec.lock byte-identical to baseline; pubspec.yaml CS0 ref unchanged.
+Debug APK and web output contain all 7 installed JSON files with exact approved bytes.

@@ -14,3 +14,12 @@ Catalog installedCatalog() => validateCatalog(
   manifestContents: installedManifest(),
   files: installedFiles(),
 ).catalog!;
+
+// Frozen Experiment E manifest; the five original pack files remain installed.
+String initialManifest() =>
+    File('test/fixtures/initial-manifest.json').readAsStringSync();
+
+Catalog initialCatalog() => validateCatalog(
+  manifestContents: initialManifest(),
+  files: installedFiles(),
+).catalog!;

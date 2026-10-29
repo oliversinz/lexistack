@@ -59,7 +59,7 @@ Future<ProgressController> legacyPlayer(TestClock clock) async {
 }
 
 void main() {
-  for (final pack in installedCatalog().packs.take(4)) {
+  for (final pack in installedCatalog().packs.take(5)) {
     test(
       'F5 ECO-03/05 ${pack.id} all eight unlocks independent and durable',
       () async {
@@ -104,7 +104,7 @@ void main() {
     );
   }
 
-  test('F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion', () async {
+  test('F5 ECO-06 Continue follows all 40 manifest levels; explicit replay survives completion', () async {
     final p = await player();
     for (final level in p.campaignPacks.expand((p) => p.levels)) {
       final attempt = p.continueCampaign()!;
@@ -112,8 +112,8 @@ void main() {
       expect(attempt.date, isNull);
       win(BoardController(p, attempt));
     }
-    expect(p.state.campaign, hasLength(32));
-    expect(p.state.results, hasLength(32));
+    expect(p.state.campaign, hasLength(40));
+    expect(p.state.results, hasLength(40));
     final sequence = p.state.sequence;
     expect(p.continueCampaign(), isNull);
     expect(p.state.sequence, sequence);

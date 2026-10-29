@@ -50,7 +50,7 @@ void main() {
       await tester.pumpAndSettle();
       await reveal(tester, 'Explore collection');
       expect(find.text('Everyday Echoes'), findsOneWidget);
-      expect(find.text('0 / 8 solved · Available offline'), findsNWidgets(4));
+      expect(find.text('0 / 8 solved · Available offline'), findsNWidgets(5));
       expect(find.byTooltip('Settings'), findsOneWidget);
       await reveal(tester, 'Explore collection', -200);
       await tester.tap(find.text('Explore collection').first);
@@ -67,7 +67,7 @@ void main() {
       await tester.pumpAndSettle();
       await tester.pageBack();
       await tester.pumpAndSettle();
-      expect(find.text('Explore collection'), findsNWidgets(4));
+      expect(find.text('Explore collection'), findsNWidgets(5));
     },
   );
 

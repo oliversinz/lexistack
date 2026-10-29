@@ -1507,3 +1507,85 @@ complete. **The final comparative evaluation against LexiStack3 and LexiStack4
 remains pending.** No independent 100-point score or experiment winner is
 assigned, and the evaluation methodology is unchanged. No new development,
 Content Studio CS1 or C/D/E comparison is part of this integration.
+
+## Post-experiment — approved Pack 5 integration (2026-10-29)
+
+**Independent acceptance: pending.** This addition is explicitly authorized by
+the Pack 5 Flutter Integration assignment; it does not alter the historical
+Experiment E benchmark or its acceptance records. Branch:
+`codex/pack5-flutter-integration`. App baseline:
+`6a466ef347a3f1c17b1837fc210d9cd41a336065`.
+
+Integrated `releases/cs1-pack5-v1/` from Content Studio commit
+`ba005009089ca54a1d4c203f218e37cfaae62f6e`, approved Pack 5 r02. All nine release
+files match their committed bytes and all eight SHA256SUMS entries pass.
+Pack 5 SHA-256:
+`46e38caf79689b253b353fd52dd73b95fb84e9e721cff596dba56927f6ad708f`.
+Only the approved manifest and new pack were copied, with one Flutter asset
+registration. No `lib/` changes, dependency changes, version changes, content
+edits, storage migration or Content Studio writes. CS0 stays pinned to
+`d9acbd52de0e198dd109a4859299318db3f465f5`; `pubspec.lock` is byte-identical.
+
+Strict catalog: five Campaign packs / 40 Campaign levels, one Daily pool /
+8 Daily levels, 48 total levels, 192 categories, 768 tile positions; zero errors
+and warnings, strict minimum true, initial benchmark false by design. Historical
+tests retain the original manifest's locked bytes and all five original pack
+blob identities, with 40/160/640 totals and initial benchmark true. Negative
+schema, candidate and recovery coverage remains intact. APK and web bundles
+were checked against every installed JSON byte.
+
+Actual commands (PowerShell output redirection only for text logs):
+
+| Command | Exit | Result / evidence under `docs/evidence/pack5/` |
+|---|---:|---|
+| `flutter doctor -v` | 0 | Flutter 3.47.8, Dart 3.13.7, Android SDK 36.1.0; `toolchain.txt` |
+| `flutter test --reporter compact` before asset changes | 0 | 197 baseline tests passed |
+| `flutter pub get` | 0 | Dependency pin/lock unchanged; `pub-get.txt` |
+| `dart run tool/validate_levels.dart` | 0 | 48 levels, zero errors/warnings; `validation.txt` |
+| `flutter analyze` | 0 | No issues; `analyze.txt` |
+| `flutter test test/content_test.dart test/f5_content_test.dart test/app/f5_catalog_progress_test.dart test/app/pack5_save_compatibility_test.dart test/ui/f5_catalog_test.dart --reporter expanded` | 0 | 64 focused tests passed |
+| `flutter test --reporter expanded` final | 0 | 204 tests passed; `all-tests.txt` |
+| `flutter build apk --debug` | 0 | Debug APK built; `apk-build.txt` |
+| `flutter build web` | 0 | Web build succeeded; `web-build.txt` |
+| `git diff --check` | 0 | No whitespace errors |
+
+Two intermediate full-suite runs exited 1 because the same app navigation test
+still had two separate four-pack assertions. Both were updated to five; no
+coverage was removed. Final full suite passed. Save compatibility tests create
+original 40-level catalog saves with all 32 Campaign achievements, mixed stars,
+consumed practice payouts, pending replay with paid hints, previous Daily wins,
+active or finalized current Daily, settings and spending. Expanded loads match
+every saved field without recovery notices or writes. Rescues, capped replay
+rewards, Daily settlement, fresh Pack 5 state, subsequent persistence and Continue
+into Pack 5 all pass. Sixteen date probes preserve Daily IDs, seeds and boards.
+Real-bundle UI tests solve all eight new boards, check trivia/red herrings,
+normal unlocks, Continue and replay, and verify Level 04 labels/colors/guess tiers
+and lowest-tier hint targeting independently of source order `[1,4,3,2]`.
+
+Android: Pixel_10, Android 16/API 36, emulator-5554. The existing 40-level APK and
+save were inspected before `adb install -r`; no data was cleared or replaced.
+The DataStore remained byte-identical before update, after install and after
+launch. The saved pack4 board resumed with its exact order, selected tile, paid
+hints, lives and RNG. Five packs and all eight Pack 5 stages rendered; actual
+UI play solved stages 1–4 through ordinary unlocking, verified Level 04 tier
+presentation and two paid peeks, displayed result trivia/red herrings, opened
+a fresh replay, and opened the unchanged Daily board. Force-stop/relaunch then
+preserved the entire save byte-for-byte again. Original achievements, finalized
+results and unfinished board remain intact. Smoke play added four Pack 5 wins,
+an unfinished replay and an unfinished Daily; final wallet is
+`35 + 4×50 − 2×40 = 155`, with no duplicate old payouts.
+
+Evidence: [integrity](evidence/pack5/integrity.txt),
+[Android comparisons and limits](evidence/pack5/android-checks.txt),
+[device commands](evidence/pack5/android-commands.txt), paired save snapshots and
+actual PNG/XML captures in the same directory. Key screenshots were visually
+inspected. Android stages 5–8 are covered by automated UI tests, not manual
+device play. Web was built; no new browser runtime check was performed.
+
+Remaining defects/blockers: none identified. Nonblocking environment output:
+Windows C++ tools absent (Windows build not requested), Gradle/JDK native-access
+warning and Flutter web Cupertino font-family warning. Android helper retries
+handled an offscreen result label and Windows console Unicode encoding; neither
+was an application failure. No user intervention or independent review occurred
+during implementation. Feature branch delivery only; `main` remains at the
+accepted baseline pending explicit independent approval.

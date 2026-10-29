@@ -1,0 +1,12 @@
+Android 16 / API 36, Pixel_10 AVD, emulator-5554. Existing installed APK had the original four Campaign packs and byte-identical original JSON.
+In-place update: adb install -r build/app/outputs/flutter-apk/app-debug.apk (exit 0). No clear, uninstall, or save replacement.
+Before / after install / after launch: exact saved JSON and raw DataStore bytes preserved; SHA256 ef99d01130b7781ed28a0903c5facffc37c3271d42c455be626335d29536eb9a.
+Initial state: 35 coins, 3 Campaign achievements, 4 finalized results, unfinished pack4_lvl01 with paid pair/peek and selected DOROTHY. All restored unchanged; Continue only advanced entry sequence as designed.
+Home progress changed from 3 / 32 to 3 / 40. Campaign shelf top/bottom showed all five packs; Pack 5 title/description and all eight ordered stages rendered. First unlocked, stages 2-8 locked initially.
+Actual UI taps submitted intended groups and won pack5_lvl01 through pack5_lvl04, using normal sequential unlocking. Each paid +50 once; stage 4 replay opened 16 fresh tiles.
+Level 04 source tiers remained 1,4,3,2. Slots and solved banners used matching labels/colors. Two Category Peeks targeted tiers 1 then 2 (last source category); costs 40 each. Share rows rendered yellow,purple,blue,green after source-order solves.
+Results displayed trivia and red-herring explanations, inspected in screenshots. Existing pack4 board and Daily 2026-10-29 (daily_lvl06, A Taste of Language) remained accessible.
+After force-stop/relaunch: exact JSON and raw DataStore preserved; SHA256 2b50392be31c1f15f2ea3219f6e07b58beac90f7a7572d7cbf23c22f0087f919.
+Final smoke state: 155 coins = 35 + 4*50 - 2*40; 7 achievements; 8 results. Original achievements, result prefix and unfinished board unchanged. Added four Pack 5 wins, one unfinished Pack 5 replay and current unfinished Daily. No existing payouts duplicated.
+Android stages 5-8 were not played manually; all eight were solved via real-app widget tests and all 48 via engine tests. No physical device or browser runtime check in this task; web build passed.
+Helper corrections: first final-card assertion expected an offscreen result label; inspected result and scrolled to it. Python console encoding was changed to UTF-8 after a star-character print failed. Neither was an app failure. No emulator startup failure or human intervention.

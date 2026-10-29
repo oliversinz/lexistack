@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "pack5",
+    "title": "Unexpected Connections",
+    "description": "Eight fresh puzzles revealing surprising links across language, culture, science, and everyday life."
+  },
+  "levels": [
+    {
+      "id": "pack5_lvl01",
+      "packId": "pack5",
+      "title": "Driving Range",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "HEADWEAR",
+          "difficultyTier": 1,
+          "tiles": [
+            "BERET",
+            "FEDORA",
+            "SOMBRERO",
+            "BEANIE"
+          ],
+          "triviaFact": "The sombrero takes its name from the Spanish word sombra, meaning shade, which its wide brim provides."
+        },
+        {
+          "id": "g2",
+          "title": "BIRDS OF PREY",
+          "difficultyTier": 2,
+          "tiles": [
+            "FALCON",
+            "OSPREY",
+            "KESTREL",
+            "HARRIER"
+          ],
+          "triviaFact": "The osprey feeds almost entirely on live fish, plunging feet first into the water to catch them."
+        },
+        {
+          "id": "g3",
+          "title": "GOLF SCORING TERMS",
+          "difficultyTier": 3,
+          "tiles": [
+            "PAR",
+            "BOGEY",
+            "BIRDIE",
+            "EAGLE"
+          ],
+          "triviaFact": "In golf, a birdie is one stroke under par for a hole, while an eagle is two strokes under."
+        },
+        {
+          "id": "g4",
+          "title": "PARTS OF A CAR",
+          "difficultyTier": 4,
+          "tiles": [
+            "BONNET",
+            "BOOT",
+            "HOOD",
+            "TRUNK"
+          ],
+          "triviaFact": "Bonnet and boot are the British names for what American drivers call the hood and trunk of a car."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "EAGLE"
+          ],
+          "note": "EAGLE looks like a fifth bird of prey beside FALCON, OSPREY, KESTREL and HARRIER, but golf needs it; PAR, BOGEY, BIRDIE and EAGLE are all scoring terms."
+        },
+        {
+          "tiles": [
+            "BONNET",
+            "HOOD"
+          ],
+          "note": "BONNET and HOOD are worn on the head like BERET and BEANIE, but they are also car parts; BOOT and TRUNK confirm that reading."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl02",
+      "packId": "pack5",
+      "title": "Bridging the Gap",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "ANIMAL ENCLOSURES",
+          "difficultyTier": 1,
+          "tiles": [
+            "KENNEL",
+            "STABLE",
+            "HUTCH",
+            "COOP"
+          ],
+          "triviaFact": "A traditional rabbit hutch is often a raised wooden box with a wire mesh front that lets fresh air circulate."
+        },
+        {
+          "id": "g2",
+          "title": "WORDS FOR A STRONG DESIRE",
+          "difficultyTier": 2,
+          "tiles": [
+            "CRAVING",
+            "URGE",
+            "ITCH",
+            "HANKERING"
+          ],
+          "triviaFact": "Crave comes from an Old English verb meaning to demand, long before it meant to long for something."
+        },
+        {
+          "id": "g3",
+          "title": "THINGS WITH A BRIDGE",
+          "difficultyTier": 3,
+          "tiles": [
+            "NOSE",
+            "GLASSES",
+            "SHIP",
+            "SONG"
+          ],
+          "triviaFact": "A ship's bridge is named after the raised walkway that once spanned the paddle wheels of early steamships."
+        },
+        {
+          "id": "g4",
+          "title": "CURRENCIES",
+          "difficultyTier": 4,
+          "tiles": [
+            "REAL",
+            "WON",
+            "YEN",
+            "POUND"
+          ],
+          "triviaFact": "The yen, the won and the Chinese yuan all take their names from a character meaning round."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "POUND"
+          ],
+          "note": "POUND is a place where stray animals are held, tempting the KENNEL and HUTCH group, but REAL, WON and YEN need it as a currency."
+        },
+        {
+          "tiles": [
+            "YEN"
+          ],
+          "note": "YEN can mean a longing, just like URGE and ITCH, but the desire words are complete without it; it joins REAL, WON and POUND."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl03",
+      "packId": "pack5",
+      "title": "Signs from Above",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "PUNCTUATION MARKS",
+          "difficultyTier": 1,
+          "tiles": [
+            "COMMA",
+            "COLON",
+            "HYPHEN",
+            "APOSTROPHE"
+          ],
+          "triviaFact": "Apostrophe comes from a Greek word for turning away, describing a mark that shows where letters were left out."
+        },
+        {
+          "id": "g2",
+          "title": "ZODIAC SIGNS",
+          "difficultyTier": 2,
+          "tiles": [
+            "ARIES",
+            "LIBRA",
+            "VIRGO",
+            "PISCES"
+          ],
+          "triviaFact": "Libra, represented by a pair of scales, is the only zodiac sign symbolized by an object."
+        },
+        {
+          "id": "g3",
+          "title": "OLYMPIAN DEITIES",
+          "difficultyTier": 3,
+          "tiles": [
+            "ZEUS",
+            "APHRODITE",
+            "DIONYSUS",
+            "HEPHAESTUS"
+          ],
+          "triviaFact": "In many versions of the myth, Hephaestus split open the head of Zeus with an axe, and Athena sprang out."
+        },
+        {
+          "id": "g4",
+          "title": "NASA HUMAN SPACEFLIGHT PROGRAMS",
+          "difficultyTier": 4,
+          "tiles": [
+            "MERCURY",
+            "GEMINI",
+            "APOLLO",
+            "ARTEMIS"
+          ],
+          "triviaFact": "NASA named its return-to-the-Moon program after Artemis, the twin sister of Apollo in Greek myth."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "GEMINI"
+          ],
+          "note": "GEMINI looks like a fifth zodiac sign beside ARIES and LIBRA, but it also named the NASA program flown between MERCURY and APOLLO."
+        },
+        {
+          "tiles": [
+            "APOLLO",
+            "ARTEMIS"
+          ],
+          "note": "APOLLO and ARTEMIS are Olympian twins, suggesting a six-deity set, but ZEUS, APHRODITE, DIONYSUS and HEPHAESTUS complete it; the twins name NASA programs."
+        },
+        {
+          "tiles": [
+            "MERCURY"
+          ],
+          "note": "MERCURY is also a Roman god and a planet, but it is not one of the Greek Olympians; it opens the list of NASA human spaceflight programs."
+        },
+        {
+          "tiles": [
+            "ARIES"
+          ],
+          "note": "ARIES resembles ARES, the Greek god of war, but it is the zodiac ram and belongs with LIBRA, VIRGO and PISCES."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl04",
+      "packId": "pack5",
+      "title": "Packed and Ready",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "US STATES",
+          "difficultyTier": 1,
+          "tiles": [
+            "OREGON",
+            "NEVADA",
+            "VERMONT",
+            "KANSAS"
+          ],
+          "triviaFact": "Vermont's name is usually traced to the French words for green mountain."
+        },
+        {
+          "id": "g2",
+          "title": "GARMENTS NAMED AFTER PLACES",
+          "difficultyTier": 4,
+          "tiles": [
+            "TUXEDO",
+            "BIKINI",
+            "JODHPURS",
+            "BALACLAVA"
+          ],
+          "triviaFact": "Jodhpurs take their name from the Indian city of Jodhpur, where similar riding trousers were worn."
+        },
+        {
+          "id": "g3",
+          "title": "COMPUTER FONTS",
+          "difficultyTier": 3,
+          "tiles": [
+            "COURIER",
+            "GEORGIA",
+            "IMPACT",
+            "HELVETICA"
+          ],
+          "triviaFact": "Helvetica takes its name from Helvetia, the Latin name for Switzerland, where the typeface was created."
+        },
+        {
+          "id": "g4",
+          "title": "CARRY LOADS FOR OTHERS",
+          "difficultyTier": 2,
+          "tiles": [
+            "PORTER",
+            "CADDIE",
+            "BEARER",
+            "MULE"
+          ],
+          "triviaFact": "A mule is the offspring of a male donkey and a female horse, valued for its strength and stamina."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "GEORGIA"
+          ],
+          "note": "GEORGIA looks like a fifth US state beside OREGON and KANSAS, but it is also a familiar computer font alongside COURIER, IMPACT and HELVETICA."
+        },
+        {
+          "tiles": [
+            "COURIER"
+          ],
+          "note": "COURIER carries loads for others like a PORTER or CADDIE, but the font set needs it; MULE completes the carriers."
+        },
+        {
+          "tiles": [
+            "MULE"
+          ],
+          "note": "MULE is also a backless shoe, tempting the garment set, but it is not named after a place; it is the pack animal among the carriers."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl05",
+      "packId": "pack5",
+      "title": "Small World",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "RODENTS",
+          "difficultyTier": 1,
+          "tiles": [
+            "LEMMING",
+            "HAMSTER",
+            "GERBIL",
+            "CAPYBARA"
+          ],
+          "triviaFact": "A rodent's front teeth never stop growing, so regular gnawing keeps them at a useful length."
+        },
+        {
+          "id": "g2",
+          "title": "WAYS TO READ",
+          "difficultyTier": 2,
+          "tiles": [
+            "SKIM",
+            "SCAN",
+            "BROWSE",
+            "STUDY"
+          ],
+          "triviaFact": "Skimming means reading quickly for the gist, while scanning means searching a text for particular details."
+        },
+        {
+          "id": "g3",
+          "title": "SOUTH AMERICAN ANIMALS",
+          "difficultyTier": 3,
+          "tiles": [
+            "ANACONDA",
+            "TOUCAN",
+            "CAIMAN",
+            "MACAW"
+          ],
+          "triviaFact": "Caimans belong to the same family as alligators and live in rivers and wetlands across Central and South America."
+        },
+        {
+          "id": "g4",
+          "title": "CONTAIN A HIDDEN COUNTRY",
+          "difficultyTier": 4,
+          "tiles": [
+            "PIRANHA",
+            "PERUSE",
+            "MALIGN",
+            "INCUBATE"
+          ],
+          "triviaFact": "Modern Mali is named after the medieval Mali Empire, which grew wealthy through its trade in gold."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "CAPYBARA",
+            "PIRANHA"
+          ],
+          "note": "CAPYBARA and PIRANHA both live in South America, suggesting a six-animal set, but CAPYBARA is one of the four rodents, the only mammals on the board, and PIRANHA hides IRAN."
+        },
+        {
+          "tiles": [
+            "PERUSE"
+          ],
+          "note": "PERUSE looks like a fifth way to read beside SKIM and SCAN, but that group is complete with BROWSE and STUDY; PERUSE hides PERU."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl06",
+      "packId": "pack5",
+      "title": "Spare Parts",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "THINGS THAT FLOAT",
+          "difficultyTier": 1,
+          "tiles": [
+            "BUOY",
+            "RAFT",
+            "ICEBERG",
+            "LILY PAD"
+          ],
+          "triviaFact": "Roughly nine tenths of an iceberg's volume lies hidden below the surface of the water."
+        },
+        {
+          "id": "g2",
+          "title": "TEN-PIN BOWLING TERMS",
+          "difficultyTier": 2,
+          "tiles": [
+            "STRIKE",
+            "SPARE",
+            "TURKEY",
+            "FRAME"
+          ],
+          "triviaFact": "In ten-pin bowling, three strikes in a row are called a turkey."
+        },
+        {
+          "id": "g3",
+          "title": "BEGIN WITH A BODY PART",
+          "difficultyTier": 3,
+          "tiles": [
+            "LEGEND",
+            "ARMADA",
+            "SHINGLE",
+            "EARNEST"
+          ],
+          "triviaFact": "Legend comes from a Latin word meaning things to be read, first used for stories of saints' lives."
+        },
+        {
+          "id": "g4",
+          "title": "ALSO EUROPEAN CITIES",
+          "difficultyTier": 4,
+          "tiles": [
+            "NICE",
+            "SPLIT",
+            "CORK",
+            "BATH"
+          ],
+          "triviaFact": "Much of the old town of Split lies within the walls of a palace that the Roman emperor Diocletian built around 300 AD."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "CORK"
+          ],
+          "note": "CORK floats as surely as BUOY, RAFT and ICEBERG, but it is also a city in Ireland, joining NICE, SPLIT and BATH."
+        },
+        {
+          "tiles": [
+            "SPLIT"
+          ],
+          "note": "SPLIT is a real bowling term beside STRIKE and SPARE, yet that group is complete with TURKEY and FRAME; SPLIT is a Croatian city."
+        },
+        {
+          "tiles": [
+            "TURKEY"
+          ],
+          "note": "TURKEY sounds like a place to join the cities, but it is a country rather than a city; in bowling it means three strikes in a row."
+        },
+        {
+          "tiles": [
+            "ARMADA"
+          ],
+          "note": "An ARMADA floats too, but the floating set is already complete; its opening ARM joins LEGEND, SHINGLE and EARNEST."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl07",
+      "packId": "pack5",
+      "title": "Branching Out",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "WORDS FOR GREAT HAPPINESS",
+          "difficultyTier": 1,
+          "tiles": [
+            "BLISS",
+            "ELATION",
+            "RAPTURE",
+            "GLEE"
+          ],
+          "triviaFact": "Rapture comes from a Latin word for seizing or carrying off, like being swept away by joy."
+        },
+        {
+          "id": "g2",
+          "title": "CONIFERS",
+          "difficultyTier": 2,
+          "tiles": [
+            "SPRUCE",
+            "FIR",
+            "LARCH",
+            "CYPRESS"
+          ],
+          "triviaFact": "The larch is an unusual conifer that turns gold and sheds all of its needles every autumn."
+        },
+        {
+          "id": "g3",
+          "title": "BEFORE BERRY",
+          "difficultyTier": 3,
+          "tiles": [
+            "GOOSE",
+            "ELDER",
+            "STRAW",
+            "RASP"
+          ],
+          "triviaFact": "Botanically, strawberries and raspberries are not true berries, unlike tomatoes and bananas."
+        },
+        {
+          "id": "g4",
+          "title": "CONTAIN ALL FIVE VOWELS",
+          "difficultyTier": 4,
+          "tiles": [
+            "SEQUOIA",
+            "EUPHORIA",
+            "EQUATION",
+            "FACETIOUS"
+          ],
+          "triviaFact": "Sequoia fits all five vowels into seven letters, while facetious has them in alphabetical order."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "SEQUOIA"
+          ],
+          "note": "SEQUOIA really is a fifth conifer, but the vowel group needs it; SPRUCE, FIR, LARCH and CYPRESS complete the conifers."
+        },
+        {
+          "tiles": [
+            "ELDER"
+          ],
+          "note": "ELDER is a flowering broadleaf tree, not a conifer, so it only suits a looser trees theme; it belongs with GOOSE, STRAW and RASP as ELDERBERRY."
+        },
+        {
+          "tiles": [
+            "EUPHORIA"
+          ],
+          "note": "EUPHORIA means great happiness like BLISS and RAPTURE, but it belongs with SEQUOIA and EQUATION as a word containing all five vowels."
+        },
+        {
+          "tiles": [
+            "ELATION"
+          ],
+          "note": "ELATION almost contains every vowel, but it has no U, so it stays with BLISS, RAPTURE and GLEE."
+        }
+      ]
+    },
+    {
+      "id": "pack5_lvl08",
+      "packId": "pack5",
+      "title": "Mixed Messages",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "HOUSEHOLD CHORES",
+          "difficultyTier": 1,
+          "tiles": [
+            "SWEEP",
+            "MOP",
+            "VACUUM",
+            "POLISH"
+          ],
+          "triviaFact": "One of the first powered vacuum cleaners was so big that a horse had to haul it from job to job."
+        },
+        {
+          "id": "g2",
+          "title": "PARTS OF A SMARTPHONE",
+          "difficultyTier": 2,
+          "tiles": [
+            "BATTERY",
+            "CAMERA",
+            "SPEAKER",
+            "MICROPHONE"
+          ],
+          "triviaFact": "Many smartphones have several microphones, using the extra ones to help cancel out background noise."
+        },
+        {
+          "id": "g3",
+          "title": "DIPLOMACY TERMS",
+          "difficultyTier": 3,
+          "tiles": [
+            "TREATY",
+            "EMBASSY",
+            "SUMMIT",
+            "EMBARGO"
+          ],
+          "triviaFact": "Embargo comes from a Spanish verb meaning to bar, and first meant an order stopping ships from leaving port."
+        },
+        {
+          "id": "g4",
+          "title": "CAN MEAN ITS OWN OPPOSITE",
+          "difficultyTier": 4,
+          "tiles": [
+            "DUST",
+            "SCREEN",
+            "CLEAVE",
+            "SANCTION"
+          ],
+          "triviaFact": "Words like these are called contronyms, and cleave can mean both to split apart and to cling together."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "DUST"
+          ],
+          "note": "DUST sounds like a fifth chore beside SWEEP and MOP, but it can mean adding a fine powder as well as removing dirt."
+        },
+        {
+          "tiles": [
+            "SCREEN"
+          ],
+          "note": "SCREEN is an obvious smartphone part, yet BATTERY, CAMERA, SPEAKER and MICROPHONE already complete that group; it can mean both to show and to hide."
+        },
+        {
+          "tiles": [
+            "SANCTION"
+          ],
+          "note": "SANCTION sits naturally beside TREATY and EMBARGO, but it can mean both to approve and to punish, so it joins the opposite-meaning words."
+        }
+      ]
+    }
+  ]
+}

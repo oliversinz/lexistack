@@ -1,0 +1,257 @@
+2026-10-29T21:37:12 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:37:13 adb shell pm path de.cloudwards.lexistack -> 0
+2026-10-29T21:37:13 adb shell am start -n de.cloudwards.lexistack/.MainActivity -> 0
+2026-10-29T21:37:54 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:37:54 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:37:54 adb exec-out screencap -p -> 0
+2026-10-29T21:37:54 adb shell pm path de.cloudwards.lexistack -> 0
+2026-10-29T21:37:57 adb pull /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk build/pack5-baseline.apk -> 0
+2026-10-29T21:39:47 adb shell input keyevent 4 -> 0
+2026-10-29T21:39:50 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:39:50 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:40:01 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:40:01 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:40:02 adb exec-out screencap -p -> 0
+2026-10-29T21:40:02 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:40:59 adb shell am force-stop de.cloudwards.lexistack -> 0
+2026-10-29T21:41:01 adb install -r build/app/outputs/flutter-apk/app-debug.apk -> 0
+2026-10-29T21:41:01 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:41:02 adb shell am start -n de.cloudwards.lexistack/.MainActivity -> 0
+2026-10-29T21:41:30 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:30 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:30 adb exec-out screencap -p -> 0
+2026-10-29T21:41:30 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:41:43 adb shell input tap 540 845 -> 0
+2026-10-29T21:41:47 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:47 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:47 adb exec-out screencap -p -> 0
+2026-10-29T21:41:47 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:41:54 adb shell input tap 74 216 -> 0
+2026-10-29T21:41:56 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:56 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:57 adb shell input tap 907 1759 -> 0
+2026-10-29T21:41:59 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:41:59 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:00 adb exec-out screencap -p -> 0
+2026-10-29T21:42:26 adb shell input swipe 550 2150 550 600 450 -> 0
+2026-10-29T21:42:28 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:28 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:29 adb exec-out screencap -p -> 0
+2026-10-29T21:42:34 adb shell input tap 540 2148 -> 0
+2026-10-29T21:42:36 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:37 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:37 adb exec-out screencap -p -> 0
+2026-10-29T21:42:46 adb shell input tap 516 718 -> 0
+2026-10-29T21:42:49 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:49 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:49 adb shell input tap 540 1281 -> 0
+2026-10-29T21:42:52 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:52 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:42:52 adb exec-out screencap -p -> 0
+2026-10-29T21:42:57 adb shell input tap 920 1375 -> 0
+2026-10-29T21:42:57 adb shell input tap 666 1152 -> 0
+2026-10-29T21:42:58 adb shell input tap 920 929 -> 0
+2026-10-29T21:42:58 adb shell input tap 159 706 -> 0
+2026-10-29T21:43:00 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:00 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:01 adb exec-out screencap -p -> 0
+2026-10-29T21:43:01 adb shell input tap 905 2161 -> 0
+2026-10-29T21:43:04 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:04 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:04 adb exec-out screencap -p -> 0
+2026-10-29T21:43:21 adb shell input tap 920 1260 -> 0
+2026-10-29T21:43:21 adb shell input tap 920 1483 -> 0
+2026-10-29T21:43:21 adb shell input tap 666 1483 -> 0
+2026-10-29T21:43:21 adb shell input tap 413 1260 -> 0
+2026-10-29T21:43:21 adb shell input tap 905 2161 -> 0
+2026-10-29T21:43:24 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:24 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:24 adb shell input tap 666 1412 -> 0
+2026-10-29T21:43:24 adb shell input tap 920 1189 -> 0
+2026-10-29T21:43:24 adb shell input tap 413 1412 -> 0
+2026-10-29T21:43:24 adb shell input tap 666 1189 -> 0
+2026-10-29T21:43:25 adb shell input tap 905 2161 -> 0
+2026-10-29T21:43:27 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:27 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:27 adb shell input tap 920 1341 -> 0
+2026-10-29T21:43:27 adb shell input tap 413 1341 -> 0
+2026-10-29T21:43:28 adb shell input tap 159 1341 -> 0
+2026-10-29T21:43:28 adb shell input tap 666 1341 -> 0
+2026-10-29T21:43:28 adb shell input tap 905 2161 -> 0
+2026-10-29T21:43:30 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:31 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:56 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:56 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:43:57 adb exec-out screencap -p -> 0
+2026-10-29T21:44:09 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:44:09 adb shell input swipe 550 1950 550 650 500 -> 0
+2026-10-29T21:44:12 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:12 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:12 adb exec-out screencap -p -> 0
+2026-10-29T21:44:46 adb shell input tap 74 216 -> 0
+2026-10-29T21:44:49 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:49 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:49 adb shell input tap 74 216 -> 0
+2026-10-29T21:44:52 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:52 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:52 adb shell input tap 564 978 -> 0
+2026-10-29T21:44:54 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:54 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:55 adb shell input tap 540 1281 -> 0
+2026-10-29T21:44:57 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:57 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:44:57 adb shell input tap 413 929 -> 0
+2026-10-29T21:44:58 adb shell input tap 413 1375 -> 0
+2026-10-29T21:44:58 adb shell input tap 666 929 -> 0
+2026-10-29T21:44:58 adb shell input tap 413 706 -> 0
+2026-10-29T21:44:58 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:01 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:01 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:01 adb shell input tap 920 1260 -> 0
+2026-10-29T21:45:01 adb shell input tap 159 1037 -> 0
+2026-10-29T21:45:01 adb shell input tap 159 1260 -> 0
+2026-10-29T21:45:01 adb shell input tap 920 1483 -> 0
+2026-10-29T21:45:02 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:04 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:04 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:04 adb shell input tap 159 1412 -> 0
+2026-10-29T21:45:05 adb shell input tap 920 1412 -> 0
+2026-10-29T21:45:05 adb shell input tap 666 1189 -> 0
+2026-10-29T21:45:05 adb shell input tap 413 1412 -> 0
+2026-10-29T21:45:05 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:08 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:08 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:08 adb shell input tap 666 1341 -> 0
+2026-10-29T21:45:08 adb shell input tap 159 1341 -> 0
+2026-10-29T21:45:08 adb shell input tap 920 1341 -> 0
+2026-10-29T21:45:08 adb shell input tap 413 1341 -> 0
+2026-10-29T21:45:08 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:11 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:11 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:31 adb shell input tap 74 216 -> 0
+2026-10-29T21:45:34 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:34 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:34 adb shell input tap 74 216 -> 0
+2026-10-29T21:45:37 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:37 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:37 adb shell input tap 516 1238 -> 0
+2026-10-29T21:45:39 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:39 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:39 adb shell input tap 540 1281 -> 0
+2026-10-29T21:45:42 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:42 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:42 adb shell input tap 413 929 -> 0
+2026-10-29T21:45:42 adb shell input tap 159 706 -> 0
+2026-10-29T21:45:42 adb shell input tap 413 1152 -> 0
+2026-10-29T21:45:42 adb shell input tap 413 706 -> 0
+2026-10-29T21:45:42 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:45 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:45 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:45 adb shell input tap 413 1037 -> 0
+2026-10-29T21:45:45 adb shell input tap 159 1037 -> 0
+2026-10-29T21:45:45 adb shell input tap 413 1260 -> 0
+2026-10-29T21:45:46 adb shell input tap 666 1260 -> 0
+2026-10-29T21:45:46 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:48 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:48 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:48 adb shell input tap 159 1189 -> 0
+2026-10-29T21:45:49 adb shell input tap 413 1412 -> 0
+2026-10-29T21:45:49 adb shell input tap 413 1189 -> 0
+2026-10-29T21:45:49 adb shell input tap 666 1189 -> 0
+2026-10-29T21:45:49 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:52 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:52 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:52 adb shell input tap 159 1341 -> 0
+2026-10-29T21:45:52 adb shell input tap 666 1341 -> 0
+2026-10-29T21:45:52 adb shell input tap 920 1341 -> 0
+2026-10-29T21:45:52 adb shell input tap 413 1341 -> 0
+2026-10-29T21:45:52 adb shell input tap 905 2161 -> 0
+2026-10-29T21:45:55 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:55 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:55 adb shell input tap 74 216 -> 0
+2026-10-29T21:45:57 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:58 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:45:58 adb shell input tap 74 216 -> 0
+2026-10-29T21:46:00 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:00 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:00 adb shell input tap 564 1497 -> 0
+2026-10-29T21:46:03 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:03 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:03 adb shell input tap 540 1281 -> 0
+2026-10-29T21:46:05 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:05 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:08 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:08 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:08 adb exec-out screencap -p -> 0
+2026-10-29T21:46:45 adb shell input tap 540 1707 -> 0
+2026-10-29T21:46:47 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:47 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:47 adb shell input tap 540 1775 -> 0
+2026-10-29T21:46:49 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:49 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:50 adb exec-out screencap -p -> 0
+2026-10-29T21:46:50 adb shell input tap 920 1289 -> 0
+2026-10-29T21:46:50 adb shell input tap 159 843 -> 0
+2026-10-29T21:46:50 adb shell input tap 666 1512 -> 0
+2026-10-29T21:46:50 adb shell input tap 413 1512 -> 0
+2026-10-29T21:46:50 adb shell input tap 905 2161 -> 0
+2026-10-29T21:46:53 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:53 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:53 adb shell input tap 413 1105 -> 0
+2026-10-29T21:46:53 adb shell input tap 920 1551 -> 0
+2026-10-29T21:46:53 adb shell input tap 666 1551 -> 0
+2026-10-29T21:46:53 adb shell input tap 159 1328 -> 0
+2026-10-29T21:46:54 adb shell input tap 905 2161 -> 0
+2026-10-29T21:46:56 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:56 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:58 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:59 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:46:59 adb exec-out screencap -p -> 0
+2026-10-29T21:47:16 adb shell input tap 159 1480 -> 0
+2026-10-29T21:47:16 adb shell input tap 920 1480 -> 0
+2026-10-29T21:47:16 adb shell input tap 666 1257 -> 0
+2026-10-29T21:47:16 adb shell input tap 159 1257 -> 0
+2026-10-29T21:47:16 adb shell input tap 905 2161 -> 0
+2026-10-29T21:47:19 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:19 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:19 adb shell input tap 920 1410 -> 0
+2026-10-29T21:47:19 adb shell input tap 159 1410 -> 0
+2026-10-29T21:47:19 adb shell input tap 413 1410 -> 0
+2026-10-29T21:47:19 adb shell input tap 666 1410 -> 0
+2026-10-29T21:47:20 adb shell input tap 905 2161 -> 0
+2026-10-29T21:47:22 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:22 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:23 adb shell input swipe 550 1950 550 650 500 -> 0
+2026-10-29T21:47:25 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:25 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:26 adb exec-out screencap -p -> 0
+2026-10-29T21:47:26 adb shell input tap 540 2088 -> 0
+2026-10-29T21:47:28 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:28 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:47:29 adb exec-out screencap -p -> 0
+2026-10-29T21:47:29 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:47:53 adb shell getprop ro.build.version.release -> 0
+2026-10-29T21:47:53 adb shell getprop ro.build.version.sdk -> 0
+2026-10-29T21:47:53 adb emu avd name -> 0
+2026-10-29T21:48:06 adb shell input tap 74 216 -> 0
+2026-10-29T21:48:08 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:08 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:08 adb shell input tap 74 216 -> 0
+2026-10-29T21:48:11 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:11 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:11 adb shell input tap 74 216 -> 0
+2026-10-29T21:48:13 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:13 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:13 adb shell input tap 74 216 -> 0
+2026-10-29T21:48:16 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:16 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:16 adb shell input tap 545 1510 -> 0
+2026-10-29T21:48:19 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:19 adb exec-out cat /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:19 adb exec-out screencap -p -> 0
+2026-10-29T21:48:19 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:48:19 adb shell am force-stop de.cloudwards.lexistack -> 0
+2026-10-29T21:48:19 adb shell am start -n de.cloudwards.lexistack/.MainActivity -> 0
+2026-10-29T21:48:49 adb exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb -> 0
+2026-10-29T21:48:51 adb shell uiautomator dump /sdcard/pack5-window.xml -> 0
+2026-10-29T21:48:51 adb exec-out cat /sdcard/pack5-window.xml -> 0

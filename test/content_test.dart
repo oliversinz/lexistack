@@ -31,11 +31,11 @@ void main() {
       final report = check();
       expect(report.diagnostics, isEmpty);
       expect(report.mode, ValidationMode.strict);
-      expect(report.isInitialBenchmark, isTrue);
-      expect(report.catalog!.packs, hasLength(5));
-      expect(report.totalLevels, 40);
-      expect(report.totalCategories, 160);
-      expect(report.totalTiles, 640);
+      expect(report.isInitialBenchmark, isFalse);
+      expect(report.catalog!.packs, hasLength(6));
+      expect(report.totalLevels, 48);
+      expect(report.totalCategories, 192);
+      expect(report.totalTiles, 768);
       expect(report.meetsStrictMinimum, isTrue);
       final pack = report.catalog!.packs.first;
       expect(pack.schemaVersion, 2);
@@ -72,8 +72,8 @@ void main() {
       final report = await loadAssetCatalog(rootBundle);
       expect(report.diagnostics, isEmpty);
       expect(report.mode, ValidationMode.strict);
-      expect(report.isInitialBenchmark, isTrue);
-      expect(report.catalog!.packs, hasLength(5));
+      expect(report.isInitialBenchmark, isFalse);
+      expect(report.catalog!.packs, hasLength(6));
       expect(
         report.catalog!.packs.first.levels.last.title,
         'Hidden in Plain Sight',

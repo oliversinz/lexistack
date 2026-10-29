@@ -1,0 +1,10 @@
+LexiStack schema v2: STRICT
+pack1.json [pack1]: 8 levels, 32 groups, 128 tile positions
+pack2.json [pack2]: 8 levels, 32 groups, 128 tile positions
+pack3.json [pack3]: 8 levels, 32 groups, 128 tile positions
+pack4.json [pack4]: 8 levels, 32 groups, 128 tile positions
+pack5.json [pack5]: 8 levels, 32 groups, 128 tile positions
+daily.json [daily, Daily]: 8 levels, 32 groups, 128 tile positions
+Totals: 6 packs, 48 levels, 192 groups, 768 tile positions; 0 errors, 0 warnings.
+Strict minimum: PASS; initial benchmark (4×8 campaign + 8 daily): NOT MET.
+VALID (0 warnings).
