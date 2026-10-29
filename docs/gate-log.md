@@ -1510,7 +1510,11 @@ Content Studio CS1 or C/D/E comparison is part of this integration.
 
 ## Post-experiment — approved Pack 5 integration (2026-10-29)
 
-**Independent acceptance: pending.** This addition is explicitly authorized by
+**Independent quality gate: ACCEPTED (2026-10-29).** Accepted implementation
+commit: `f290eca096d9949b7be060527e141e3a0462b2d4`. Review outcome: no blocking
+defects. Authorization: fast-forward integration into `main`.
+
+This addition is explicitly authorized by
 the Pack 5 Flutter Integration assignment; it does not alter the historical
 Experiment E benchmark or its acceptance records. Branch:
 `codex/pack5-flutter-integration`. App baseline:
@@ -1587,5 +1591,5 @@ Windows C++ tools absent (Windows build not requested), Gradle/JDK native-access
 warning and Flutter web Cupertino font-family warning. Android helper retries
 handled an offscreen result label and Windows console Unicode encoding; neither
 was an application failure. No user intervention or independent review occurred
-during implementation. Feature branch delivery only; `main` remains at the
-accepted baseline pending explicit independent approval.
+during implementation. Subsequent independent acceptance authorizes
+fast-forward integration into `main`, as recorded above.
