@@ -1,0 +1,24 @@
+assets\levels\daily.json APK/web byte identity OK
+assets\levels\manifest.json APK/web byte identity OK
+assets\levels\pack1.json APK/web byte identity OK
+assets\levels\pack2.json APK/web byte identity OK
+assets\levels\pack3.json APK/web byte identity OK
+assets\levels\pack4.json APK/web byte identity OK
+assets\fonts\dmsans-OFL.txt APK/web byte identity OK
+assets\fonts\dmsans.ttf APK/web byte identity OK
+assets\fonts\emoji-OFL.txt APK/web byte identity OK
+assets\fonts\emoji.ttf APK/web byte identity OK
+assets\fonts\fraunces-OFL.txt APK/web byte identity OK
+assets\fonts\fraunces.ttf APK/web byte identity OK
+assets\fonts\symbols-OFL.txt APK/web byte identity OK
+assets\fonts\symbols.ttf APK/web byte identity OK
+FontManifest: [{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"Fraunces","fonts":[{"asset":"assets/fonts/fraunces.ttf"}]},{"family":"DM Sans","fonts":[{"asset":"assets/fonts/dmsans.ttf"}]},{"family":"Roboto","fonts":[{"asset":"assets/fonts/dmsans.ttf"}]},{"family":"LexiStack Symbols","fonts":[{"asset":"assets/fonts/symbols.ttf"}]},{"family":"LexiStack Emoji","fonts":[{"asset":"assets/fonts/emoji.ttf"}]}]
+01_home.png: (390, 844)
+02_board_selected.png: (390, 844)
+03_board_solved.png: (390, 844)
+04_result.png: (390, 844)
+04_result_facts.png: (390, 844)
+04_result_red_herrings.png: (390, 844)
+05_packs.png: (390, 844)
+05_packs_levels.png: (390, 844)
+06_desktop_frame.png: (1280, 800)

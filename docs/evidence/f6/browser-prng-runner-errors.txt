@@ -1,0 +1,36 @@
+### Result
+Total messages: 14 (Errors: 6, Warnings: 1)
+Returning 13 messages for level "info"
+
+[ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:65437/favicon.ico:0
+[ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:65437/canvaskit/chromium/canvaskit.wasm:0
+[ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:65437/canvaskit/chromium/canvaskit.js:0
+[LOG] Dart test runner browser host running @ http://localhost:65437/static/host.dart.js:7278
+[WARNING] Null check operator used on a null value
+host.dart.js 15409:12  main_closure.call$0
+host.dart.js 4089:16   StaticClosure._rootRun
+host.dart.js 10850:39  _CustomZone.run$1$1
+host.dart.js 4190:88   Object.runZonedGuarded
+host.dart.js 7282:9    main
+host.dart.js 16464:7   <fn>
+host.dart.js 16445:7   <fn>
+host.dart.js 16458:5   dartProgram
+host.dart.js 16467:3   <fn>
+ @ http://localhost:65437/static/host.dart.js:15644
+[LOG] Starting suite http://localhost:65437/core/prng_browser_test.html @ http://localhost:65437/static/host.dart.js:7305
+[LOG] Appended iframe with src http://localhost:65437/core/prng_browser_test.html#%7B%22metadata%22:%7B%22testOn%22:null,%22timeout%22:%7B%22duration%22:null,%22scaleFactor%22:1%7D,%22skip%22:null,%22skipReason%22:null,%22verboseTrace%22:null,%22chainStackTraces%22:true,%22retry%22:null,%22tags%22:%5B%5D,%22onPlatform%22:%5B%5D,%22forTag%22:%7B%7D,%22languageVersionComment%22:null%7D,%22browser%22:%22chrome%22%7D @ http://localhost:65437/static/host.dart.js:7315
+[INFO] DDC is about to load 1/2 scripts with pool size = 1000 @ http://localhost:65437/ddc_module_loader.js:1014
+[INFO] DDC is about to load 495/495 scripts with pool size = 1000 @ http://localhost:65437/ddc_module_loader.js:1014
+[LOG] Starting application from main method in: org-dartlang-app:///main.dart. @ http://localhost:65437/ddc_module_loader.js:1585
+Failed to execute 'compile' on 'WebAssembly': HTTP status code is not ok
+Failed to fetch dynamically imported module: http://localhost:65437/canvaskit/chromium/canvaskit.js
+DartError: Exception: Web test for coreprng_browser_test.dart not found
+    at Object.throw_ [as throw] (http://localhost:65437/dart_sdk.js:3805:11)
+    at Object.main$ [as main] (http://localhost:65437/main.dart.lib.js:45:17)
+    at runMainAndHandleErrors (http://localhost:65437/ddc_module_loader.js:1557:45)
+    at LibraryManager._runMain (http://localhost:65437/ddc_module_loader.js:1579:9)
+    at LibraryManager.runMain (http://localhost:65437/ddc_module_loader.js:1593:12)
+    at DartDevEmbedder.runMain (http://localhost:65437/ddc_module_loader.js:2186:22)
+    at child.main (http://localhost:65437/main_module.bootstrap.js:25:23)
+    at window.$onLoadEndCallback (http://localhost:65437/main_module.bootstrap.js:28:11)
+    at http://localhost:65437/on_load_end_bootstrap.js:1:8

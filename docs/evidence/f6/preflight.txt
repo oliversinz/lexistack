@@ -1,0 +1,93 @@
+START 2026-10-29T11:16:10.5784562+01:00
+COMMAND git --version; git status --short --branch; git rev-parse HEAD main origin/main; git log -1 --format=fuller; Get-FileHash prompts/F6-android-release-candidate-audit.md; Get-ComputerInfo | Select-Object WindowsProductName,OsVersion; $PSVersionTable; Get-Content .dart_tool/package_config.json | Select-String lexistack_content_contract -Context 0,5; git hash-object --no-filters assets/levels/*.json
+git version 2.55.0.windows.1
+## codex/f6-android-release-candidate
+?? docs/evidence/f6/
+?? prompts/F6-android-release-candidate-audit.md
+9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873
+9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873
+9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873
+commit 9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873
+Author:     Oliver Sinz <oliversinz@gmail.com>
+AuthorDate: Thu Oct 29 10:13:00 2026 +0100
+Commit:     Oliver Sinz <oliversinz@gmail.com>
+CommitDate: Thu Oct 29 10:13:00 2026 +0100
+
+    docs: record independent F5 gate acceptance
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          21D8C0EF46F8722A33FEFB893475A96DB7621546B8DCD20D8D29302983D6ADFC       C:\Codex\LexiStack\prompts\F6-an…
+
+WindowsProductName : Windows 10 Home
+OsVersion          : 10.0.26300
+
+
+Key   : PSVersion
+Value : 7.6.5
+Name  : PSVersion
+
+
+Key   : PSEdition
+Value : Core
+Name  : PSEdition
+
+
+Key   : GitCommitId
+Value : 7.6.5
+Name  : GitCommitId
+
+
+Key   : OS
+Value : Microsoft Windows 10.0.26300
+Name  : OS
+
+
+Key   : Platform
+Value : Win32NT
+Name  : Platform
+
+
+Key   : PSCompatibleVersions
+Value : {1.0, 2.0, 3.0, 4.0…}
+Name  : PSCompatibleVersions
+
+
+Key   : PSRemotingProtocolVersion
+Value : 2.4
+Name  : PSRemotingProtocolVersion
+
+
+Key   : SerializationVersion
+Value : 1.1.0.1
+Name  : SerializationVersion
+
+
+Key   : WSManStackVersion
+Value : 3.0
+Name  : WSManStackVersion
+
+
+IgnoreCase : True
+LineNumber : 113
+Line       :       "name": "lexistack_content_contract",
+Filename   : InputStream
+Path       : InputStream
+Pattern    : lexistack_content_contract
+Context    : Microsoft.PowerShell.Commands.MatchInfoContext
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 114
+Line       :       "rootUri": "file:///C:/Users/olive/AppData/Local/Pub/Cache/git/lexistack-content-d9acbd52de0e198dd109a4859299318db3f465f5/packages/lexistack_content_contract",
+Filename   : InputStream
+Path       : InputStream
+Pattern    : lexistack_content_contract
+Context    : Microsoft.PowerShell.Commands.MatchInfoContext
+Matches    : {0}
+
+fatal: could not open 'assets/levels/*.json' for reading: No such file or directory
+
+END 2026-10-29T11:16:14.0897294+01:00
+EXIT 128

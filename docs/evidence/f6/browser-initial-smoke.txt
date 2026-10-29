@@ -1,0 +1,68 @@
+START 2026-10-29T11:38:04.3932442+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6app click e83; npx --yes --package @playwright/cli playwright-cli -s=f6app snapshot; npx --yes --package @playwright/cli playwright-cli -s=f6app localstorage-list
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: 'Submit' }).click();
+```
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-38-08-076Z.yml)
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+```yaml
+- generic [ref=e5]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button "Back" [ref=e48]
+              - heading "1 · Table Talk" [level=2] [ref=e49]
+              - generic [ref=e50]: 150 coins
+            - group:
+              - generic [ref=e51]: EVERYDAY ECHOES
+              - generic [ref=e52]: 4 of 4 lives
+              - generic [ref=e53]: 0 mistakes
+              - generic [ref=e54]: 1/4 found
+              - generic [ref=e55]: Tier 1 group, solved
+              - generic [ref=e56]: Tier 2 group, hidden
+              - generic [ref=e57]: Tier 3 group, hidden
+              - generic [ref=e58]: Tier 4 group, hidden
+              - generic [ref=e59]: Correct! BREAKFAST BAKES
+              - button "Tier 1 · BREAKFAST BAKES" [expanded] [ref=e87]
+              - generic [ref=e88]: TOAST · WAFFLE · MUFFIN · BAGEL
+              - generic [ref=e89]: A bagel is traditionally boiled before baking, which helps create its chewy crust.
+              - generic:
+                - generic:
+                  - button "SPOON" [ref=e61]
+                  - button "FORK" [ref=e62]
+                  - button "LOVE" [ref=e63]
+                  - button "PAPER" [ref=e64]
+                  - button "VOLLEY" [ref=e66]
+                  - button "TRAFFIC" [ref=e67]
+                  - button "DEUCE" [ref=e68]
+                  - button "PEARL" [ref=e69]
+                  - button "KNIFE" [ref=e70]
+                  - button "LADLE" [ref=e72]
+                  - button "SERVE" [ref=e74]
+                  - button "LOG" [ref=e75]
+              - generic [ref=e76]: BOOSTERS · PAY ONLY ON SUCCESS
+              - button "Pair Magnet · 30" [ref=e77]
+              - button "Category Peek · 40" [ref=e78]
+              - button "Extra Life · 60" [disabled] [ref=e79]
+              - generic [ref=e80]: Tap to toggle. Hold a word, then drag it onto another word or the selection tray.
+              - button "Back to level" [ref=e81]
+            - generic [ref=e82]: "Selection tray, 0 of 4:"
+            - button "Submit" [disabled] [active] [ref=e83]
+            - button "Shuffle" [ref=e84]
+            - button "Deselect" [disabled] [ref=e85]
+            - button "Boosters" [ref=e86]
+```
+lexistack.progress="{\"version\":1,\"coins\":150,\"sequence\":1,\"campaign\":{},\"results\":[],\"daily\":{},\"attempts\":[{\"id\":\"a1\",\"levelId\":\"pack1_lvl01\",\"date\":null,\"entered\":1,\"fingerprint\":\"[\\\"pack1_lvl01\\\",\\\"pack1\\\",\\\"Table Talk\\\",[\\\"g1\\\",\\\"BREAKFAST BAKES\\\",1,\\\"A bagel is traditionally boiled before baking, which helps create its chewy crust.\\\",[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g1\\\\\\\",0]\\\",\\\"TOAST\\\",1],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g1\\\\\\\",1]\\\",\\\"WAFFLE\\\",1],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g1\\\\\\\",2]\\\",\\\"MUFFIN\\\",1],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g1\\\\\\\",3]\\\",\\\"BAGEL\\\",1]],[\\\"g2\\\",\\\"KITCHEN UTENSILS\\\",2,\\\"A ladle has a deep bowl designed for lifting and serving liquids such as soup.\\\",[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g2\\\\\\\",0]\\\",\\\"FORK\\\",2],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g2\\\\\\\",1]\\\",\\\"SPOON\\\",2],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g2\\\\\\\",2]\\\",\\\"KNIFE\\\",2],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g2\\\\\\\",3]\\\",\\\"LADLE\\\",2]],[\\\"g3\\\",\\\"TENNIS TERMS\\\",3,\\\"In tennis scoring, love means zero and deuce is a tie at forty points each.\\\",[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g3\\\\\\\",0]\\\",\\\"SERVE\\\",3],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g3\\\\\\\",1]\\\",\\\"LOVE\\\",3],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g3\\\\\\\",2]\\\",\\\"DEUCE\\\",3],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g3\\\\\\\",3]\\\",\\\"VOLLEY\\\",3]],[\\\"g4\\\",\\\"PAIRS WITH JAM\\\",4,\\\"Logjam originated as a term for timber obstructing waterways before becoming a metaphor.\\\",[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g4\\\\\\\",0]\\\",\\\"TRAFFIC\\\",4],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g4\\\\\\\",1]\\\",\\\"PAPER\\\",4],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g4\\\\\\\",2]\\\",\\\"LOG\\\",4],[\\\"[\\\\\\\"pack1_lvl01\\\\\\\",\\\\\\\"g4\\\\\\\",3]\\\",\\\"PEARL\\\",4]],[[[\\\"SERVE\\\"],\\\"SERVE could describe offering breakfast, but LOVE, DEUCE and VOLLEY give it a precise tennis home.\\\"]]]\",\"game\":{\"seed\":2,\"rng\":229615974,\"status\":\"playing\",\"lives\":4,\"mistakes\":0,\"combo\":1,\"extraLives\":0,\"order\":[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",3]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",3]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",3]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",2]\"],\"selection\":[],\"solved\":[\"g1\"],\"wrong\":[],\"pairs\":{},\"peeked\":[],\"guesses\":[{\"ids\":[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",3]\"],\"tiers\":[1,1,1,1],\"correct\":true}]}}],\"dailyAttempt\":null,\"bestDailyStreak\":0,\"settings\":{\"theme\":\"system\",\"haptics\":true},\"retiredIds\":[],\"rewardLocks\":[],\"unavailableDaily\":[]}"
+END 2026-10-29T11:38:12.6485276+01:00
+EXIT 0

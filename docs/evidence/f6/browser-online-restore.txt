@@ -1,0 +1,26 @@
+START 2026-10-29T11:42:50.5114681+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6app network-state-set online; npx --yes --package @playwright/cli playwright-cli -s=f6app goto http://127.0.0.1:8765; npx --yes --package @playwright/cli playwright-cli -s=f6app snapshot
+### Result
+Network is now online
+### Ran Playwright code
+```js
+await page.context().setOffline(false);
+```
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:8765');
+```
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-42-55-270Z.yml)
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+```yaml
+- button "Enable accessibility" [ref=f4e1]
+```
+END 2026-10-29T11:42:57.3664825+01:00
+EXIT 0

@@ -1,0 +1,5 @@
+START 2026-10-29T11:16:15.9109865+01:00
+COMMAND dart --version
+Dart SDK version: 3.13.7 (stable) (Thu Oct 22 14:28:57 2026 -0700) on "windows_x64"
+END 2026-10-29T11:16:16.6546300+01:00
+EXIT 0

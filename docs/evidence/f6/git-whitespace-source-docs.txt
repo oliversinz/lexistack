@@ -1,0 +1,4 @@
+START 2026-10-29T12:08:23.6169939+01:00
+COMMAND git -c core.whitespace=cr-at-eol diff --cached --check 9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873 -- . ":(exclude)assets/fonts/*-OFL.txt" ":(exclude)docs/evidence/f6/*.txt"
+END 2026-10-29T12:08:23.7697224+01:00
+EXIT 0

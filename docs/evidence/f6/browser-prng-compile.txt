@@ -1,0 +1,5 @@
+START 2026-10-29T11:26:00.2911392+01:00
+COMMAND dart compile js tool/check_prng.dart -o build/prng/check_prng.js
+Compiled 10,750,194 input bytes (5,320,519 characters source) to 127,841 characters JavaScript in 0.50 seconds
+END 2026-10-29T11:26:01.8489681+01:00
+EXIT 0

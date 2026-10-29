@@ -1,0 +1,15 @@
+START 2026-10-29T11:58:22.6202948+01:00
+COMMAND python .dart_tool/f6_android.py state android-final-original; python .dart_tool/f6_android.py shell settings get global airplane_mode_on; python .dart_tool/f6_android.py shell settings get global wifi_on; python .dart_tool/f6_android.py shell settings get global mobile_data
+{"version": 1, "coins": 35, "sequence": 13, "campaign": {"pack1_lvl01": {"bestStars": 1, "practicePaid": false}, "pack2_lvl01": {"bestStars": 3, "practicePaid": false}, "pack3_lvl01": {"bestStars": 3, "practicePaid": false}}, "daily": {}, "bestDailyStreak": 0, "settings": {"theme": "dark", "haptics": false}, "retiredIds": [], "rewardLocks": [], "unavailableDaily": []}
+DataStore SHA256 ef99d01130b7781ed28a0903c5facffc37c3271d42c455be626335d29536eb9a
+0
+
+
+1
+
+
+1
+
+
+END 2026-10-29T11:58:23.6202175+01:00
+EXIT 0

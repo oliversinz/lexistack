@@ -1,0 +1,1298 @@
+{
+  "version": 1,
+  "coins": 30,
+  "sequence": 17,
+  "campaign": {
+    "pack1_lvl01": {
+      "bestStars": 1,
+      "practicePaid": false
+    },
+    "pack2_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack3_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack4_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    }
+  },
+  "results": [
+    {
+      "id": "a1",
+      "levelId": "pack1_lvl01",
+      "date": null,
+      "header": "LexiStack · Everyday Echoes #1",
+      "won": true,
+      "mistakes": 4,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g2\",0]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g2\",1]"
+          ],
+          "tiers": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g4\",0]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",1]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g2\",2]",
+            "[\"pack1_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g3\",2]",
+            "[\"pack1_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g4\",0]",
+            "[\"pack1_lvl01\",\"g4\",1]",
+            "[\"pack1_lvl01\",\"g4\",2]",
+            "[\"pack1_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 15,
+      "rewardKind": "first",
+      "board": {
+        "id": "a1",
+        "levelId": "pack1_lvl01",
+        "date": null,
+        "entered": 5,
+        "fingerprint": "[\"pack1_lvl01\",\"pack1\",\"Table Talk\",[\"g1\",\"BREAKFAST BAKES\",1,\"A bagel is traditionally boiled before baking, which helps create its chewy crust.\",[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"TOAST\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"WAFFLE\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"MUFFIN\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",3]\",\"BAGEL\",1]],[\"g2\",\"KITCHEN UTENSILS\",2,\"A ladle has a deep bowl designed for lifting and serving liquids such as soup.\",[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"FORK\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"SPOON\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",2]\",\"KNIFE\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",3]\",\"LADLE\",2]],[\"g3\",\"TENNIS TERMS\",3,\"In tennis scoring, love means zero and deuce is a tie at forty points each.\",[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"SERVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"LOVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",2]\",\"DEUCE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",3]\",\"VOLLEY\",3]],[\"g4\",\"PAIRS WITH JAM\",4,\"Logjam originated as a term for timber obstructing waterways before becoming a metaphor.\",[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\",\"TRAFFIC\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\",\"PAPER\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",2]\",\"LOG\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",3]\",\"PEARL\",4]],[[[\"SERVE\"],\"SERVE could describe offering breakfast, but LOVE, DEUCE and VOLLEY give it a precise tennis home.\"]]]",
+        "game": {
+          "seed": 2,
+          "rng": 229615974,
+          "status": "won",
+          "lives": 1,
+          "mistakes": 4,
+          "combo": 4,
+          "extraLives": 1,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\"]"
+          ],
+          "pairs": {
+            "g1": [
+              "[\"pack1_lvl01\",\"g1\",0]",
+              "[\"pack1_lvl01\",\"g1\",1]"
+            ]
+          },
+          "peeked": [
+            "g1"
+          ],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g1\",2]",
+                "[\"pack1_lvl01\",\"g2\",0]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g2\",1]"
+              ],
+              "tiers": [
+                1,
+                1,
+                2,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g3\",0]",
+                "[\"pack1_lvl01\",\"g4\",0]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",1]",
+                "[\"pack1_lvl01\",\"g3\",1]",
+                "[\"pack1_lvl01\",\"g4\",1]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g1\",2]",
+                "[\"pack1_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g2\",1]",
+                "[\"pack1_lvl01\",\"g2\",2]",
+                "[\"pack1_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g3\",0]",
+                "[\"pack1_lvl01\",\"g3\",1]",
+                "[\"pack1_lvl01\",\"g3\",2]",
+                "[\"pack1_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g4\",0]",
+                "[\"pack1_lvl01\",\"g4\",1]",
+                "[\"pack1_lvl01\",\"g4\",2]",
+                "[\"pack1_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a6",
+      "levelId": "pack1_lvl01",
+      "date": null,
+      "header": "LexiStack · Everyday Echoes #1",
+      "won": false,
+      "mistakes": 4,
+      "groups": 0,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g2\",0]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g2\",1]"
+          ],
+          "tiers": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g4\",0]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",1]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        }
+      ],
+      "reward": 0,
+      "rewardKind": "loss",
+      "board": {
+        "id": "a6",
+        "levelId": "pack1_lvl01",
+        "date": null,
+        "entered": 9,
+        "fingerprint": "[\"pack1_lvl01\",\"pack1\",\"Table Talk\",[\"g1\",\"BREAKFAST BAKES\",1,\"A bagel is traditionally boiled before baking, which helps create its chewy crust.\",[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"TOAST\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"WAFFLE\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"MUFFIN\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",3]\",\"BAGEL\",1]],[\"g2\",\"KITCHEN UTENSILS\",2,\"A ladle has a deep bowl designed for lifting and serving liquids such as soup.\",[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"FORK\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"SPOON\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",2]\",\"KNIFE\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",3]\",\"LADLE\",2]],[\"g3\",\"TENNIS TERMS\",3,\"In tennis scoring, love means zero and deuce is a tie at forty points each.\",[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"SERVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"LOVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",2]\",\"DEUCE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",3]\",\"VOLLEY\",3]],[\"g4\",\"PAIRS WITH JAM\",4,\"Logjam originated as a term for timber obstructing waterways before becoming a metaphor.\",[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\",\"TRAFFIC\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\",\"PAPER\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",2]\",\"LOG\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",3]\",\"PEARL\",4]],[[[\"SERVE\"],\"SERVE could describe offering breakfast, but LOVE, DEUCE and VOLLEY give it a precise tennis home.\"]]]",
+        "game": {
+          "seed": 7,
+          "rng": 803655909,
+          "status": "lostFinal",
+          "lives": 0,
+          "mistakes": 4,
+          "combo": 0,
+          "extraLives": 0,
+          "order": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",3]",
+            "[\"pack1_lvl01\",\"g4\",2]",
+            "[\"pack1_lvl01\",\"g2\",2]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g3\",2]",
+            "[\"pack1_lvl01\",\"g3\",3]",
+            "[\"pack1_lvl01\",\"g2\",3]",
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",0]",
+            "[\"pack1_lvl01\",\"g4\",3]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g4\",1]",
+            "[\"pack1_lvl01\",\"g1\",1]"
+          ],
+          "selection": [
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",1]"
+          ],
+          "solved": [],
+          "wrong": [
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\"]"
+          ],
+          "pairs": {
+            "g1": [
+              "[\"pack1_lvl01\",\"g1\",3]",
+              "[\"pack1_lvl01\",\"g1\",0]"
+            ]
+          },
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g1\",2]",
+                "[\"pack1_lvl01\",\"g2\",0]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g2\",1]"
+              ],
+              "tiers": [
+                1,
+                1,
+                2,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g3\",0]",
+                "[\"pack1_lvl01\",\"g4\",0]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",1]",
+                "[\"pack1_lvl01\",\"g3\",1]",
+                "[\"pack1_lvl01\",\"g4\",1]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a10",
+      "levelId": "pack2_lvl01",
+      "date": null,
+      "header": "LexiStack · Science & Nature #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g1\",0]",
+            "[\"pack2_lvl01\",\"g1\",1]",
+            "[\"pack2_lvl01\",\"g1\",2]",
+            "[\"pack2_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g2\",0]",
+            "[\"pack2_lvl01\",\"g2\",1]",
+            "[\"pack2_lvl01\",\"g2\",2]",
+            "[\"pack2_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g3\",0]",
+            "[\"pack2_lvl01\",\"g3\",1]",
+            "[\"pack2_lvl01\",\"g3\",2]",
+            "[\"pack2_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g4\",0]",
+            "[\"pack2_lvl01\",\"g4\",1]",
+            "[\"pack2_lvl01\",\"g4\",2]",
+            "[\"pack2_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a10",
+        "levelId": "pack2_lvl01",
+        "date": null,
+        "entered": 10,
+        "fingerprint": "[\"pack2_lvl01\",\"pack2\",\"Other Worlds\",[\"g1\",\"PLANETS BEYOND EARTH\",1,\"Saturn is less dense than water when its mass is averaged over its entire volume.\",[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",0]\",\"MARS\",1],[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",1]\",\"VENUS\",1],[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",2]\",\"SATURN\",1],[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",3]\",\"JUPITER\",1]],[\"g2\",\"METALLIC ELEMENTS\",2,\"Mercury is a metal that remains liquid at ordinary room temperature.\",[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",0]\",\"MERCURY\",2],[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",1]\",\"LEAD\",2],[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",2]\",\"GOLD\",2],[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",3]\",\"IRON\",2]],[\"g3\",\"DECIDUOUS TREES\",3,\"Deciduous trees shed their leaves seasonally, reducing water loss during unfavorable conditions.\",[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",0]\",\"BIRCH\",3],[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",1]\",\"WILLOW\",3],[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",2]\",\"MAPLE\",3],[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",3]\",\"BEECH\",3]],[\"g4\",\"BEFORE CELL\",4,\"A dry cell uses an electrolyte held in a paste rather than a freely flowing liquid.\",[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",0]\",\"STEM\",4],[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",1]\",\"FUEL\",4],[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",2]\",\"DRY\",4],[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",3]\",\"PRISON\",4]],[[[\"MERCURY\"],\"MERCURY looks like a fifth planet, but it completes the four metallic elements and leaves four unambiguous planets.\"]]]",
+        "game": {
+          "seed": 11,
+          "rng": 1262887857,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g1\",0]",
+                "[\"pack2_lvl01\",\"g1\",1]",
+                "[\"pack2_lvl01\",\"g1\",2]",
+                "[\"pack2_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g2\",0]",
+                "[\"pack2_lvl01\",\"g2\",1]",
+                "[\"pack2_lvl01\",\"g2\",2]",
+                "[\"pack2_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g3\",0]",
+                "[\"pack2_lvl01\",\"g3\",1]",
+                "[\"pack2_lvl01\",\"g3\",2]",
+                "[\"pack2_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g4\",0]",
+                "[\"pack2_lvl01\",\"g4\",1]",
+                "[\"pack2_lvl01\",\"g4\",2]",
+                "[\"pack2_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a11",
+      "levelId": "pack3_lvl01",
+      "date": null,
+      "header": "LexiStack · World History & Myth #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g1\",0]",
+            "[\"pack3_lvl01\",\"g1\",1]",
+            "[\"pack3_lvl01\",\"g1\",2]",
+            "[\"pack3_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g2\",0]",
+            "[\"pack3_lvl01\",\"g2\",1]",
+            "[\"pack3_lvl01\",\"g2\",2]",
+            "[\"pack3_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g3\",0]",
+            "[\"pack3_lvl01\",\"g3\",1]",
+            "[\"pack3_lvl01\",\"g3\",2]",
+            "[\"pack3_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g4\",0]",
+            "[\"pack3_lvl01\",\"g4\",1]",
+            "[\"pack3_lvl01\",\"g4\",2]",
+            "[\"pack3_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a11",
+        "levelId": "pack3_lvl01",
+        "date": null,
+        "entered": 11,
+        "fingerprint": "[\"pack3_lvl01\",\"pack3\",\"Echoes of Empire\",[\"g1\",\"ROMAN DEITIES\",1,\"Vesta was associated with the hearth and the sacred fire of ancient Rome.\",[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",0]\",\"MARS\",1],[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",1]\",\"JUNO\",1],[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",2]\",\"VESTA\",1],[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",3]\",\"NEPTUNE\",1]],[\"g2\",\"GREEK LETTERS\",2,\"The English word alphabet combines the names of the first two Greek letters.\",[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",0]\",\"ALPHA\",2],[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",1]\",\"BETA\",2],[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",2]\",\"GAMMA\",2],[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",3]\",\"DELTA\",2]],[\"g3\",\"HISTORIC WRITING SURFACES\",3,\"Papyrus sheets were made from strips cut from the stem of a wetland plant.\",[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",0]\",\"PAPYRUS\",3],[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",1]\",\"VELLUM\",3],[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",2]\",\"PARCHMENT\",3],[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",3]\",\"CLAY TABLET\",3]],[\"g4\",\"BEFORE AGE\",4,\"The Bronze Age takes its name from an alloy commonly made with copper and tin.\",[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",0]\",\"STONE\",4],[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",1]\",\"BRONZE\",4],[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",2]\",\"IRON\",4],[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",3]\",\"SPACE\",4]],[[[\"MARS\",\"NEPTUNE\"],\"MARS and NEPTUNE suggest planets, but JUNO and VESTA complete the Roman deities; this board has no four-planet set.\"]]]",
+        "game": {
+          "seed": 12,
+          "rng": 1377695844,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g1\",0]",
+                "[\"pack3_lvl01\",\"g1\",1]",
+                "[\"pack3_lvl01\",\"g1\",2]",
+                "[\"pack3_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g2\",0]",
+                "[\"pack3_lvl01\",\"g2\",1]",
+                "[\"pack3_lvl01\",\"g2\",2]",
+                "[\"pack3_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g3\",0]",
+                "[\"pack3_lvl01\",\"g3\",1]",
+                "[\"pack3_lvl01\",\"g3\",2]",
+                "[\"pack3_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g4\",0]",
+                "[\"pack3_lvl01\",\"g4\",1]",
+                "[\"pack3_lvl01\",\"g4\",2]",
+                "[\"pack3_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a12",
+      "levelId": "pack4_lvl01",
+      "date": null,
+      "header": "LexiStack · Pop Culture & Wordplay #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack4_lvl01\",\"g1\",1]",
+            "[\"pack4_lvl01\",\"g1\",0]",
+            "[\"pack4_lvl01\",\"g1\",2]",
+            "[\"pack4_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack4_lvl01\",\"g2\",1]",
+            "[\"pack4_lvl01\",\"g2\",3]",
+            "[\"pack4_lvl01\",\"g2\",0]",
+            "[\"pack4_lvl01\",\"g2\",2]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack4_lvl01\",\"g3\",0]",
+            "[\"pack4_lvl01\",\"g3\",3]",
+            "[\"pack4_lvl01\",\"g3\",2]",
+            "[\"pack4_lvl01\",\"g3\",1]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack4_lvl01\",\"g4\",1]",
+            "[\"pack4_lvl01\",\"g4\",0]",
+            "[\"pack4_lvl01\",\"g4\",3]",
+            "[\"pack4_lvl01\",\"g4\",2]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a12",
+        "levelId": "pack4_lvl01",
+        "date": null,
+        "entered": 14,
+        "fingerprint": "[\"pack4_lvl01\",\"pack4\",\"Opening Night\",[\"g1\",\"FILM GENRES\",1,\"A western typically uses frontier life as a setting for its story.\",[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",0]\",\"COMEDY\",1],[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",1]\",\"DRAMA\",1],[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",2]\",\"THRILLER\",1],[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",3]\",\"WESTERN\",1]],[\"g2\",\"MUSICAL TEMPO DIRECTIONS\",2,\"Andante suggests a walking pace, while presto calls for a much faster tempo.\",[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",0]\",\"ADAGIO\",2],[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",1]\",\"ALLEGRO\",2],[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",2]\",\"PRESTO\",2],[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",3]\",\"ANDANTE\",2]],[\"g3\",\"TRAVELERS TO THE EMERALD CITY\",3,\"The Wonderful Wizard of Oz began as a novel before its famous screen adaptation.\",[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",0]\",\"DOROTHY\",3],[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",1]\",\"TOTO\",3],[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",2]\",\"SCARECROW\",3],[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",3]\",\"TIN MAN\",3]],[\"g4\",\"BEFORE STAR\",4,\"A lodestar is a guiding star, often used metaphorically for a guiding principle.\",[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",0]\",\"ROCK\",4],[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",1]\",\"FILM\",4],[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",2]\",\"LODE\",4],[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",3]\",\"SHOOTING\",4]],[[[\"TOTO\"],\"TOTO is also a band's name, but ADAGIO and its partners specify musical speed; the Oz travelers make a complete set.\"]]]",
+        "game": {
+          "seed": 13,
+          "rng": 247986532,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {
+            "g3": [
+              "[\"pack4_lvl01\",\"g3\",0]",
+              "[\"pack4_lvl01\",\"g3\",1]"
+            ]
+          },
+          "peeked": [
+            "g1"
+          ],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack4_lvl01\",\"g1\",1]",
+                "[\"pack4_lvl01\",\"g1\",0]",
+                "[\"pack4_lvl01\",\"g1\",2]",
+                "[\"pack4_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack4_lvl01\",\"g2\",1]",
+                "[\"pack4_lvl01\",\"g2\",3]",
+                "[\"pack4_lvl01\",\"g2\",0]",
+                "[\"pack4_lvl01\",\"g2\",2]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack4_lvl01\",\"g3\",0]",
+                "[\"pack4_lvl01\",\"g3\",3]",
+                "[\"pack4_lvl01\",\"g3\",2]",
+                "[\"pack4_lvl01\",\"g3\",1]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack4_lvl01\",\"g4\",1]",
+                "[\"pack4_lvl01\",\"g4\",0]",
+                "[\"pack4_lvl01\",\"g4\",3]",
+                "[\"pack4_lvl01\",\"g4\",2]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a15",
+      "levelId": "daily_lvl06",
+      "date": "2026-10-29",
+      "header": "LexiStack · Daily 2026-10-29",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"daily_lvl06\",\"g1\",0]",
+            "[\"daily_lvl06\",\"g1\",1]",
+            "[\"daily_lvl06\",\"g1\",2]",
+            "[\"daily_lvl06\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"daily_lvl06\",\"g2\",0]",
+            "[\"daily_lvl06\",\"g2\",1]",
+            "[\"daily_lvl06\",\"g2\",2]",
+            "[\"daily_lvl06\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"daily_lvl06\",\"g3\",0]",
+            "[\"daily_lvl06\",\"g3\",1]",
+            "[\"daily_lvl06\",\"g3\",2]",
+            "[\"daily_lvl06\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"daily_lvl06\",\"g4\",0]",
+            "[\"daily_lvl06\",\"g4\",1]",
+            "[\"daily_lvl06\",\"g4\",2]",
+            "[\"daily_lvl06\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 75,
+      "rewardKind": "daily",
+      "board": {
+        "id": "a15",
+        "levelId": "daily_lvl06",
+        "date": "2026-10-29",
+        "entered": 15,
+        "fingerprint": "[\"daily_lvl06\",\"daily\",\"A Taste of Language\",[\"g1\",\"CHEESES\",1,\"Feta is traditionally made from sheep's milk or a mixture of sheep's and goat's milk.\",[\"[\\\"daily_lvl06\\\",\\\"g1\\\",0]\",\"CHEDDAR\",1],[\"[\\\"daily_lvl06\\\",\\\"g1\\\",1]\",\"GOUDA\",1],[\"[\\\"daily_lvl06\\\",\\\"g1\\\",2]\",\"BRIE\",1],[\"[\\\"daily_lvl06\\\",\\\"g1\\\",3]\",\"FETA\",1]],[\"g2\",\"FIVE-LETTER COUNTRIES\",2,\"Nepal's national flag has two triangular sections rather than a rectangular outline.\",[\"[\\\"daily_lvl06\\\",\\\"g2\\\",0]\",\"CHILE\",2],[\"[\\\"daily_lvl06\\\",\\\"g2\\\",1]\",\"NEPAL\",2],[\"[\\\"daily_lvl06\\\",\\\"g2\\\",2]\",\"SPAIN\",2],[\"[\\\"daily_lvl06\\\",\\\"g2\\\",3]\",\"EGYPT\",2]],[\"g3\",\"ENGLISH WORDS FROM JAPANESE\",3,\"Origami combines Japanese words associated with folding and paper.\",[\"[\\\"daily_lvl06\\\",\\\"g3\\\",0]\",\"TSUNAMI\",3],[\"[\\\"daily_lvl06\\\",\\\"g3\\\",1]\",\"ORIGAMI\",3],[\"[\\\"daily_lvl06\\\",\\\"g3\\\",2]\",\"KARAOKE\",3],[\"[\\\"daily_lvl06\\\",\\\"g3\\\",3]\",\"HAIKU\",3]],[\"g4\",\"ANAGRAMS OF EAST\",4,\"Anagrams preserve the count of each letter even when the arrangement changes.\",[\"[\\\"daily_lvl06\\\",\\\"g4\\\",0]\",\"EAST\",4],[\"[\\\"daily_lvl06\\\",\\\"g4\\\",1]\",\"EATS\",4],[\"[\\\"daily_lvl06\\\",\\\"g4\\\",2]\",\"SEAT\",4],[\"[\\\"daily_lvl06\\\",\\\"g4\\\",3]\",\"TEAS\",4]],[[[\"CHILE\"],\"CHILE can name a pepper, tempting a food connection with the cheeses, but NEPAL, SPAIN and EGYPT make its country group precise.\"]]]",
+        "game": {
+          "seed": 302,
+          "rng": 312273722,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"daily_lvl06\",\"g1\",0]",
+                "[\"daily_lvl06\",\"g1\",1]",
+                "[\"daily_lvl06\",\"g1\",2]",
+                "[\"daily_lvl06\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"daily_lvl06\",\"g2\",0]",
+                "[\"daily_lvl06\",\"g2\",1]",
+                "[\"daily_lvl06\",\"g2\",2]",
+                "[\"daily_lvl06\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"daily_lvl06\",\"g3\",0]",
+                "[\"daily_lvl06\",\"g3\",1]",
+                "[\"daily_lvl06\",\"g3\",2]",
+                "[\"daily_lvl06\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"daily_lvl06\",\"g4\",0]",
+                "[\"daily_lvl06\",\"g4\",1]",
+                "[\"daily_lvl06\",\"g4\",2]",
+                "[\"daily_lvl06\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "daily": {
+    "2026-10-29": {
+      "id": "a15",
+      "won": true
+    }
+  },
+  "attempts": [
+    {
+      "id": "a16",
+      "levelId": "pack1_lvl02",
+      "date": null,
+      "entered": 17,
+      "fingerprint": "[\"pack1_lvl02\",\"pack1\",\"A Place to Sit\",[\"g1\",\"SEATS AROUND THE HOUSE\",1,\"A stool differs from a typical chair by having no backrest.\",[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",0]\",\"CHAIR\",1],[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",1]\",\"SOFA\",1],[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",2]\",\"STOOL\",1],[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",3]\",\"BENCH\",1]],[\"g2\",\"IN A SEWING BASKET\",2,\"A thimble protects a fingertip while pushing a needle through fabric.\",[\"[\\\"pack1_lvl02\\\",\\\"g2\\\",0]\",\"NEEDLE\",2],[\"[\\\"pack1_lvl02\\\",\\\"g2\\\",1]\",\"THREAD\",2],[\"[\\\"pack1_lvl02\\\",\\\"g2\\\",2]\",\"THIMBLE\",2],[\"[\\\"pack1_lvl02\\\",\\\"g2\\\",3]\",\"BOBBIN\",2]],[\"g3\",\"PARTS OF A RIVER\",3,\"A river mouth is where the flowing water enters another body of water.\",[\"[\\\"pack1_lvl02\\\",\\\"g3\\\",0]\",\"BANK\",3],[\"[\\\"pack1_lvl02\\\",\\\"g3\\\",1]\",\"BED\",3],[\"[\\\"pack1_lvl02\\\",\\\"g3\\\",2]\",\"MOUTH\",3],[\"[\\\"pack1_lvl02\\\",\\\"g3\\\",3]\",\"SOURCE\",3]],[\"g4\",\"BEFORE LIGHT\",4,\"The word spotlight expanded from stage lighting to mean public attention.\",[\"[\\\"pack1_lvl02\\\",\\\"g4\\\",0]\",\"MOON\",4],[\"[\\\"pack1_lvl02\\\",\\\"g4\\\",1]\",\"FLASH\",4],[\"[\\\"pack1_lvl02\\\",\\\"g4\\\",2]\",\"SPOT\",4],[\"[\\\"pack1_lvl02\\\",\\\"g4\\\",3]\",\"DAY\",4]],[[[\"BED\"],\"BED looks at home among household furniture, but the four actual seats leave it with the river terms.\"]]]",
+      "game": {
+        "seed": 17,
+        "rng": 1976200578,
+        "status": "playing",
+        "lives": 1,
+        "mistakes": 4,
+        "combo": 0,
+        "extraLives": 1,
+        "order": [
+          "[\"pack1_lvl02\",\"g3\",0]",
+          "[\"pack1_lvl02\",\"g4\",1]",
+          "[\"pack1_lvl02\",\"g2\",3]",
+          "[\"pack1_lvl02\",\"g3\",1]",
+          "[\"pack1_lvl02\",\"g1\",1]",
+          "[\"pack1_lvl02\",\"g3\",3]",
+          "[\"pack1_lvl02\",\"g4\",3]",
+          "[\"pack1_lvl02\",\"g3\",2]",
+          "[\"pack1_lvl02\",\"g4\",0]",
+          "[\"pack1_lvl02\",\"g1\",2]",
+          "[\"pack1_lvl02\",\"g2\",2]",
+          "[\"pack1_lvl02\",\"g1\",3]",
+          "[\"pack1_lvl02\",\"g2\",0]",
+          "[\"pack1_lvl02\",\"g1\",0]",
+          "[\"pack1_lvl02\",\"g4\",2]",
+          "[\"pack1_lvl02\",\"g2\",1]"
+        ],
+        "selection": [
+          "[\"pack1_lvl02\",\"g1\",1]",
+          "[\"pack1_lvl02\",\"g2\",1]",
+          "[\"pack1_lvl02\",\"g3\",1]",
+          "[\"pack1_lvl02\",\"g4\",1]"
+        ],
+        "solved": [],
+        "wrong": [
+          "[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl02\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl02\\\",\\\"g1\\\",2]\",\"[\\\"pack1_lvl02\\\",\\\"g2\\\",0]\"]",
+          "[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl02\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl02\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl02\\\",\\\"g2\\\",1]\"]",
+          "[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl02\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl02\\\",\\\"g3\\\",0]\",\"[\\\"pack1_lvl02\\\",\\\"g4\\\",0]\"]",
+          "[\"[\\\"pack1_lvl02\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl02\\\",\\\"g2\\\",1]\",\"[\\\"pack1_lvl02\\\",\\\"g3\\\",1]\",\"[\\\"pack1_lvl02\\\",\\\"g4\\\",1]\"]"
+        ],
+        "pairs": {
+          "g2": [
+            "[\"pack1_lvl02\",\"g2\",0]",
+            "[\"pack1_lvl02\",\"g2\",1]"
+          ]
+        },
+        "peeked": [
+          "g1"
+        ],
+        "guesses": [
+          {
+            "ids": [
+              "[\"pack1_lvl02\",\"g1\",0]",
+              "[\"pack1_lvl02\",\"g1\",1]",
+              "[\"pack1_lvl02\",\"g1\",2]",
+              "[\"pack1_lvl02\",\"g2\",0]"
+            ],
+            "tiers": [
+              1,
+              1,
+              1,
+              2
+            ],
+            "correct": false
+          },
+          {
+            "ids": [
+              "[\"pack1_lvl02\",\"g1\",0]",
+              "[\"pack1_lvl02\",\"g1\",1]",
+              "[\"pack1_lvl02\",\"g2\",0]",
+              "[\"pack1_lvl02\",\"g2\",1]"
+            ],
+            "tiers": [
+              1,
+              1,
+              2,
+              2
+            ],
+            "correct": false
+          },
+          {
+            "ids": [
+              "[\"pack1_lvl02\",\"g1\",0]",
+              "[\"pack1_lvl02\",\"g2\",0]",
+              "[\"pack1_lvl02\",\"g3\",0]",
+              "[\"pack1_lvl02\",\"g4\",0]"
+            ],
+            "tiers": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "correct": false
+          },
+          {
+            "ids": [
+              "[\"pack1_lvl02\",\"g1\",1]",
+              "[\"pack1_lvl02\",\"g2\",1]",
+              "[\"pack1_lvl02\",\"g3\",1]",
+              "[\"pack1_lvl02\",\"g4\",1]"
+            ],
+            "tiers": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "correct": false
+          }
+        ]
+      }
+    }
+  ],
+  "dailyAttempt": null,
+  "bestDailyStreak": 1,
+  "settings": {
+    "theme": "light",
+    "haptics": true
+  },
+  "retiredIds": [],
+  "rewardLocks": [],
+  "unavailableDaily": []
+}

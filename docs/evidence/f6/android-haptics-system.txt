@@ -1,0 +1,143 @@
+VibratorManagerService:
+  VibrationSettings:
+    vibrateOn = true
+    vibrateInputDevices = false
+    batterySaverMode = false
+    ringerMode = normal
+    onWirelessCharger = false
+    processStateCache size = 49
+    VibrationIntensities:
+      UNKNOWN = MEDIUM, default: MEDIUM
+      ALARM = MEDIUM, default: MEDIUM
+      TOUCH = MEDIUM, default: MEDIUM
+      MEDIA = MEDIUM, default: MEDIUM
+      RINGTONE = MEDIUM, default: MEDIUM
+      PHYSICAL_EMULATION = MEDIUM, default: MEDIUM
+      NOTIFICATION = MEDIUM, default: MEDIUM
+      HARDWARE_FEEDBACK = MEDIUM, default: MEDIUM
+      COMMUNICATION_REQUEST = MEDIUM, default: MEDIUM
+      ACCESSIBILITY = MEDIUM, default: MEDIUM
+      IME = MEDIUM, default: MEDIUM
+      GESTURE_INPUT = MEDIUM, default: MEDIUM
+    VibrationConfig:
+      ignoreVibrationsOnWirelessCharger = false
+      defaultVibrationAmplitude = 255
+      hapticChannelMaxAmplitude = 0.0
+      vibrationScaleFactors = null
+      externalVibrationScaleFactors = null
+      rampStepDurationMs = 5
+      rampDownDurationMs = 0
+      requestVibrationParamsForUsages = [ALARM, RINGTONE, NOTIFICATION, COMMUNICATION_REQUEST]
+      requestVibrationParamsTimeoutMs = 50
+  
+  VibrationScaler:
+    ScaleLevels:
+      VERY_LOW = 0.5102041
+      LOW = 0.71428573
+      NONE = 1.0
+      HIGH = 1.4
+      VERY_HIGH = 1.9599999
+    AdaptiveHapticsScales = null
+    DeviceConfigVibrationScales = null
+    DeviceConfigExternalVibrationScales = null
+  
+  Native HAL VibratorManager:
+    capabilitiesFlags = 111111111
+    vibratorIds = [1]
+    Vibrators:
+      Vibrator (id=1):
+        currentState = IDLE
+        currentAmplitude = 0.0
+        vibratorInfoLoadSuccessful = true
+        vibratorStateListener size = 0
+        VibratorInfo:
+          id = 1
+          capabilities = [ON_CALLBACK, PERFORM_CALLBACK, COMPOSE_EFFECTS, COMPOSE_PWLE_EFFECTS, ALWAYS_ON_CONTROL, AMPLITUDE_CONTROL, FREQUENCY_CONTROL, EXTERNAL_CONTROL, EXTERNAL_AMPLITUDE_CONTROL, CAP_COMPOSE_PWLE_EFFECTS_V2]
+          capabilitiesFlags = 1111111111111
+          supportedEffects = [CLICK, TICK]
+          supportedPrimitives = [NOOP(0ms), CLICK(100ms), THUD(100ms), SPIN(100ms), QUICK_RISE(100ms), SLOW_RISE(100ms), QUICK_FALL(100ms), TICK(100ms), LOW_TICK(100ms)]
+          supportedBraking = [NONE, CLAB]
+          primitiveDelayMax = 1000
+          compositionSizeMax = 256
+          pwlePrimitiveDurationMax = 16383
+          pwleSizeMax = 126
+          q-factor = 11.0
+          frequencyProfileLegacy = FrequencyProfileLegacy{mFrequencyRange=[140.0, 160.0], mMinFrequency=140.0, mResonantFrequency=150.0, mFrequencyResolution=1.0, mMaxAmplitudes count=21}
+          frequencyProfile = FrequencyProfile{mResonantFrequency=150.0, mFrequenciesHz=[30.0, 46.0, 50.0, 55.0, 62.0, 65.0, 83.0, 85.0, 92.0, 107.0, 115.0, 123.0, 135.0, 144.0, 145.0, 150.0, 175.0, 181.0, 190.0, 200.0, 204.0, 205.0, 224.0, 235.0, 242.0, 253.0, 263.0, 278.0, 294.0, 300.0], mOutputAccelerationsGs=[0.01, 0.09, 0.1, 0.12, 0.66, 1.38, 0.82, 0.85, 1.05, 1.63, 1.72, 1.81, 2.23, 2.47, 2.5, 3.0, 2.51, 2.41, 2.28, 2.08, 1.96, 1.9, 1.7, 1.5, 1.46, 1.41, 1.39, 1.37, 1.35, 1.34], mMinFrequencyHz=30.0, mMaxFrequencyHz=300.0, mMaxOutputAccelerationGs=3.0}
+          mMaxEnvelopeEffectSize = 16
+          mMinEnvelopeEffectControlPointDurationMillis = 20
+          mMaxEnvelopeEffectControlPointDurationMillis = 1000
+  
+  
+  CurrentVibration:
+    null
+  
+  NextVibration:
+    null
+  
+  
+  Recent vibrations:
+    TOUCH:
+      10-29 11:45:37.937 |   effect |             finished | duration:   105ms | start: 11:45:37.939 | end: 11:45:38.042 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=1): ViewRootImpl#performHapticFeedback | played: Prebaked=CLICK(MEDIUM, with fallback) | original: null
+      10-29 11:46:47.530 |   effect |             finished | duration:   106ms | start: 11:46:47.533 | end: 11:46:47.636 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 11:48:27.625 |   effect |             finished | duration:   107ms | start: 11:48:27.625 | end: 11:48:27.732 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:30.059 |   effect | cancelled_superseded | duration:    99ms | start: 11:48:30.061 | end: 11:48:30.158 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:30.156 |   effect |             finished | duration:   112ms | start: 11:48:30.162 | end: 11:48:30.268 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:30.370 |   effect | cancelled_superseded | duration:    14ms | start: 11:48:30.371 | end: 11:48:30.384 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:30.379 |   effect |             finished | duration:   113ms | start: 11:48:30.387 | end: 11:48:30.492 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:32.957 |   effect |             finished | duration:   105ms | start: 11:48:32.959 | end: 11:48:33.062 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=6): ViewRootImpl#performHapticFeedback | played: Prebaked=TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:35.454 |   effect |             finished | duration:   104ms | start: 11:48:35.456 | end: 11:48:35.559 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:37.929 |   effect | cancelled_superseded | duration:    94ms | start: 11:48:37.930 | end: 11:48:38.023 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:38.019 |   effect | cancelled_superseded | duration:    75ms | start: 11:48:38.024 | end: 11:48:38.094 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:38.093 |   effect | cancelled_superseded | duration:    93ms | start: 11:48:38.096 | end: 11:48:38.186 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:38.184 |   effect |             finished | duration:   104ms | start: 11:48:38.187 | end: 11:48:38.289 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:40.716 |   effect |             finished | duration:   106ms | start: 11:48:40.717 | end: 11:48:40.822 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=6): ViewRootImpl#performHapticFeedback | played: Prebaked=TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:43.152 |   effect |             finished | duration:   105ms | start: 11:48:43.154 | end: 11:48:43.257 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:45.681 |   effect | cancelled_superseded | duration:    74ms | start: 11:48:45.682 | end: 11:48:45.755 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:45.754 |   effect | cancelled_superseded | duration:    77ms | start: 11:48:45.756 | end: 11:48:45.831 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:45.829 |   effect |             finished | duration:   106ms | start: 11:48:45.833 | end: 11:48:45.935 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:45.961 |   effect |             finished | duration:   105ms | start: 11:48:45.962 | end: 11:48:46.066 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:48:48.374 |   effect |             finished | duration:   107ms | start: 11:48:48.378 | end: 11:48:48.481 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=6): ViewRootImpl#performHapticFeedback | played: Prebaked=TICK(MEDIUM, with fallback) | original: null
+    
+  
+  
+  Aggregated vibration history:
+    TOUCH:
+      10-28 16:07:16.264 |   effect |             finished | duration:   119ms | start: 16:07:16.267 | end: 16:07:16.384 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 16:08:39.481 |   effect |             finished | duration:   117ms | start: 16:08:39.485 | end: 16:08:39.598 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 16:47:31.809 |   effect |             finished | duration:   119ms | start: 16:47:31.815 | end: 16:47:31.928 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 16:55:33.986 |   effect |             finished | duration:   105ms | start: 16:55:33.989 | end: 16:55:34.091 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 18:22:13.644 |   effect |             finished | duration:   116ms | start: 18:22:13.648 | end: 18:22:13.760 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 18:24:14.848 |   effect |             finished | duration:   106ms | start: 18:24:14.851 | end: 18:24:14.955 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 18:25:37.669 |   effect |             finished | duration:   116ms | start: 18:25:37.677 | end: 18:25:37.785 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 18:33:21.935 |   effect |             finished | duration:   105ms | start: 18:33:21.938 | end: 18:33:22.040 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 19:01:42.114 |   effect |             finished | duration:   109ms | start: 19:01:42.119 | end: 19:01:42.224 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 19:41:21.748 |   effect |             finished | duration:   136ms | start: 19:41:21.766 | end: 19:41:21.884 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 19:48:35.384 |   effect |             finished | duration:   189ms | start: 19:48:35.449 | end: 19:48:35.572 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 19:50:37.546 |   effect |             finished | duration:   123ms | start: 19:50:37.548 | end: 19:50:37.669 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 19:55:07.183 |   effect |             finished | duration:   116ms | start: 19:55:07.184 | end: 19:55:07.298 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 20:03:14.172 |   effect |             finished | duration:   114ms | start: 20:03:14.173 | end: 20:03:14.285 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 20:04:26.593 |   effect |             finished | duration:   105ms | start: 20:04:26.595 | end: 20:04:26.697 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-28 20:11:07.607 |   effect |             finished | duration:   105ms | start: 20:11:07.608 | end: 20:11:07.712 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 09:24:18.150 |   effect |             finished | duration:   112ms | start: 09:24:18.153 | end: 09:24:18.262 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 09:36:03.564 |   effect |             finished | duration:   106ms | start: 09:36:03.568 | end: 09:36:03.671 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 09:46:23.899 |   effect |             finished | duration:   106ms | start: 09:46:23.902 | end: 09:46:24.005 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 09:50:48.581 |   effect |             finished | duration:   105ms | start: 09:50:48.583 | end: 09:50:48.685 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 11:22:32.942 |   effect |             finished | duration:   153ms | start: 11:22:32.960 | end: 11:22:33.095 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 11:34:32.421 |   effect |             finished | duration:   121ms | start: 11:34:32.423 | end: 11:34:32.542 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 11:37:45.381 |   effect |             finished | duration:   108ms | start: 11:37:45.385 | end: 11:37:45.489 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 11:39:29.690 |   effect |             finished | duration:   119ms | start: 11:39:29.695 | end: 11:39:29.809 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | com.google.android.apps.nexuslauncher (uid=10191, deviceId=0) | reason: null | played: Primitive=CLICK(scale=0.70, pause=0ms) | original: null
+      10-29 11:45:22.278 |   effect | cancelled_superseded | duration:    56ms | start: 11:45:22.279 | end: 11:45:22.334 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      -> Skipping 2 aggregated entries, latest:
+      10-29 11:45:22.536 |   effect |             finished | duration:   112ms | start: 11:45:22.543 | end: 11:45:22.648 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=4): ViewRootImpl#performHapticFeedback | played: Prebaked=TEXTURE_TICK(MEDIUM, with fallback) | original: null
+      10-29 11:45:25.085 |   effect |             finished | duration:   107ms | start: 11:45:25.090 | end: 11:45:25.192 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=6): ViewRootImpl#performHapticFeedback | played: Prebaked=TICK(MEDIUM, with fallback) | original: null
+      10-29 11:45:35.425 |   effect |             finished | duration:   110ms | start: 11:45:35.429 | end: 11:45:35.535 | scale:      NONE (1.00) | adaptiveScale=1.00 | flags:    0 | usage: TOUCH | de.cloudwards.lexistack (uid=10227, deviceId=0) | reason: performHapticFeedback(constant=1): ViewRootImpl#performHapticFeedback | played: Prebaked=CLICK(MEDIUM, with fallback) | original: null
+    
+  
+  
+  VibratorControlService:
+    isVibratorControllerRegistered = false
+    hasPendingVibrationParamsRequest = false
+    
+    Vibration parameters update history:
+

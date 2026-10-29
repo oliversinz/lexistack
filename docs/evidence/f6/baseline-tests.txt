@@ -1,0 +1,229 @@
+START 2026-10-29T11:17:13.0886013+01:00
+COMMAND flutter test --reporter expanded
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/app/daily_test.dart
+00:00 +0: C:/Codex/LexiStack/test/app/daily_test.dart: DAY-01/02 independent civil-day and seed goldens including DST and leap
+00:00 +1: C:/Codex/LexiStack/test/app/economy_test.dart: ECO-01/02 independent 0 mistakes -> 3 stars +50
+00:00 +2: C:/Codex/LexiStack/test/app/economy_test.dart: ECO-01/02 independent 0 mistakes -> 3 stars +50
+00:00 +3: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +4: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +5: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +6: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +7: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all eight unlocks independent and durable
+00:00 +8: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all eight unlocks independent and durable
+00:00 +9: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all eight unlocks independent and durable
+00:00 +10: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all eight unlocks independent and durable
+00:00 +11: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all eight unlocks independent and durable
+00:00 +12: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all eight unlocks independent and durable
+00:00 +13: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +14: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +15: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +16: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +17: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +18: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +19: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +20: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +21: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +22: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +23: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +24: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +25: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +26: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +27: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +28: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +29: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +30: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +31: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +32: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:00 +33: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +34: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +35: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +36: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +37: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +38: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +39: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +40: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +41: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +42: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +43: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +44: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +45: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +46: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +47: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +48: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +49: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +50: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +51: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +52: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +53: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +54: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +55: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +56: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +57: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +58: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +59: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +60: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +61: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +62: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +63: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +64: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +65: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +66: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +67: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +68: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +68: C:/Codex/LexiStack/test/core/prng_test.dart: ENG-11 independent fixed PRNG vectors and default board order
+Seed 1: [16807, 282475249, 1622650073, 984943658, 1144108930, 470211272, 101027544, 1457850878] OK
+Seed 42: [705894, 1126542223, 1579310009, 565444343, 807934826, 421520601, 2095673201, 1100194760] OK
+Seed 20261028: [1224681370, 1736512742, 1266892064, 354559643, 1964283123, 440342930, 614976948, 78772025] OK
+Seed 2147483646: [2147466840, 1865008398, 524833574, 1162539989, 1003374717, 1677272375, 2046456103, 689632769] OK
+F2 default seed board indexes: [11, 15, 6, 0, 12, 13, 1, 7, 14, 8, 5, 3, 9, 4, 2, 10]; state 1470087647 OK
+00:01 +69: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +70: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +71: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +72: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +73: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +74: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:01 +75: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +76: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +77: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +78: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +79: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +80: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +81: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +82: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +83: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +84: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +85: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +86: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +87: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +88: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +89: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +90: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +91: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +92: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +93: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +94: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +95: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +96: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +97: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +98: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +99: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +100: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +101: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +102: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +103: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +104: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +105: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +106: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +107: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +108: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +109: C:/Codex/LexiStack/test/app_test.dart: actual app shows production metadata and navigates Home / pack / level / back
+00:02 +110: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:02 +111: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:02 +112: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:02 +113: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:02 +114: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +115: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +116: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +117: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +118: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +119: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +120: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +121: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +122: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +123: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +124: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +125: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +126: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +127: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +128: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +129: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +130: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 32 manifest levels; explicit replay survives completion
+00:03 +131: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:03 +132: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +133: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +134: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +135: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +136: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +137: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +138: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +139: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +140: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:04 +141: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:05 +142: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:06 +142: C:/Codex/LexiStack/test/ui/f4_d01_test.dart: F4-D01 390x844 actual 16 tile rectangles + Submit inside SafeArea without scrolling
+390x844 grid=Rect.fromLTRB(16.0, 200.0, 374.0, 533.0) submit=Rect.fromLTRB(272.7, 718.0, 374.0, 770.0) dock=Rect.fromLTRB(0.0, 707.0, 390.0, 820.0) safeY=24..820 scroll=0.0
+00:06 +143: C:/Codex/LexiStack/test/ui/board_test.dart: UI-02 real pack1 Play, selection cap, solve reveals exact title and trivia
+00:06 +144: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:08 +145: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:10 +145: C:/Codex/LexiStack/test/ui/f4_d01_test.dart: F4-D01 360x640 1.3x anchored action, real tray drag, one/two solves and facts
+360x640 scale=1.3 grid=Rect.fromLTRB(16.0, 215.0, 344.0, 476.0) submit=Rect.fromLTRB(233.9, 511.0, 344.0, 563.0) dock=Rect.fromLTRB(0.0, 497.0, 360.0, 616.0) safeY=24..616
+00:10 +146: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:11 +147: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:12 +148: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:12 +149: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:13 +150: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+F4-D02 dark 360.0x640.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+F4-D02 dark 390.0x844.0 scale=1.0: resolved font roles, render/layout and fixed dock PASS
+F4-D02 dark 1280.0x800.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+00:14 +151: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:15 +152: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+00:17 +153: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+00:17 +154: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+00:18 +155: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all four packs, eight stages, independent progress, new boards
+00:18 +156: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-07/08 peeked pending loss has no visual or semantic spoilers after reconstruction; exact loss copy
+00:18 +157: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: light, small/phone/wide
+F4-D02 light 360.0x640.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+F4-D02 light 390.0x844.0 scale=1.0: resolved font roles, render/layout and fixed dock PASS
+F4-D02 light 1280.0x800.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+00:20 +158: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 unaffordable pending rescue disabled; explicit reveal still works
+00:21 +159: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 unaffordable pending rescue disabled; explicit reveal still works
+00:21 +160: C:/Codex/LexiStack/test/ui/board_test.dart: all four real groups win; active attempt resumes and replay is explicit
+00:21 +161: C:/Codex/LexiStack/test/ui/board_test.dart: all four real groups win; active attempt resumes and replay is explicit
+00:21 +162: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real long labels and intended group interaction at Size(360.0, 640.0)/1.3
+00:21 +163: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 waits for successful platform transfer; failed copy never reports success
+00:22 +164: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-08 waits for successful platform transfer; failed copy never reports success
+00:24 +165: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-10 long groups, two-word tiles, 2 solves, full result and Settings Size(360.0, 640.0) scale=1.3 dark=true
+00:24 +166: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-10 long groups, two-word tiles, 2 solves, full result and Settings Size(360.0, 640.0) scale=1.3 dark=true
+00:25 +167: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:25 +168: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:26 +169: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:28 +170: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:28 +171: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:28 +172: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:28 +173: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:29 +174: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:31 +175: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:31 +176: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-12 enabled haptics map only successful outcomes, including rescue and rejected fifth/duplicate
+00:33 +177: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:33 +178: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:36 +179: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:36 +180: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09/12 disabled haptics suppress wrong solve booster rescue after reconstruction
+00:38 +181: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09/12 disabled haptics suppress wrong solve booster rescue after reconstruction
+00:38 +182: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:39 +183: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:39 +183: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-12 platform haptic failure cannot roll back a successful purchase
+Haptic feedback unavailable: PlatformException(unsupported, null, null, null)
+00:39 +184: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:40 +185: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:40 +186: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:40 +187: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:42 +188: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-03 Statistics finalized-only empty and completed values; back and Settings links
+00:42 +189: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-11 tile semantics unique, selected state and touch targets; four slots and lives
+00:43 +190: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-11 auditable normal-text contrast in both themes and all tiers
+00:43 +191: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-06 wrong shake affects selected tiles only, reduced=false
+00:43 +192: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-06/12 motion reduced=false never repeats settlement when interrupted
+00:45 +193: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-06 wrong shake affects selected tiles only, reduced=true
+00:45 +194: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-06/12 motion reduced=true never repeats settlement when interrupted
+00:47 +195: All tests passed!
+END 2026-10-29T11:18:06.7481940+01:00
+EXIT 0

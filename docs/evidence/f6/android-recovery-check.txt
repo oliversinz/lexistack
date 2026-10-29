@@ -1,0 +1,8 @@
+START 2026-10-29T11:48:37.0244665+01:00
+COMMAND python .dart_tool/f6-compare.py
+Cold launcher reload: entire JSON unchanged.
+Continue: same attempt a16; complete game snapshot unchanged (order, selection, RNG, guesses, hints, lives, mistakes).
+Wallet 90; six results unchanged; settings light / haptics true unchanged. Only normal entry/sequence counters advance.
+
+END 2026-10-29T11:48:37.2174170+01:00
+EXIT 0

@@ -1327,3 +1327,97 @@ protected contracts, application source, JSON assets, dependencies and tests
 remain unchanged. Tests/builds were not rerun for this documentation-only
 integration; accepted evidence remains in `docs/evidence/f5/`.
 **F6 has not started.**
+
+## F6 — Android release candidate implementation
+
+**Gate: F6 — Android Release Candidate & Final Verification.**
+**Decision: PENDING independent review.** No implementing-agent gate score or
+Experiment E winner is assigned. F1–F5 acceptance records above are unchanged.
+
+Starting accepted F5 main: `9aec6c82f5fd2e5d86ed4a98dcdf3e799c9ac873`.
+Feature branch: `codex/f6-android-release-candidate`.
+Implementation/packaging/capture checkpoint:
+`d5a83f3d0e2cc72cd491e0cc386e5237ce95169a`.
+Final submission: the subsequent evidence/documentation commit containing this
+section, identified by `git rev-parse origin/codex/f6-android-release-candidate`
+and the exact SHA in the final implementation report. Main remains at the
+accepted starting SHA; publication is feature-branch only, without a PR/merge.
+
+The supplied attachment was archived byte-for-byte as
+[prompts/F6-android-release-candidate-audit.md](../prompts/F6-android-release-candidate-audit.md).
+SHA-256: `21d8c0ef46f8722a33fefb893475a96db7621546b8dcd20d8d29302983d6adfc`.
+Agent: Codex / GPT-6 family; exact serving revision/effort unavailable.
+Execution date: October 29, 2026, UTC+1; recorded baseline starts 11:16,
+final full checks run 11:41:36–11:44:47; restoration confirmed again at 12:05.
+Subsequent work records evidence and publishes the branch. **Human rescue
+interventions: 0.** All corrections below occurred within this autonomous run.
+
+Verified environment: Windows 11 26H2/build 10.0.26300.9711, PowerShell 7.6.5,
+Git 2.55.0.windows.1, Flutter 3.47.8 (`737ba8f885`), Dart 3.13.7, Android SDK
+36.1.0, Gradle 9.3.1, Android Studio JBR 25.0.3; Pixel_10 Android 16/API 36,
+emulator 37.2.12, 1080×2424; installed Chrome 156.0.8078.73.
+
+[The F6 evidence index](evidence/f6/README.md) contains literal commands,
+stdout/stderr, native exit codes, timestamps, source identities, APK metadata,
+real browser/native observations, failure classifications and review mapping.
+The required baseline reproduced **195 passing tests** before production edits.
+Final commands all exit **0**: `flutter pub get`,
+`dart run tool/validate_levels.dart`, `dart analyze`,
+`flutter test --reporter expanded`, `dart run tool/check_prng.dart`,
+`flutter build web`, `flutter build apk --debug`, `flutter build apk --release`.
+Final suite: **197 passed**, all accepted tests preserved; strict validation:
+**40 levels / 160 categories / 640 tile positions, zero errors/warnings,
+initial benchmark PASS**. Analyzer reports no issues.
+
+- Added the missing SDK Flutter web target and reused the production PuzzleMark
+  for Android/web icons. Added omitted packaged font licenses, seven licensed
+  symbol/emoji glyphs for demonstrated missing-glyph defects, and local web
+  renderer/font fallbacks. No game rules, economics, storage, reference JSON,
+  content pin, accepted tests or architecture contracts changed. The only
+  production `lib/` change is the ThemeData font-fallback line.
+- The preferred Flutter Chrome PRNG runner failed on virtual import/Windows
+  test paths; its output is retained. The unchanged oracle was compiled to JS
+  and executed in actual Chrome: all eight values for seeds 1, 42, 20261028 and
+  2147483646 match; shuffle `11,15,6,0,12,13,1,7,14,8,5,3,9,4,2,10`, state
+  `1470087647`. Compile/browser CLI exits 0. Real Flutter web gameplay and reload
+  persistence worked; fresh asset requests were all local HTTP 200 with no
+  console errors/warnings. Offline browser reload failed and is not claimed.
+- Six [canonical screenshots](screenshots/) are genuine Flutter captures:
+  `01_home.png`, `02_board_selected.png`, `03_board_solved.png`, `04_result.png`,
+  `05_packs.png` at 390×844 and `06_desktop_frame.png` at 1280×800. Dimensions
+  independently checked and images visually inspected. Extra genuine scroll
+  captures expose remaining result facts/red herrings and level selection.
+- Native Android verified all four packs, taps, additive long-press tile/tray
+  drag, solve/trivia, wrong/One Away/duplicate protection, paid Pair/Peek, pending
+  loss without spoilers, affordable rescue, explicit final loss, rewards/stats,
+  Copy result confirmation and settings/haptic service behavior. Airplane mode
+  plus disabled Wi-Fi/mobile data produced no active network; Campaign and
+  Daily remained playable, including +50/+75 wins and +0 final loss.
+- Force-stop verified PID 26424 absent (expected `pidof` exit 1), then launcher
+  restart PID 28079. Attempt a16's order/selection/hints/lives/mistakes, wallet
+  and settings survived exactly; no repeat charge/reward. Warm resume retained
+  PID/state. System cold Displayed times: corrected debug first start 4.926 s,
+  later debug restart 4.458 s, release 1.433 s; single emulator observations.
+  Release APK also loaded Home/saved Daily offline. Original user profile was
+  restored byte-for-byte from the initial snapshot, final debug APK reinstalled,
+  original connectivity restored and original save hash confirmed after launch.
+- Release APK: 51,256,737 bytes; SHA-256
+  `d837a9bddc06bceb212855229452b726aa3ff15048a36e3048b85b1dc56f79a0`.
+  Package `de.cloudwards.lexistack`, version 0.1.0+1. **Release-mode compiled,
+  debug-signed verification APK — not a production-signed Play Store release.**
+  No signing secrets/build binaries are committed. All six locked blob hashes
+  and Content Contract ref/resolved SHA remain unchanged; the prompt's Daily
+  transcription typo was resolved using the authoritative reference lock.
+
+Remaining limits: independent acceptance and C/D/E comparison not performed;
+no production signing, physical-device/tactile validation or browser offline
+reload support. Windows C++ tooling is absent, so desktop build was not run.
+Nonfatal Java native-access, Cupertino font-tree-shaker and package-version
+warnings are retained. No unresolved required-probe engineering defect observed.
+Agent/tool issues (Windows wildcard reads, scaffold churn, early launcher/drag
+attempts, unavailable system glyph fallback, upstream 404 and two bulk-command
+policy rejections) were corrected autonomously; unsuccessful evidence remains.
+Raw logs and upstream license whitespace are preserved deliberately. Review
+covers ARC-01–04, CNT-01–11, ENG-01–12, ECO-01–09, DAY-01–06, PER-01–09,
+UI-01–12 and PLT-01–08 through the evidence map; CAT editorial work and final
+comparative scoring remain independent. **Await independent F6 review.**

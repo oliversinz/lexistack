@@ -1,0 +1,90 @@
+START 2026-10-29T11:44:13.1738742+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6app screenshot --filename docs/evidence/f6/browser-home.png; npx --yes --package @playwright/cli playwright-cli -s=f6app click f4e13; npx --yes --package @playwright/cli playwright-cli -s=f6app snapshot; npx --yes --package @playwright/cli playwright-cli -s=f6app screenshot --filename docs/evidence/f6/browser-restored-board.png; npx --yes --package @playwright/cli playwright-cli -s=f6app console
+### Result
+- [Screenshot of viewport](docs\evidence\f6\browser-home.png)
+### Ran Playwright code
+```js
+// Screenshot viewport and save it as docs\evidence\f6\browser-home.png
+await page.screenshot({
+  path: 'docs\\evidence\\f6\\browser-home.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: 'Continue Campaign' }).click();
+```
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-44-17-962Z.yml)
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+```yaml
+- generic [ref=f4e5] [cursor=pointer]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button "Back" [active] [ref=f4e48]
+              - heading "1 · Table Talk" [level=2] [ref=f4e49]
+              - generic [ref=f4e50]: 150 coins
+            - group:
+              - generic [ref=f4e51]: EVERYDAY ECHOES
+              - generic [ref=f4e52]: 4 of 4 lives
+              - generic [ref=f4e53]: 0 mistakes
+              - generic [ref=f4e54]: 2/4 found
+              - generic [ref=f4e55]: Tier 1 group, solved
+              - generic [ref=f4e56]: Tier 2 group, solved
+              - generic [ref=f4e57]: Tier 3 group, hidden
+              - generic [ref=f4e58]: Tier 4 group, hidden
+              - generic [ref=f4e59]: Find four words that belong together.
+              - button "Tier 1 · BREAKFAST BAKES" [ref=f4e60]
+              - button "Tier 2 · KITCHEN UTENSILS" [expanded] [ref=f4e61]
+              - generic [ref=f4e62]: FORK · SPOON · KNIFE · LADLE
+              - generic [ref=f4e63]: A ladle has a deep bowl designed for lifting and serving liquids such as soup.
+              - generic:
+                - generic:
+                  - button "LOVE" [ref=f4e64]
+                  - button "PAPER" [ref=f4e65]
+                  - button "VOLLEY" [ref=f4e66]
+                  - button "TRAFFIC" [ref=f4e67]
+                  - button "DEUCE" [ref=f4e68]
+                  - button "PEARL" [ref=f4e69]
+                  - button "SERVE" [ref=f4e70]
+                  - button "LOG" [ref=f4e71]
+              - generic [ref=f4e72]: BOOSTERS · PAY ONLY ON SUCCESS
+              - button "Pair Magnet · 30" [ref=f4e73]
+              - button "Category Peek · 40" [ref=f4e74]
+              - button "Extra Life · 60" [disabled] [ref=f4e75]
+              - generic [ref=f4e76]: Tap to toggle. Hold a word, then drag it onto another word or the selection tray.
+              - button "Back to level" [ref=f4e77]
+            - generic [ref=f4e78]: "Selection tray, 0 of 4:"
+            - button "Submit" [disabled] [ref=f4e79]
+            - button "Shuffle" [ref=f4e80]
+            - button "Deselect" [disabled] [ref=f4e81]
+            - button "Boosters" [ref=f4e82]
+```
+### Result
+- [Screenshot of viewport](docs\evidence\f6\browser-restored-board.png)
+### Ran Playwright code
+```js
+// Screenshot viewport and save it as docs\evidence\f6\browser-restored-board.png
+await page.screenshot({
+  path: 'docs\\evidence\\f6\\browser-restored-board.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Result
+Total messages: 1 (Errors: 0, Warnings: 0)
+Returning 0 messages for level "info"
+
+END 2026-10-29T11:44:25.2383110+01:00
+EXIT 0

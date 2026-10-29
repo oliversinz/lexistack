@@ -1,0 +1,7 @@
+START 2026-10-29T11:36:58.1978775+01:00
+COMMAND dart format test/ui/f6_capture_test.dart tool/generate_icons.dart lib/ui/theme.dart
+Formatted test/ui/f6_capture_test.dart
+Formatted tool/generate_icons.dart
+Formatted 3 files (2 changed) in 0.02 seconds.
+END 2026-10-29T11:36:59.4739851+01:00
+EXIT 0

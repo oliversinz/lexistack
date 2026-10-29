@@ -1,0 +1,3 @@
+Cold launcher reload: entire JSON unchanged.
+Continue: same attempt a16; complete game snapshot unchanged (order, selection, RNG, guesses, hints, lives, mistakes).
+Wallet 90; six results unchanged; settings light / haptics true unchanged. Only normal entry/sequence counters advance.

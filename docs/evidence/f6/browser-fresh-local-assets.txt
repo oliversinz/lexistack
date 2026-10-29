@@ -1,0 +1,38 @@
+START 2026-10-29T11:46:05.9281255+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6local open http://127.0.0.1:8765 --browser chrome; npx --yes --package @playwright/cli playwright-cli -s=f6local requests --static; npx --yes --package @playwright/cli playwright-cli -s=f6local console
+### Browser `f6local` opened with pid 37452.
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:8765');
+```
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-46-09-594Z.yml)
+### Result
+1. [GET] http://127.0.0.1:8765/ => [200] OK
+2. [GET] http://127.0.0.1:8765/flutter_bootstrap.js => [200] OK
+3. [GET] http://127.0.0.1:8765/canvaskit/chromium/canvaskit.wasm => [200] OK
+4. [GET] http://127.0.0.1:8765/canvaskit/chromium/canvaskit.js => [200] OK
+5. [GET] http://127.0.0.1:8765/main.dart.js => [200] OK
+6. [GET] http://127.0.0.1:8765/assets/FontManifest.json => [200] OK
+7. [GET] http://127.0.0.1:8765/assets/fonts/MaterialIcons-Regular.otf => [200] OK
+8. [GET] http://127.0.0.1:8765/assets/assets/fonts/fraunces.ttf => [200] OK
+9. [GET] http://127.0.0.1:8765/assets/assets/fonts/dmsans.ttf => [200] OK
+10. [GET] http://127.0.0.1:8765/assets/assets/fonts/dmsans.ttf => [200] OK
+11. [GET] http://127.0.0.1:8765/assets/assets/fonts/symbols.ttf => [200] OK
+12. [GET] http://127.0.0.1:8765/assets/assets/fonts/emoji.ttf => [200] OK
+13. [GET] http://127.0.0.1:8765/favicon.png => [200] OK
+14. [GET] http://127.0.0.1:8765/assets/assets/levels/manifest.json => [200] OK
+15. [GET] http://127.0.0.1:8765/assets/assets/levels/pack1.json => [200] OK
+16. [GET] http://127.0.0.1:8765/assets/assets/levels/pack2.json => [200] OK
+17. [GET] http://127.0.0.1:8765/assets/assets/levels/pack3.json => [200] OK
+18. [GET] http://127.0.0.1:8765/assets/assets/levels/pack4.json => [200] OK
+19. [GET] http://127.0.0.1:8765/assets/assets/levels/daily.json => [200] OK
+### Result
+Total messages: 1 (Errors: 0, Warnings: 0)
+Returning 0 messages for level "info"
+
+END 2026-10-29T11:46:13.7269213+01:00
+EXIT 0

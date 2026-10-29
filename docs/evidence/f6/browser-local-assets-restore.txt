@@ -1,0 +1,67 @@
+START 2026-10-29T11:40:10.7351725+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6app click f1e13; npx --yes --package @playwright/cli playwright-cli -s=f6app snapshot
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: 'Continue Campaign' }).click();
+```
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-40-13-406Z.yml)
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+```yaml
+- generic [ref=f1e5]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button "Back" [active] [ref=f1e48]
+              - heading "1 · Table Talk" [level=2] [ref=f1e49]
+              - generic [ref=f1e50]: 150 coins
+            - group:
+              - generic [ref=f1e51]: EVERYDAY ECHOES
+              - generic [ref=f1e52]: 4 of 4 lives
+              - generic [ref=f1e53]: 0 mistakes
+              - generic [ref=f1e54]: 1/4 found
+              - generic [ref=f1e55]: Tier 1 group, solved
+              - generic [ref=f1e56]: Tier 2 group, hidden
+              - generic [ref=f1e57]: Tier 3 group, hidden
+              - generic [ref=f1e58]: Tier 4 group, hidden
+              - generic [ref=f1e59]: Find four words that belong together.
+              - button "Tier 1 · BREAKFAST BAKES" [expanded] [ref=f1e60]
+              - generic [ref=f1e61]: TOAST · WAFFLE · MUFFIN · BAGEL
+              - generic [ref=f1e62]: A bagel is traditionally boiled before baking, which helps create its chewy crust.
+              - generic:
+                - generic:
+                  - button "SPOON" [ref=f1e63]
+                  - button "FORK" [ref=f1e64]
+                  - button "LOVE" [ref=f1e65]
+                  - button "PAPER" [ref=f1e66]
+                  - button "VOLLEY" [ref=f1e67]
+                  - button "TRAFFIC" [ref=f1e68]
+                  - button "DEUCE" [ref=f1e69]
+                  - button "PEARL" [ref=f1e70]
+                  - button "KNIFE" [ref=f1e71]
+                  - button "LADLE" [ref=f1e72]
+                  - button "SERVE" [ref=f1e73]
+                  - button "LOG" [ref=f1e74]
+              - generic [ref=f1e75]: BOOSTERS · PAY ONLY ON SUCCESS
+              - button "Pair Magnet · 30" [ref=f1e76]
+              - button "Category Peek · 40" [ref=f1e77]
+              - button "Extra Life · 60" [disabled] [ref=f1e78]
+              - generic [ref=f1e79]: Tap to toggle. Hold a word, then drag it onto another word or the selection tray.
+              - button "Back to level" [ref=f1e80]
+            - generic [ref=f1e81]: "Selection tray, 0 of 4:"
+            - button "Submit" [disabled] [ref=f1e82]
+            - button "Shuffle" [ref=f1e83]
+            - button "Deselect" [disabled] [ref=f1e84]
+            - button "Boosters" [ref=f1e85]
+```
+END 2026-10-29T11:40:15.4851972+01:00
+EXIT 0

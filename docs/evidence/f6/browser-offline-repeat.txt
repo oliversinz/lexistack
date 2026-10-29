@@ -1,0 +1,34 @@
+START 2026-10-29T11:42:43.7995032+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6app network-state-set offline; npx --yes --package @playwright/cli playwright-cli -s=f6app reload; npx --yes --package @playwright/cli playwright-cli -s=f6app snapshot
+### Result
+Network is now offline
+### Ran Playwright code
+```js
+await page.context().setOffline(true);
+```
+### Error
+Error: net::ERR_INTERNET_DISCONNECTED
+Call log:
+[2m  - waiting for navigation until "load"[22m
+
+### Page
+- Page URL: chrome-error://chromewebdata/
+- Page Title: 127.0.0.1
+### Snapshot
+```yaml
+- generic [ref=f2e3]:
+  - generic [ref=f2e5]:
+    - heading "Press space to play" [level=1] [ref=f2e6]
+    - generic [ref=f2e7]:
+      - paragraph [ref=f2e8]: "Try:"
+      - list [ref=f2e9]:
+        - listitem [ref=f2e10]: Checking the network cables, modem, and router
+        - listitem [ref=f2e11]: Reconnecting to Wi-Fi
+        - listitem [ref=f2e12]:
+          - link "Running Windows Network Diagnostics" [ref=f2e13] [cursor=pointer]:
+            - /url: javascript:diagnoseErrors()
+    - generic [ref=f2e14]: ERR_INTERNET_DISCONNECTED
+  - application "Dino game, press space to play" [ref=f2e16]
+```
+END 2026-10-29T11:42:50.5081865+01:00
+EXIT 0

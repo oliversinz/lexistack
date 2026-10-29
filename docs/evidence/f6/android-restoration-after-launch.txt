@@ -1,0 +1,6 @@
+START 2026-10-29T12:05:02.8794396+01:00
+COMMAND python .dart_tool/f6_android.py state android-final-original
+{"version": 1, "coins": 35, "sequence": 13, "campaign": {"pack1_lvl01": {"bestStars": 1, "practicePaid": false}, "pack2_lvl01": {"bestStars": 3, "practicePaid": false}, "pack3_lvl01": {"bestStars": 3, "practicePaid": false}}, "daily": {}, "bestDailyStreak": 0, "settings": {"theme": "dark", "haptics": false}, "retiredIds": [], "rewardLocks": [], "unavailableDaily": []}
+DataStore SHA256 ef99d01130b7781ed28a0903c5facffc37c3271d42c455be626335d29536eb9a
+END 2026-10-29T12:05:03.1984275+01:00
+EXIT 0

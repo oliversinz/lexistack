@@ -1,0 +1,14 @@
+START 2026-10-29T11:27:13.0020899+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6oracle eval "() => ({userAgent:navigator.userAgent,result:document.body.dataset.result,output:document.querySelector('pre').textContent})"
+### Result
+{
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+  "result": "pass",
+  "output": "Seed 1: [16807, 282475249, 1622650073, 984943658, 1144108930, 470211272, 101027544, 1457850878] OK\nSeed 42: [705894, 1126542223, 1579310009, 565444343, 807934826, 421520601, 2095673201, 1100194760] OK\nSeed 20261028: [1224681370, 1736512742, 1266892064, 354559643, 1964283123, 440342930, 614976948, 78772025] OK\nSeed 2147483646: [2147466840, 1865008398, 524833574, 1162539989, 1003374717, 1677272375, 2046456103, 689632769] OK\nF2 default seed board indexes: [11, 15, 6, 0, 12, 13, 1, 7, 14, 8, 5, 3, 9, 4, 2, 10]; state 1470087647 OK\n"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({userAgent:navigator.userAgent,result:document.body.dataset.result,output:document.querySelector(\'pre\').textContent})');
+```
+END 2026-10-29T11:27:16.0490003+01:00
+EXIT 0

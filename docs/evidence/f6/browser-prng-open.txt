@@ -1,0 +1,17 @@
+START 2026-10-29T11:27:09.6834927+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6oracle open http://127.0.0.1:8766 --browser chrome
+### Browser `f6oracle` opened with pid 15148.
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:8766');
+```
+### Page
+- Page URL: http://127.0.0.1:8766/
+- Page Title: LexiStack production PRNG golden vectors
+- Console: 1 errors, 0 warnings
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-27-12-948Z.yml)
+### Events
+- New console entries: .playwright-cli\console-2026-10-29T10-27-12-630Z.log#L1-L6
+END 2026-10-29T11:27:12.9984082+01:00
+EXIT 0

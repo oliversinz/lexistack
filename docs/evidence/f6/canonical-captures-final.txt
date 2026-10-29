@@ -1,0 +1,20 @@
+START 2026-10-29T11:36:59.4765450+01:00
+COMMAND flutter test test/ui/f6_capture_test.dart --dart-define=CAPTURE=true --reporter expanded
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/ui/f6_capture_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: PLT-07 phone captures from real catalog and settled transitions
+00:04 +1: PLT-07 desktop production board centered at width 460
+00:05 +2: (tearDownAll)
+00:05 +2: All tests passed!
+END 2026-10-29T11:37:10.4855298+01:00
+EXIT 0

@@ -1,0 +1,111 @@
+Pending loss concealed all answers/facts; 60-coin rescue preserved attempt/state; final loss +0, seven results; warm resume identical: OK
+10-28 19:01:50.929 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:41:20.275 W/ActivityTaskManager(  751): Force removing ActivityRecord{57545957 u0 de.cloudwards.lexistack/.MainActivity t15 f}}: app died, no saved state
+10-28 19:41:40.043 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:48:34.221 W/ActivityTaskManager(  751): Force removing ActivityRecord{41122113 u0 de.cloudwards.lexistack/.MainActivity t16 f}}: app died, no saved state
+10-28 19:48:38.541 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:50:37.066 W/ActivityTaskManager(  751): Force removing ActivityRecord{79395902 u0 de.cloudwards.lexistack/.MainActivity t17 f}}: app died, no saved state
+10-28 19:50:40.437 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 19:55:06.171 W/ActivityTaskManager(  751): Force removing ActivityRecord{16626703 u0 de.cloudwards.lexistack/.MainActivity t18 f}}: app died, no saved state
+10-28 19:55:10.144 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 20:03:13.208 W/ActivityTaskManager(  751): Force removing ActivityRecord{203393962 u0 de.cloudwards.lexistack/.MainActivity t19 f}}: app died, no saved state
+10-28 20:03:17.299 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 20:03:25.564 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +8s332ms
+10-28 20:03:25.564 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +8s332ms
+10-28 20:03:36.899 W/ActivityTaskManager(  751): Force removing ActivityRecord{108110197 u0 de.cloudwards.lexistack/.MainActivity t20 f}}: app died, no saved state
+10-28 20:04:29.586 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-28 20:04:34.829 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s252ms
+10-28 20:04:34.833 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +5s252ms
+10-28 20:10:42.606 I/ActivityTaskManager(  751): moveTaskToBack: Task{55b9f7b #21 type=standard I=de.cloudwards.lexistack/.MainActivity}
+10-28 20:11:10.823 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+10-29 09:24:41.376 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+10-29 09:27:38.434 W/ActivityTaskManager(  751): Force removing ActivityRecord{249985802 u0 de.cloudwards.lexistack/.MainActivity t21 f}}: app died, no saved state
+10-29 09:36:09.261 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 09:36:14.141 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s891ms
+10-29 09:36:14.141 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s891ms
+10-29 09:46:15.152 W/ActivityTaskManager(  751): Force removing ActivityRecord{167401648 u0 de.cloudwards.lexistack/.MainActivity t23 f}}: app died, no saved state
+10-29 09:46:26.916 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 09:46:31.641 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s739ms
+10-29 09:46:31.642 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s739ms
+10-29 09:48:26.549 E/AndroidRuntime(24035): FATAL EXCEPTION: main
+10-29 09:48:26.549 E/AndroidRuntime(24035): PID: 24035
+10-29 09:48:26.549 E/AndroidRuntime(24035): java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@b2b067falready registered!
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3381)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.os.Parcel.createException(Parcel.java:3357)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.os.Parcel.readException(Parcel.java:3340)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.os.Parcel.readException(Parcel.java:3282)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.view.accessibility.IAccessibilityManager$Stub$Proxy.registerUiTestAutomationService(IAccessibilityManager.java:1209)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.app.UiAutomationConnection.registerUiTestAutomationServiceLocked(UiAutomationConnection.java:689)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.app.UiAutomationConnection.connect(UiAutomationConnection.java:117)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.app.UiAutomation.connectWithTimeout(UiAutomation.java:390)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.app.UiAutomation.connect(UiAutomation.java:335)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.uiautomator.core.UiAutomationShellWrapper.connect(UiAutomationShellWrapper.java:36)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:78)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:366)
+10-29 09:48:26.549 E/AndroidRuntime(24035): Caused by: android.os.RemoteException: Remote stack trace:
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.server.accessibility.UiAutomationManager.registerUiTestAutomationServiceLocked(UiAutomationManager.java:109)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at com.android.server.accessibility.AccessibilityManagerService.registerUiTestAutomationService(AccessibilityManagerService.java:1715)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.view.accessibility.IAccessibilityManager$Stub.onTransact(IAccessibilityManager.java:595)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 	at android.os.Binder.execTransact(Binder.java:1418)
+10-29 09:48:26.549 E/AndroidRuntime(24035): 
+10-29 09:48:26.550 E/AndroidRuntime(24035): Couldn't report crash. Here's the crash:
+10-29 09:48:26.550 E/AndroidRuntime(24035): java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@b2b067falready registered!
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3381)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.os.Parcel.createException(Parcel.java:3357)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.os.Parcel.readException(Parcel.java:3340)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.os.Parcel.readException(Parcel.java:3282)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.view.accessibility.IAccessibilityManager$Stub$Proxy.registerUiTestAutomationService(IAccessibilityManager.java:1209)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.app.UiAutomationConnection.registerUiTestAutomationServiceLocked(UiAutomationConnection.java:689)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.app.UiAutomationConnection.connect(UiAutomationConnection.java:117)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.app.UiAutomation.connectWithTimeout(UiAutomation.java:390)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.app.UiAutomation.connect(UiAutomation.java:335)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.uiautomator.core.UiAutomationShellWrapper.connect(UiAutomationShellWrapper.java:36)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:78)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:366)
+10-29 09:48:26.550 E/AndroidRuntime(24035): Caused by: android.os.RemoteException: Remote stack trace:
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.server.accessibility.UiAutomationManager.registerUiTestAutomationServiceLocked(UiAutomationManager.java:109)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at com.android.server.accessibility.AccessibilityManagerService.registerUiTestAutomationService(AccessibilityManagerService.java:1715)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.view.accessibility.IAccessibilityManager$Stub.onTransact(IAccessibilityManager.java:595)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 	at android.os.Binder.execTransact(Binder.java:1418)
+10-29 09:48:26.550 E/AndroidRuntime(24035): 
+10-29 09:48:26.552 E/AndroidRuntime(24035): Error reporting crash. Here's the error:
+10-29 09:48:26.552 E/AndroidRuntime(24035): java.lang.RuntimeException: Bad file descriptor
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at android.os.BinderProxy.transactNative(Native Method)
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at android.os.BinderProxy.transact(BinderProxy.java:599)
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at android.app.IActivityManager$Stub$Proxy.handleApplicationCrash(IActivityManager.java:6179)
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at com.android.internal.os.RuntimeInit$KillApplicationHandler.uncaughtException(RuntimeInit.java:165)
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1098)
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1093)
+10-29 09:48:26.552 E/AndroidRuntime(24035): 	at java.lang.Thread.dispatchUncaughtException(Thread.java:3377)
+10-29 09:50:32.231 W/ActivityTaskManager(  751): Force removing ActivityRecord{73498893 u0 de.cloudwards.lexistack/.MainActivity t24 f}}: app died, no saved state
+10-29 09:50:51.475 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 09:50:55.568 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s113ms
+10-29 09:50:55.568 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s113ms
+10-29 11:22:47.489 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+10-29 11:34:31.399 W/ActivityTaskManager(  751): Force removing ActivityRecord{150750862 u0 de.cloudwards.lexistack/.MainActivity t25 f}}: app died, no saved state
+10-29 11:34:55.980 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 11:35:01.161 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s195ms
+10-29 11:35:01.162 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +5s195ms
+10-29 11:36:07.836 W/ActivityTaskManager(  751): Force removing ActivityRecord{187356238 u0 de.cloudwards.lexistack/.MainActivity t26 f}}: app died, no saved state
+10-29 11:37:48.800 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 11:37:53.825 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +5s34ms
+10-29 11:37:53.825 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +5s34ms
+10-29 11:39:28.715 W/ActivityTaskManager(  751): Force removing ActivityRecord{105627945 u0 de.cloudwards.lexistack/.MainActivity t27 f}}: app died, no saved state
+10-29 11:39:33.064 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 11:39:37.976 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s926ms
+10-29 11:39:37.977 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s926ms
+10-29 11:46:46.669 W/ActivityTaskManager(  751): Force removing ActivityRecord{16068810 u0 de.cloudwards.lexistack/.MainActivity t28 f}}: app died, no saved state
+10-29 11:46:50.792 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 11:46:55.241 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +4s458ms
+10-29 11:46:55.241 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +4s458ms
+10-29 11:56:05.489 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+10-29 11:56:12.105 W/ActivityTaskManager(  751): Force removing ActivityRecord{225565618 u0 de.cloudwards.lexistack/.MainActivity t29 f}}: app died, no saved state
+10-29 11:56:46.214 I/ActivityTaskManager(  751): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=de.cloudwards.lexistack/.MainActivity bnds=[285,979][540,1262]} with LAUNCH_SINGLE_TOP from uid 10191 (com.google.android.apps.nexuslauncher) (sr=260527566) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-29 11:56:47.634 I/ActivityTaskManager(  751): Displayed de.cloudwards.lexistack/.MainActivity for user 0: +1s433ms
+10-29 11:56:47.634 I/ActivityTaskManager(  751): Fully drawn de.cloudwards.lexistack/.MainActivity: +1s433ms

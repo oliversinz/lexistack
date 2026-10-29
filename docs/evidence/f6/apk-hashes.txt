@@ -1,0 +1,14 @@
+START 2026-10-29T11:47:08.8383608+01:00
+COMMAND Get-FileHash build/app/outputs/flutter-apk/app-debug.apk,build/app/outputs/flutter-apk/app-release.apk | Format-List | Out-String
+
+Algorithm : SHA256
+Hash      : 3B90C8DA1F35401E0B5D87D3F258A6F4FF9410C4587EFDCB11356C348C228EF4
+Path      : C:\Codex\LexiStack\build\app\outputs\flutter-apk\app-debug.apk
+
+Algorithm : SHA256
+Hash      : D837A9BDDC06BCEB212855229452B726AA3FF15048A36E3048B85B1DC56F79A0
+Path      : C:\Codex\LexiStack\build\app\outputs\flutter-apk\app-release.apk
+
+
+END 2026-10-29T11:47:09.2784725+01:00
+EXIT 

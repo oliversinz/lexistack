@@ -1,0 +1,58 @@
+START 2026-10-29T11:38:56.5009217+01:00
+COMMAND npx --yes --package @playwright/cli playwright-cli -s=f6app reload; npx --yes --package @playwright/cli playwright-cli -s=f6app snapshot; npx --yes --package @playwright/cli playwright-cli -s=f6app requests --static
+### Ran Playwright code
+```js
+await page.reload();
+```
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+- [Snapshot](.playwright-cli\page-2026-10-29T10-38-59-061Z.yml)
+### Page
+- Page URL: http://127.0.0.1:8765/
+- Page Title: LexiStack
+### Snapshot
+```yaml
+- button "Enable accessibility" [ref=f1e1]
+```
+### Result
+1. [GET] http://127.0.0.1:8765/ => [200] OK
+2. [GET] http://127.0.0.1:8765/flutter_bootstrap.js => [200] OK
+3. [GET] https://www.gstatic.com/flutter-canvaskit/cf636b1dfb818dd6a3ff16e390e93b1a036969c8/chromium/canvaskit.wasm => [200] 
+4. [GET] https://www.gstatic.com/flutter-canvaskit/cf636b1dfb818dd6a3ff16e390e93b1a036969c8/chromium/canvaskit.js => [200] 
+5. [GET] http://127.0.0.1:8765/main.dart.js => [200] OK
+6. [GET] http://127.0.0.1:8765/favicon.png => [200] OK
+7. [GET] http://127.0.0.1:8765/assets/FontManifest.json => [200] OK
+8. [GET] http://127.0.0.1:8765/assets/fonts/MaterialIcons-Regular.otf => [200] OK
+9. [GET] http://127.0.0.1:8765/assets/assets/fonts/fraunces.ttf => [200] OK
+10. [GET] http://127.0.0.1:8765/assets/assets/fonts/dmsans.ttf => [200] OK
+11. [GET] https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2 => [200] 
+12. [GET] http://127.0.0.1:8765/assets/assets/levels/manifest.json => [200] OK
+13. [GET] http://127.0.0.1:8765/assets/assets/levels/pack1.json => [200] OK
+14. [GET] http://127.0.0.1:8765/assets/assets/levels/pack2.json => [200] OK
+15. [GET] http://127.0.0.1:8765/assets/assets/levels/pack3.json => [200] OK
+16. [GET] http://127.0.0.1:8765/assets/assets/levels/pack4.json => [200] OK
+17. [GET] http://127.0.0.1:8765/assets/assets/levels/daily.json => [200] OK
+18. [GET] https://fonts.gstatic.com/s/notosanssymbols2/v24/I_uyMoGduATTei9eI8daxVHDyfisHr71-vrgfE71.woff2 => [200] 
+19. [GET] http://127.0.0.1:8765/ => [200] OK
+20. [GET] http://127.0.0.1:8765/flutter_bootstrap.js => [200] OK
+21. [GET] http://127.0.0.1:8765/canvaskit/chromium/canvaskit.wasm => [200] OK
+22. [GET] http://127.0.0.1:8765/canvaskit/chromium/canvaskit.js => [200] OK
+23. [GET] http://127.0.0.1:8765/main.dart.js => [200] OK
+24. [GET] http://127.0.0.1:8765/assets/FontManifest.json => [200] OK
+25. [GET] http://127.0.0.1:8765/assets/fonts/MaterialIcons-Regular.otf => [200] OK
+26. [GET] http://127.0.0.1:8765/assets/assets/fonts/fraunces.ttf => [200] OK
+27. [GET] http://127.0.0.1:8765/assets/assets/fonts/dmsans.ttf => [200] OK
+28. [GET] http://127.0.0.1:8765/assets/assets/fonts/dmsans.ttf => [200] OK
+29. [GET] http://127.0.0.1:8765/assets/assets/fonts/symbols.ttf => [200] OK
+30. [GET] http://127.0.0.1:8765/assets/assets/fonts/emoji.ttf => [200] OK
+31. [GET] http://127.0.0.1:8765/favicon.png => [200] OK
+32. [GET] http://127.0.0.1:8765/assets/assets/levels/manifest.json => [200] OK
+33. [GET] http://127.0.0.1:8765/assets/assets/levels/pack1.json => [200] OK
+34. [GET] http://127.0.0.1:8765/assets/assets/levels/pack2.json => [200] OK
+35. [GET] http://127.0.0.1:8765/assets/assets/levels/pack3.json => [200] OK
+36. [GET] http://127.0.0.1:8765/assets/assets/levels/pack4.json => [200] OK
+37. [GET] http://127.0.0.1:8765/assets/assets/levels/daily.json => [200] OK
+END 2026-10-29T11:39:03.2536954+01:00
+EXIT 0

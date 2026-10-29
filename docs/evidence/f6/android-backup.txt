@@ -1,0 +1,14 @@
+START 2026-10-29T11:18:00.9792792+01:00
+COMMAND & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 emu avd snapshot save f6-before-verification; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 exec-out run-as de.cloudwards.lexistack cat files/datastore/FlutterSharedPreferences.preferences_pb > .dart_tool/f6-user-before.pb; Get-FileHash .dart_tool/f6-user-before.pb; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell settings get global airplane_mode_on; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell settings get global wifi_on; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell settings get global mobile_data
+OK
+
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          EF99D01130B7781ED28A0903C5FACFFC37C3271D42C455BE626335D29536EB9A       C:\Codex\LexiStack\.dart_tool\f6…
+0
+1
+1
+
+END 2026-10-29T11:18:12.3375158+01:00
+EXIT 0

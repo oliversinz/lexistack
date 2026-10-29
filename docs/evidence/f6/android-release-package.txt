@@ -1,0 +1,135 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        6849f0e de.cloudwards.lexistack/.MainActivity filter 1c22d2f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        acbbf3c de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter 9ce6d4b
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        acbbf3c de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter 16ce4c5
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        acbbf3c de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter e6f9e1a
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        acbbf3c de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter 5339328
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (4ff0860):
+    sourcePackage=de.cloudwards.lexistack
+    uid=10227 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f640119 de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  de.cloudwards.lexistack/androidx.startup.InitializationProvider:
+    Provider{84045de de.cloudwards.lexistack/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [de.cloudwards.lexistack.androidx-startup]:
+    Provider{84045de de.cloudwards.lexistack/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5b93bf de.cloudwards.lexistack}
+
+Key Set Manager:
+  [de.cloudwards.lexistack]
+      Signing KeySets: 65
+
+Packages:
+  Package [de.cloudwards.lexistack] (51b6f6c):
+    appId=10227
+    pkg=Package{2bc4a8c de.cloudwards.lexistack}
+    codePath=/data/app/~~f_1qMlont1Rno3xy9e-2PQ==/de.cloudwards.lexistack-ddvqEXkSdXM05bx9sEDA1A==
+    resourcePath=/data/app/~~f_1qMlont1Rno3xy9e-2PQ==/de.cloudwards.lexistack-ddvqEXkSdXM05bx9sEDA1A==
+    legacyNativeLibraryDir=/data/app/~~f_1qMlont1Rno3xy9e-2PQ==/de.cloudwards.lexistack-ddvqEXkSdXM05bx9sEDA1A==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=0.1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.PROCESS_TEXT dat=content://*/... typ=text/plain }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2026-10-29 11:56:11
+    lastUpdateTime=2026-10-29 11:56:12
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{59a4b99 version:2, signatures:[702eb5f5], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=353363 deDataInode=131077 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/de.cloudwards.lexistack
+      firstInstallTime=2026-10-28 16:06:50
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/EmulationPixel10/EmulationPixel10Overlay.apk
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      legacy overlay paths:
+        /product/overlay/EmulationPixel10/EmulationPixel10Overlay.apk
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.as:
+      de.cloudwards.lexistack
+    com.google.android.settings.intelligence:
+      de.cloudwards.lexistack
+    com.google.android.apps.accessibility.voiceaccess:
+      de.cloudwards.lexistack
+    de.cloudwards.lexistack:
+      com.google.android.googlequicksearchbox
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.android.settings,com.android.dynsystem,com.android.emulator.multidisplay,com.android.localtransport,com.android.DeviceAsWebcam,com.android.location.fused,com.android.providers.settings,android,com.android.keychain,com.android.inputdevices]:
+        de.cloudwards.lexistack
+      com.google.android.inputmethod.latin:
+        de.cloudwards.lexistack
+  queryable via uses-library:
+
+Dexopt state:
+  [de.cloudwards.lexistack]
+    path: /data/app/~~f_1qMlont1Rno3xy9e-2PQ==/de.cloudwards.lexistack-ddvqEXkSdXM05bx9sEDA1A==/base.apk
+      x86_64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~f_1qMlont1Rno3xy9e-2PQ==/de.cloudwards.lexistack-ddvqEXkSdXM05bx9sEDA1A==/oat/x86_64/base.odex]
+

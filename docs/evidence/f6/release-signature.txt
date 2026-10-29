@@ -1,0 +1,13 @@
+START 2026-10-29T11:47:09.2813225+01:00
+COMMAND & "$env:LOCALAPPDATA/Android/sdk/build-tools/36.1.0/apksigner.bat" verify --print-certs build/app/outputs/flutter-apk/app-release.apk
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/C:/Users/olive/AppData/Local/Android/Sdk/build-tools/36.1.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: e8303f43f63283012bbe9d1b78689be3d6591c19811ae37a3130900e7519f8f3
+Signer #1 certificate SHA-1 digest: 8dc6509c9df5987ef7131abf360804a46f96bbb5
+Signer #1 certificate MD5 digest: 5620bbb4c88b3ece123e0c9e098b03f0
+END 2026-10-29T11:47:09.7611061+01:00
+EXIT 0

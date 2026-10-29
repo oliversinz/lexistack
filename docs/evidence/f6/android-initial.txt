@@ -1,0 +1,149 @@
+START 2026-10-29T11:17:00.0361685+01:00
+COMMAND & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" devices -l; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell getprop ro.build.version.release; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell getprop ro.build.version.sdk; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell wm size; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell pm list users; & "$env:LOCALAPPDATA/Android/sdk/platform-tools/adb.exe" -s emulator-5554 shell dumpsys package de.cloudwards.lexistack
+List of devices attached
+emulator-5554          device product:sdk_gphone64_x86_64 model:sdk_gphone64_x86_64 device:emu64xa transport_id:2
+
+16
+36
+Physical size: 1080x2424
+Users:
+	UserInfo{0:null:4c13} running
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        1b38700 de.cloudwards.lexistack/.MainActivity filter 692ab39
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        3b4757e de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter a69c1f5
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        3b4757e de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter d169adf
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        3b4757e de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter d4a132c
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        3b4757e de.cloudwards.lexistack/androidx.profileinstaller.ProfileInstallReceiver filter 9e6b8a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c0d6d74):
+    sourcePackage=de.cloudwards.lexistack
+    uid=10227 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4c9229d de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  de.cloudwards.lexistack/androidx.startup.InitializationProvider:
+    Provider{49dc312 de.cloudwards.lexistack/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [de.cloudwards.lexistack.androidx-startup]:
+    Provider{49dc312 de.cloudwards.lexistack/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{a87bae3 de.cloudwards.lexistack}
+
+Key Set Manager:
+  [de.cloudwards.lexistack]
+      Signing KeySets: 65
+
+Packages:
+  Package [de.cloudwards.lexistack] (1ae9966):
+    appId=10227
+    pkg=Package{54dece0 de.cloudwards.lexistack}
+    codePath=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==
+    resourcePath=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==
+    legacyNativeLibraryDir=/data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=0.1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.PROCESS_TEXT dat=content://*/... typ=text/plain }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2026-10-29 09:46:15
+    lastUpdateTime=2026-10-29 09:46:15
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{59a4b99 version:2, signatures:[702eb5f5], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.INTERNET
+      de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      android.permission.INTERNET: granted=true
+      de.cloudwards.lexistack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=353363 deDataInode=131077 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/de.cloudwards.lexistack
+      firstInstallTime=2026-10-28 16:06:50
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/EmulationPixel10/EmulationPixel10Overlay.apk
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      legacy overlay paths:
+        /product/overlay/EmulationPixel10/EmulationPixel10Overlay.apk
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.as:
+      de.cloudwards.lexistack
+    com.google.android.settings.intelligence:
+      de.cloudwards.lexistack
+    com.google.android.apps.accessibility.voiceaccess:
+      de.cloudwards.lexistack
+    de.cloudwards.lexistack:
+      com.google.android.googlequicksearchbox
+  queryable via interaction:
+    User 0:
+      [com.android.server.telecom,com.android.settings,com.android.dynsystem,com.android.emulator.multidisplay,com.android.localtransport,com.android.DeviceAsWebcam,com.android.location.fused,com.android.providers.settings,android,com.android.keychain,com.android.inputdevices]:
+        de.cloudwards.lexistack
+      com.google.android.inputmethod.latin:
+        de.cloudwards.lexistack
+  queryable via uses-library:
+
+Dexopt state:
+  [de.cloudwards.lexistack]
+    path: /data/app/~~Cv5NjrofqeuRK54peJd0hw==/de.cloudwards.lexistack-5WABNyj8ZqPV1_X_rW9Hqg==/base.apk
+      x86_64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]
+END 2026-10-29T11:17:02.4856636+01:00
+EXIT 0
