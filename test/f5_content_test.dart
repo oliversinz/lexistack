@@ -45,21 +45,69 @@ void main() {
     // Git blob identities from release ba005009089ca54a1d4c203f218e37cfaae62f6e.
     // Pack 5 SHA-256: 46e38caf79689b253b353fd52dd73b95fb84e9e721cff596dba56927f6ad708f.
     for (final entry in {
-      'manifest.json': 'e48a157f7da4f00351cef702a8672314084e0ddf',
-      'pack5.json': 'ec83e117ed694008b964ae7630b783bcb5ab09fd',
+      'test/fixtures/pack5-manifest.json':
+          'e48a157f7da4f00351cef702a8672314084e0ddf',
+      'assets/levels/pack5.json': 'ec83e117ed694008b964ae7630b783bcb5ab09fd',
     }.entries) {
-      final result = Process.runSync('git', ['hash-object', '--no-filters', 'assets/levels/${entry.key}']);
+      final result = Process.runSync('git', [
+        'hash-object',
+        '--no-filters',
+        entry.key,
+      ]);
       expect(result.exitCode, 0);
       expect(result.stdout.toString().trim(), entry.value);
     }
-    final report = check({});
-    final catalog = report.catalog!;
-    expect(catalog.packs.map((p) => p.id), ['pack1', 'pack2', 'pack3', 'pack4', 'pack5', 'daily']);
+    final catalog = pack5Catalog();
+    expect(catalog.packs.map((p) => p.id), [
+      'pack1',
+      'pack2',
+      'pack3',
+      'pack4',
+      'pack5',
+      'daily',
+    ]);
     expect(catalog.packs.take(5).expand((p) => p.levels), hasLength(40));
     expect(catalog.packs.last.levels, hasLength(8));
     expect(catalog.packs[4].title, 'Unexpected Connections');
-    expect(catalog.packs[4].levels[3].categories.map((c) => c.difficultyTier), [1, 4, 3, 2]);
+    expect(catalog.packs[4].levels[3].categories.map((c) => c.difficultyTier), [
+      1,
+      4,
+      3,
+      2,
+    ]);
   });
+
+  test(
+    'approved cs1-pack6-v1 manifest and sixteen-stage Pack 6 are immutable',
+    () {
+      // Release at Studio 470e2238cd72f507900125fc1e56c5ab1a58b130.
+      // Pack 6 SHA-256: 18badc36157916fea571e4c61403388d35edac18869412684301b91502eb5bb9.
+      for (final entry in {
+        'manifest.json': '24d722cb5758504d124b9d6f356fcd1ef3878861',
+        'pack6.json': 'bbd8092b73aaf2520ffc455a0706ae0cf1e48467',
+      }.entries) {
+        final result = Process.runSync('git', [
+          'hash-object',
+          '--no-filters',
+          'assets/levels/${entry.key}',
+        ]);
+        expect(result.exitCode, 0);
+        expect(result.stdout.toString().trim(), entry.value);
+      }
+      final catalog = check({}).catalog!;
+      expect(catalog.packs.map((p) => p.id), [
+        'pack1',
+        'pack2',
+        'pack3',
+        'pack4',
+        'pack5',
+        'pack6',
+        'daily',
+      ]);
+      expect(catalog.packs[5].title, 'Hidden in Plain Sight');
+      expect(catalog.packs[5].levels, hasLength(16));
+    },
+  );
 
   test('CNT-05/11 every production identity, order and intended solve', () {
     final report = check({});
@@ -73,12 +121,13 @@ void main() {
       'pack3.json',
       'pack4.json',
       'pack5.json',
+      'pack6.json',
     ]);
     expect(report.catalog!.manifest.daily, 'daily.json');
     final levelIds = <String>{}, tileIds = <String>{};
     for (final pack in report.catalog!.packs) {
       expect(pack.levels.map((l) => l.id), [
-        for (var i = 1; i <= 8; i++)
+        for (var i = 1; i <= (pack.id == 'pack6' ? 16 : 8); i++)
           '${pack.id}_lvl${i.toString().padLeft(2, '0')}',
       ]);
       for (final level in pack.levels) {
@@ -114,8 +163,8 @@ void main() {
         expect(game.order, isEmpty);
       }
     }
-    expect(levelIds, hasLength(48));
-    expect(tileIds, hasLength(768));
+    expect(levelIds, hasLength(64));
+    expect(tileIds, hasLength(1024));
   });
 
   final mutations = <String, (String, void Function(dynamic))>{
@@ -297,7 +346,7 @@ void main() {
             : CandidateInterpretation.addition,
       );
       expect(report.isValid, kind != 'invalid');
-      expect(report.totalLevels, kind == 'replacement' ? 48 : 56);
+      expect(report.totalLevels, kind == 'replacement' ? 64 : 72);
       expect(formatReport(report), contains('preview only'));
       if (kind == 'replacement') {
         expect(report.candidate!.replacedSource, 'pack2.json');

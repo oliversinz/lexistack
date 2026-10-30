@@ -1,0 +1,283 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  shared_preferences_foundation 2.5.7 (2.6.1 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.4 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Codex/LexiStack/test/app/daily_test.dart
+00:00 +0: C:/Codex/LexiStack/test/app/daily_test.dart: DAY-01/02 independent civil-day and seed goldens including DST and leap
+00:00 +1: C:/Codex/LexiStack/test/app/daily_test.dart: DAY-02 same civil date gives identical fresh board; cycle repeats only the level
+00:00 +2: C:/Codex/LexiStack/test/app/economy_test.dart: ECO-01/02 independent 0 mistakes -> 3 stars +50
+00:00 +3: C:/Codex/LexiStack/test/app/daily_test.dart: DAY-03/04 finalized Daily reopens one result and reward once; no replay
+00:00 +4: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +5: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +6: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +7: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +8: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:00 +9: C:/Codex/LexiStack/test/app/load_recovery_test.dart: F3-R01 failed read never overwrites existing progress on save retry
+00:01 +10: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all 8 unlocks independent and durable
+00:01 +11: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-03/05 pack1 all 8 unlocks independent and durable
+00:01 +12: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +13: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +14: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +15: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +16: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +17: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +18: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +19: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +20: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +21: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +22: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +23: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +24: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +25: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +26: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +27: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +28: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:01 +29: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:02 +30: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:02 +31: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:02 +32: C:/Codex/LexiStack/test/app/pack6_progress_test.dart: Pack 6 stages 9 and 16 retain attempts, hints, rewards and replay caps
+00:02 +33: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +34: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +35: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +36: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +37: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +38: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +39: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +40: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +41: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +42: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +43: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +44: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +45: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +46: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +46: C:/Codex/LexiStack/test/core/prng_test.dart: ENG-11 independent fixed PRNG vectors and default board order
+Seed 1: [16807, 282475249, 1622650073, 984943658, 1144108930, 470211272, 101027544, 1457850878] OK
+Seed 42: [705894, 1126542223, 1579310009, 565444343, 807934826, 421520601, 2095673201, 1100194760] OK
+Seed 20261028: [1224681370, 1736512742, 1266892064, 354559643, 1964283123, 440342930, 614976948, 78772025] OK
+Seed 2147483646: [2147466840, 1865008398, 524833574, 1162539989, 1003374717, 1677272375, 2046456103, 689632769] OK
+F2 default seed board indexes: [11, 15, 6, 0, 12, 13, 1, 7, 14, 8, 5, 3, 9, 4, 2, 10]; state 1470087647 OK
+00:02 +47: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +48: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +49: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +50: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +51: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +52: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +53: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +54: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +55: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +56: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +57: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +58: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +59: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +60: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +61: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +61 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:02 +61 -1: C:/Codex/LexiStack/test/core/game_test.dart: all 48 installed levels are solvable by their intended groups [E]
+  Expected: an object with length of <48>
+    Actual: ExpandIterable<Pack, Level>:[
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              Instance of 'Level',
+              ...
+            ]
+     Which: has length of <64>
+
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\core\game_test.dart 417:7                      main.<fn>
+
+00:03 +62 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +63 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +64 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +65 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +66 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +67 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +68 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +69 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +70 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +71 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +72 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +73 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +74 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +75 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +76 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +77 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +78 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +79 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +80 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +81 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +82 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +83 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:03 +84 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:04 +85 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:04 +86 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:04 +87 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:04 +88 -1: C:/Codex/LexiStack/test/app/pack5_save_compatibility_test.dart: 40-level save expands unchanged with active Daily and unfinished replay
+00:04 +89 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +90 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +91 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +92 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +93 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +94 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +95 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +96 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +97 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +98 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +99 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +100 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +101 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +102 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +103 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +104 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:04 +105 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +106 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +107 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +108 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +109 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +110 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +111 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +112 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +113 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +114 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +115 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +116 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +117 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +118 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +119 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +120 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +121 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +122 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +123 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +124 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +125 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +126 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +127 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +128 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +129 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +130 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +131 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +132 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +133 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +134 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +135 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +136 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:05 +137 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +138 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +139 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +140 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +141 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +142 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +143 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:06 +144 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:07 +145 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:07 +145 -1: C:/Codex/LexiStack/test/ui/f4_d01_test.dart: F4-D01 390x844 actual 16 tile rectangles + Submit inside SafeArea without scrolling
+390x844 grid=Rect.fromLTRB(16.0, 200.0, 374.0, 533.0) submit=Rect.fromLTRB(272.7, 718.0, 374.0, 770.0) dock=Rect.fromLTRB(0.0, 707.0, 390.0, 820.0) safeY=24..820 scroll=0.0
+00:07 +146 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:07 +147 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:07 +148 -1: C:/Codex/LexiStack/test/app/f5_catalog_progress_test.dart: F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion
+00:10 +149 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:10 +150 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:10 +151 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:10 +152 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:12 +152 -1: C:/Codex/LexiStack/test/ui/f4_d01_test.dart: F4-D01 360x640 1.3x anchored action, real tray drag, one/two solves and facts
+360x640 scale=1.3 grid=Rect.fromLTRB(16.0, 215.0, 344.0, 476.0) submit=Rect.fromLTRB(233.9, 511.0, 344.0, 563.0) dock=Rect.fromLTRB(0.0, 497.0, 360.0, 616.0) safeY=24..616
+00:12 +153 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:12 +154 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:13 +155 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:14 +156 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+00:14 +157 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: dark, small/phone/wide
+F4-D02 dark 360.0x640.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+F4-D02 dark 390.0x844.0 scale=1.0: resolved font roles, render/layout and fixed dock PASS
+F4-D02 dark 1280.0x800.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+00:17 +158 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:17 +159 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:18 +160 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:18 +161 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:19 +162 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:20 +163 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:20 +164 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:21 +165 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:21 +166 -1: C:/Codex/LexiStack/test/ui/f4_layout_test.dart: UI-03 four packs keep independent locks; Play Resume View Result Replay and Next work
+00:21 +167 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards
+00:22 +168 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards
+00:23 +168 -1: C:/Codex/LexiStack/test/ui/f4_d02_test.dart: F4-D02 resolved fonts and layout: light, small/phone/wide
+F4-D02 light 360.0x640.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+F4-D02 light 390.0x844.0 scale=1.0: resolved font roles, render/layout and fixed dock PASS
+F4-D02 light 1280.0x800.0 scale=1.3: resolved font roles, render/layout and fixed dock PASS
+00:23 +169 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards
+00:24 +170 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards
+00:24 +171 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards
+00:24 +172 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards
+00:25 +173 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:26 +174 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:27 +175 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:28 +176 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:29 +177 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:30 +178 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 actual first win, paid hint, explicit replay reward and saved result
+00:30 +179 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(360.0, 640.0) with 1.3x text
+00:31 +180 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 real long labels and intended group interaction at Size(390.0, 844.0)/1.0
+00:31 +181 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+00:32 +182 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09 themes retain navigator and board handle; haptics persist; reset invalidates stale handle
+00:32 +183 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 unaffordable pending rescue disabled; explicit reveal still works
+00:33 +184 -1: C:/Codex/LexiStack/test/ui/progress_test.dart: F3 unaffordable pending rescue disabled; explicit reveal still works
+00:33 +185 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:34 +186 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:35 +187 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:36 +188 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:36 +189 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(390.0, 844.0) with 1.3x text
+00:36 +190 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:37 +191 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:37 +192 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:38 +193 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:39 +194 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: F5 all Campaign won opens shelf; explicit replay remains available
+00:39 +195 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09/12 disabled haptics suppress wrong solve booster rescue after reconstruction
+00:40 +196 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-09/12 disabled haptics suppress wrong solve booster rescue after reconstruction
+00:40 +197 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:41 +198 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:41 +198 -1: C:/Codex/LexiStack/test/ui/f4_test.dart: UI-12 platform haptic failure cannot roll back a successful purchase
+Haptic feedback unavailable: PlatformException(unsupported, null, null, null)
+00:41 +199 -1: C:/Codex/LexiStack/test/ui/board_test.dart: F2 board, pending decision and results usable at Size(1280.0, 800.0) with 1.3x text
+00:41 +200 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:41 +201 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:41 +202 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:42 +203 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:43 +204 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:44 +205 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:44 +206 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:44 +207 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:46 +208 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:46 +209 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:47 +210 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 5 all boards, tier colors, results, Continue and replay
+00:50 +211 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: Pack 6 all boards, tier colors, results, Continue and replay
+01:06 +212 -1: C:/Codex/LexiStack/test/ui/f5_catalog_test.dart: (tearDownAll)
+01:06 +212 -1: Some tests failed.
+
+Failing tests:
+  C:/Codex/LexiStack/test/core/game_test.dart: all 48 installed levels are solvable by their intended groups

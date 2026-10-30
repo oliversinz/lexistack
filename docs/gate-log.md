@@ -1593,3 +1593,105 @@ handled an offscreen result label and Windows console Unicode encoding; neither
 was an application failure. No user intervention or independent review occurred
 during implementation. Subsequent independent acceptance authorizes
 fast-forward integration into `main`, as recorded above.
+
+## Pack 6 content integration — 2026-10-30 — independent review pending
+
+This is the explicitly assigned content integration, not a feature phase. Started
+from clean Flutter `main`/`origin/main`
+`41bfa5c9b57d23978e5be2fc0b327a6335f50349` on
+`codex/pack6-flutter-integration`. Studio local and remote `main` both matched
+`470e2238cd72f507900125fc1e56c5ab1a58b130`, with a clean tree. Studio was read only.
+Implementer: Codex; no separate implementing-agent review or user intervention.
+Independent GPT-6 acceptance remains pending. No merge or push to `main` is
+authorized by this record.
+
+Verified all nine `releases/cs1-pack6-v1/SHA256SUMS` entries and all six release
+bindings (candidate, author notes, author prompt, review prompt, review and human
+approval). Approval is `APPROVED`, binds the candidate/review hashes, and the
+bound review is `PASS` with zero unresolved blockers/majors. Imported only the
+exact manifest and Pack 6 bytes; registered the new asset in `pubspec.yaml`.
+Pack 6 SHA-256 is
+`18badc36157916fea571e4c61403388d35edac18869412684301b91502eb5bb9`;
+manifest SHA-256 is
+`4580aa22990ac15632a777d6a5a714db2919a206b3f33730bbe2ab11ca5e3d0f`.
+All existing pack bytes, `pubspec.lock`, and CS0 pin/resolved commit
+`d9acbd52de0e198dd109a4859299318db3f465f5` remain unchanged. All eight JSON assets
+in the APK also match the installed bytes. See [integrity](evidence/pack6/integrity.txt).
+
+Inspection found that asset loading, Campaign ordering, unlocks, Continue,
+level numbering, stage lists, progress bars, solved counts and result/replay
+handling already use catalog identities and lengths. No `lib/` changes,
+dependencies, save-version changes or migrations were needed. Production now
+contains six Campaign packs (56 stages) and the unchanged eight-level Daily pool:
+64 levels, 256 categories, 1,024 tile positions. The original Experiment E
+40/160/640 benchmark and locked identities remain asserted independently.
+The previous approved manifest is retained byte-for-byte as
+`test/fixtures/pack5-manifest.json`, preserving Pack 5 release identity coverage
+and providing the actual 48-level catalog for save compatibility tests.
+
+Focused coverage includes sequential unlocking of all sixteen stages, final
+completion, Continue into Pack 6 and all-won selector behavior, replay, stable
+level/tile identities, later-stage active/pending-loss restoration, paid hints,
+mixed stars, exact-once rewards and the +5/+0 practice cap. Both 40- and 48-level
+saves load with every field unchanged, without recovery notices or writes:
+old achievements, practice payouts, histories, unfinished replay, settings,
+active/final Daily and streaks are preserved. Sixteen date probes per historical
+catalog retain the same Daily IDs, seeds and boards. Real-bundle widget tests
+solve all sixteen new boards and test the sixteen-segment progress bar and
+reachable stages 9–16 at 360×640/1.3× text and 390×844.
+
+Actual commands (text output redirected to `docs/evidence/pack6/`):
+
+| Command | Exit | Evidence/result |
+|---|---:|---|
+| `flutter doctor -v` | 0 | `toolchain.txt`: Flutter 3.47.8, Dart 3.13.7, Android SDK 36.1.0, Pixel_10 API 36 |
+| `flutter pub get` | 0 | `pub-get.txt`; dependency lock unchanged |
+| `dart run tool/validate_levels.dart` | 0 | `validation.txt`; 64/256/1024, zero errors/warnings |
+| `flutter analyze` | 0 | `analyze-final.txt`; no issues |
+| `flutter test --reporter expanded` | 0 | `all-tests-final.txt`; all 213 tests passed, including focused tests and prior regressions |
+| `flutter build apk --debug` | 0 | `apk-build.txt`; APK built and bundled JSON bytes checked |
+| `git diff --check` | 0 | No whitespace errors |
+
+The initial focused command was
+`flutter test test/content_test.dart test/f5_content_test.dart test/app/f5_catalog_progress_test.dart test/app/pack5_save_compatibility_test.dart test/app/pack6_progress_test.dart test/ui/f5_catalog_test.dart test/ui/pack6_layout_test.dart --reporter expanded`.
+It exited 1 (72 passed, one old eight-stage UI expectation). The first full suite
+also exited 1 (212 passed, one old 48-level engine-test expectation). Initial
+analysis exited 1 for two missing brace-style fixes in modified tests. All were
+corrected and the final analysis/full suite above passed; no runtime defect was
+found or hidden. The initial logs are retained. A local Python/PowerShell encoding
+issue during test editing was corrected before validation.
+
+Android verification used the installed Pixel_10 emulator (Android 16/API 36,
+`emulator-5554`) and the real debug APK. Before updating, the old 48-level APK
+expired the unfinished Daily dated 2026-10-29 on today's launch, changing only
+that field as required by the existing date rules. After that, DataStore bytes
+were identical before `adb install -r`, after installation and after the new
+launcher start. Continue resumed the existing Pack 5 attempt with its exact
+board and identity; the other existing unfinished board was also retained.
+
+Actual Android input opened Pack 6, displayed all sixteen stages, and solved
+stages 1–16 in order through ordinary unlocking (no injected save/progress).
+Each win had zero mistakes, three stars and exactly +50 coins: 155 + 800 = 955.
+The stage-16 result was displayed, followed by an explicit replay, Pair Magnet
+and Category Peek purchases, shuffle and a selected tile. Force-stop/launcher
+restart retained the complete save bytes. Continue restored that replay's exact
+ID, fingerprint, RNG, order, selection and both paid hints; only entry recency
+changed. Wallet stayed 955 − 30 − 40 = 885, with no restart charges/rewards and
+all previous achievements/results preserved. Screenshots of the shelf, lower
+stages, stage 9, stage-16 result and resumed replay were visually inspected.
+
+Device commands and exit codes are in [android-commands.txt](evidence/pack6/android-commands.txt).
+The complete sixteen-stage run exited 0; see [android-play.txt](evidence/pack6/android-play.txt).
+Save/ledger comparisons exited 0; see [android-checks.txt](evidence/pack6/android-checks.txt)
+and the before/after JSON snapshots. The restart helper initially exited 1
+because its exact text lookup did not include the paid hint's `, Pair 1` semantic
+suffix. Selecting the observed label completed the check without reapplying
+hints; this was an automation issue, not an application defect. An initial save
+comparison also correctly detected the old APK's expired Daily; the installation
+comparison uses the subsequent pre-install state. No user intervention occurred.
+
+Remaining defects or blocked required checks: none identified. Nonblocking
+environment output: Gradle/JDK native-access warning and unavailable Windows C++
+toolchain (Windows build not requested). No new browser execution or web build
+was performed for this content-only integration. Final branch commit and push
+are reported in the implementation handoff; independent review decides approval.

@@ -10,7 +10,7 @@ import 'package:lexistack/ui/catalog_screens.dart';
 import 'package:lexistack/ui/common.dart';
 import 'package:lexistack/ui/theme.dart';
 
-import '../support/content_fixture.dart' show initialCatalog;
+import '../support/content_fixture.dart' show initialCatalog, pack5Catalog;
 import '../support/progress_fixture.dart';
 import 'board_test.dart' show viewport, tapVisible, submitWords, tile;
 import 'progress_test.dart' show board;
@@ -46,7 +46,7 @@ void main() {
   });
 
   testWidgets(
-    'F5 real bundle shelf: all five packs, eight stages, independent progress, new boards',
+    'F5 real bundle shelf: all six packs, catalog-sized stages, independent progress, new boards',
     (t) async {
       viewport(t, const Size(390, 844));
       final catalog = installedCatalog();
@@ -56,11 +56,11 @@ void main() {
       );
       await p.flush();
       await app(t, p.storage as MemoryProgressStorage);
-      expect(find.text('Campaign · 1 / 40 stages solved'), findsOneWidget);
+      expect(find.text('Campaign · 1 / 56 stages solved'), findsOneWidget);
       await tapVisible(t, find.text('Campaign'));
-      expect(find.byType(PackCard), findsNWidgets(5));
+      expect(find.byType(PackCard), findsNWidgets(6));
       expect(find.text('Daily Stack'), findsNothing);
-      for (final pack in catalog.packs.take(5)) {
+      for (final pack in catalog.packs.take(6)) {
         expect(find.text(pack.title), findsOneWidget);
         expect(find.text(pack.description), findsOneWidget);
         final card = find.ancestor(
@@ -71,14 +71,14 @@ void main() {
           find.descendant(
             of: card,
             matching: find.text(
-              '${pack.id == 'pack2' ? 1 : 0} / 8 solved · Available offline',
+              '${pack.id == 'pack2' ? 1 : 0} / ${pack.levels.length} solved · Available offline',
             ),
           ),
           findsOneWidget,
         );
         await openPack(t, pack.title);
         expect(
-          find.text('8 levels · Win a stage to unlock the next'),
+          find.text('${pack.levels.length} levels · Win a stage to unlock the next'),
           findsOneWidget,
         );
         for (final (i, level) in pack.levels.indexed) {
@@ -220,69 +220,115 @@ void main() {
       }
       await p.flush();
       await app(t, p.storage as MemoryProgressStorage);
-      expect(find.text('Campaign · 40 / 40 stages solved'), findsOneWidget);
+      expect(find.text('Campaign · 56 / 56 stages solved'), findsOneWidget);
       await tapVisible(t, find.text('Continue Campaign'));
       expect(find.byType(PacksScreen), findsOneWidget);
       await openPack(t, p.campaignPacks.last.title);
       await tapVisible(t, find.text(p.campaignPacks.last.levels.first.title));
       await tapVisible(t, find.text('Replay · New attempt'));
       expect(board(t).game.status, GameStatus.playing);
-      expect(board(t).game.level.id, 'pack5_lvl01');
+      expect(board(t).game.level.id, 'pack6_lvl01');
       expect(t.takeException(), isNull);
     },
   );
 
-  testWidgets('Pack 5 all eight boards, tier colors, results, Continue and replay', (t) async {
-    viewport(t, const Size(390, 844));
-    final old = await player(catalog: initialCatalog());
-    for (final level in old.campaignPacks.expand((p) => p.levels)) {
-      win(BoardController(old, old.enterCampaign(level)!));
-    }
-    await old.flush();
-    await app(t, old.storage as MemoryProgressStorage);
-    expect(find.text('Campaign · 32 / 40 stages solved'), findsOneWidget);
-    await tapVisible(t, find.text('Continue Campaign'));
-    final pack = installedCatalog().packs[4];
-    for (final (index, level) in pack.levels.indexed) {
-      expect(board(t).game.level.id, level.id);
-      expect(find.text('${index + 1} · ${level.title}'), findsOneWidget);
-      expect(board(t).game.order, hasLength(16));
-      for (final category in level.categories) {
-        await submitWords(t, category.tiles.map((t) => t.text).toList());
-        expect(board(t).game.guesses.last.tiers, List.filled(4, category.difficultyTier));
-        final label = find.text('Tier ${category.difficultyTier} · ${category.title}');
-        expect(label, findsOneWidget);
-        final card = t.widget<Container>(find.byKey(ValueKey('category-${category.id}')));
-        expect((card.decoration! as BoxDecoration).color, tierColors[category.difficultyTier - 1]);
-        if (level.id == 'pack5_lvl04' && category.difficultyTier == 1) {
-          // Tier 2 is last in the source array, but must be hinted next.
-          final tier2 = level.categories.singleWhere((c) => c.difficultyTier == 2);
-          await tapVisible(t, find.text('Boosters'));
-          await tapVisible(t, find.text('Category Peek · 40'));
-          expect(board(t).game.peekedIds, [tier2.id]);
-          await tapVisible(t, find.text('Pair Magnet · 30'));
-          expect(board(t).game.pairs.keys, [tier2.id]);
+  for (final packNumber in [5, 6]) {
+    testWidgets(
+      'Pack $packNumber all boards, tier colors, results, Continue and replay',
+      (t) async {
+        viewport(t, const Size(390, 844));
+        final old = await player(
+          catalog: packNumber == 5 ? initialCatalog() : pack5Catalog(),
+        );
+        for (final level in old.campaignPacks.expand((p) => p.levels)) {
+          win(BoardController(old, old.enterCampaign(level)!));
         }
-      }
-      expect(board(t).game.status, GameStatus.won);
-      expect(find.text('You found every connection!'), findsOneWidget);
-      for (final category in level.categories) {
-        expect(find.text(category.triviaFact), findsOneWidget);
-      }
-      for (final hint in level.redHerrings) {
-        expect(find.text(hint.note), findsOneWidget);
-      }
-      expect(board(t).result!.reward, 50);
-      expect(t.takeException(), isNull);
-      await tapVisible(t, find.text('Next connection'));
-    }
-    expect(find.byType(PacksScreen), findsOneWidget);
-    await openPack(t, pack.title);
-    await tapVisible(t, find.byKey(ValueKey('level-${pack.levels.last.id}')));
-    await tapVisible(t, find.text('Replay · New attempt'));
-    expect(board(t).game.level.id, 'pack5_lvl08');
-    expect(board(t).game.order, hasLength(16));
-    expect(board(t).game.status, GameStatus.playing);
-    expect(t.takeException(), isNull);
-  });
+        await old.flush();
+        await app(t, old.storage as MemoryProgressStorage);
+        expect(
+          find.text(
+            'Campaign · ${packNumber == 5 ? 32 : 40} / 56 stages solved',
+          ),
+          findsOneWidget,
+        );
+        await tapVisible(t, find.text('Continue Campaign'));
+        final pack = installedCatalog().packs[packNumber - 1];
+        for (final (index, level) in pack.levels.indexed) {
+          expect(board(t).game.level.id, level.id);
+          expect(find.text('${index + 1} · ${level.title}'), findsOneWidget);
+          expect(board(t).game.order, hasLength(16));
+          for (final category in level.categories) {
+            await submitWords(t, category.tiles.map((t) => t.text).toList());
+            expect(
+              board(t).game.guesses.last.tiers,
+              List.filled(4, category.difficultyTier),
+            );
+            final label = find.text(
+              'Tier ${category.difficultyTier} · ${category.title}',
+            );
+            expect(label, findsOneWidget);
+            final card = t.widget<Container>(
+              find.byKey(ValueKey('category-${category.id}')),
+            );
+            expect(
+              (card.decoration! as BoxDecoration).color,
+              tierColors[category.difficultyTier - 1],
+            );
+            if (level.id == 'pack5_lvl04' && category.difficultyTier == 1) {
+              // Tier 2 is last in the source array, but must be hinted next.
+              final tier2 = level.categories.singleWhere(
+                (c) => c.difficultyTier == 2,
+              );
+              await tapVisible(t, find.text('Boosters'));
+              await tapVisible(t, find.text('Category Peek · 40'));
+              expect(board(t).game.peekedIds, [tier2.id]);
+              await tapVisible(t, find.text('Pair Magnet · 30'));
+              expect(board(t).game.pairs.keys, [tier2.id]);
+            }
+          }
+          expect(board(t).game.status, GameStatus.won);
+          expect(find.text('You found every connection!'), findsOneWidget);
+          for (final category in level.categories) {
+            expect(find.text(category.triviaFact), findsOneWidget);
+          }
+          for (final hint in level.redHerrings) {
+            expect(find.text(hint.note), findsOneWidget);
+          }
+          expect(board(t).result!.reward, 50);
+          expect(t.takeException(), isNull);
+          await tapVisible(t, find.text('Next connection'));
+        }
+        if (packNumber == 5) {
+          expect(board(t).game.level.id, 'pack6_lvl01');
+          await t.pageBack();
+          await t.pumpAndSettle();
+          await tapVisible(t, find.text('Campaign'));
+        }
+        expect(find.byType(PacksScreen), findsOneWidget);
+        final card = find.ancestor(
+          of: find.text(pack.title),
+          matching: find.byType(PackCard),
+        );
+        expect(
+          find.descendant(
+            of: card,
+            matching: find.text(
+              '${pack.levels.length} / ${pack.levels.length} solved · Available offline',
+            ),
+          ),
+          findsOneWidget,
+        );
+        await openPack(t, pack.title);
+        await tapVisible(
+          t,
+          find.byKey(ValueKey('level-${pack.levels.last.id}')),
+        );
+        await tapVisible(t, find.text('Replay · New attempt'));
+        expect(board(t).game.level.id, pack.levels.last.id);
+        expect(board(t).game.order, hasLength(16));
+        expect(board(t).game.status, GameStatus.playing);
+        expect(t.takeException(), isNull);
+      },
+    );
+  }
 }

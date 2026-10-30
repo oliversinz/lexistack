@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Codex\LexiStack\build\pack6_smoke.py", line 130, in <module>
+    elif mode == 'replay-restart': replay_restart()
+                                   ~~~~~~~~~~~~~~^^
+  File "C:\Codex\LexiStack\build\pack6_smoke.py", line 105, in replay_restart
+    visible_tap(level['categories'][0]['tiles'][0])
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Codex\LexiStack\build\pack6_smoke.py", line 69, in visible_tap
+    raise RuntimeError(f'Cannot reach {label}')
+RuntimeError: Cannot reach VAMPIRE

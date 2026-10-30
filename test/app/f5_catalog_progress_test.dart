@@ -59,9 +59,9 @@ Future<ProgressController> legacyPlayer(TestClock clock) async {
 }
 
 void main() {
-  for (final pack in installedCatalog().packs.take(5)) {
+  for (final pack in installedCatalog().packs.take(6)) {
     test(
-      'F5 ECO-03/05 ${pack.id} all eight unlocks independent and durable',
+      'F5 ECO-03/05 ${pack.id} all ${pack.levels.length} unlocks independent and durable',
       () async {
         final p = await player();
         for (final other in p.campaignPacks) {
@@ -71,8 +71,12 @@ void main() {
         for (final (index, level) in pack.levels.indexed) {
           expect(p.unlocked(level), isTrue);
           win(BoardController(p, p.enterCampaign(level)!));
-          if (index < 7) expect(p.unlocked(pack.levels[index + 1]), isTrue);
-          if (index < 6) expect(p.unlocked(pack.levels[index + 2]), isFalse);
+          if (index + 1 < pack.levels.length) {
+            expect(p.unlocked(pack.levels[index + 1]), isTrue);
+          }
+          if (index + 2 < pack.levels.length) {
+            expect(p.unlocked(pack.levels[index + 2]), isFalse);
+          }
           for (final other in p.campaignPacks.where((p) => p.id != pack.id)) {
             expect(other.levels.skip(1).any(p.unlocked), isFalse);
           }
@@ -104,7 +108,7 @@ void main() {
     );
   }
 
-  test('F5 ECO-06 Continue follows all 40 manifest levels; explicit replay survives completion', () async {
+  test('F5 ECO-06 Continue follows all 56 Campaign levels; explicit replay survives completion', () async {
     final p = await player();
     for (final level in p.campaignPacks.expand((p) => p.levels)) {
       final attempt = p.continueCampaign()!;
@@ -112,8 +116,8 @@ void main() {
       expect(attempt.date, isNull);
       win(BoardController(p, attempt));
     }
-    expect(p.state.campaign, hasLength(40));
-    expect(p.state.results, hasLength(40));
+    expect(p.state.campaign, hasLength(56));
+    expect(p.state.results, hasLength(56));
     final sequence = p.state.sequence;
     expect(p.continueCampaign(), isNull);
     expect(p.state.sequence, sequence);

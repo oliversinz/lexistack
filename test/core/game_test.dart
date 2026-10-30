@@ -411,10 +411,10 @@ void main() {
   });
 
   test(
-    'all 48 installed levels are solvable by their intended groups',
+    'all 64 installed levels are solvable by their intended groups',
     () {
       final catalog = installedCatalog();
-      expect(catalog.packs.expand((p) => p.levels), hasLength(48));
+      expect(catalog.packs.expand((p) => p.levels), hasLength(64));
       for (final level in catalog.packs.expand((p) => p.levels)) {
         final g = Game(level, seed: 20261028);
         solveRemaining(g);

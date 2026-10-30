@@ -1,0 +1,1193 @@
+{
+  "schemaVersion": 2,
+  "pack": {
+    "id": "pack6",
+    "title": "Hidden in Plain Sight",
+    "description": "Sixteen boards of decoys, disguises and words hiding inside other words."
+  },
+  "levels": [
+    {
+      "id": "pack6_lvl01",
+      "packId": "pack6",
+      "title": "Undercover",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "ROOT VEGETABLES",
+          "difficultyTier": 1,
+          "tiles": [
+            "CARROT",
+            "TURNIP",
+            "PARSNIP",
+            "RADISH"
+          ],
+          "triviaFact": "Carrots and parsnips belong to the same plant family as parsley, celery and fennel."
+        },
+        {
+          "id": "g2",
+          "title": "PEOPLE IN SPY JARGON",
+          "difficultyTier": 2,
+          "tiles": [
+            "MOLE",
+            "SLEEPER",
+            "HANDLER",
+            "ASSET"
+          ],
+          "triviaFact": "The novelist John le Carré helped popularize mole as the word for a spy hidden inside an organization."
+        },
+        {
+          "id": "g3",
+          "title": "BURROWING ANIMALS",
+          "difficultyTier": 3,
+          "tiles": [
+            "RABBIT",
+            "BADGER",
+            "WOMBAT",
+            "MEERKAT"
+          ],
+          "triviaFact": "A wombat's pouch faces backward, which helps keep soil out while the mother digs."
+        },
+        {
+          "id": "g4",
+          "title": "BEFORE AGENT",
+          "difficultyTier": 4,
+          "tiles": [
+            "LITERARY",
+            "TRAVEL",
+            "FREE",
+            "INSURANCE"
+          ],
+          "triviaFact": "In professional sports, a free agent is a player who is out of contract and may sign with any team."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "MOLE"
+          ],
+          "note": "MOLE digs tunnels like WOMBAT and BADGER, but RABBIT, BADGER, WOMBAT and MEERKAT already complete the burrowers; MOLE is spy slang for an insider."
+        },
+        {
+          "tiles": [
+            "SLEEPER"
+          ],
+          "note": "SLEEPER can precede AGENT, but LITERARY, TRAVEL, FREE and INSURANCE complete that set, while the spy jargon needs SLEEPER beside MOLE, HANDLER and ASSET."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl02",
+      "packId": "pack6",
+      "title": "Safe and Sound",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "SOUNDS A DOG MAKES",
+          "difficultyTier": 1,
+          "tiles": [
+            "WOOF",
+            "YAP",
+            "GROWL",
+            "HOWL"
+          ],
+          "triviaFact": "The basenji, a hunting dog from central Africa, is known for rarely barking and instead makes a yodel-like sound."
+        },
+        {
+          "id": "g2",
+          "title": "PARTS OF A TREE",
+          "difficultyTier": 2,
+          "tiles": [
+            "BARK",
+            "ROOT",
+            "TWIG",
+            "LEAF"
+          ],
+          "triviaFact": "Cork is harvested from the thick outer bark of the cork oak, which grows back after it has been stripped."
+        },
+        {
+          "id": "g3",
+          "title": "GYMNASTICS APPARATUS",
+          "difficultyTier": 3,
+          "tiles": [
+            "BEAM",
+            "POMMEL HORSE",
+            "FLOOR",
+            "RINGS"
+          ],
+          "triviaFact": "The balance beam used in artistic gymnastics is only 10 centimeters wide."
+        },
+        {
+          "id": "g4",
+          "title": "PLACES TO KEEP MONEY",
+          "difficultyTier": 4,
+          "tiles": [
+            "SAFE",
+            "VAULT",
+            "PIGGY BANK",
+            "TILL"
+          ],
+          "triviaFact": "A till is the drawer where money is kept in a cash register, and in British English the word can mean the whole machine."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "BARK"
+          ],
+          "note": "BARK is the most famous dog sound, but WOOF, YAP, GROWL and HOWL complete that set; BARK is also the outer layer of a tree."
+        },
+        {
+          "tiles": [
+            "RINGS"
+          ],
+          "note": "Trees have growth RINGS, but BARK, ROOT, TWIG and LEAF already complete the tree; RINGS is a gymnastics apparatus."
+        },
+        {
+          "tiles": [
+            "VAULT"
+          ],
+          "note": "VAULT is a gymnastics event, but BEAM, POMMEL HORSE, FLOOR and RINGS complete the apparatus; a bank VAULT keeps money."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl03",
+      "packId": "pack6",
+      "title": "Now You See It",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "VERBS FOR HIDING SOMETHING",
+          "difficultyTier": 1,
+          "tiles": [
+            "STASH",
+            "CACHE",
+            "BURY",
+            "CONCEAL"
+          ],
+          "triviaFact": "Cache comes from the French verb cacher, meaning to conceal."
+        },
+        {
+          "id": "g2",
+          "title": "ANIMAL COVERINGS",
+          "difficultyTier": 2,
+          "tiles": [
+            "PELT",
+            "FLEECE",
+            "PLUMAGE",
+            "HIDE"
+          ],
+          "triviaFact": "Plumage, a bird's covering of feathers, comes from the French word plume, meaning feather."
+        },
+        {
+          "id": "g3",
+          "title": "ANIMALS THAT CAN CHANGE COLOR",
+          "difficultyTier": 3,
+          "tiles": [
+            "CHAMELEON",
+            "CUTTLEFISH",
+            "OCTOPUS",
+            "FLOUNDER"
+          ],
+          "triviaFact": "Cuttlefish change color using chromatophores, elastic sacs of pigment that tiny muscles stretch open."
+        },
+        {
+          "id": "g4",
+          "title": "FOLLOW TREASURE",
+          "difficultyTier": 4,
+          "tiles": [
+            "HUNT",
+            "CHEST",
+            "TROVE",
+            "MAP"
+          ],
+          "triviaFact": "In English law, treasure trove once described hidden gold or silver whose owner could not be traced."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "HIDE"
+          ],
+          "note": "HIDE is the most obvious verb for hiding, but STASH, CACHE, BURY and CONCEAL complete that set; HIDE is also an animal's skin."
+        },
+        {
+          "tiles": [
+            "BURY"
+          ],
+          "note": "People bury treasure, but BURY comes before TREASURE rather than after it; it belongs with the hiding verbs."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl04",
+      "packId": "pack6",
+      "title": "True Colors",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "RACKET SPORTS",
+          "difficultyTier": 1,
+          "tiles": [
+            "TENNIS",
+            "SQUASH",
+            "BADMINTON",
+            "PADEL"
+          ],
+          "triviaFact": "Badminton takes its name from Badminton House, the Duke of Beaufort's country estate in Gloucestershire, England."
+        },
+        {
+          "id": "g2",
+          "title": "PIZZA TOPPINGS",
+          "difficultyTier": 2,
+          "tiles": [
+            "PEPPERONI",
+            "ANCHOVY",
+            "PINEAPPLE",
+            "ARTICHOKE"
+          ],
+          "triviaFact": "Hawaiian pizza, topped with pineapple and ham, is usually credited to Sam Panopoulos, who served it in Canada in 1962."
+        },
+        {
+          "id": "g3",
+          "title": "LAWMAKING TERMS",
+          "difficultyTier": 3,
+          "tiles": [
+            "BILL",
+            "VETO",
+            "QUORUM",
+            "AMENDMENT"
+          ],
+          "triviaFact": "Veto is Latin for I forbid, the word Roman tribunes used to block actions of magistrates or the Senate."
+        },
+        {
+          "id": "g4",
+          "title": "END IN A COLOR",
+          "difficultyTier": 4,
+          "tiles": [
+            "CHAMBER",
+            "SUBLIME",
+            "IMPEACH",
+            "SAUSAGE"
+          ],
+          "triviaFact": "The color amber is named after amber the gemstone, which is fossilized tree resin."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "SAUSAGE"
+          ],
+          "note": "SAUSAGE is a classic pizza topping, but PEPPERONI, ANCHOVY, PINEAPPLE and ARTICHOKE complete that set; SAUSAGE ends in SAGE."
+        },
+        {
+          "tiles": [
+            "CHAMBER",
+            "IMPEACH"
+          ],
+          "note": "CHAMBER and IMPEACH sound like lawmaking words, but BILL, VETO, QUORUM and AMENDMENT complete that set; they end in AMBER and PEACH."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl05",
+      "packId": "pack6",
+      "title": "Crack the Code",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "CLOTHING FASTENERS",
+          "difficultyTier": 1,
+          "tiles": [
+            "BUTTON",
+            "BUCKLE",
+            "TOGGLE",
+            "CLASP"
+          ],
+          "triviaFact": "A toggle is a short peg, often wooden, pushed through a loop, as on a traditional duffel coat."
+        },
+        {
+          "id": "g2",
+          "title": "DRINKING ESTABLISHMENTS",
+          "difficultyTier": 2,
+          "tiles": [
+            "PUB",
+            "TAVERN",
+            "SALOON",
+            "BAR"
+          ],
+          "triviaFact": "Pub is short for public house, the traditional British name for a place licensed to sell alcohol."
+        },
+        {
+          "id": "g3",
+          "title": "INVENTORS",
+          "difficultyTier": 3,
+          "tiles": [
+            "EDISON",
+            "MARCONI",
+            "NOBEL",
+            "GUTENBERG"
+          ],
+          "triviaFact": "Alfred Nobel patented dynamite in 1867 and left most of his fortune to fund the Nobel Prizes."
+        },
+        {
+          "id": "g4",
+          "title": "BEFORE CODE",
+          "difficultyTier": 4,
+          "tiles": [
+            "ZIP",
+            "MORSE",
+            "DRESS",
+            "SOURCE"
+          ],
+          "triviaFact": "ZIP in the American ZIP Code stands for Zone Improvement Plan, a system introduced in 1963."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "ZIP"
+          ],
+          "note": "A ZIP fastens clothing, but BUTTON, BUCKLE, TOGGLE and CLASP complete that set; ZIP comes before CODE."
+        },
+        {
+          "tiles": [
+            "MORSE"
+          ],
+          "note": "Samuel MORSE was an inventor, but EDISON, MARCONI, NOBEL and GUTENBERG complete that set; MORSE comes before CODE."
+        },
+        {
+          "tiles": [
+            "BAR"
+          ],
+          "note": "BAR can come before CODE, but ZIP, MORSE, DRESS and SOURCE complete that set; a BAR is a place to buy a drink, like a PUB or TAVERN."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl06",
+      "packId": "pack6",
+      "title": "By the Numbers",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "KINDS OF TOOTH",
+          "difficultyTier": 1,
+          "tiles": [
+            "MOLAR",
+            "INCISOR",
+            "FANG",
+            "TUSK"
+          ],
+          "triviaFact": "An elephant's tusks are elongated incisor teeth that keep growing throughout its life."
+        },
+        {
+          "id": "g2",
+          "title": "ADVERBS OF FREQUENCY",
+          "difficultyTier": 2,
+          "tiles": [
+            "SELDOM",
+            "ALWAYS",
+            "RARELY",
+            "USUALLY"
+          ],
+          "triviaFact": "In English, adverbs of frequency usually go before a main verb but after forms of the verb be."
+        },
+        {
+          "id": "g3",
+          "title": "TYPES OF TRAIN",
+          "difficultyTier": 3,
+          "tiles": [
+            "EXPRESS",
+            "MONORAIL",
+            "MAGLEV",
+            "COMMUTER"
+          ],
+          "triviaFact": "Maglev, short for magnetic levitation, describes trains that hover above their guideway on magnetic fields."
+        },
+        {
+          "id": "g4",
+          "title": "HIDE A NUMBER",
+          "difficultyTier": 4,
+          "tiles": [
+            "CANINE",
+            "FREIGHT",
+            "OFTEN",
+            "NETWORK"
+          ],
+          "triviaFact": "Canine comes from the Latin canis, meaning dog, while the nine hidden inside it goes back to Old English nigon."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "CANINE"
+          ],
+          "note": "CANINE is a kind of tooth, but MOLAR, INCISOR, FANG and TUSK complete that set; CANINE hides NINE."
+        },
+        {
+          "tiles": [
+            "OFTEN"
+          ],
+          "note": "OFTEN is an adverb of frequency, but SELDOM, ALWAYS, RARELY and USUALLY complete that set; OFTEN hides TEN."
+        },
+        {
+          "tiles": [
+            "FREIGHT"
+          ],
+          "note": "A FREIGHT train is a type of train, but EXPRESS, MONORAIL, MAGLEV and COMMUTER complete that set; FREIGHT hides EIGHT."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl07",
+      "packId": "pack6",
+      "title": "Call Sign",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "PLACES TO STAY",
+          "difficultyTier": 1,
+          "tiles": [
+            "HOSTEL",
+            "MOTEL",
+            "INN",
+            "GUESTHOUSE"
+          ],
+          "triviaFact": "The youth hostel movement began in Germany in 1909, inspired by the teacher Richard Schirrmann."
+        },
+        {
+          "id": "g2",
+          "title": "ENTERTAINMENT AWARDS",
+          "difficultyTier": 2,
+          "tiles": [
+            "EMMY",
+            "GRAMMY",
+            "TONY",
+            "BAFTA"
+          ],
+          "triviaFact": "The Tony Awards are named after Antoinette Perry, an American actress, director and producer."
+        },
+        {
+          "id": "g3",
+          "title": "SHAKESPEARE CHARACTERS",
+          "difficultyTier": 3,
+          "tiles": [
+            "OPHELIA",
+            "PUCK",
+            "PROSPERO",
+            "JULIET"
+          ],
+          "triviaFact": "Puck, the mischievous sprite in A Midsummer Night's Dream, is also called Robin Goodfellow."
+        },
+        {
+          "id": "g4",
+          "title": "NATO PHONETIC ALPHABET WORDS",
+          "difficultyTier": 4,
+          "tiles": [
+            "HOTEL",
+            "OSCAR",
+            "SIERRA",
+            "UNIFORM"
+          ],
+          "triviaFact": "The NATO phonetic alphabet gives each letter a code word so spellings stay clear over noisy radio links."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "HOTEL"
+          ],
+          "note": "HOTEL is a place to stay, but HOSTEL, MOTEL, INN and GUESTHOUSE complete that set; HOTEL is the NATO word for H."
+        },
+        {
+          "tiles": [
+            "OSCAR"
+          ],
+          "note": "The OSCAR is a famous award, but EMMY, GRAMMY, TONY and BAFTA complete that set; OSCAR is the NATO word for O."
+        },
+        {
+          "tiles": [
+            "JULIET"
+          ],
+          "note": "JULIET is also a NATO code word, officially spelled Juliett, but the Shakespeare set needs her beside OPHELIA, PUCK and PROSPERO."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl08",
+      "packId": "pack6",
+      "title": "Grand Tour",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "BITING INSECTS",
+          "difficultyTier": 1,
+          "tiles": [
+            "MIDGE",
+            "FLEA",
+            "HORSEFLY",
+            "BEDBUG"
+          ],
+          "triviaFact": "Only female horseflies bite, because they need protein from blood to develop their eggs."
+        },
+        {
+          "id": "g2",
+          "title": "WEB BROWSERS",
+          "difficultyTier": 2,
+          "tiles": [
+            "FIREFOX",
+            "SAFARI",
+            "OPERA",
+            "EDGE"
+          ],
+          "triviaFact": "Firefox grew out of the Mozilla project, and version 1.0 was released in November 2004."
+        },
+        {
+          "id": "g3",
+          "title": "PARTS OF A CHURCH",
+          "difficultyTier": 3,
+          "tiles": [
+            "NAVE",
+            "ALTAR",
+            "PULPIT",
+            "CRYPT"
+          ],
+          "triviaFact": "Nave comes from the Latin navis, meaning ship, which is also the root of the word navy."
+        },
+        {
+          "id": "g4",
+          "title": "HIDE A CAPITAL CITY",
+          "difficultyTier": 4,
+          "tiles": [
+            "MOSQUITO",
+            "CLIMATE",
+            "CHROME",
+            "PARISH"
+          ],
+          "triviaFact": "Quito, the capital of Ecuador, sits about 2,850 meters above sea level in the Andes."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "MOSQUITO"
+          ],
+          "note": "MOSQUITO is the best-known biting insect, but MIDGE, FLEA, HORSEFLY and BEDBUG complete that set; MOSQUITO hides QUITO."
+        },
+        {
+          "tiles": [
+            "CHROME"
+          ],
+          "note": "CHROME is a web browser, but FIREFOX, SAFARI, OPERA and EDGE complete that set; CHROME hides ROME."
+        },
+        {
+          "tiles": [
+            "PARISH"
+          ],
+          "note": "PARISH sounds churchy, but it is a district rather than part of a church building; it hides PARIS."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl09",
+      "packId": "pack6",
+      "title": "Art Heist",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "BREAKFAST FOODS",
+          "difficultyTier": 1,
+          "tiles": [
+            "PORRIDGE",
+            "PANCAKE",
+            "CEREAL",
+            "OMELETTE"
+          ],
+          "triviaFact": "Cereal takes its name from Ceres, the Roman goddess of agriculture and grain."
+        },
+        {
+          "id": "g2",
+          "title": "VERBS FOR EATING",
+          "difficultyTier": 2,
+          "tiles": [
+            "CHEW",
+            "NIBBLE",
+            "GOBBLE",
+            "GNAW"
+          ],
+          "triviaFact": "Rodents gnaw constantly because their front incisor teeth never stop growing."
+        },
+        {
+          "id": "g3",
+          "title": "POLICE RANKS",
+          "difficultyTier": 3,
+          "tiles": [
+            "SERGEANT",
+            "INSPECTOR",
+            "LIEUTENANT",
+            "CAPTAIN"
+          ],
+          "triviaFact": "Lieutenant comes from French words meaning place holder, for an officer who acts in a superior's place."
+        },
+        {
+          "id": "g4",
+          "title": "PAINTER SURNAMES",
+          "difficultyTier": 4,
+          "tiles": [
+            "VERMEER",
+            "BACON",
+            "MUNCH",
+            "CONSTABLE"
+          ],
+          "triviaFact": "Edvard Munch made several versions of The Scream, including paintings, pastels and prints."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "BACON"
+          ],
+          "note": "BACON is a breakfast food, but PORRIDGE, PANCAKE, CEREAL and OMELETTE complete that set; Francis BACON was a painter."
+        },
+        {
+          "tiles": [
+            "MUNCH"
+          ],
+          "note": "MUNCH means to eat, but CHEW, NIBBLE, GOBBLE and GNAW complete that set; Edvard MUNCH painted The Scream."
+        },
+        {
+          "tiles": [
+            "CONSTABLE"
+          ],
+          "note": "CONSTABLE is a police rank, but SERGEANT, INSPECTOR, LIEUTENANT and CAPTAIN complete that set; John CONSTABLE was a painter."
+        },
+        {
+          "tiles": [
+            "SERGEANT"
+          ],
+          "note": "SERGEANT may recall the painter John Singer Sargent, but his name is spelled differently; SERGEANT is a police rank."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl10",
+      "packId": "pack6",
+      "title": "Bird's-Eye View",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "FACIAL EXPRESSIONS",
+          "difficultyTier": 1,
+          "tiles": [
+            "FROWN",
+            "GRIN",
+            "SMIRK",
+            "POUT"
+          ],
+          "triviaFact": "A smile is produced mainly by the zygomatic major muscle, which pulls the corners of the mouth upward."
+        },
+        {
+          "id": "g2",
+          "title": "WORDS FOR COWARDLY",
+          "difficultyTier": 2,
+          "tiles": [
+            "TIMID",
+            "GUTLESS",
+            "SPINELESS",
+            "YELLOW"
+          ],
+          "triviaFact": "The sense of yellow meaning cowardly is recorded from the 1850s, though the reason for it is uncertain."
+        },
+        {
+          "id": "g3",
+          "title": "OLD BRITISH COINS",
+          "difficultyTier": 3,
+          "tiles": [
+            "FARTHING",
+            "SHILLING",
+            "FLORIN",
+            "GUINEA"
+          ],
+          "triviaFact": "Before decimalization in 1971, a British pound was made up of 20 shillings."
+        },
+        {
+          "id": "g4",
+          "title": "HIDE A BIRD",
+          "difficultyTier": 4,
+          "tiles": [
+            "SCOWL",
+            "CRAVEN",
+            "CROWN",
+            "STEALTH"
+          ],
+          "triviaFact": "The color teal takes its name from the common teal, a small duck with a stripe of similar color around its eye."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "SCOWL"
+          ],
+          "note": "SCOWL is a facial expression, but FROWN, GRIN, SMIRK and POUT complete that set; SCOWL hides OWL."
+        },
+        {
+          "tiles": [
+            "CRAVEN"
+          ],
+          "note": "CRAVEN means cowardly, but TIMID, GUTLESS, SPINELESS and YELLOW complete that set; CRAVEN hides RAVEN."
+        },
+        {
+          "tiles": [
+            "CROWN"
+          ],
+          "note": "The CROWN was an old British coin worth five shillings, but FARTHING, SHILLING, FLORIN and GUINEA complete that set; CROWN hides CROW."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl11",
+      "packId": "pack6",
+      "title": "Steal the Show",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "CLASSIC BOARD GAMES",
+          "difficultyTier": 1,
+          "tiles": [
+            "SCRABBLE",
+            "RISK",
+            "LUDO",
+            "BACKGAMMON"
+          ],
+          "triviaFact": "Ludo is based on pachisi, a cross-and-circle board game that originated in India."
+        },
+        {
+          "id": "g2",
+          "title": "CRIMES",
+          "difficultyTier": 2,
+          "tiles": [
+            "FRAUD",
+            "ARSON",
+            "FORGERY",
+            "BRIBERY"
+          ],
+          "triviaFact": "Arson comes from the Latin verb ardere, meaning to burn."
+        },
+        {
+          "id": "g3",
+          "title": "SOCCER POSITIONS",
+          "difficultyTier": 3,
+          "tiles": [
+            "STRIKER",
+            "WINGER",
+            "GOALKEEPER",
+            "SWEEPER"
+          ],
+          "triviaFact": "A sweeper, also called a libero, plays behind the back line to clear any ball that gets through."
+        },
+        {
+          "id": "g4",
+          "title": "CONTAIN CONSECUTIVE LETTERS LIKE ABC",
+          "difficultyTier": 4,
+          "tiles": [
+            "HIJACK",
+            "DEFENDER",
+            "MONOPOLY",
+            "STUDENT"
+          ],
+          "triviaFact": "Each of these words contains three letters that sit side by side in the alphabet, such as STU in student."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "MONOPOLY"
+          ],
+          "note": "MONOPOLY is a classic board game, but SCRABBLE, RISK, LUDO and BACKGAMMON complete that set; MONOPOLY hides NOP."
+        },
+        {
+          "tiles": [
+            "HIJACK"
+          ],
+          "note": "To HIJACK is a crime, but FRAUD, ARSON, FORGERY and BRIBERY complete that set; HIJACK hides HIJ."
+        },
+        {
+          "tiles": [
+            "DEFENDER"
+          ],
+          "note": "DEFENDER is a soccer position, but STRIKER, WINGER, GOALKEEPER and SWEEPER complete that set; DEFENDER begins with DEF."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl12",
+      "packId": "pack6",
+      "title": "Island Hopping",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "COFFEE DRINKS",
+          "difficultyTier": 1,
+          "tiles": [
+            "ESPRESSO",
+            "LATTE",
+            "MOCHA",
+            "AMERICANO"
+          ],
+          "triviaFact": "Latte is short for the Italian caffè latte, which simply means milk coffee."
+        },
+        {
+          "id": "g2",
+          "title": "TYPES OF SWEATER",
+          "difficultyTier": 2,
+          "tiles": [
+            "CARDIGAN",
+            "PULLOVER",
+            "TURTLENECK",
+            "CREWNECK"
+          ],
+          "triviaFact": "The cardigan is named after James Brudenell, the 7th Earl of Cardigan, a British army officer."
+        },
+        {
+          "id": "g3",
+          "title": "ISLANDS",
+          "difficultyTier": 3,
+          "tiles": [
+            "JAVA",
+            "JERSEY",
+            "CAPRI",
+            "MADEIRA"
+          ],
+          "triviaFact": "Java is the world's most populous island, home to more than half of Indonesia's population."
+        },
+        {
+          "id": "g4",
+          "title": "PROGRAMMING LANGUAGES",
+          "difficultyTier": 4,
+          "tiles": [
+            "PYTHON",
+            "RUBY",
+            "SWIFT",
+            "RUST"
+          ],
+          "triviaFact": "Python's creator, Guido van Rossum, named it after the comedy group Monty Python, not the snake."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "JAVA"
+          ],
+          "note": "JAVA is a programming language and slang for coffee, but PYTHON, RUBY, SWIFT and RUST complete the languages; JAVA is an Indonesian island."
+        },
+        {
+          "tiles": [
+            "JERSEY"
+          ],
+          "note": "In British English a JERSEY is a sweater, but CARDIGAN, PULLOVER, TURTLENECK and CREWNECK complete that set; JERSEY is a Channel Island."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl13",
+      "packId": "pack6",
+      "title": "Sound Check",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "UNITS OF MASS",
+          "difficultyTier": 1,
+          "tiles": [
+            "GRAM",
+            "OUNCE",
+            "TONNE",
+            "STONE"
+          ],
+          "triviaFact": "A stone, still used in Britain and Ireland for body weight, equals 14 pounds, or about 6.35 kilograms."
+        },
+        {
+          "id": "g2",
+          "title": "PLUMBING COMPONENTS",
+          "difficultyTier": 2,
+          "tiles": [
+            "TAP",
+            "VALVE",
+            "PIPE",
+            "DRAIN"
+          ],
+          "triviaFact": "A U-shaped trap under a sink holds water that stops sewer gases from rising into the room."
+        },
+        {
+          "id": "g3",
+          "title": "ELEMENTS OF MUSIC",
+          "difficultyTier": 3,
+          "tiles": [
+            "RHYTHM",
+            "MELODY",
+            "HARMONY",
+            "TEMPO"
+          ],
+          "triviaFact": "Melody describes notes heard one after another, while harmony describes notes sounded together."
+        },
+        {
+          "id": "g4",
+          "title": "SOUND LIKE VEGETABLES",
+          "difficultyTier": 4,
+          "tiles": [
+            "BEAT",
+            "LEAK",
+            "CARAT",
+            "CHARRED"
+          ],
+          "triviaFact": "Swiss chard belongs to the same species as beetroot, but it is grown for its leaves rather than its root."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "CARAT"
+          ],
+          "note": "A CARAT is a unit of mass for gems, but GRAM, OUNCE, TONNE and STONE complete that set; CARAT sounds like carrot."
+        },
+        {
+          "tiles": [
+            "BEAT"
+          ],
+          "note": "BEAT is a basic element of music, but RHYTHM, MELODY, HARMONY and TEMPO complete that set; BEAT sounds like beet."
+        },
+        {
+          "tiles": [
+            "LEAK"
+          ],
+          "note": "A LEAK is a plumbing problem rather than a component like TAP, VALVE, PIPE or DRAIN; it sounds like leek."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl14",
+      "packId": "pack6",
+      "title": "Poker Face",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "WINDOW COVERINGS",
+          "difficultyTier": 1,
+          "tiles": [
+            "CURTAIN",
+            "SHUTTER",
+            "DRAPE",
+            "BLIND"
+          ],
+          "triviaFact": "Venetian blinds use horizontal slats that can be tilted to let in more or less light."
+        },
+        {
+          "id": "g2",
+          "title": "CHESS TERMS",
+          "difficultyTier": 2,
+          "tiles": [
+            "GAMBIT",
+            "CASTLING",
+            "STALEMATE",
+            "CHECK"
+          ],
+          "triviaFact": "Castling is the only chess move in which a player moves two pieces, the king and a rook, at once."
+        },
+        {
+          "id": "g3",
+          "title": "WORDS FOR A CLIFF",
+          "difficultyTier": 3,
+          "tiles": [
+            "CRAG",
+            "PRECIPICE",
+            "ESCARPMENT",
+            "ROCK FACE"
+          ],
+          "triviaFact": "An escarpment is a long, steep slope that separates two areas of land at different heights."
+        },
+        {
+          "id": "g4",
+          "title": "POKER TERMS",
+          "difficultyTier": 4,
+          "tiles": [
+            "BLUFF",
+            "FLOP",
+            "TELL",
+            "RIVER"
+          ],
+          "triviaFact": "In Texas hold'em, the river is the fifth and final community card dealt face up."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "BLIND"
+          ],
+          "note": "In poker a BLIND is a forced bet, but BLUFF, FLOP, TELL and RIVER complete the poker set; the window coverings need BLIND."
+        },
+        {
+          "tiles": [
+            "CHECK"
+          ],
+          "note": "To CHECK is also a poker action, but the chess terms need it beside GAMBIT, CASTLING and STALEMATE."
+        },
+        {
+          "tiles": [
+            "BLUFF"
+          ],
+          "note": "A BLUFF is also a steep bank or cliff, but CRAG, PRECIPICE, ESCARPMENT and ROCK FACE complete that set; BLUFF is a poker term."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl15",
+      "packId": "pack6",
+      "title": "Keyed Up",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "HANDICRAFTS",
+          "difficultyTier": 1,
+          "tiles": [
+            "KNITTING",
+            "WEAVING",
+            "CROCHET",
+            "QUILTING"
+          ],
+          "triviaFact": "Crochet takes its name from the French word for a small hook, the tool used to make its stitches."
+        },
+        {
+          "id": "g2",
+          "title": "OFFICE EQUIPMENT",
+          "difficultyTier": 2,
+          "tiles": [
+            "STAPLER",
+            "SHREDDER",
+            "SCANNER",
+            "PRINTER"
+          ],
+          "triviaFact": "Cross-cut shredders slice paper into small pieces that are much harder to reassemble than long strips."
+        },
+        {
+          "id": "g3",
+          "title": "ALLOYS",
+          "difficultyTier": 3,
+          "tiles": [
+            "BRASS",
+            "BRONZE",
+            "STEEL",
+            "SOLDER"
+          ],
+          "triviaFact": "Bronze is mainly copper and tin, while brass is mainly copper and zinc."
+        },
+        {
+          "id": "g4",
+          "title": "TYPED ON THE TOP ROW OF A QWERTY KEYBOARD",
+          "difficultyTier": 4,
+          "tiles": [
+            "TYPEWRITER",
+            "POTTERY",
+            "PEWTER",
+            "PROPERTY"
+          ],
+          "triviaFact": "The QWERTY layout is named after the first six letters on the top row of letter keys."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "TYPEWRITER"
+          ],
+          "note": "A TYPEWRITER is classic office equipment, but STAPLER, SHREDDER, SCANNER and PRINTER complete that set; TYPEWRITER uses only top-row letters."
+        },
+        {
+          "tiles": [
+            "POTTERY"
+          ],
+          "note": "POTTERY is a handicraft, but KNITTING, WEAVING, CROCHET and QUILTING complete that set; POTTERY uses only top-row letters."
+        },
+        {
+          "tiles": [
+            "PEWTER"
+          ],
+          "note": "PEWTER is an alloy based on tin, but BRASS, BRONZE, STEEL and SOLDER complete that set; PEWTER uses only top-row letters."
+        }
+      ]
+    },
+    {
+      "id": "pack6_lvl16",
+      "packId": "pack6",
+      "title": "Order, Order",
+      "categories": [
+        {
+          "id": "g1",
+          "title": "HORROR MOVIE MONSTERS",
+          "difficultyTier": 1,
+          "tiles": [
+            "VAMPIRE",
+            "ZOMBIE",
+            "MUMMY",
+            "WEREWOLF"
+          ],
+          "triviaFact": "Bram Stoker's 1897 novel Dracula did much to shape the modern image of the vampire."
+        },
+        {
+          "id": "g2",
+          "title": "FABRICS",
+          "difficultyTier": 2,
+          "tiles": [
+            "DENIM",
+            "VELVET",
+            "TWEED",
+            "SATIN"
+          ],
+          "triviaFact": "Denim takes its name from serge de Nîmes, a sturdy fabric associated with the French city of Nîmes."
+        },
+        {
+          "id": "g3",
+          "title": "BEFORE AID",
+          "difficultyTier": 3,
+          "tiles": [
+            "LEGAL",
+            "HEARING",
+            "VISUAL",
+            "FOREIGN"
+          ],
+          "triviaFact": "Legal aid helps people who cannot afford a lawyer to get free or low-cost advice and representation."
+        },
+        {
+          "id": "g4",
+          "title": "LETTERS IN ALPHABETICAL ORDER",
+          "difficultyTier": 4,
+          "tiles": [
+            "GHOST",
+            "CHINTZ",
+            "FIRST",
+            "ALMOST"
+          ],
+          "triviaFact": "Chintz, a glazed printed cotton, comes from the Hindi word chint, and its six letters run in alphabetical order."
+        }
+      ],
+      "redHerrings": [
+        {
+          "tiles": [
+            "GHOST"
+          ],
+          "note": "A GHOST haunts many horror films, but VAMPIRE, ZOMBIE, MUMMY and WEREWOLF complete that set; G, H, O, S, T run in alphabetical order."
+        },
+        {
+          "tiles": [
+            "CHINTZ"
+          ],
+          "note": "CHINTZ is a fabric, but DENIM, VELVET, TWEED and SATIN complete that set; its letters run in alphabetical order."
+        },
+        {
+          "tiles": [
+            "FIRST"
+          ],
+          "note": "FIRST AID is the most familiar phrase, but LEGAL, HEARING, VISUAL and FOREIGN complete that set; F, I, R, S, T are in alphabetical order."
+        }
+      ]
+    }
+  ]
+}

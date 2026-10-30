@@ -52,4 +52,5 @@ flutter:
     - assets/levels/pack3.json
     - assets/levels/pack4.json
     - assets/levels/pack5.json
+    - assets/levels/pack6.json
     - assets/levels/daily.json

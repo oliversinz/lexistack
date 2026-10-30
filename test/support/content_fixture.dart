@@ -23,3 +23,9 @@ Catalog initialCatalog() => validateCatalog(
   manifestContents: initialManifest(),
   files: installedFiles(),
 ).catalog!;
+
+// Exact approved 48-level catalog before Pack 6 was added.
+Catalog pack5Catalog() => validateCatalog(
+  manifestContents: File('test/fixtures/pack5-manifest.json').readAsStringSync(),
+  files: installedFiles(),
+).catalog!;

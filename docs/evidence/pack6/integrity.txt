@@ -1,0 +1,27 @@
+PASS release RELEASE.md af37e49f24a5f9803e480bcf47c2a2a1c9f765f32edf7dc6804fbb65427c4a64
+PASS release daily.json cae28b16a0ea4efe7dbb13db3eca26dff776fc4f604753cc591d90df41947a08
+PASS release manifest.json 4580aa22990ac15632a777d6a5a714db2919a206b3f33730bbe2ab11ca5e3d0f
+PASS release pack1.json d5e67008d5e7161fd6c41c0ac46530867f742f21f1cf042c74e6df7d69850e9a
+PASS release pack2.json 2847510b69daf99642e67407b593a7d67d17430d6a1167148d40f41a4bcbaf08
+PASS release pack3.json a9e5ca304a9ba01700df36c92aeb4425c618990975351a5596822a2e6c3157f9
+PASS release pack4.json 7315eef5e0650fe51d045dec1d712a786eed5d857aaa4f0e9bb6382f2b3807a4
+PASS release pack5.json 46e38caf79689b253b353fd52dd73b95fb84e9e721cff596dba56927f6ad708f
+PASS release pack6.json 18badc36157916fea571e4c61403388d35edac18869412684301b91502eb5bb9
+PASS binding candidates/pack6/r01/pack6.json 18badc36157916fea571e4c61403388d35edac18869412684301b91502eb5bb9
+PASS binding candidates/pack6/r01/author-notes.md ccb0eea02481be2a0d6c53670fed5e4e6ab01cd348f7f82b95377618ba4cc02a
+PASS binding prompts/author-v2.md c55f304bb5f5967fcb6565a1fc7b6081a3f61ed5eef3c714687d0c25f408bdab
+PASS binding prompts/review-v2.md baa40dc68b04e4330e092b7d94cada012c07f23954f0906527cd6505c3c24180
+PASS binding reviews/pack6/r01/review.md 144eefadc5f43d8efd0dfd6a2c4af7315d797ab92ea24f4313c5250e4479b86e
+PASS binding reviews/pack6/r01/approval.json 951d129146d8316d84c9f7431c537bec4f3655738285188fd82534a3484b261d
+PASS installed exact bytes daily.json
+PASS installed exact bytes manifest.json
+PASS installed exact bytes pack1.json
+PASS installed exact bytes pack2.json
+PASS installed exact bytes pack3.json
+PASS installed exact bytes pack4.json
+PASS installed exact bytes pack5.json
+PASS installed exact bytes pack6.json
+Resolved CS0 package file:///C:/Users/olive/AppData/Local/Pub/Cache/git/lexistack-content-d9acbd52de0e198dd109a4859299318db3f465f5/packages/lexistack_content_contract
+PASS unchanged CS0 pin and lockfile d9acbd52de0e198dd109a4859299318db3f465f5
+PASS every production JSON asset matches APK bundled bytes
+PASS Studio working tree unchanged True

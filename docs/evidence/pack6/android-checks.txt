@@ -1,0 +1,9 @@
+PASS old APK expired yesterday's Daily before integration, with no other changed field.
+PASS DataStore bytes identical before install, after install and after new launcher start.
+PASS all sixteen stages solved via Android input, ordered achievements, three stars, +50 each.
+PASS existing results/achievements, board fingerprints/state, settings and Daily history/streak untouched.
+PASS final first-win wallet = 155 + 16*50 = 955; no old payouts repeated.
+PASS force-stop / launcher restart preserves the entire DataStore byte-for-byte.
+PASS Continue resumes stage-16 replay: identical attempt ID, fingerprint, shuffled order, RNG, selection and paid hints.
+PASS wallet 955 - 30 - 40 = 885; no restart charges or rewards; all stars and finalized results preserved.
+PASS post-reload UI Continue changes only sequence and attempt-entered recency; every other persisted field is identical.

@@ -32,10 +32,10 @@ void main() {
       expect(report.diagnostics, isEmpty);
       expect(report.mode, ValidationMode.strict);
       expect(report.isInitialBenchmark, isFalse);
-      expect(report.catalog!.packs, hasLength(6));
-      expect(report.totalLevels, 48);
-      expect(report.totalCategories, 192);
-      expect(report.totalTiles, 768);
+      expect(report.catalog!.packs, hasLength(7));
+      expect(report.totalLevels, 64);
+      expect(report.totalCategories, 256);
+      expect(report.totalTiles, 1024);
       expect(report.meetsStrictMinimum, isTrue);
       final pack = report.catalog!.packs.first;
       expect(pack.schemaVersion, 2);
@@ -73,7 +73,7 @@ void main() {
       expect(report.diagnostics, isEmpty);
       expect(report.mode, ValidationMode.strict);
       expect(report.isInitialBenchmark, isFalse);
-      expect(report.catalog!.packs, hasLength(6));
+      expect(report.catalog!.packs, hasLength(7));
       expect(
         report.catalog!.packs.first.levels.last.title,
         'Hidden in Plain Sight',

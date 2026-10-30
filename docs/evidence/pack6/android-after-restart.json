@@ -1,0 +1,4301 @@
+{
+  "version": 1,
+  "coins": 885,
+  "sequence": 38,
+  "campaign": {
+    "pack1_lvl01": {
+      "bestStars": 1,
+      "practicePaid": false
+    },
+    "pack2_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack3_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack5_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack5_lvl02": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack5_lvl03": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack5_lvl04": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl01": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl02": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl03": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl04": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl05": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl06": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl07": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl08": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl09": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl10": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl11": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl12": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl13": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl14": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl15": {
+      "bestStars": 3,
+      "practicePaid": false
+    },
+    "pack6_lvl16": {
+      "bestStars": 3,
+      "practicePaid": false
+    }
+  },
+  "results": [
+    {
+      "id": "a1",
+      "levelId": "pack1_lvl01",
+      "date": null,
+      "header": "LexiStack · Everyday Echoes #1",
+      "won": true,
+      "mistakes": 4,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g2\",0]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g2\",1]"
+          ],
+          "tiers": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g4\",0]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",1]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g2\",2]",
+            "[\"pack1_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g3\",2]",
+            "[\"pack1_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g4\",0]",
+            "[\"pack1_lvl01\",\"g4\",1]",
+            "[\"pack1_lvl01\",\"g4\",2]",
+            "[\"pack1_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 15,
+      "rewardKind": "first",
+      "board": {
+        "id": "a1",
+        "levelId": "pack1_lvl01",
+        "date": null,
+        "entered": 5,
+        "fingerprint": "[\"pack1_lvl01\",\"pack1\",\"Table Talk\",[\"g1\",\"BREAKFAST BAKES\",1,\"A bagel is traditionally boiled before baking, which helps create its chewy crust.\",[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"TOAST\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"WAFFLE\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"MUFFIN\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",3]\",\"BAGEL\",1]],[\"g2\",\"KITCHEN UTENSILS\",2,\"A ladle has a deep bowl designed for lifting and serving liquids such as soup.\",[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"FORK\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"SPOON\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",2]\",\"KNIFE\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",3]\",\"LADLE\",2]],[\"g3\",\"TENNIS TERMS\",3,\"In tennis scoring, love means zero and deuce is a tie at forty points each.\",[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"SERVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"LOVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",2]\",\"DEUCE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",3]\",\"VOLLEY\",3]],[\"g4\",\"PAIRS WITH JAM\",4,\"Logjam originated as a term for timber obstructing waterways before becoming a metaphor.\",[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\",\"TRAFFIC\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\",\"PAPER\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",2]\",\"LOG\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",3]\",\"PEARL\",4]],[[[\"SERVE\"],\"SERVE could describe offering breakfast, but LOVE, DEUCE and VOLLEY give it a precise tennis home.\"]]]",
+        "game": {
+          "seed": 2,
+          "rng": 229615974,
+          "status": "won",
+          "lives": 1,
+          "mistakes": 4,
+          "combo": 4,
+          "extraLives": 1,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\"]"
+          ],
+          "pairs": {
+            "g1": [
+              "[\"pack1_lvl01\",\"g1\",0]",
+              "[\"pack1_lvl01\",\"g1\",1]"
+            ]
+          },
+          "peeked": [
+            "g1"
+          ],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g1\",2]",
+                "[\"pack1_lvl01\",\"g2\",0]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g2\",1]"
+              ],
+              "tiers": [
+                1,
+                1,
+                2,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g3\",0]",
+                "[\"pack1_lvl01\",\"g4\",0]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",1]",
+                "[\"pack1_lvl01\",\"g3\",1]",
+                "[\"pack1_lvl01\",\"g4\",1]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g1\",2]",
+                "[\"pack1_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g2\",1]",
+                "[\"pack1_lvl01\",\"g2\",2]",
+                "[\"pack1_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g3\",0]",
+                "[\"pack1_lvl01\",\"g3\",1]",
+                "[\"pack1_lvl01\",\"g3\",2]",
+                "[\"pack1_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g4\",0]",
+                "[\"pack1_lvl01\",\"g4\",1]",
+                "[\"pack1_lvl01\",\"g4\",2]",
+                "[\"pack1_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a6",
+      "levelId": "pack1_lvl01",
+      "date": null,
+      "header": "LexiStack · Everyday Echoes #1",
+      "won": false,
+      "mistakes": 4,
+      "groups": 0,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g2\",0]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g2\",1]"
+          ],
+          "tiers": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g4\",0]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        },
+        {
+          "ids": [
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",1]"
+          ],
+          "tiers": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "correct": false
+        }
+      ],
+      "reward": 0,
+      "rewardKind": "loss",
+      "board": {
+        "id": "a6",
+        "levelId": "pack1_lvl01",
+        "date": null,
+        "entered": 9,
+        "fingerprint": "[\"pack1_lvl01\",\"pack1\",\"Table Talk\",[\"g1\",\"BREAKFAST BAKES\",1,\"A bagel is traditionally boiled before baking, which helps create its chewy crust.\",[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"TOAST\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"WAFFLE\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"MUFFIN\",1],[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",3]\",\"BAGEL\",1]],[\"g2\",\"KITCHEN UTENSILS\",2,\"A ladle has a deep bowl designed for lifting and serving liquids such as soup.\",[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"FORK\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"SPOON\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",2]\",\"KNIFE\",2],[\"[\\\"pack1_lvl01\\\",\\\"g2\\\",3]\",\"LADLE\",2]],[\"g3\",\"TENNIS TERMS\",3,\"In tennis scoring, love means zero and deuce is a tie at forty points each.\",[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"SERVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"LOVE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",2]\",\"DEUCE\",3],[\"[\\\"pack1_lvl01\\\",\\\"g3\\\",3]\",\"VOLLEY\",3]],[\"g4\",\"PAIRS WITH JAM\",4,\"Logjam originated as a term for timber obstructing waterways before becoming a metaphor.\",[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\",\"TRAFFIC\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\",\"PAPER\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",2]\",\"LOG\",4],[\"[\\\"pack1_lvl01\\\",\\\"g4\\\",3]\",\"PEARL\",4]],[[[\"SERVE\"],\"SERVE could describe offering breakfast, but LOVE, DEUCE and VOLLEY give it a precise tennis home.\"]]]",
+        "game": {
+          "seed": 7,
+          "rng": 803655909,
+          "status": "lostFinal",
+          "lives": 0,
+          "mistakes": 4,
+          "combo": 0,
+          "extraLives": 0,
+          "order": [
+            "[\"pack1_lvl01\",\"g1\",0]",
+            "[\"pack1_lvl01\",\"g1\",3]",
+            "[\"pack1_lvl01\",\"g4\",2]",
+            "[\"pack1_lvl01\",\"g2\",2]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g2\",0]",
+            "[\"pack1_lvl01\",\"g3\",2]",
+            "[\"pack1_lvl01\",\"g3\",3]",
+            "[\"pack1_lvl01\",\"g2\",3]",
+            "[\"pack1_lvl01\",\"g3\",0]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",0]",
+            "[\"pack1_lvl01\",\"g4\",3]",
+            "[\"pack1_lvl01\",\"g1\",2]",
+            "[\"pack1_lvl01\",\"g4\",1]",
+            "[\"pack1_lvl01\",\"g1\",1]"
+          ],
+          "selection": [
+            "[\"pack1_lvl01\",\"g1\",1]",
+            "[\"pack1_lvl01\",\"g2\",1]",
+            "[\"pack1_lvl01\",\"g3\",1]",
+            "[\"pack1_lvl01\",\"g4\",1]"
+          ],
+          "solved": [],
+          "wrong": [
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",2]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",0]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",0]\"]",
+            "[\"[\\\"pack1_lvl01\\\",\\\"g1\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g2\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g3\\\",1]\",\"[\\\"pack1_lvl01\\\",\\\"g4\\\",1]\"]"
+          ],
+          "pairs": {
+            "g1": [
+              "[\"pack1_lvl01\",\"g1\",3]",
+              "[\"pack1_lvl01\",\"g1\",0]"
+            ]
+          },
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g1\",2]",
+                "[\"pack1_lvl01\",\"g2\",0]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g2\",1]"
+              ],
+              "tiers": [
+                1,
+                1,
+                2,
+                2
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",0]",
+                "[\"pack1_lvl01\",\"g2\",0]",
+                "[\"pack1_lvl01\",\"g3\",0]",
+                "[\"pack1_lvl01\",\"g4\",0]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            },
+            {
+              "ids": [
+                "[\"pack1_lvl01\",\"g1\",1]",
+                "[\"pack1_lvl01\",\"g2\",1]",
+                "[\"pack1_lvl01\",\"g3\",1]",
+                "[\"pack1_lvl01\",\"g4\",1]"
+              ],
+              "tiers": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "correct": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a10",
+      "levelId": "pack2_lvl01",
+      "date": null,
+      "header": "LexiStack · Science & Nature #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g1\",0]",
+            "[\"pack2_lvl01\",\"g1\",1]",
+            "[\"pack2_lvl01\",\"g1\",2]",
+            "[\"pack2_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g2\",0]",
+            "[\"pack2_lvl01\",\"g2\",1]",
+            "[\"pack2_lvl01\",\"g2\",2]",
+            "[\"pack2_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g3\",0]",
+            "[\"pack2_lvl01\",\"g3\",1]",
+            "[\"pack2_lvl01\",\"g3\",2]",
+            "[\"pack2_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack2_lvl01\",\"g4\",0]",
+            "[\"pack2_lvl01\",\"g4\",1]",
+            "[\"pack2_lvl01\",\"g4\",2]",
+            "[\"pack2_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a10",
+        "levelId": "pack2_lvl01",
+        "date": null,
+        "entered": 10,
+        "fingerprint": "[\"pack2_lvl01\",\"pack2\",\"Other Worlds\",[\"g1\",\"PLANETS BEYOND EARTH\",1,\"Saturn is less dense than water when its mass is averaged over its entire volume.\",[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",0]\",\"MARS\",1],[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",1]\",\"VENUS\",1],[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",2]\",\"SATURN\",1],[\"[\\\"pack2_lvl01\\\",\\\"g1\\\",3]\",\"JUPITER\",1]],[\"g2\",\"METALLIC ELEMENTS\",2,\"Mercury is a metal that remains liquid at ordinary room temperature.\",[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",0]\",\"MERCURY\",2],[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",1]\",\"LEAD\",2],[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",2]\",\"GOLD\",2],[\"[\\\"pack2_lvl01\\\",\\\"g2\\\",3]\",\"IRON\",2]],[\"g3\",\"DECIDUOUS TREES\",3,\"Deciduous trees shed their leaves seasonally, reducing water loss during unfavorable conditions.\",[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",0]\",\"BIRCH\",3],[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",1]\",\"WILLOW\",3],[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",2]\",\"MAPLE\",3],[\"[\\\"pack2_lvl01\\\",\\\"g3\\\",3]\",\"BEECH\",3]],[\"g4\",\"BEFORE CELL\",4,\"A dry cell uses an electrolyte held in a paste rather than a freely flowing liquid.\",[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",0]\",\"STEM\",4],[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",1]\",\"FUEL\",4],[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",2]\",\"DRY\",4],[\"[\\\"pack2_lvl01\\\",\\\"g4\\\",3]\",\"PRISON\",4]],[[[\"MERCURY\"],\"MERCURY looks like a fifth planet, but it completes the four metallic elements and leaves four unambiguous planets.\"]]]",
+        "game": {
+          "seed": 11,
+          "rng": 1262887857,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g1\",0]",
+                "[\"pack2_lvl01\",\"g1\",1]",
+                "[\"pack2_lvl01\",\"g1\",2]",
+                "[\"pack2_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g2\",0]",
+                "[\"pack2_lvl01\",\"g2\",1]",
+                "[\"pack2_lvl01\",\"g2\",2]",
+                "[\"pack2_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g3\",0]",
+                "[\"pack2_lvl01\",\"g3\",1]",
+                "[\"pack2_lvl01\",\"g3\",2]",
+                "[\"pack2_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack2_lvl01\",\"g4\",0]",
+                "[\"pack2_lvl01\",\"g4\",1]",
+                "[\"pack2_lvl01\",\"g4\",2]",
+                "[\"pack2_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a11",
+      "levelId": "pack3_lvl01",
+      "date": null,
+      "header": "LexiStack · World History & Myth #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g1\",0]",
+            "[\"pack3_lvl01\",\"g1\",1]",
+            "[\"pack3_lvl01\",\"g1\",2]",
+            "[\"pack3_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g2\",0]",
+            "[\"pack3_lvl01\",\"g2\",1]",
+            "[\"pack3_lvl01\",\"g2\",2]",
+            "[\"pack3_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g3\",0]",
+            "[\"pack3_lvl01\",\"g3\",1]",
+            "[\"pack3_lvl01\",\"g3\",2]",
+            "[\"pack3_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack3_lvl01\",\"g4\",0]",
+            "[\"pack3_lvl01\",\"g4\",1]",
+            "[\"pack3_lvl01\",\"g4\",2]",
+            "[\"pack3_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a11",
+        "levelId": "pack3_lvl01",
+        "date": null,
+        "entered": 11,
+        "fingerprint": "[\"pack3_lvl01\",\"pack3\",\"Echoes of Empire\",[\"g1\",\"ROMAN DEITIES\",1,\"Vesta was associated with the hearth and the sacred fire of ancient Rome.\",[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",0]\",\"MARS\",1],[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",1]\",\"JUNO\",1],[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",2]\",\"VESTA\",1],[\"[\\\"pack3_lvl01\\\",\\\"g1\\\",3]\",\"NEPTUNE\",1]],[\"g2\",\"GREEK LETTERS\",2,\"The English word alphabet combines the names of the first two Greek letters.\",[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",0]\",\"ALPHA\",2],[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",1]\",\"BETA\",2],[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",2]\",\"GAMMA\",2],[\"[\\\"pack3_lvl01\\\",\\\"g2\\\",3]\",\"DELTA\",2]],[\"g3\",\"HISTORIC WRITING SURFACES\",3,\"Papyrus sheets were made from strips cut from the stem of a wetland plant.\",[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",0]\",\"PAPYRUS\",3],[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",1]\",\"VELLUM\",3],[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",2]\",\"PARCHMENT\",3],[\"[\\\"pack3_lvl01\\\",\\\"g3\\\",3]\",\"CLAY TABLET\",3]],[\"g4\",\"BEFORE AGE\",4,\"The Bronze Age takes its name from an alloy commonly made with copper and tin.\",[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",0]\",\"STONE\",4],[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",1]\",\"BRONZE\",4],[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",2]\",\"IRON\",4],[\"[\\\"pack3_lvl01\\\",\\\"g4\\\",3]\",\"SPACE\",4]],[[[\"MARS\",\"NEPTUNE\"],\"MARS and NEPTUNE suggest planets, but JUNO and VESTA complete the Roman deities; this board has no four-planet set.\"]]]",
+        "game": {
+          "seed": 12,
+          "rng": 1377695844,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g1\",0]",
+                "[\"pack3_lvl01\",\"g1\",1]",
+                "[\"pack3_lvl01\",\"g1\",2]",
+                "[\"pack3_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g2\",0]",
+                "[\"pack3_lvl01\",\"g2\",1]",
+                "[\"pack3_lvl01\",\"g2\",2]",
+                "[\"pack3_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g3\",0]",
+                "[\"pack3_lvl01\",\"g3\",1]",
+                "[\"pack3_lvl01\",\"g3\",2]",
+                "[\"pack3_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack3_lvl01\",\"g4\",0]",
+                "[\"pack3_lvl01\",\"g4\",1]",
+                "[\"pack3_lvl01\",\"g4\",2]",
+                "[\"pack3_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a15",
+      "levelId": "pack5_lvl01",
+      "date": null,
+      "header": "LexiStack · Unexpected Connections #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack5_lvl01\",\"g1\",0]",
+            "[\"pack5_lvl01\",\"g1\",1]",
+            "[\"pack5_lvl01\",\"g1\",2]",
+            "[\"pack5_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl01\",\"g2\",0]",
+            "[\"pack5_lvl01\",\"g2\",1]",
+            "[\"pack5_lvl01\",\"g2\",2]",
+            "[\"pack5_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl01\",\"g3\",0]",
+            "[\"pack5_lvl01\",\"g3\",1]",
+            "[\"pack5_lvl01\",\"g3\",2]",
+            "[\"pack5_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl01\",\"g4\",0]",
+            "[\"pack5_lvl01\",\"g4\",1]",
+            "[\"pack5_lvl01\",\"g4\",2]",
+            "[\"pack5_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a15",
+        "levelId": "pack5_lvl01",
+        "date": null,
+        "entered": 15,
+        "fingerprint": "[\"pack5_lvl01\",\"pack5\",\"Driving Range\",[\"g1\",\"HEADWEAR\",1,\"The sombrero takes its name from the Spanish word sombra, meaning shade, which its wide brim provides.\",[\"[\\\"pack5_lvl01\\\",\\\"g1\\\",0]\",\"BERET\",1],[\"[\\\"pack5_lvl01\\\",\\\"g1\\\",1]\",\"FEDORA\",1],[\"[\\\"pack5_lvl01\\\",\\\"g1\\\",2]\",\"SOMBRERO\",1],[\"[\\\"pack5_lvl01\\\",\\\"g1\\\",3]\",\"BEANIE\",1]],[\"g2\",\"BIRDS OF PREY\",2,\"The osprey feeds almost entirely on live fish, plunging feet first into the water to catch them.\",[\"[\\\"pack5_lvl01\\\",\\\"g2\\\",0]\",\"FALCON\",2],[\"[\\\"pack5_lvl01\\\",\\\"g2\\\",1]\",\"OSPREY\",2],[\"[\\\"pack5_lvl01\\\",\\\"g2\\\",2]\",\"KESTREL\",2],[\"[\\\"pack5_lvl01\\\",\\\"g2\\\",3]\",\"HARRIER\",2]],[\"g3\",\"GOLF SCORING TERMS\",3,\"In golf, a birdie is one stroke under par for a hole, while an eagle is two strokes under.\",[\"[\\\"pack5_lvl01\\\",\\\"g3\\\",0]\",\"PAR\",3],[\"[\\\"pack5_lvl01\\\",\\\"g3\\\",1]\",\"BOGEY\",3],[\"[\\\"pack5_lvl01\\\",\\\"g3\\\",2]\",\"BIRDIE\",3],[\"[\\\"pack5_lvl01\\\",\\\"g3\\\",3]\",\"EAGLE\",3]],[\"g4\",\"PARTS OF A CAR\",4,\"Bonnet and boot are the British names for what American drivers call the hood and trunk of a car.\",[\"[\\\"pack5_lvl01\\\",\\\"g4\\\",0]\",\"BONNET\",4],[\"[\\\"pack5_lvl01\\\",\\\"g4\\\",1]\",\"BOOT\",4],[\"[\\\"pack5_lvl01\\\",\\\"g4\\\",2]\",\"HOOD\",4],[\"[\\\"pack5_lvl01\\\",\\\"g4\\\",3]\",\"TRUNK\",4]],[[[\"EAGLE\"],\"EAGLE looks like a fifth bird of prey beside FALCON, OSPREY, KESTREL and HARRIER, but golf needs it; PAR, BOGEY, BIRDIE and EAGLE are all scoring terms.\"],[[\"BONNET\",\"HOOD\"],\"BONNET and HOOD are worn on the head like BERET and BEANIE, but they are also car parts; BOOT and TRUNK confirm that reading.\"]]]",
+        "game": {
+          "seed": 16,
+          "rng": 1836927792,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack5_lvl01\",\"g1\",0]",
+                "[\"pack5_lvl01\",\"g1\",1]",
+                "[\"pack5_lvl01\",\"g1\",2]",
+                "[\"pack5_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl01\",\"g2\",0]",
+                "[\"pack5_lvl01\",\"g2\",1]",
+                "[\"pack5_lvl01\",\"g2\",2]",
+                "[\"pack5_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl01\",\"g3\",0]",
+                "[\"pack5_lvl01\",\"g3\",1]",
+                "[\"pack5_lvl01\",\"g3\",2]",
+                "[\"pack5_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl01\",\"g4\",0]",
+                "[\"pack5_lvl01\",\"g4\",1]",
+                "[\"pack5_lvl01\",\"g4\",2]",
+                "[\"pack5_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a16",
+      "levelId": "pack5_lvl02",
+      "date": null,
+      "header": "LexiStack · Unexpected Connections #2",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack5_lvl02\",\"g1\",0]",
+            "[\"pack5_lvl02\",\"g1\",1]",
+            "[\"pack5_lvl02\",\"g1\",2]",
+            "[\"pack5_lvl02\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl02\",\"g2\",0]",
+            "[\"pack5_lvl02\",\"g2\",1]",
+            "[\"pack5_lvl02\",\"g2\",2]",
+            "[\"pack5_lvl02\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl02\",\"g3\",0]",
+            "[\"pack5_lvl02\",\"g3\",1]",
+            "[\"pack5_lvl02\",\"g3\",2]",
+            "[\"pack5_lvl02\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl02\",\"g4\",0]",
+            "[\"pack5_lvl02\",\"g4\",1]",
+            "[\"pack5_lvl02\",\"g4\",2]",
+            "[\"pack5_lvl02\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a16",
+        "levelId": "pack5_lvl02",
+        "date": null,
+        "entered": 16,
+        "fingerprint": "[\"pack5_lvl02\",\"pack5\",\"Bridging the Gap\",[\"g1\",\"ANIMAL ENCLOSURES\",1,\"A traditional rabbit hutch is often a raised wooden box with a wire mesh front that lets fresh air circulate.\",[\"[\\\"pack5_lvl02\\\",\\\"g1\\\",0]\",\"KENNEL\",1],[\"[\\\"pack5_lvl02\\\",\\\"g1\\\",1]\",\"STABLE\",1],[\"[\\\"pack5_lvl02\\\",\\\"g1\\\",2]\",\"HUTCH\",1],[\"[\\\"pack5_lvl02\\\",\\\"g1\\\",3]\",\"COOP\",1]],[\"g2\",\"WORDS FOR A STRONG DESIRE\",2,\"Crave comes from an Old English verb meaning to demand, long before it meant to long for something.\",[\"[\\\"pack5_lvl02\\\",\\\"g2\\\",0]\",\"CRAVING\",2],[\"[\\\"pack5_lvl02\\\",\\\"g2\\\",1]\",\"URGE\",2],[\"[\\\"pack5_lvl02\\\",\\\"g2\\\",2]\",\"ITCH\",2],[\"[\\\"pack5_lvl02\\\",\\\"g2\\\",3]\",\"HANKERING\",2]],[\"g3\",\"THINGS WITH A BRIDGE\",3,\"A ship's bridge is named after the raised walkway that once spanned the paddle wheels of early steamships.\",[\"[\\\"pack5_lvl02\\\",\\\"g3\\\",0]\",\"NOSE\",3],[\"[\\\"pack5_lvl02\\\",\\\"g3\\\",1]\",\"GLASSES\",3],[\"[\\\"pack5_lvl02\\\",\\\"g3\\\",2]\",\"SHIP\",3],[\"[\\\"pack5_lvl02\\\",\\\"g3\\\",3]\",\"SONG\",3]],[\"g4\",\"CURRENCIES\",4,\"The yen, the won and the Chinese yuan all take their names from a character meaning round.\",[\"[\\\"pack5_lvl02\\\",\\\"g4\\\",0]\",\"REAL\",4],[\"[\\\"pack5_lvl02\\\",\\\"g4\\\",1]\",\"WON\",4],[\"[\\\"pack5_lvl02\\\",\\\"g4\\\",2]\",\"YEN\",4],[\"[\\\"pack5_lvl02\\\",\\\"g4\\\",3]\",\"POUND\",4]],[[[\"POUND\"],\"POUND is a place where stray animals are held, tempting the KENNEL and HUTCH group, but REAL, WON and YEN need it as a currency.\"],[[\"YEN\"],\"YEN can mean a longing, just like URGE and ITCH, but the desire words are complete without it; it joins REAL, WON and POUND.\"]]]",
+        "game": {
+          "seed": 17,
+          "rng": 1951735779,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack5_lvl02\",\"g1\",0]",
+                "[\"pack5_lvl02\",\"g1\",1]",
+                "[\"pack5_lvl02\",\"g1\",2]",
+                "[\"pack5_lvl02\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl02\",\"g2\",0]",
+                "[\"pack5_lvl02\",\"g2\",1]",
+                "[\"pack5_lvl02\",\"g2\",2]",
+                "[\"pack5_lvl02\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl02\",\"g3\",0]",
+                "[\"pack5_lvl02\",\"g3\",1]",
+                "[\"pack5_lvl02\",\"g3\",2]",
+                "[\"pack5_lvl02\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl02\",\"g4\",0]",
+                "[\"pack5_lvl02\",\"g4\",1]",
+                "[\"pack5_lvl02\",\"g4\",2]",
+                "[\"pack5_lvl02\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a17",
+      "levelId": "pack5_lvl03",
+      "date": null,
+      "header": "LexiStack · Unexpected Connections #3",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack5_lvl03\",\"g1\",0]",
+            "[\"pack5_lvl03\",\"g1\",1]",
+            "[\"pack5_lvl03\",\"g1\",2]",
+            "[\"pack5_lvl03\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl03\",\"g2\",0]",
+            "[\"pack5_lvl03\",\"g2\",1]",
+            "[\"pack5_lvl03\",\"g2\",2]",
+            "[\"pack5_lvl03\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl03\",\"g3\",0]",
+            "[\"pack5_lvl03\",\"g3\",1]",
+            "[\"pack5_lvl03\",\"g3\",2]",
+            "[\"pack5_lvl03\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl03\",\"g4\",0]",
+            "[\"pack5_lvl03\",\"g4\",1]",
+            "[\"pack5_lvl03\",\"g4\",2]",
+            "[\"pack5_lvl03\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a17",
+        "levelId": "pack5_lvl03",
+        "date": null,
+        "entered": 17,
+        "fingerprint": "[\"pack5_lvl03\",\"pack5\",\"Signs from Above\",[\"g1\",\"PUNCTUATION MARKS\",1,\"Apostrophe comes from a Greek word for turning away, describing a mark that shows where letters were left out.\",[\"[\\\"pack5_lvl03\\\",\\\"g1\\\",0]\",\"COMMA\",1],[\"[\\\"pack5_lvl03\\\",\\\"g1\\\",1]\",\"COLON\",1],[\"[\\\"pack5_lvl03\\\",\\\"g1\\\",2]\",\"HYPHEN\",1],[\"[\\\"pack5_lvl03\\\",\\\"g1\\\",3]\",\"APOSTROPHE\",1]],[\"g2\",\"ZODIAC SIGNS\",2,\"Libra, represented by a pair of scales, is the only zodiac sign symbolized by an object.\",[\"[\\\"pack5_lvl03\\\",\\\"g2\\\",0]\",\"ARIES\",2],[\"[\\\"pack5_lvl03\\\",\\\"g2\\\",1]\",\"LIBRA\",2],[\"[\\\"pack5_lvl03\\\",\\\"g2\\\",2]\",\"VIRGO\",2],[\"[\\\"pack5_lvl03\\\",\\\"g2\\\",3]\",\"PISCES\",2]],[\"g3\",\"OLYMPIAN DEITIES\",3,\"In many versions of the myth, Hephaestus split open the head of Zeus with an axe, and Athena sprang out.\",[\"[\\\"pack5_lvl03\\\",\\\"g3\\\",0]\",\"ZEUS\",3],[\"[\\\"pack5_lvl03\\\",\\\"g3\\\",1]\",\"APHRODITE\",3],[\"[\\\"pack5_lvl03\\\",\\\"g3\\\",2]\",\"DIONYSUS\",3],[\"[\\\"pack5_lvl03\\\",\\\"g3\\\",3]\",\"HEPHAESTUS\",3]],[\"g4\",\"NASA HUMAN SPACEFLIGHT PROGRAMS\",4,\"NASA named its return-to-the-Moon program after Artemis, the twin sister of Apollo in Greek myth.\",[\"[\\\"pack5_lvl03\\\",\\\"g4\\\",0]\",\"MERCURY\",4],[\"[\\\"pack5_lvl03\\\",\\\"g4\\\",1]\",\"GEMINI\",4],[\"[\\\"pack5_lvl03\\\",\\\"g4\\\",2]\",\"APOLLO\",4],[\"[\\\"pack5_lvl03\\\",\\\"g4\\\",3]\",\"ARTEMIS\",4]],[[[\"GEMINI\"],\"GEMINI looks like a fifth zodiac sign beside ARIES and LIBRA, but it also named the NASA program flown between MERCURY and APOLLO.\"],[[\"APOLLO\",\"ARTEMIS\"],\"APOLLO and ARTEMIS are Olympian twins, suggesting a six-deity set, but ZEUS, APHRODITE, DIONYSUS and HEPHAESTUS complete it; the twins name NASA programs.\"],[[\"MERCURY\"],\"MERCURY is also a Roman god and a planet, but it is not one of the Greek Olympians; it opens the list of NASA human spaceflight programs.\"],[[\"ARIES\"],\"ARIES resembles ARES, the Greek god of war, but it is the zodiac ram and belongs with LIBRA, VIRGO and PISCES.\"]]]",
+        "game": {
+          "seed": 18,
+          "rng": 2066543766,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack5_lvl03\",\"g1\",0]",
+                "[\"pack5_lvl03\",\"g1\",1]",
+                "[\"pack5_lvl03\",\"g1\",2]",
+                "[\"pack5_lvl03\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl03\",\"g2\",0]",
+                "[\"pack5_lvl03\",\"g2\",1]",
+                "[\"pack5_lvl03\",\"g2\",2]",
+                "[\"pack5_lvl03\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl03\",\"g3\",0]",
+                "[\"pack5_lvl03\",\"g3\",1]",
+                "[\"pack5_lvl03\",\"g3\",2]",
+                "[\"pack5_lvl03\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl03\",\"g4\",0]",
+                "[\"pack5_lvl03\",\"g4\",1]",
+                "[\"pack5_lvl03\",\"g4\",2]",
+                "[\"pack5_lvl03\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a18",
+      "levelId": "pack5_lvl04",
+      "date": null,
+      "header": "LexiStack · Unexpected Connections #4",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack5_lvl04\",\"g1\",0]",
+            "[\"pack5_lvl04\",\"g1\",1]",
+            "[\"pack5_lvl04\",\"g1\",2]",
+            "[\"pack5_lvl04\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl04\",\"g2\",0]",
+            "[\"pack5_lvl04\",\"g2\",1]",
+            "[\"pack5_lvl04\",\"g2\",2]",
+            "[\"pack5_lvl04\",\"g2\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl04\",\"g3\",0]",
+            "[\"pack5_lvl04\",\"g3\",1]",
+            "[\"pack5_lvl04\",\"g3\",2]",
+            "[\"pack5_lvl04\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack5_lvl04\",\"g4\",0]",
+            "[\"pack5_lvl04\",\"g4\",1]",
+            "[\"pack5_lvl04\",\"g4\",2]",
+            "[\"pack5_lvl04\",\"g4\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a18",
+        "levelId": "pack5_lvl04",
+        "date": null,
+        "entered": 18,
+        "fingerprint": "[\"pack5_lvl04\",\"pack5\",\"Packed and Ready\",[\"g1\",\"US STATES\",1,\"Vermont's name is usually traced to the French words for green mountain.\",[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",0]\",\"OREGON\",1],[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",1]\",\"NEVADA\",1],[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",2]\",\"VERMONT\",1],[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",3]\",\"KANSAS\",1]],[\"g2\",\"GARMENTS NAMED AFTER PLACES\",4,\"Jodhpurs take their name from the Indian city of Jodhpur, where similar riding trousers were worn.\",[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",0]\",\"TUXEDO\",4],[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",1]\",\"BIKINI\",4],[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",2]\",\"JODHPURS\",4],[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",3]\",\"BALACLAVA\",4]],[\"g3\",\"COMPUTER FONTS\",3,\"Helvetica takes its name from Helvetia, the Latin name for Switzerland, where the typeface was created.\",[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",0]\",\"COURIER\",3],[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",1]\",\"GEORGIA\",3],[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",2]\",\"IMPACT\",3],[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",3]\",\"HELVETICA\",3]],[\"g4\",\"CARRY LOADS FOR OTHERS\",2,\"A mule is the offspring of a male donkey and a female horse, valued for its strength and stamina.\",[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",0]\",\"PORTER\",2],[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",1]\",\"CADDIE\",2],[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",2]\",\"BEARER\",2],[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",3]\",\"MULE\",2]],[[[\"GEORGIA\"],\"GEORGIA looks like a fifth US state beside OREGON and KANSAS, but it is also a familiar computer font alongside COURIER, IMPACT and HELVETICA.\"],[[\"COURIER\"],\"COURIER carries loads for others like a PORTER or CADDIE, but the font set needs it; MULE completes the carriers.\"],[[\"MULE\"],\"MULE is also a backless shoe, tempting the garment set, but it is not named after a place; it is the pack animal among the carriers.\"]]]",
+        "game": {
+          "seed": 19,
+          "rng": 33868106,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [
+            "g1",
+            "g4"
+          ],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack5_lvl04\",\"g1\",0]",
+                "[\"pack5_lvl04\",\"g1\",1]",
+                "[\"pack5_lvl04\",\"g1\",2]",
+                "[\"pack5_lvl04\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl04\",\"g2\",0]",
+                "[\"pack5_lvl04\",\"g2\",1]",
+                "[\"pack5_lvl04\",\"g2\",2]",
+                "[\"pack5_lvl04\",\"g2\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl04\",\"g3\",0]",
+                "[\"pack5_lvl04\",\"g3\",1]",
+                "[\"pack5_lvl04\",\"g3\",2]",
+                "[\"pack5_lvl04\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack5_lvl04\",\"g4\",0]",
+                "[\"pack5_lvl04\",\"g4\",1]",
+                "[\"pack5_lvl04\",\"g4\",2]",
+                "[\"pack5_lvl04\",\"g4\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a22",
+      "levelId": "pack6_lvl01",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #1",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl01\",\"g1\",0]",
+            "[\"pack6_lvl01\",\"g1\",1]",
+            "[\"pack6_lvl01\",\"g1\",2]",
+            "[\"pack6_lvl01\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl01\",\"g2\",0]",
+            "[\"pack6_lvl01\",\"g2\",1]",
+            "[\"pack6_lvl01\",\"g2\",2]",
+            "[\"pack6_lvl01\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl01\",\"g3\",0]",
+            "[\"pack6_lvl01\",\"g3\",1]",
+            "[\"pack6_lvl01\",\"g3\",2]",
+            "[\"pack6_lvl01\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl01\",\"g4\",0]",
+            "[\"pack6_lvl01\",\"g4\",1]",
+            "[\"pack6_lvl01\",\"g4\",2]",
+            "[\"pack6_lvl01\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a22",
+        "levelId": "pack6_lvl01",
+        "date": null,
+        "entered": 22,
+        "fingerprint": "[\"pack6_lvl01\",\"pack6\",\"Undercover\",[\"g1\",\"ROOT VEGETABLES\",1,\"Carrots and parsnips belong to the same plant family as parsley, celery and fennel.\",[\"[\\\"pack6_lvl01\\\",\\\"g1\\\",0]\",\"CARROT\",1],[\"[\\\"pack6_lvl01\\\",\\\"g1\\\",1]\",\"TURNIP\",1],[\"[\\\"pack6_lvl01\\\",\\\"g1\\\",2]\",\"PARSNIP\",1],[\"[\\\"pack6_lvl01\\\",\\\"g1\\\",3]\",\"RADISH\",1]],[\"g2\",\"PEOPLE IN SPY JARGON\",2,\"The novelist John le Carré helped popularize mole as the word for a spy hidden inside an organization.\",[\"[\\\"pack6_lvl01\\\",\\\"g2\\\",0]\",\"MOLE\",2],[\"[\\\"pack6_lvl01\\\",\\\"g2\\\",1]\",\"SLEEPER\",2],[\"[\\\"pack6_lvl01\\\",\\\"g2\\\",2]\",\"HANDLER\",2],[\"[\\\"pack6_lvl01\\\",\\\"g2\\\",3]\",\"ASSET\",2]],[\"g3\",\"BURROWING ANIMALS\",3,\"A wombat's pouch faces backward, which helps keep soil out while the mother digs.\",[\"[\\\"pack6_lvl01\\\",\\\"g3\\\",0]\",\"RABBIT\",3],[\"[\\\"pack6_lvl01\\\",\\\"g3\\\",1]\",\"BADGER\",3],[\"[\\\"pack6_lvl01\\\",\\\"g3\\\",2]\",\"WOMBAT\",3],[\"[\\\"pack6_lvl01\\\",\\\"g3\\\",3]\",\"MEERKAT\",3]],[\"g4\",\"BEFORE AGENT\",4,\"In professional sports, a free agent is a player who is out of contract and may sign with any team.\",[\"[\\\"pack6_lvl01\\\",\\\"g4\\\",0]\",\"LITERARY\",4],[\"[\\\"pack6_lvl01\\\",\\\"g4\\\",1]\",\"TRAVEL\",4],[\"[\\\"pack6_lvl01\\\",\\\"g4\\\",2]\",\"FREE\",4],[\"[\\\"pack6_lvl01\\\",\\\"g4\\\",3]\",\"INSURANCE\",4]],[[[\"MOLE\"],\"MOLE digs tunnels like WOMBAT and BADGER, but RABBIT, BADGER, WOMBAT and MEERKAT already complete the burrowers; MOLE is spy slang for an insider.\"],[[\"SLEEPER\"],\"SLEEPER can precede AGENT, but LITERARY, TRAVEL, FREE and INSURANCE complete that set, while the spy jargon needs SLEEPER beside MOLE, HANDLER and ASSET.\"]]]",
+        "game": {
+          "seed": 23,
+          "rng": 493100054,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl01\",\"g1\",0]",
+                "[\"pack6_lvl01\",\"g1\",1]",
+                "[\"pack6_lvl01\",\"g1\",2]",
+                "[\"pack6_lvl01\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl01\",\"g2\",0]",
+                "[\"pack6_lvl01\",\"g2\",1]",
+                "[\"pack6_lvl01\",\"g2\",2]",
+                "[\"pack6_lvl01\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl01\",\"g3\",0]",
+                "[\"pack6_lvl01\",\"g3\",1]",
+                "[\"pack6_lvl01\",\"g3\",2]",
+                "[\"pack6_lvl01\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl01\",\"g4\",0]",
+                "[\"pack6_lvl01\",\"g4\",1]",
+                "[\"pack6_lvl01\",\"g4\",2]",
+                "[\"pack6_lvl01\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a23",
+      "levelId": "pack6_lvl02",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #2",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl02\",\"g1\",0]",
+            "[\"pack6_lvl02\",\"g1\",1]",
+            "[\"pack6_lvl02\",\"g1\",2]",
+            "[\"pack6_lvl02\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl02\",\"g2\",0]",
+            "[\"pack6_lvl02\",\"g2\",1]",
+            "[\"pack6_lvl02\",\"g2\",2]",
+            "[\"pack6_lvl02\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl02\",\"g3\",0]",
+            "[\"pack6_lvl02\",\"g3\",1]",
+            "[\"pack6_lvl02\",\"g3\",2]",
+            "[\"pack6_lvl02\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl02\",\"g4\",0]",
+            "[\"pack6_lvl02\",\"g4\",1]",
+            "[\"pack6_lvl02\",\"g4\",2]",
+            "[\"pack6_lvl02\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a23",
+        "levelId": "pack6_lvl02",
+        "date": null,
+        "entered": 23,
+        "fingerprint": "[\"pack6_lvl02\",\"pack6\",\"Safe and Sound\",[\"g1\",\"SOUNDS A DOG MAKES\",1,\"The basenji, a hunting dog from central Africa, is known for rarely barking and instead makes a yodel-like sound.\",[\"[\\\"pack6_lvl02\\\",\\\"g1\\\",0]\",\"WOOF\",1],[\"[\\\"pack6_lvl02\\\",\\\"g1\\\",1]\",\"YAP\",1],[\"[\\\"pack6_lvl02\\\",\\\"g1\\\",2]\",\"GROWL\",1],[\"[\\\"pack6_lvl02\\\",\\\"g1\\\",3]\",\"HOWL\",1]],[\"g2\",\"PARTS OF A TREE\",2,\"Cork is harvested from the thick outer bark of the cork oak, which grows back after it has been stripped.\",[\"[\\\"pack6_lvl02\\\",\\\"g2\\\",0]\",\"BARK\",2],[\"[\\\"pack6_lvl02\\\",\\\"g2\\\",1]\",\"ROOT\",2],[\"[\\\"pack6_lvl02\\\",\\\"g2\\\",2]\",\"TWIG\",2],[\"[\\\"pack6_lvl02\\\",\\\"g2\\\",3]\",\"LEAF\",2]],[\"g3\",\"GYMNASTICS APPARATUS\",3,\"The balance beam used in artistic gymnastics is only 10 centimeters wide.\",[\"[\\\"pack6_lvl02\\\",\\\"g3\\\",0]\",\"BEAM\",3],[\"[\\\"pack6_lvl02\\\",\\\"g3\\\",1]\",\"POMMEL HORSE\",3],[\"[\\\"pack6_lvl02\\\",\\\"g3\\\",2]\",\"FLOOR\",3],[\"[\\\"pack6_lvl02\\\",\\\"g3\\\",3]\",\"RINGS\",3]],[\"g4\",\"PLACES TO KEEP MONEY\",4,\"A till is the drawer where money is kept in a cash register, and in British English the word can mean the whole machine.\",[\"[\\\"pack6_lvl02\\\",\\\"g4\\\",0]\",\"SAFE\",4],[\"[\\\"pack6_lvl02\\\",\\\"g4\\\",1]\",\"VAULT\",4],[\"[\\\"pack6_lvl02\\\",\\\"g4\\\",2]\",\"PIGGY BANK\",4],[\"[\\\"pack6_lvl02\\\",\\\"g4\\\",3]\",\"TILL\",4]],[[[\"BARK\"],\"BARK is the most famous dog sound, but WOOF, YAP, GROWL and HOWL complete that set; BARK is also the outer layer of a tree.\"],[[\"RINGS\"],\"Trees have growth RINGS, but BARK, ROOT, TWIG and LEAF already complete the tree; RINGS is a gymnastics apparatus.\"],[[\"VAULT\"],\"VAULT is a gymnastics event, but BEAM, POMMEL HORSE, FLOOR and RINGS complete the apparatus; a bank VAULT keeps money.\"]]]",
+        "game": {
+          "seed": 24,
+          "rng": 607908041,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl02\",\"g1\",0]",
+                "[\"pack6_lvl02\",\"g1\",1]",
+                "[\"pack6_lvl02\",\"g1\",2]",
+                "[\"pack6_lvl02\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl02\",\"g2\",0]",
+                "[\"pack6_lvl02\",\"g2\",1]",
+                "[\"pack6_lvl02\",\"g2\",2]",
+                "[\"pack6_lvl02\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl02\",\"g3\",0]",
+                "[\"pack6_lvl02\",\"g3\",1]",
+                "[\"pack6_lvl02\",\"g3\",2]",
+                "[\"pack6_lvl02\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl02\",\"g4\",0]",
+                "[\"pack6_lvl02\",\"g4\",1]",
+                "[\"pack6_lvl02\",\"g4\",2]",
+                "[\"pack6_lvl02\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a24",
+      "levelId": "pack6_lvl03",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #3",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl03\",\"g1\",0]",
+            "[\"pack6_lvl03\",\"g1\",1]",
+            "[\"pack6_lvl03\",\"g1\",2]",
+            "[\"pack6_lvl03\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl03\",\"g2\",0]",
+            "[\"pack6_lvl03\",\"g2\",1]",
+            "[\"pack6_lvl03\",\"g2\",2]",
+            "[\"pack6_lvl03\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl03\",\"g3\",0]",
+            "[\"pack6_lvl03\",\"g3\",1]",
+            "[\"pack6_lvl03\",\"g3\",2]",
+            "[\"pack6_lvl03\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl03\",\"g4\",0]",
+            "[\"pack6_lvl03\",\"g4\",1]",
+            "[\"pack6_lvl03\",\"g4\",2]",
+            "[\"pack6_lvl03\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a24",
+        "levelId": "pack6_lvl03",
+        "date": null,
+        "entered": 24,
+        "fingerprint": "[\"pack6_lvl03\",\"pack6\",\"Now You See It\",[\"g1\",\"VERBS FOR HIDING SOMETHING\",1,\"Cache comes from the French verb cacher, meaning to conceal.\",[\"[\\\"pack6_lvl03\\\",\\\"g1\\\",0]\",\"STASH\",1],[\"[\\\"pack6_lvl03\\\",\\\"g1\\\",1]\",\"CACHE\",1],[\"[\\\"pack6_lvl03\\\",\\\"g1\\\",2]\",\"BURY\",1],[\"[\\\"pack6_lvl03\\\",\\\"g1\\\",3]\",\"CONCEAL\",1]],[\"g2\",\"ANIMAL COVERINGS\",2,\"Plumage, a bird's covering of feathers, comes from the French word plume, meaning feather.\",[\"[\\\"pack6_lvl03\\\",\\\"g2\\\",0]\",\"PELT\",2],[\"[\\\"pack6_lvl03\\\",\\\"g2\\\",1]\",\"FLEECE\",2],[\"[\\\"pack6_lvl03\\\",\\\"g2\\\",2]\",\"PLUMAGE\",2],[\"[\\\"pack6_lvl03\\\",\\\"g2\\\",3]\",\"HIDE\",2]],[\"g3\",\"ANIMALS THAT CAN CHANGE COLOR\",3,\"Cuttlefish change color using chromatophores, elastic sacs of pigment that tiny muscles stretch open.\",[\"[\\\"pack6_lvl03\\\",\\\"g3\\\",0]\",\"CHAMELEON\",3],[\"[\\\"pack6_lvl03\\\",\\\"g3\\\",1]\",\"CUTTLEFISH\",3],[\"[\\\"pack6_lvl03\\\",\\\"g3\\\",2]\",\"OCTOPUS\",3],[\"[\\\"pack6_lvl03\\\",\\\"g3\\\",3]\",\"FLOUNDER\",3]],[\"g4\",\"FOLLOW TREASURE\",4,\"In English law, treasure trove once described hidden gold or silver whose owner could not be traced.\",[\"[\\\"pack6_lvl03\\\",\\\"g4\\\",0]\",\"HUNT\",4],[\"[\\\"pack6_lvl03\\\",\\\"g4\\\",1]\",\"CHEST\",4],[\"[\\\"pack6_lvl03\\\",\\\"g4\\\",2]\",\"TROVE\",4],[\"[\\\"pack6_lvl03\\\",\\\"g4\\\",3]\",\"MAP\",4]],[[[\"HIDE\"],\"HIDE is the most obvious verb for hiding, but STASH, CACHE, BURY and CONCEAL complete that set; HIDE is also an animal's skin.\"],[[\"BURY\"],\"People bury treasure, but BURY comes before TREASURE rather than after it; it belongs with the hiding verbs.\"]]]",
+        "game": {
+          "seed": 25,
+          "rng": 722716028,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl03\",\"g1\",0]",
+                "[\"pack6_lvl03\",\"g1\",1]",
+                "[\"pack6_lvl03\",\"g1\",2]",
+                "[\"pack6_lvl03\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl03\",\"g2\",0]",
+                "[\"pack6_lvl03\",\"g2\",1]",
+                "[\"pack6_lvl03\",\"g2\",2]",
+                "[\"pack6_lvl03\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl03\",\"g3\",0]",
+                "[\"pack6_lvl03\",\"g3\",1]",
+                "[\"pack6_lvl03\",\"g3\",2]",
+                "[\"pack6_lvl03\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl03\",\"g4\",0]",
+                "[\"pack6_lvl03\",\"g4\",1]",
+                "[\"pack6_lvl03\",\"g4\",2]",
+                "[\"pack6_lvl03\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a25",
+      "levelId": "pack6_lvl04",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #4",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl04\",\"g1\",0]",
+            "[\"pack6_lvl04\",\"g1\",1]",
+            "[\"pack6_lvl04\",\"g1\",2]",
+            "[\"pack6_lvl04\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl04\",\"g2\",0]",
+            "[\"pack6_lvl04\",\"g2\",1]",
+            "[\"pack6_lvl04\",\"g2\",2]",
+            "[\"pack6_lvl04\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl04\",\"g3\",0]",
+            "[\"pack6_lvl04\",\"g3\",1]",
+            "[\"pack6_lvl04\",\"g3\",2]",
+            "[\"pack6_lvl04\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl04\",\"g4\",0]",
+            "[\"pack6_lvl04\",\"g4\",1]",
+            "[\"pack6_lvl04\",\"g4\",2]",
+            "[\"pack6_lvl04\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a25",
+        "levelId": "pack6_lvl04",
+        "date": null,
+        "entered": 25,
+        "fingerprint": "[\"pack6_lvl04\",\"pack6\",\"True Colors\",[\"g1\",\"RACKET SPORTS\",1,\"Badminton takes its name from Badminton House, the Duke of Beaufort's country estate in Gloucestershire, England.\",[\"[\\\"pack6_lvl04\\\",\\\"g1\\\",0]\",\"TENNIS\",1],[\"[\\\"pack6_lvl04\\\",\\\"g1\\\",1]\",\"SQUASH\",1],[\"[\\\"pack6_lvl04\\\",\\\"g1\\\",2]\",\"BADMINTON\",1],[\"[\\\"pack6_lvl04\\\",\\\"g1\\\",3]\",\"PADEL\",1]],[\"g2\",\"PIZZA TOPPINGS\",2,\"Hawaiian pizza, topped with pineapple and ham, is usually credited to Sam Panopoulos, who served it in Canada in 1962.\",[\"[\\\"pack6_lvl04\\\",\\\"g2\\\",0]\",\"PEPPERONI\",2],[\"[\\\"pack6_lvl04\\\",\\\"g2\\\",1]\",\"ANCHOVY\",2],[\"[\\\"pack6_lvl04\\\",\\\"g2\\\",2]\",\"PINEAPPLE\",2],[\"[\\\"pack6_lvl04\\\",\\\"g2\\\",3]\",\"ARTICHOKE\",2]],[\"g3\",\"LAWMAKING TERMS\",3,\"Veto is Latin for I forbid, the word Roman tribunes used to block actions of magistrates or the Senate.\",[\"[\\\"pack6_lvl04\\\",\\\"g3\\\",0]\",\"BILL\",3],[\"[\\\"pack6_lvl04\\\",\\\"g3\\\",1]\",\"VETO\",3],[\"[\\\"pack6_lvl04\\\",\\\"g3\\\",2]\",\"QUORUM\",3],[\"[\\\"pack6_lvl04\\\",\\\"g3\\\",3]\",\"AMENDMENT\",3]],[\"g4\",\"END IN A COLOR\",4,\"The color amber is named after amber the gemstone, which is fossilized tree resin.\",[\"[\\\"pack6_lvl04\\\",\\\"g4\\\",0]\",\"CHAMBER\",4],[\"[\\\"pack6_lvl04\\\",\\\"g4\\\",1]\",\"SUBLIME\",4],[\"[\\\"pack6_lvl04\\\",\\\"g4\\\",2]\",\"IMPEACH\",4],[\"[\\\"pack6_lvl04\\\",\\\"g4\\\",3]\",\"SAUSAGE\",4]],[[[\"SAUSAGE\"],\"SAUSAGE is a classic pizza topping, but PEPPERONI, ANCHOVY, PINEAPPLE and ARTICHOKE complete that set; SAUSAGE ends in SAGE.\"],[[\"CHAMBER\",\"IMPEACH\"],\"CHAMBER and IMPEACH sound like lawmaking words, but BILL, VETO, QUORUM and AMENDMENT complete that set; they end in AMBER and PEACH.\"]]]",
+        "game": {
+          "seed": 26,
+          "rng": 837524015,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl04\",\"g1\",0]",
+                "[\"pack6_lvl04\",\"g1\",1]",
+                "[\"pack6_lvl04\",\"g1\",2]",
+                "[\"pack6_lvl04\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl04\",\"g2\",0]",
+                "[\"pack6_lvl04\",\"g2\",1]",
+                "[\"pack6_lvl04\",\"g2\",2]",
+                "[\"pack6_lvl04\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl04\",\"g3\",0]",
+                "[\"pack6_lvl04\",\"g3\",1]",
+                "[\"pack6_lvl04\",\"g3\",2]",
+                "[\"pack6_lvl04\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl04\",\"g4\",0]",
+                "[\"pack6_lvl04\",\"g4\",1]",
+                "[\"pack6_lvl04\",\"g4\",2]",
+                "[\"pack6_lvl04\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a26",
+      "levelId": "pack6_lvl05",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #5",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl05\",\"g1\",0]",
+            "[\"pack6_lvl05\",\"g1\",1]",
+            "[\"pack6_lvl05\",\"g1\",2]",
+            "[\"pack6_lvl05\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl05\",\"g2\",0]",
+            "[\"pack6_lvl05\",\"g2\",1]",
+            "[\"pack6_lvl05\",\"g2\",2]",
+            "[\"pack6_lvl05\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl05\",\"g3\",0]",
+            "[\"pack6_lvl05\",\"g3\",1]",
+            "[\"pack6_lvl05\",\"g3\",2]",
+            "[\"pack6_lvl05\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl05\",\"g4\",0]",
+            "[\"pack6_lvl05\",\"g4\",1]",
+            "[\"pack6_lvl05\",\"g4\",2]",
+            "[\"pack6_lvl05\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a26",
+        "levelId": "pack6_lvl05",
+        "date": null,
+        "entered": 26,
+        "fingerprint": "[\"pack6_lvl05\",\"pack6\",\"Crack the Code\",[\"g1\",\"CLOTHING FASTENERS\",1,\"A toggle is a short peg, often wooden, pushed through a loop, as on a traditional duffel coat.\",[\"[\\\"pack6_lvl05\\\",\\\"g1\\\",0]\",\"BUTTON\",1],[\"[\\\"pack6_lvl05\\\",\\\"g1\\\",1]\",\"BUCKLE\",1],[\"[\\\"pack6_lvl05\\\",\\\"g1\\\",2]\",\"TOGGLE\",1],[\"[\\\"pack6_lvl05\\\",\\\"g1\\\",3]\",\"CLASP\",1]],[\"g2\",\"DRINKING ESTABLISHMENTS\",2,\"Pub is short for public house, the traditional British name for a place licensed to sell alcohol.\",[\"[\\\"pack6_lvl05\\\",\\\"g2\\\",0]\",\"PUB\",2],[\"[\\\"pack6_lvl05\\\",\\\"g2\\\",1]\",\"TAVERN\",2],[\"[\\\"pack6_lvl05\\\",\\\"g2\\\",2]\",\"SALOON\",2],[\"[\\\"pack6_lvl05\\\",\\\"g2\\\",3]\",\"BAR\",2]],[\"g3\",\"INVENTORS\",3,\"Alfred Nobel patented dynamite in 1867 and left most of his fortune to fund the Nobel Prizes.\",[\"[\\\"pack6_lvl05\\\",\\\"g3\\\",0]\",\"EDISON\",3],[\"[\\\"pack6_lvl05\\\",\\\"g3\\\",1]\",\"MARCONI\",3],[\"[\\\"pack6_lvl05\\\",\\\"g3\\\",2]\",\"NOBEL\",3],[\"[\\\"pack6_lvl05\\\",\\\"g3\\\",3]\",\"GUTENBERG\",3]],[\"g4\",\"BEFORE CODE\",4,\"ZIP in the American ZIP Code stands for Zone Improvement Plan, a system introduced in 1963.\",[\"[\\\"pack6_lvl05\\\",\\\"g4\\\",0]\",\"ZIP\",4],[\"[\\\"pack6_lvl05\\\",\\\"g4\\\",1]\",\"MORSE\",4],[\"[\\\"pack6_lvl05\\\",\\\"g4\\\",2]\",\"DRESS\",4],[\"[\\\"pack6_lvl05\\\",\\\"g4\\\",3]\",\"SOURCE\",4]],[[[\"ZIP\"],\"A ZIP fastens clothing, but BUTTON, BUCKLE, TOGGLE and CLASP complete that set; ZIP comes before CODE.\"],[[\"MORSE\"],\"Samuel MORSE was an inventor, but EDISON, MARCONI, NOBEL and GUTENBERG complete that set; MORSE comes before CODE.\"],[[\"BAR\"],\"BAR can come before CODE, but ZIP, MORSE, DRESS and SOURCE complete that set; a BAR is a place to buy a drink, like a PUB or TAVERN.\"]]]",
+        "game": {
+          "seed": 27,
+          "rng": 952332002,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl05\",\"g1\",0]",
+                "[\"pack6_lvl05\",\"g1\",1]",
+                "[\"pack6_lvl05\",\"g1\",2]",
+                "[\"pack6_lvl05\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl05\",\"g2\",0]",
+                "[\"pack6_lvl05\",\"g2\",1]",
+                "[\"pack6_lvl05\",\"g2\",2]",
+                "[\"pack6_lvl05\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl05\",\"g3\",0]",
+                "[\"pack6_lvl05\",\"g3\",1]",
+                "[\"pack6_lvl05\",\"g3\",2]",
+                "[\"pack6_lvl05\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl05\",\"g4\",0]",
+                "[\"pack6_lvl05\",\"g4\",1]",
+                "[\"pack6_lvl05\",\"g4\",2]",
+                "[\"pack6_lvl05\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a27",
+      "levelId": "pack6_lvl06",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #6",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl06\",\"g1\",0]",
+            "[\"pack6_lvl06\",\"g1\",1]",
+            "[\"pack6_lvl06\",\"g1\",2]",
+            "[\"pack6_lvl06\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl06\",\"g2\",0]",
+            "[\"pack6_lvl06\",\"g2\",1]",
+            "[\"pack6_lvl06\",\"g2\",2]",
+            "[\"pack6_lvl06\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl06\",\"g3\",0]",
+            "[\"pack6_lvl06\",\"g3\",1]",
+            "[\"pack6_lvl06\",\"g3\",2]",
+            "[\"pack6_lvl06\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl06\",\"g4\",0]",
+            "[\"pack6_lvl06\",\"g4\",1]",
+            "[\"pack6_lvl06\",\"g4\",2]",
+            "[\"pack6_lvl06\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a27",
+        "levelId": "pack6_lvl06",
+        "date": null,
+        "entered": 27,
+        "fingerprint": "[\"pack6_lvl06\",\"pack6\",\"By the Numbers\",[\"g1\",\"KINDS OF TOOTH\",1,\"An elephant's tusks are elongated incisor teeth that keep growing throughout its life.\",[\"[\\\"pack6_lvl06\\\",\\\"g1\\\",0]\",\"MOLAR\",1],[\"[\\\"pack6_lvl06\\\",\\\"g1\\\",1]\",\"INCISOR\",1],[\"[\\\"pack6_lvl06\\\",\\\"g1\\\",2]\",\"FANG\",1],[\"[\\\"pack6_lvl06\\\",\\\"g1\\\",3]\",\"TUSK\",1]],[\"g2\",\"ADVERBS OF FREQUENCY\",2,\"In English, adverbs of frequency usually go before a main verb but after forms of the verb be.\",[\"[\\\"pack6_lvl06\\\",\\\"g2\\\",0]\",\"SELDOM\",2],[\"[\\\"pack6_lvl06\\\",\\\"g2\\\",1]\",\"ALWAYS\",2],[\"[\\\"pack6_lvl06\\\",\\\"g2\\\",2]\",\"RARELY\",2],[\"[\\\"pack6_lvl06\\\",\\\"g2\\\",3]\",\"USUALLY\",2]],[\"g3\",\"TYPES OF TRAIN\",3,\"Maglev, short for magnetic levitation, describes trains that hover above their guideway on magnetic fields.\",[\"[\\\"pack6_lvl06\\\",\\\"g3\\\",0]\",\"EXPRESS\",3],[\"[\\\"pack6_lvl06\\\",\\\"g3\\\",1]\",\"MONORAIL\",3],[\"[\\\"pack6_lvl06\\\",\\\"g3\\\",2]\",\"MAGLEV\",3],[\"[\\\"pack6_lvl06\\\",\\\"g3\\\",3]\",\"COMMUTER\",3]],[\"g4\",\"HIDE A NUMBER\",4,\"Canine comes from the Latin canis, meaning dog, while the nine hidden inside it goes back to Old English nigon.\",[\"[\\\"pack6_lvl06\\\",\\\"g4\\\",0]\",\"CANINE\",4],[\"[\\\"pack6_lvl06\\\",\\\"g4\\\",1]\",\"FREIGHT\",4],[\"[\\\"pack6_lvl06\\\",\\\"g4\\\",2]\",\"OFTEN\",4],[\"[\\\"pack6_lvl06\\\",\\\"g4\\\",3]\",\"NETWORK\",4]],[[[\"CANINE\"],\"CANINE is a kind of tooth, but MOLAR, INCISOR, FANG and TUSK complete that set; CANINE hides NINE.\"],[[\"OFTEN\"],\"OFTEN is an adverb of frequency, but SELDOM, ALWAYS, RARELY and USUALLY complete that set; OFTEN hides TEN.\"],[[\"FREIGHT\"],\"A FREIGHT train is a type of train, but EXPRESS, MONORAIL, MAGLEV and COMMUTER complete that set; FREIGHT hides EIGHT.\"]]]",
+        "game": {
+          "seed": 28,
+          "rng": 1067139989,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl06\",\"g1\",0]",
+                "[\"pack6_lvl06\",\"g1\",1]",
+                "[\"pack6_lvl06\",\"g1\",2]",
+                "[\"pack6_lvl06\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl06\",\"g2\",0]",
+                "[\"pack6_lvl06\",\"g2\",1]",
+                "[\"pack6_lvl06\",\"g2\",2]",
+                "[\"pack6_lvl06\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl06\",\"g3\",0]",
+                "[\"pack6_lvl06\",\"g3\",1]",
+                "[\"pack6_lvl06\",\"g3\",2]",
+                "[\"pack6_lvl06\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl06\",\"g4\",0]",
+                "[\"pack6_lvl06\",\"g4\",1]",
+                "[\"pack6_lvl06\",\"g4\",2]",
+                "[\"pack6_lvl06\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a28",
+      "levelId": "pack6_lvl07",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #7",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl07\",\"g1\",0]",
+            "[\"pack6_lvl07\",\"g1\",1]",
+            "[\"pack6_lvl07\",\"g1\",2]",
+            "[\"pack6_lvl07\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl07\",\"g2\",0]",
+            "[\"pack6_lvl07\",\"g2\",1]",
+            "[\"pack6_lvl07\",\"g2\",2]",
+            "[\"pack6_lvl07\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl07\",\"g3\",0]",
+            "[\"pack6_lvl07\",\"g3\",1]",
+            "[\"pack6_lvl07\",\"g3\",2]",
+            "[\"pack6_lvl07\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl07\",\"g4\",0]",
+            "[\"pack6_lvl07\",\"g4\",1]",
+            "[\"pack6_lvl07\",\"g4\",2]",
+            "[\"pack6_lvl07\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a28",
+        "levelId": "pack6_lvl07",
+        "date": null,
+        "entered": 28,
+        "fingerprint": "[\"pack6_lvl07\",\"pack6\",\"Call Sign\",[\"g1\",\"PLACES TO STAY\",1,\"The youth hostel movement began in Germany in 1909, inspired by the teacher Richard Schirrmann.\",[\"[\\\"pack6_lvl07\\\",\\\"g1\\\",0]\",\"HOSTEL\",1],[\"[\\\"pack6_lvl07\\\",\\\"g1\\\",1]\",\"MOTEL\",1],[\"[\\\"pack6_lvl07\\\",\\\"g1\\\",2]\",\"INN\",1],[\"[\\\"pack6_lvl07\\\",\\\"g1\\\",3]\",\"GUESTHOUSE\",1]],[\"g2\",\"ENTERTAINMENT AWARDS\",2,\"The Tony Awards are named after Antoinette Perry, an American actress, director and producer.\",[\"[\\\"pack6_lvl07\\\",\\\"g2\\\",0]\",\"EMMY\",2],[\"[\\\"pack6_lvl07\\\",\\\"g2\\\",1]\",\"GRAMMY\",2],[\"[\\\"pack6_lvl07\\\",\\\"g2\\\",2]\",\"TONY\",2],[\"[\\\"pack6_lvl07\\\",\\\"g2\\\",3]\",\"BAFTA\",2]],[\"g3\",\"SHAKESPEARE CHARACTERS\",3,\"Puck, the mischievous sprite in A Midsummer Night's Dream, is also called Robin Goodfellow.\",[\"[\\\"pack6_lvl07\\\",\\\"g3\\\",0]\",\"OPHELIA\",3],[\"[\\\"pack6_lvl07\\\",\\\"g3\\\",1]\",\"PUCK\",3],[\"[\\\"pack6_lvl07\\\",\\\"g3\\\",2]\",\"PROSPERO\",3],[\"[\\\"pack6_lvl07\\\",\\\"g3\\\",3]\",\"JULIET\",3]],[\"g4\",\"NATO PHONETIC ALPHABET WORDS\",4,\"The NATO phonetic alphabet gives each letter a code word so spellings stay clear over noisy radio links.\",[\"[\\\"pack6_lvl07\\\",\\\"g4\\\",0]\",\"HOTEL\",4],[\"[\\\"pack6_lvl07\\\",\\\"g4\\\",1]\",\"OSCAR\",4],[\"[\\\"pack6_lvl07\\\",\\\"g4\\\",2]\",\"SIERRA\",4],[\"[\\\"pack6_lvl07\\\",\\\"g4\\\",3]\",\"UNIFORM\",4]],[[[\"HOTEL\"],\"HOTEL is a place to stay, but HOSTEL, MOTEL, INN and GUESTHOUSE complete that set; HOTEL is the NATO word for H.\"],[[\"OSCAR\"],\"The OSCAR is a famous award, but EMMY, GRAMMY, TONY and BAFTA complete that set; OSCAR is the NATO word for O.\"],[[\"JULIET\"],\"JULIET is also a NATO code word, officially spelled Juliett, but the Shakespeare set needs her beside OPHELIA, PUCK and PROSPERO.\"]]]",
+        "game": {
+          "seed": 29,
+          "rng": 1181947976,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl07\",\"g1\",0]",
+                "[\"pack6_lvl07\",\"g1\",1]",
+                "[\"pack6_lvl07\",\"g1\",2]",
+                "[\"pack6_lvl07\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl07\",\"g2\",0]",
+                "[\"pack6_lvl07\",\"g2\",1]",
+                "[\"pack6_lvl07\",\"g2\",2]",
+                "[\"pack6_lvl07\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl07\",\"g3\",0]",
+                "[\"pack6_lvl07\",\"g3\",1]",
+                "[\"pack6_lvl07\",\"g3\",2]",
+                "[\"pack6_lvl07\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl07\",\"g4\",0]",
+                "[\"pack6_lvl07\",\"g4\",1]",
+                "[\"pack6_lvl07\",\"g4\",2]",
+                "[\"pack6_lvl07\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a29",
+      "levelId": "pack6_lvl08",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #8",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl08\",\"g1\",0]",
+            "[\"pack6_lvl08\",\"g1\",1]",
+            "[\"pack6_lvl08\",\"g1\",2]",
+            "[\"pack6_lvl08\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl08\",\"g2\",0]",
+            "[\"pack6_lvl08\",\"g2\",1]",
+            "[\"pack6_lvl08\",\"g2\",2]",
+            "[\"pack6_lvl08\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl08\",\"g3\",0]",
+            "[\"pack6_lvl08\",\"g3\",1]",
+            "[\"pack6_lvl08\",\"g3\",2]",
+            "[\"pack6_lvl08\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl08\",\"g4\",0]",
+            "[\"pack6_lvl08\",\"g4\",1]",
+            "[\"pack6_lvl08\",\"g4\",2]",
+            "[\"pack6_lvl08\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a29",
+        "levelId": "pack6_lvl08",
+        "date": null,
+        "entered": 29,
+        "fingerprint": "[\"pack6_lvl08\",\"pack6\",\"Grand Tour\",[\"g1\",\"BITING INSECTS\",1,\"Only female horseflies bite, because they need protein from blood to develop their eggs.\",[\"[\\\"pack6_lvl08\\\",\\\"g1\\\",0]\",\"MIDGE\",1],[\"[\\\"pack6_lvl08\\\",\\\"g1\\\",1]\",\"FLEA\",1],[\"[\\\"pack6_lvl08\\\",\\\"g1\\\",2]\",\"HORSEFLY\",1],[\"[\\\"pack6_lvl08\\\",\\\"g1\\\",3]\",\"BEDBUG\",1]],[\"g2\",\"WEB BROWSERS\",2,\"Firefox grew out of the Mozilla project, and version 1.0 was released in November 2004.\",[\"[\\\"pack6_lvl08\\\",\\\"g2\\\",0]\",\"FIREFOX\",2],[\"[\\\"pack6_lvl08\\\",\\\"g2\\\",1]\",\"SAFARI\",2],[\"[\\\"pack6_lvl08\\\",\\\"g2\\\",2]\",\"OPERA\",2],[\"[\\\"pack6_lvl08\\\",\\\"g2\\\",3]\",\"EDGE\",2]],[\"g3\",\"PARTS OF A CHURCH\",3,\"Nave comes from the Latin navis, meaning ship, which is also the root of the word navy.\",[\"[\\\"pack6_lvl08\\\",\\\"g3\\\",0]\",\"NAVE\",3],[\"[\\\"pack6_lvl08\\\",\\\"g3\\\",1]\",\"ALTAR\",3],[\"[\\\"pack6_lvl08\\\",\\\"g3\\\",2]\",\"PULPIT\",3],[\"[\\\"pack6_lvl08\\\",\\\"g3\\\",3]\",\"CRYPT\",3]],[\"g4\",\"HIDE A CAPITAL CITY\",4,\"Quito, the capital of Ecuador, sits about 2,850 meters above sea level in the Andes.\",[\"[\\\"pack6_lvl08\\\",\\\"g4\\\",0]\",\"MOSQUITO\",4],[\"[\\\"pack6_lvl08\\\",\\\"g4\\\",1]\",\"CLIMATE\",4],[\"[\\\"pack6_lvl08\\\",\\\"g4\\\",2]\",\"CHROME\",4],[\"[\\\"pack6_lvl08\\\",\\\"g4\\\",3]\",\"PARISH\",4]],[[[\"MOSQUITO\"],\"MOSQUITO is the best-known biting insect, but MIDGE, FLEA, HORSEFLY and BEDBUG complete that set; MOSQUITO hides QUITO.\"],[[\"CHROME\"],\"CHROME is a web browser, but FIREFOX, SAFARI, OPERA and EDGE complete that set; CHROME hides ROME.\"],[[\"PARISH\"],\"PARISH sounds churchy, but it is a district rather than part of a church building; it hides PARIS.\"]]]",
+        "game": {
+          "seed": 30,
+          "rng": 1296755963,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl08\",\"g1\",0]",
+                "[\"pack6_lvl08\",\"g1\",1]",
+                "[\"pack6_lvl08\",\"g1\",2]",
+                "[\"pack6_lvl08\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl08\",\"g2\",0]",
+                "[\"pack6_lvl08\",\"g2\",1]",
+                "[\"pack6_lvl08\",\"g2\",2]",
+                "[\"pack6_lvl08\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl08\",\"g3\",0]",
+                "[\"pack6_lvl08\",\"g3\",1]",
+                "[\"pack6_lvl08\",\"g3\",2]",
+                "[\"pack6_lvl08\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl08\",\"g4\",0]",
+                "[\"pack6_lvl08\",\"g4\",1]",
+                "[\"pack6_lvl08\",\"g4\",2]",
+                "[\"pack6_lvl08\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a30",
+      "levelId": "pack6_lvl09",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #9",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl09\",\"g1\",0]",
+            "[\"pack6_lvl09\",\"g1\",1]",
+            "[\"pack6_lvl09\",\"g1\",2]",
+            "[\"pack6_lvl09\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl09\",\"g2\",0]",
+            "[\"pack6_lvl09\",\"g2\",1]",
+            "[\"pack6_lvl09\",\"g2\",2]",
+            "[\"pack6_lvl09\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl09\",\"g3\",0]",
+            "[\"pack6_lvl09\",\"g3\",1]",
+            "[\"pack6_lvl09\",\"g3\",2]",
+            "[\"pack6_lvl09\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl09\",\"g4\",0]",
+            "[\"pack6_lvl09\",\"g4\",1]",
+            "[\"pack6_lvl09\",\"g4\",2]",
+            "[\"pack6_lvl09\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a30",
+        "levelId": "pack6_lvl09",
+        "date": null,
+        "entered": 30,
+        "fingerprint": "[\"pack6_lvl09\",\"pack6\",\"Art Heist\",[\"g1\",\"BREAKFAST FOODS\",1,\"Cereal takes its name from Ceres, the Roman goddess of agriculture and grain.\",[\"[\\\"pack6_lvl09\\\",\\\"g1\\\",0]\",\"PORRIDGE\",1],[\"[\\\"pack6_lvl09\\\",\\\"g1\\\",1]\",\"PANCAKE\",1],[\"[\\\"pack6_lvl09\\\",\\\"g1\\\",2]\",\"CEREAL\",1],[\"[\\\"pack6_lvl09\\\",\\\"g1\\\",3]\",\"OMELETTE\",1]],[\"g2\",\"VERBS FOR EATING\",2,\"Rodents gnaw constantly because their front incisor teeth never stop growing.\",[\"[\\\"pack6_lvl09\\\",\\\"g2\\\",0]\",\"CHEW\",2],[\"[\\\"pack6_lvl09\\\",\\\"g2\\\",1]\",\"NIBBLE\",2],[\"[\\\"pack6_lvl09\\\",\\\"g2\\\",2]\",\"GOBBLE\",2],[\"[\\\"pack6_lvl09\\\",\\\"g2\\\",3]\",\"GNAW\",2]],[\"g3\",\"POLICE RANKS\",3,\"Lieutenant comes from French words meaning place holder, for an officer who acts in a superior's place.\",[\"[\\\"pack6_lvl09\\\",\\\"g3\\\",0]\",\"SERGEANT\",3],[\"[\\\"pack6_lvl09\\\",\\\"g3\\\",1]\",\"INSPECTOR\",3],[\"[\\\"pack6_lvl09\\\",\\\"g3\\\",2]\",\"LIEUTENANT\",3],[\"[\\\"pack6_lvl09\\\",\\\"g3\\\",3]\",\"CAPTAIN\",3]],[\"g4\",\"PAINTER SURNAMES\",4,\"Edvard Munch made several versions of The Scream, including paintings, pastels and prints.\",[\"[\\\"pack6_lvl09\\\",\\\"g4\\\",0]\",\"VERMEER\",4],[\"[\\\"pack6_lvl09\\\",\\\"g4\\\",1]\",\"BACON\",4],[\"[\\\"pack6_lvl09\\\",\\\"g4\\\",2]\",\"MUNCH\",4],[\"[\\\"pack6_lvl09\\\",\\\"g4\\\",3]\",\"CONSTABLE\",4]],[[[\"BACON\"],\"BACON is a breakfast food, but PORRIDGE, PANCAKE, CEREAL and OMELETTE complete that set; Francis BACON was a painter.\"],[[\"MUNCH\"],\"MUNCH means to eat, but CHEW, NIBBLE, GOBBLE and GNAW complete that set; Edvard MUNCH painted The Scream.\"],[[\"CONSTABLE\"],\"CONSTABLE is a police rank, but SERGEANT, INSPECTOR, LIEUTENANT and CAPTAIN complete that set; John CONSTABLE was a painter.\"],[[\"SERGEANT\"],\"SERGEANT may recall the painter John Singer Sargent, but his name is spelled differently; SERGEANT is a police rank.\"]]]",
+        "game": {
+          "seed": 31,
+          "rng": 1411563950,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl09\",\"g1\",0]",
+                "[\"pack6_lvl09\",\"g1\",1]",
+                "[\"pack6_lvl09\",\"g1\",2]",
+                "[\"pack6_lvl09\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl09\",\"g2\",0]",
+                "[\"pack6_lvl09\",\"g2\",1]",
+                "[\"pack6_lvl09\",\"g2\",2]",
+                "[\"pack6_lvl09\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl09\",\"g3\",0]",
+                "[\"pack6_lvl09\",\"g3\",1]",
+                "[\"pack6_lvl09\",\"g3\",2]",
+                "[\"pack6_lvl09\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl09\",\"g4\",0]",
+                "[\"pack6_lvl09\",\"g4\",1]",
+                "[\"pack6_lvl09\",\"g4\",2]",
+                "[\"pack6_lvl09\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a31",
+      "levelId": "pack6_lvl10",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #10",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl10\",\"g1\",0]",
+            "[\"pack6_lvl10\",\"g1\",1]",
+            "[\"pack6_lvl10\",\"g1\",2]",
+            "[\"pack6_lvl10\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl10\",\"g2\",0]",
+            "[\"pack6_lvl10\",\"g2\",1]",
+            "[\"pack6_lvl10\",\"g2\",2]",
+            "[\"pack6_lvl10\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl10\",\"g3\",0]",
+            "[\"pack6_lvl10\",\"g3\",1]",
+            "[\"pack6_lvl10\",\"g3\",2]",
+            "[\"pack6_lvl10\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl10\",\"g4\",0]",
+            "[\"pack6_lvl10\",\"g4\",1]",
+            "[\"pack6_lvl10\",\"g4\",2]",
+            "[\"pack6_lvl10\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a31",
+        "levelId": "pack6_lvl10",
+        "date": null,
+        "entered": 31,
+        "fingerprint": "[\"pack6_lvl10\",\"pack6\",\"Bird's-Eye View\",[\"g1\",\"FACIAL EXPRESSIONS\",1,\"A smile is produced mainly by the zygomatic major muscle, which pulls the corners of the mouth upward.\",[\"[\\\"pack6_lvl10\\\",\\\"g1\\\",0]\",\"FROWN\",1],[\"[\\\"pack6_lvl10\\\",\\\"g1\\\",1]\",\"GRIN\",1],[\"[\\\"pack6_lvl10\\\",\\\"g1\\\",2]\",\"SMIRK\",1],[\"[\\\"pack6_lvl10\\\",\\\"g1\\\",3]\",\"POUT\",1]],[\"g2\",\"WORDS FOR COWARDLY\",2,\"The sense of yellow meaning cowardly is recorded from the 1850s, though the reason for it is uncertain.\",[\"[\\\"pack6_lvl10\\\",\\\"g2\\\",0]\",\"TIMID\",2],[\"[\\\"pack6_lvl10\\\",\\\"g2\\\",1]\",\"GUTLESS\",2],[\"[\\\"pack6_lvl10\\\",\\\"g2\\\",2]\",\"SPINELESS\",2],[\"[\\\"pack6_lvl10\\\",\\\"g2\\\",3]\",\"YELLOW\",2]],[\"g3\",\"OLD BRITISH COINS\",3,\"Before decimalization in 1971, a British pound was made up of 20 shillings.\",[\"[\\\"pack6_lvl10\\\",\\\"g3\\\",0]\",\"FARTHING\",3],[\"[\\\"pack6_lvl10\\\",\\\"g3\\\",1]\",\"SHILLING\",3],[\"[\\\"pack6_lvl10\\\",\\\"g3\\\",2]\",\"FLORIN\",3],[\"[\\\"pack6_lvl10\\\",\\\"g3\\\",3]\",\"GUINEA\",3]],[\"g4\",\"HIDE A BIRD\",4,\"The color teal takes its name from the common teal, a small duck with a stripe of similar color around its eye.\",[\"[\\\"pack6_lvl10\\\",\\\"g4\\\",0]\",\"SCOWL\",4],[\"[\\\"pack6_lvl10\\\",\\\"g4\\\",1]\",\"CRAVEN\",4],[\"[\\\"pack6_lvl10\\\",\\\"g4\\\",2]\",\"CROWN\",4],[\"[\\\"pack6_lvl10\\\",\\\"g4\\\",3]\",\"STEALTH\",4]],[[[\"SCOWL\"],\"SCOWL is a facial expression, but FROWN, GRIN, SMIRK and POUT complete that set; SCOWL hides OWL.\"],[[\"CRAVEN\"],\"CRAVEN means cowardly, but TIMID, GUTLESS, SPINELESS and YELLOW complete that set; CRAVEN hides RAVEN.\"],[[\"CROWN\"],\"The CROWN was an old British coin worth five shillings, but FARTHING, SHILLING, FLORIN and GUINEA complete that set; CROWN hides CROW.\"]]]",
+        "game": {
+          "seed": 32,
+          "rng": 1526371937,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl10\",\"g1\",0]",
+                "[\"pack6_lvl10\",\"g1\",1]",
+                "[\"pack6_lvl10\",\"g1\",2]",
+                "[\"pack6_lvl10\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl10\",\"g2\",0]",
+                "[\"pack6_lvl10\",\"g2\",1]",
+                "[\"pack6_lvl10\",\"g2\",2]",
+                "[\"pack6_lvl10\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl10\",\"g3\",0]",
+                "[\"pack6_lvl10\",\"g3\",1]",
+                "[\"pack6_lvl10\",\"g3\",2]",
+                "[\"pack6_lvl10\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl10\",\"g4\",0]",
+                "[\"pack6_lvl10\",\"g4\",1]",
+                "[\"pack6_lvl10\",\"g4\",2]",
+                "[\"pack6_lvl10\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a32",
+      "levelId": "pack6_lvl11",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #11",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl11\",\"g1\",0]",
+            "[\"pack6_lvl11\",\"g1\",1]",
+            "[\"pack6_lvl11\",\"g1\",2]",
+            "[\"pack6_lvl11\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl11\",\"g2\",0]",
+            "[\"pack6_lvl11\",\"g2\",1]",
+            "[\"pack6_lvl11\",\"g2\",2]",
+            "[\"pack6_lvl11\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl11\",\"g3\",0]",
+            "[\"pack6_lvl11\",\"g3\",1]",
+            "[\"pack6_lvl11\",\"g3\",2]",
+            "[\"pack6_lvl11\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl11\",\"g4\",0]",
+            "[\"pack6_lvl11\",\"g4\",1]",
+            "[\"pack6_lvl11\",\"g4\",2]",
+            "[\"pack6_lvl11\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a32",
+        "levelId": "pack6_lvl11",
+        "date": null,
+        "entered": 32,
+        "fingerprint": "[\"pack6_lvl11\",\"pack6\",\"Steal the Show\",[\"g1\",\"CLASSIC BOARD GAMES\",1,\"Ludo is based on pachisi, a cross-and-circle board game that originated in India.\",[\"[\\\"pack6_lvl11\\\",\\\"g1\\\",0]\",\"SCRABBLE\",1],[\"[\\\"pack6_lvl11\\\",\\\"g1\\\",1]\",\"RISK\",1],[\"[\\\"pack6_lvl11\\\",\\\"g1\\\",2]\",\"LUDO\",1],[\"[\\\"pack6_lvl11\\\",\\\"g1\\\",3]\",\"BACKGAMMON\",1]],[\"g2\",\"CRIMES\",2,\"Arson comes from the Latin verb ardere, meaning to burn.\",[\"[\\\"pack6_lvl11\\\",\\\"g2\\\",0]\",\"FRAUD\",2],[\"[\\\"pack6_lvl11\\\",\\\"g2\\\",1]\",\"ARSON\",2],[\"[\\\"pack6_lvl11\\\",\\\"g2\\\",2]\",\"FORGERY\",2],[\"[\\\"pack6_lvl11\\\",\\\"g2\\\",3]\",\"BRIBERY\",2]],[\"g3\",\"SOCCER POSITIONS\",3,\"A sweeper, also called a libero, plays behind the back line to clear any ball that gets through.\",[\"[\\\"pack6_lvl11\\\",\\\"g3\\\",0]\",\"STRIKER\",3],[\"[\\\"pack6_lvl11\\\",\\\"g3\\\",1]\",\"WINGER\",3],[\"[\\\"pack6_lvl11\\\",\\\"g3\\\",2]\",\"GOALKEEPER\",3],[\"[\\\"pack6_lvl11\\\",\\\"g3\\\",3]\",\"SWEEPER\",3]],[\"g4\",\"CONTAIN CONSECUTIVE LETTERS LIKE ABC\",4,\"Each of these words contains three letters that sit side by side in the alphabet, such as STU in student.\",[\"[\\\"pack6_lvl11\\\",\\\"g4\\\",0]\",\"HIJACK\",4],[\"[\\\"pack6_lvl11\\\",\\\"g4\\\",1]\",\"DEFENDER\",4],[\"[\\\"pack6_lvl11\\\",\\\"g4\\\",2]\",\"MONOPOLY\",4],[\"[\\\"pack6_lvl11\\\",\\\"g4\\\",3]\",\"STUDENT\",4]],[[[\"MONOPOLY\"],\"MONOPOLY is a classic board game, but SCRABBLE, RISK, LUDO and BACKGAMMON complete that set; MONOPOLY hides NOP.\"],[[\"HIJACK\"],\"To HIJACK is a crime, but FRAUD, ARSON, FORGERY and BRIBERY complete that set; HIJACK hides HIJ.\"],[[\"DEFENDER\"],\"DEFENDER is a soccer position, but STRIKER, WINGER, GOALKEEPER and SWEEPER complete that set; DEFENDER begins with DEF.\"]]]",
+        "game": {
+          "seed": 33,
+          "rng": 1641179924,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl11\",\"g1\",0]",
+                "[\"pack6_lvl11\",\"g1\",1]",
+                "[\"pack6_lvl11\",\"g1\",2]",
+                "[\"pack6_lvl11\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl11\",\"g2\",0]",
+                "[\"pack6_lvl11\",\"g2\",1]",
+                "[\"pack6_lvl11\",\"g2\",2]",
+                "[\"pack6_lvl11\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl11\",\"g3\",0]",
+                "[\"pack6_lvl11\",\"g3\",1]",
+                "[\"pack6_lvl11\",\"g3\",2]",
+                "[\"pack6_lvl11\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl11\",\"g4\",0]",
+                "[\"pack6_lvl11\",\"g4\",1]",
+                "[\"pack6_lvl11\",\"g4\",2]",
+                "[\"pack6_lvl11\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a33",
+      "levelId": "pack6_lvl12",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #12",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl12\",\"g1\",0]",
+            "[\"pack6_lvl12\",\"g1\",1]",
+            "[\"pack6_lvl12\",\"g1\",2]",
+            "[\"pack6_lvl12\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl12\",\"g2\",0]",
+            "[\"pack6_lvl12\",\"g2\",1]",
+            "[\"pack6_lvl12\",\"g2\",2]",
+            "[\"pack6_lvl12\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl12\",\"g3\",0]",
+            "[\"pack6_lvl12\",\"g3\",1]",
+            "[\"pack6_lvl12\",\"g3\",2]",
+            "[\"pack6_lvl12\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl12\",\"g4\",0]",
+            "[\"pack6_lvl12\",\"g4\",1]",
+            "[\"pack6_lvl12\",\"g4\",2]",
+            "[\"pack6_lvl12\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a33",
+        "levelId": "pack6_lvl12",
+        "date": null,
+        "entered": 33,
+        "fingerprint": "[\"pack6_lvl12\",\"pack6\",\"Island Hopping\",[\"g1\",\"COFFEE DRINKS\",1,\"Latte is short for the Italian caffè latte, which simply means milk coffee.\",[\"[\\\"pack6_lvl12\\\",\\\"g1\\\",0]\",\"ESPRESSO\",1],[\"[\\\"pack6_lvl12\\\",\\\"g1\\\",1]\",\"LATTE\",1],[\"[\\\"pack6_lvl12\\\",\\\"g1\\\",2]\",\"MOCHA\",1],[\"[\\\"pack6_lvl12\\\",\\\"g1\\\",3]\",\"AMERICANO\",1]],[\"g2\",\"TYPES OF SWEATER\",2,\"The cardigan is named after James Brudenell, the 7th Earl of Cardigan, a British army officer.\",[\"[\\\"pack6_lvl12\\\",\\\"g2\\\",0]\",\"CARDIGAN\",2],[\"[\\\"pack6_lvl12\\\",\\\"g2\\\",1]\",\"PULLOVER\",2],[\"[\\\"pack6_lvl12\\\",\\\"g2\\\",2]\",\"TURTLENECK\",2],[\"[\\\"pack6_lvl12\\\",\\\"g2\\\",3]\",\"CREWNECK\",2]],[\"g3\",\"ISLANDS\",3,\"Java is the world's most populous island, home to more than half of Indonesia's population.\",[\"[\\\"pack6_lvl12\\\",\\\"g3\\\",0]\",\"JAVA\",3],[\"[\\\"pack6_lvl12\\\",\\\"g3\\\",1]\",\"JERSEY\",3],[\"[\\\"pack6_lvl12\\\",\\\"g3\\\",2]\",\"CAPRI\",3],[\"[\\\"pack6_lvl12\\\",\\\"g3\\\",3]\",\"MADEIRA\",3]],[\"g4\",\"PROGRAMMING LANGUAGES\",4,\"Python's creator, Guido van Rossum, named it after the comedy group Monty Python, not the snake.\",[\"[\\\"pack6_lvl12\\\",\\\"g4\\\",0]\",\"PYTHON\",4],[\"[\\\"pack6_lvl12\\\",\\\"g4\\\",1]\",\"RUBY\",4],[\"[\\\"pack6_lvl12\\\",\\\"g4\\\",2]\",\"SWIFT\",4],[\"[\\\"pack6_lvl12\\\",\\\"g4\\\",3]\",\"RUST\",4]],[[[\"JAVA\"],\"JAVA is a programming language and slang for coffee, but PYTHON, RUBY, SWIFT and RUST complete the languages; JAVA is an Indonesian island.\"],[[\"JERSEY\"],\"In British English a JERSEY is a sweater, but CARDIGAN, PULLOVER, TURTLENECK and CREWNECK complete that set; JERSEY is a Channel Island.\"]]]",
+        "game": {
+          "seed": 34,
+          "rng": 1755987911,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl12\",\"g1\",0]",
+                "[\"pack6_lvl12\",\"g1\",1]",
+                "[\"pack6_lvl12\",\"g1\",2]",
+                "[\"pack6_lvl12\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl12\",\"g2\",0]",
+                "[\"pack6_lvl12\",\"g2\",1]",
+                "[\"pack6_lvl12\",\"g2\",2]",
+                "[\"pack6_lvl12\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl12\",\"g3\",0]",
+                "[\"pack6_lvl12\",\"g3\",1]",
+                "[\"pack6_lvl12\",\"g3\",2]",
+                "[\"pack6_lvl12\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl12\",\"g4\",0]",
+                "[\"pack6_lvl12\",\"g4\",1]",
+                "[\"pack6_lvl12\",\"g4\",2]",
+                "[\"pack6_lvl12\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a34",
+      "levelId": "pack6_lvl13",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #13",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl13\",\"g1\",0]",
+            "[\"pack6_lvl13\",\"g1\",1]",
+            "[\"pack6_lvl13\",\"g1\",2]",
+            "[\"pack6_lvl13\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl13\",\"g2\",0]",
+            "[\"pack6_lvl13\",\"g2\",1]",
+            "[\"pack6_lvl13\",\"g2\",2]",
+            "[\"pack6_lvl13\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl13\",\"g3\",0]",
+            "[\"pack6_lvl13\",\"g3\",1]",
+            "[\"pack6_lvl13\",\"g3\",2]",
+            "[\"pack6_lvl13\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl13\",\"g4\",0]",
+            "[\"pack6_lvl13\",\"g4\",1]",
+            "[\"pack6_lvl13\",\"g4\",2]",
+            "[\"pack6_lvl13\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a34",
+        "levelId": "pack6_lvl13",
+        "date": null,
+        "entered": 34,
+        "fingerprint": "[\"pack6_lvl13\",\"pack6\",\"Sound Check\",[\"g1\",\"UNITS OF MASS\",1,\"A stone, still used in Britain and Ireland for body weight, equals 14 pounds, or about 6.35 kilograms.\",[\"[\\\"pack6_lvl13\\\",\\\"g1\\\",0]\",\"GRAM\",1],[\"[\\\"pack6_lvl13\\\",\\\"g1\\\",1]\",\"OUNCE\",1],[\"[\\\"pack6_lvl13\\\",\\\"g1\\\",2]\",\"TONNE\",1],[\"[\\\"pack6_lvl13\\\",\\\"g1\\\",3]\",\"STONE\",1]],[\"g2\",\"PLUMBING COMPONENTS\",2,\"A U-shaped trap under a sink holds water that stops sewer gases from rising into the room.\",[\"[\\\"pack6_lvl13\\\",\\\"g2\\\",0]\",\"TAP\",2],[\"[\\\"pack6_lvl13\\\",\\\"g2\\\",1]\",\"VALVE\",2],[\"[\\\"pack6_lvl13\\\",\\\"g2\\\",2]\",\"PIPE\",2],[\"[\\\"pack6_lvl13\\\",\\\"g2\\\",3]\",\"DRAIN\",2]],[\"g3\",\"ELEMENTS OF MUSIC\",3,\"Melody describes notes heard one after another, while harmony describes notes sounded together.\",[\"[\\\"pack6_lvl13\\\",\\\"g3\\\",0]\",\"RHYTHM\",3],[\"[\\\"pack6_lvl13\\\",\\\"g3\\\",1]\",\"MELODY\",3],[\"[\\\"pack6_lvl13\\\",\\\"g3\\\",2]\",\"HARMONY\",3],[\"[\\\"pack6_lvl13\\\",\\\"g3\\\",3]\",\"TEMPO\",3]],[\"g4\",\"SOUND LIKE VEGETABLES\",4,\"Swiss chard belongs to the same species as beetroot, but it is grown for its leaves rather than its root.\",[\"[\\\"pack6_lvl13\\\",\\\"g4\\\",0]\",\"BEAT\",4],[\"[\\\"pack6_lvl13\\\",\\\"g4\\\",1]\",\"LEAK\",4],[\"[\\\"pack6_lvl13\\\",\\\"g4\\\",2]\",\"CARAT\",4],[\"[\\\"pack6_lvl13\\\",\\\"g4\\\",3]\",\"CHARRED\",4]],[[[\"CARAT\"],\"A CARAT is a unit of mass for gems, but GRAM, OUNCE, TONNE and STONE complete that set; CARAT sounds like carrot.\"],[[\"BEAT\"],\"BEAT is a basic element of music, but RHYTHM, MELODY, HARMONY and TEMPO complete that set; BEAT sounds like beet.\"],[[\"LEAK\"],\"A LEAK is a plumbing problem rather than a component like TAP, VALVE, PIPE or DRAIN; it sounds like leek.\"]]]",
+        "game": {
+          "seed": 35,
+          "rng": 1870795898,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl13\",\"g1\",0]",
+                "[\"pack6_lvl13\",\"g1\",1]",
+                "[\"pack6_lvl13\",\"g1\",2]",
+                "[\"pack6_lvl13\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl13\",\"g2\",0]",
+                "[\"pack6_lvl13\",\"g2\",1]",
+                "[\"pack6_lvl13\",\"g2\",2]",
+                "[\"pack6_lvl13\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl13\",\"g3\",0]",
+                "[\"pack6_lvl13\",\"g3\",1]",
+                "[\"pack6_lvl13\",\"g3\",2]",
+                "[\"pack6_lvl13\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl13\",\"g4\",0]",
+                "[\"pack6_lvl13\",\"g4\",1]",
+                "[\"pack6_lvl13\",\"g4\",2]",
+                "[\"pack6_lvl13\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a35",
+      "levelId": "pack6_lvl14",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #14",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl14\",\"g1\",0]",
+            "[\"pack6_lvl14\",\"g1\",1]",
+            "[\"pack6_lvl14\",\"g1\",2]",
+            "[\"pack6_lvl14\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl14\",\"g2\",0]",
+            "[\"pack6_lvl14\",\"g2\",1]",
+            "[\"pack6_lvl14\",\"g2\",2]",
+            "[\"pack6_lvl14\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl14\",\"g3\",0]",
+            "[\"pack6_lvl14\",\"g3\",1]",
+            "[\"pack6_lvl14\",\"g3\",2]",
+            "[\"pack6_lvl14\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl14\",\"g4\",0]",
+            "[\"pack6_lvl14\",\"g4\",1]",
+            "[\"pack6_lvl14\",\"g4\",2]",
+            "[\"pack6_lvl14\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a35",
+        "levelId": "pack6_lvl14",
+        "date": null,
+        "entered": 35,
+        "fingerprint": "[\"pack6_lvl14\",\"pack6\",\"Poker Face\",[\"g1\",\"WINDOW COVERINGS\",1,\"Venetian blinds use horizontal slats that can be tilted to let in more or less light.\",[\"[\\\"pack6_lvl14\\\",\\\"g1\\\",0]\",\"CURTAIN\",1],[\"[\\\"pack6_lvl14\\\",\\\"g1\\\",1]\",\"SHUTTER\",1],[\"[\\\"pack6_lvl14\\\",\\\"g1\\\",2]\",\"DRAPE\",1],[\"[\\\"pack6_lvl14\\\",\\\"g1\\\",3]\",\"BLIND\",1]],[\"g2\",\"CHESS TERMS\",2,\"Castling is the only chess move in which a player moves two pieces, the king and a rook, at once.\",[\"[\\\"pack6_lvl14\\\",\\\"g2\\\",0]\",\"GAMBIT\",2],[\"[\\\"pack6_lvl14\\\",\\\"g2\\\",1]\",\"CASTLING\",2],[\"[\\\"pack6_lvl14\\\",\\\"g2\\\",2]\",\"STALEMATE\",2],[\"[\\\"pack6_lvl14\\\",\\\"g2\\\",3]\",\"CHECK\",2]],[\"g3\",\"WORDS FOR A CLIFF\",3,\"An escarpment is a long, steep slope that separates two areas of land at different heights.\",[\"[\\\"pack6_lvl14\\\",\\\"g3\\\",0]\",\"CRAG\",3],[\"[\\\"pack6_lvl14\\\",\\\"g3\\\",1]\",\"PRECIPICE\",3],[\"[\\\"pack6_lvl14\\\",\\\"g3\\\",2]\",\"ESCARPMENT\",3],[\"[\\\"pack6_lvl14\\\",\\\"g3\\\",3]\",\"ROCK FACE\",3]],[\"g4\",\"POKER TERMS\",4,\"In Texas hold'em, the river is the fifth and final community card dealt face up.\",[\"[\\\"pack6_lvl14\\\",\\\"g4\\\",0]\",\"BLUFF\",4],[\"[\\\"pack6_lvl14\\\",\\\"g4\\\",1]\",\"FLOP\",4],[\"[\\\"pack6_lvl14\\\",\\\"g4\\\",2]\",\"TELL\",4],[\"[\\\"pack6_lvl14\\\",\\\"g4\\\",3]\",\"RIVER\",4]],[[[\"BLIND\"],\"In poker a BLIND is a forced bet, but BLUFF, FLOP, TELL and RIVER complete the poker set; the window coverings need BLIND.\"],[[\"CHECK\"],\"To CHECK is also a poker action, but the chess terms need it beside GAMBIT, CASTLING and STALEMATE.\"],[[\"BLUFF\"],\"A BLUFF is also a steep bank or cliff, but CRAG, PRECIPICE, ESCARPMENT and ROCK FACE complete that set; BLUFF is a poker term.\"]]]",
+        "game": {
+          "seed": 36,
+          "rng": 1985603885,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl14\",\"g1\",0]",
+                "[\"pack6_lvl14\",\"g1\",1]",
+                "[\"pack6_lvl14\",\"g1\",2]",
+                "[\"pack6_lvl14\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl14\",\"g2\",0]",
+                "[\"pack6_lvl14\",\"g2\",1]",
+                "[\"pack6_lvl14\",\"g2\",2]",
+                "[\"pack6_lvl14\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl14\",\"g3\",0]",
+                "[\"pack6_lvl14\",\"g3\",1]",
+                "[\"pack6_lvl14\",\"g3\",2]",
+                "[\"pack6_lvl14\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl14\",\"g4\",0]",
+                "[\"pack6_lvl14\",\"g4\",1]",
+                "[\"pack6_lvl14\",\"g4\",2]",
+                "[\"pack6_lvl14\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a36",
+      "levelId": "pack6_lvl15",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #15",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl15\",\"g1\",0]",
+            "[\"pack6_lvl15\",\"g1\",1]",
+            "[\"pack6_lvl15\",\"g1\",2]",
+            "[\"pack6_lvl15\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl15\",\"g2\",0]",
+            "[\"pack6_lvl15\",\"g2\",1]",
+            "[\"pack6_lvl15\",\"g2\",2]",
+            "[\"pack6_lvl15\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl15\",\"g3\",0]",
+            "[\"pack6_lvl15\",\"g3\",1]",
+            "[\"pack6_lvl15\",\"g3\",2]",
+            "[\"pack6_lvl15\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl15\",\"g4\",0]",
+            "[\"pack6_lvl15\",\"g4\",1]",
+            "[\"pack6_lvl15\",\"g4\",2]",
+            "[\"pack6_lvl15\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a36",
+        "levelId": "pack6_lvl15",
+        "date": null,
+        "entered": 36,
+        "fingerprint": "[\"pack6_lvl15\",\"pack6\",\"Keyed Up\",[\"g1\",\"HANDICRAFTS\",1,\"Crochet takes its name from the French word for a small hook, the tool used to make its stitches.\",[\"[\\\"pack6_lvl15\\\",\\\"g1\\\",0]\",\"KNITTING\",1],[\"[\\\"pack6_lvl15\\\",\\\"g1\\\",1]\",\"WEAVING\",1],[\"[\\\"pack6_lvl15\\\",\\\"g1\\\",2]\",\"CROCHET\",1],[\"[\\\"pack6_lvl15\\\",\\\"g1\\\",3]\",\"QUILTING\",1]],[\"g2\",\"OFFICE EQUIPMENT\",2,\"Cross-cut shredders slice paper into small pieces that are much harder to reassemble than long strips.\",[\"[\\\"pack6_lvl15\\\",\\\"g2\\\",0]\",\"STAPLER\",2],[\"[\\\"pack6_lvl15\\\",\\\"g2\\\",1]\",\"SHREDDER\",2],[\"[\\\"pack6_lvl15\\\",\\\"g2\\\",2]\",\"SCANNER\",2],[\"[\\\"pack6_lvl15\\\",\\\"g2\\\",3]\",\"PRINTER\",2]],[\"g3\",\"ALLOYS\",3,\"Bronze is mainly copper and tin, while brass is mainly copper and zinc.\",[\"[\\\"pack6_lvl15\\\",\\\"g3\\\",0]\",\"BRASS\",3],[\"[\\\"pack6_lvl15\\\",\\\"g3\\\",1]\",\"BRONZE\",3],[\"[\\\"pack6_lvl15\\\",\\\"g3\\\",2]\",\"STEEL\",3],[\"[\\\"pack6_lvl15\\\",\\\"g3\\\",3]\",\"SOLDER\",3]],[\"g4\",\"TYPED ON THE TOP ROW OF A QWERTY KEYBOARD\",4,\"The QWERTY layout is named after the first six letters on the top row of letter keys.\",[\"[\\\"pack6_lvl15\\\",\\\"g4\\\",0]\",\"TYPEWRITER\",4],[\"[\\\"pack6_lvl15\\\",\\\"g4\\\",1]\",\"POTTERY\",4],[\"[\\\"pack6_lvl15\\\",\\\"g4\\\",2]\",\"PEWTER\",4],[\"[\\\"pack6_lvl15\\\",\\\"g4\\\",3]\",\"PROPERTY\",4]],[[[\"TYPEWRITER\"],\"A TYPEWRITER is classic office equipment, but STAPLER, SHREDDER, SCANNER and PRINTER complete that set; TYPEWRITER uses only top-row letters.\"],[[\"POTTERY\"],\"POTTERY is a handicraft, but KNITTING, WEAVING, CROCHET and QUILTING complete that set; POTTERY uses only top-row letters.\"],[[\"PEWTER\"],\"PEWTER is an alloy based on tin, but BRASS, BRONZE, STEEL and SOLDER complete that set; PEWTER uses only top-row letters.\"]]]",
+        "game": {
+          "seed": 37,
+          "rng": 2100411872,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl15\",\"g1\",0]",
+                "[\"pack6_lvl15\",\"g1\",1]",
+                "[\"pack6_lvl15\",\"g1\",2]",
+                "[\"pack6_lvl15\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl15\",\"g2\",0]",
+                "[\"pack6_lvl15\",\"g2\",1]",
+                "[\"pack6_lvl15\",\"g2\",2]",
+                "[\"pack6_lvl15\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl15\",\"g3\",0]",
+                "[\"pack6_lvl15\",\"g3\",1]",
+                "[\"pack6_lvl15\",\"g3\",2]",
+                "[\"pack6_lvl15\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl15\",\"g4\",0]",
+                "[\"pack6_lvl15\",\"g4\",1]",
+                "[\"pack6_lvl15\",\"g4\",2]",
+                "[\"pack6_lvl15\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a37",
+      "levelId": "pack6_lvl16",
+      "date": null,
+      "header": "LexiStack · Hidden in Plain Sight #16",
+      "won": true,
+      "mistakes": 0,
+      "groups": 4,
+      "rows": [
+        {
+          "ids": [
+            "[\"pack6_lvl16\",\"g1\",0]",
+            "[\"pack6_lvl16\",\"g1\",1]",
+            "[\"pack6_lvl16\",\"g1\",2]",
+            "[\"pack6_lvl16\",\"g1\",3]"
+          ],
+          "tiers": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl16\",\"g2\",0]",
+            "[\"pack6_lvl16\",\"g2\",1]",
+            "[\"pack6_lvl16\",\"g2\",2]",
+            "[\"pack6_lvl16\",\"g2\",3]"
+          ],
+          "tiers": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl16\",\"g3\",0]",
+            "[\"pack6_lvl16\",\"g3\",1]",
+            "[\"pack6_lvl16\",\"g3\",2]",
+            "[\"pack6_lvl16\",\"g3\",3]"
+          ],
+          "tiers": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "correct": true
+        },
+        {
+          "ids": [
+            "[\"pack6_lvl16\",\"g4\",0]",
+            "[\"pack6_lvl16\",\"g4\",1]",
+            "[\"pack6_lvl16\",\"g4\",2]",
+            "[\"pack6_lvl16\",\"g4\",3]"
+          ],
+          "tiers": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "correct": true
+        }
+      ],
+      "reward": 50,
+      "rewardKind": "first",
+      "board": {
+        "id": "a37",
+        "levelId": "pack6_lvl16",
+        "date": null,
+        "entered": 37,
+        "fingerprint": "[\"pack6_lvl16\",\"pack6\",\"Order, Order\",[\"g1\",\"HORROR MOVIE MONSTERS\",1,\"Bram Stoker's 1897 novel Dracula did much to shape the modern image of the vampire.\",[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",0]\",\"VAMPIRE\",1],[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",1]\",\"ZOMBIE\",1],[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",2]\",\"MUMMY\",1],[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",3]\",\"WEREWOLF\",1]],[\"g2\",\"FABRICS\",2,\"Denim takes its name from serge de Nîmes, a sturdy fabric associated with the French city of Nîmes.\",[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",0]\",\"DENIM\",2],[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",1]\",\"VELVET\",2],[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",2]\",\"TWEED\",2],[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",3]\",\"SATIN\",2]],[\"g3\",\"BEFORE AID\",3,\"Legal aid helps people who cannot afford a lawyer to get free or low-cost advice and representation.\",[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",0]\",\"LEGAL\",3],[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",1]\",\"HEARING\",3],[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",2]\",\"VISUAL\",3],[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",3]\",\"FOREIGN\",3]],[\"g4\",\"LETTERS IN ALPHABETICAL ORDER\",4,\"Chintz, a glazed printed cotton, comes from the Hindi word chint, and its six letters run in alphabetical order.\",[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",0]\",\"GHOST\",4],[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",1]\",\"CHINTZ\",4],[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",2]\",\"FIRST\",4],[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",3]\",\"ALMOST\",4]],[[[\"GHOST\"],\"A GHOST haunts many horror films, but VAMPIRE, ZOMBIE, MUMMY and WEREWOLF complete that set; G, H, O, S, T run in alphabetical order.\"],[[\"CHINTZ\"],\"CHINTZ is a fabric, but DENIM, VELVET, TWEED and SATIN complete that set; its letters run in alphabetical order.\"],[[\"FIRST\"],\"FIRST AID is the most familiar phrase, but LEGAL, HEARING, VISUAL and FOREIGN complete that set; F, I, R, S, T are in alphabetical order.\"]]]",
+        "game": {
+          "seed": 38,
+          "rng": 67736212,
+          "status": "won",
+          "lives": 4,
+          "mistakes": 0,
+          "combo": 4,
+          "extraLives": 0,
+          "order": [],
+          "selection": [],
+          "solved": [
+            "g1",
+            "g2",
+            "g3",
+            "g4"
+          ],
+          "wrong": [],
+          "pairs": {},
+          "peeked": [],
+          "guesses": [
+            {
+              "ids": [
+                "[\"pack6_lvl16\",\"g1\",0]",
+                "[\"pack6_lvl16\",\"g1\",1]",
+                "[\"pack6_lvl16\",\"g1\",2]",
+                "[\"pack6_lvl16\",\"g1\",3]"
+              ],
+              "tiers": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl16\",\"g2\",0]",
+                "[\"pack6_lvl16\",\"g2\",1]",
+                "[\"pack6_lvl16\",\"g2\",2]",
+                "[\"pack6_lvl16\",\"g2\",3]"
+              ],
+              "tiers": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl16\",\"g3\",0]",
+                "[\"pack6_lvl16\",\"g3\",1]",
+                "[\"pack6_lvl16\",\"g3\",2]",
+                "[\"pack6_lvl16\",\"g3\",3]"
+              ],
+              "tiers": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "correct": true
+            },
+            {
+              "ids": [
+                "[\"pack6_lvl16\",\"g4\",0]",
+                "[\"pack6_lvl16\",\"g4\",1]",
+                "[\"pack6_lvl16\",\"g4\",2]",
+                "[\"pack6_lvl16\",\"g4\",3]"
+              ],
+              "tiers": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "correct": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "daily": {},
+  "attempts": [
+    {
+      "id": "a12",
+      "levelId": "pack4_lvl01",
+      "date": null,
+      "entered": 14,
+      "fingerprint": "[\"pack4_lvl01\",\"pack4\",\"Opening Night\",[\"g1\",\"FILM GENRES\",1,\"A western typically uses frontier life as a setting for its story.\",[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",0]\",\"COMEDY\",1],[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",1]\",\"DRAMA\",1],[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",2]\",\"THRILLER\",1],[\"[\\\"pack4_lvl01\\\",\\\"g1\\\",3]\",\"WESTERN\",1]],[\"g2\",\"MUSICAL TEMPO DIRECTIONS\",2,\"Andante suggests a walking pace, while presto calls for a much faster tempo.\",[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",0]\",\"ADAGIO\",2],[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",1]\",\"ALLEGRO\",2],[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",2]\",\"PRESTO\",2],[\"[\\\"pack4_lvl01\\\",\\\"g2\\\",3]\",\"ANDANTE\",2]],[\"g3\",\"TRAVELERS TO THE EMERALD CITY\",3,\"The Wonderful Wizard of Oz began as a novel before its famous screen adaptation.\",[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",0]\",\"DOROTHY\",3],[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",1]\",\"TOTO\",3],[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",2]\",\"SCARECROW\",3],[\"[\\\"pack4_lvl01\\\",\\\"g3\\\",3]\",\"TIN MAN\",3]],[\"g4\",\"BEFORE STAR\",4,\"A lodestar is a guiding star, often used metaphorically for a guiding principle.\",[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",0]\",\"ROCK\",4],[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",1]\",\"FILM\",4],[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",2]\",\"LODE\",4],[\"[\\\"pack4_lvl01\\\",\\\"g4\\\",3]\",\"SHOOTING\",4]],[[[\"TOTO\"],\"TOTO is also a band's name, but ADAGIO and its partners specify musical speed; the Oz travelers make a complete set.\"]]]",
+      "game": {
+        "seed": 13,
+        "rng": 247986532,
+        "status": "playing",
+        "lives": 4,
+        "mistakes": 0,
+        "combo": 0,
+        "extraLives": 0,
+        "order": [
+          "[\"pack4_lvl01\",\"g4\",0]",
+          "[\"pack4_lvl01\",\"g4\",3]",
+          "[\"pack4_lvl01\",\"g2\",0]",
+          "[\"pack4_lvl01\",\"g1\",1]",
+          "[\"pack4_lvl01\",\"g4\",2]",
+          "[\"pack4_lvl01\",\"g3\",2]",
+          "[\"pack4_lvl01\",\"g2\",2]",
+          "[\"pack4_lvl01\",\"g1\",0]",
+          "[\"pack4_lvl01\",\"g4\",1]",
+          "[\"pack4_lvl01\",\"g3\",3]",
+          "[\"pack4_lvl01\",\"g2\",3]",
+          "[\"pack4_lvl01\",\"g1\",3]",
+          "[\"pack4_lvl01\",\"g1\",2]",
+          "[\"pack4_lvl01\",\"g2\",1]",
+          "[\"pack4_lvl01\",\"g3\",1]",
+          "[\"pack4_lvl01\",\"g3\",0]"
+        ],
+        "selection": [
+          "[\"pack4_lvl01\",\"g3\",0]"
+        ],
+        "solved": [],
+        "wrong": [],
+        "pairs": {
+          "g3": [
+            "[\"pack4_lvl01\",\"g3\",0]",
+            "[\"pack4_lvl01\",\"g3\",1]"
+          ]
+        },
+        "peeked": [
+          "g1"
+        ],
+        "guesses": []
+      }
+    },
+    {
+      "id": "a19",
+      "levelId": "pack5_lvl04",
+      "date": null,
+      "entered": 21,
+      "fingerprint": "[\"pack5_lvl04\",\"pack5\",\"Packed and Ready\",[\"g1\",\"US STATES\",1,\"Vermont's name is usually traced to the French words for green mountain.\",[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",0]\",\"OREGON\",1],[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",1]\",\"NEVADA\",1],[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",2]\",\"VERMONT\",1],[\"[\\\"pack5_lvl04\\\",\\\"g1\\\",3]\",\"KANSAS\",1]],[\"g2\",\"GARMENTS NAMED AFTER PLACES\",4,\"Jodhpurs take their name from the Indian city of Jodhpur, where similar riding trousers were worn.\",[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",0]\",\"TUXEDO\",4],[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",1]\",\"BIKINI\",4],[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",2]\",\"JODHPURS\",4],[\"[\\\"pack5_lvl04\\\",\\\"g2\\\",3]\",\"BALACLAVA\",4]],[\"g3\",\"COMPUTER FONTS\",3,\"Helvetica takes its name from Helvetia, the Latin name for Switzerland, where the typeface was created.\",[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",0]\",\"COURIER\",3],[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",1]\",\"GEORGIA\",3],[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",2]\",\"IMPACT\",3],[\"[\\\"pack5_lvl04\\\",\\\"g3\\\",3]\",\"HELVETICA\",3]],[\"g4\",\"CARRY LOADS FOR OTHERS\",2,\"A mule is the offspring of a male donkey and a female horse, valued for its strength and stamina.\",[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",0]\",\"PORTER\",2],[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",1]\",\"CADDIE\",2],[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",2]\",\"BEARER\",2],[\"[\\\"pack5_lvl04\\\",\\\"g4\\\",3]\",\"MULE\",2]],[[[\"GEORGIA\"],\"GEORGIA looks like a fifth US state beside OREGON and KANSAS, but it is also a familiar computer font alongside COURIER, IMPACT and HELVETICA.\"],[[\"COURIER\"],\"COURIER carries loads for others like a PORTER or CADDIE, but the font set needs it; MULE completes the carriers.\"],[[\"MULE\"],\"MULE is also a backless shoe, tempting the garment set, but it is not named after a place; it is the pack animal among the carriers.\"]]]",
+      "game": {
+        "seed": 20,
+        "rng": 148676093,
+        "status": "playing",
+        "lives": 4,
+        "mistakes": 0,
+        "combo": 0,
+        "extraLives": 0,
+        "order": [
+          "[\"pack5_lvl04\",\"g3\",0]",
+          "[\"pack5_lvl04\",\"g4\",3]",
+          "[\"pack5_lvl04\",\"g2\",3]",
+          "[\"pack5_lvl04\",\"g2\",0]",
+          "[\"pack5_lvl04\",\"g3\",1]",
+          "[\"pack5_lvl04\",\"g2\",1]",
+          "[\"pack5_lvl04\",\"g1\",2]",
+          "[\"pack5_lvl04\",\"g4\",1]",
+          "[\"pack5_lvl04\",\"g1\",3]",
+          "[\"pack5_lvl04\",\"g1\",0]",
+          "[\"pack5_lvl04\",\"g1\",1]",
+          "[\"pack5_lvl04\",\"g3\",2]",
+          "[\"pack5_lvl04\",\"g4\",2]",
+          "[\"pack5_lvl04\",\"g3\",3]",
+          "[\"pack5_lvl04\",\"g2\",2]",
+          "[\"pack5_lvl04\",\"g4\",0]"
+        ],
+        "selection": [],
+        "solved": [],
+        "wrong": [],
+        "pairs": {},
+        "peeked": [],
+        "guesses": []
+      }
+    },
+    {
+      "id": "a38",
+      "levelId": "pack6_lvl16",
+      "date": null,
+      "entered": 38,
+      "fingerprint": "[\"pack6_lvl16\",\"pack6\",\"Order, Order\",[\"g1\",\"HORROR MOVIE MONSTERS\",1,\"Bram Stoker's 1897 novel Dracula did much to shape the modern image of the vampire.\",[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",0]\",\"VAMPIRE\",1],[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",1]\",\"ZOMBIE\",1],[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",2]\",\"MUMMY\",1],[\"[\\\"pack6_lvl16\\\",\\\"g1\\\",3]\",\"WEREWOLF\",1]],[\"g2\",\"FABRICS\",2,\"Denim takes its name from serge de Nîmes, a sturdy fabric associated with the French city of Nîmes.\",[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",0]\",\"DENIM\",2],[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",1]\",\"VELVET\",2],[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",2]\",\"TWEED\",2],[\"[\\\"pack6_lvl16\\\",\\\"g2\\\",3]\",\"SATIN\",2]],[\"g3\",\"BEFORE AID\",3,\"Legal aid helps people who cannot afford a lawyer to get free or low-cost advice and representation.\",[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",0]\",\"LEGAL\",3],[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",1]\",\"HEARING\",3],[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",2]\",\"VISUAL\",3],[\"[\\\"pack6_lvl16\\\",\\\"g3\\\",3]\",\"FOREIGN\",3]],[\"g4\",\"LETTERS IN ALPHABETICAL ORDER\",4,\"Chintz, a glazed printed cotton, comes from the Hindi word chint, and its six letters run in alphabetical order.\",[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",0]\",\"GHOST\",4],[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",1]\",\"CHINTZ\",4],[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",2]\",\"FIRST\",4],[\"[\\\"pack6_lvl16\\\",\\\"g4\\\",3]\",\"ALMOST\",4]],[[[\"GHOST\"],\"A GHOST haunts many horror films, but VAMPIRE, ZOMBIE, MUMMY and WEREWOLF complete that set; G, H, O, S, T run in alphabetical order.\"],[[\"CHINTZ\"],\"CHINTZ is a fabric, but DENIM, VELVET, TWEED and SATIN complete that set; its letters run in alphabetical order.\"],[[\"FIRST\"],\"FIRST AID is the most familiar phrase, but LEGAL, HEARING, VISUAL and FOREIGN complete that set; F, I, R, S, T are in alphabetical order.\"]]]",
+      "game": {
+        "seed": 39,
+        "rng": 743959596,
+        "status": "playing",
+        "lives": 4,
+        "mistakes": 0,
+        "combo": 0,
+        "extraLives": 0,
+        "order": [
+          "[\"pack6_lvl16\",\"g2\",3]",
+          "[\"pack6_lvl16\",\"g4\",1]",
+          "[\"pack6_lvl16\",\"g1\",2]",
+          "[\"pack6_lvl16\",\"g4\",0]",
+          "[\"pack6_lvl16\",\"g2\",2]",
+          "[\"pack6_lvl16\",\"g4\",3]",
+          "[\"pack6_lvl16\",\"g1\",3]",
+          "[\"pack6_lvl16\",\"g3\",0]",
+          "[\"pack6_lvl16\",\"g1\",1]",
+          "[\"pack6_lvl16\",\"g3\",2]",
+          "[\"pack6_lvl16\",\"g1\",0]",
+          "[\"pack6_lvl16\",\"g3\",3]",
+          "[\"pack6_lvl16\",\"g2\",1]",
+          "[\"pack6_lvl16\",\"g3\",1]",
+          "[\"pack6_lvl16\",\"g4\",2]",
+          "[\"pack6_lvl16\",\"g2\",0]"
+        ],
+        "selection": [
+          "[\"pack6_lvl16\",\"g1\",0]"
+        ],
+        "solved": [],
+        "wrong": [],
+        "pairs": {
+          "g1": [
+            "[\"pack6_lvl16\",\"g1\",0]",
+            "[\"pack6_lvl16\",\"g1\",1]"
+          ]
+        },
+        "peeked": [
+          "g1"
+        ],
+        "guesses": []
+      }
+    }
+  ],
+  "dailyAttempt": null,
+  "bestDailyStreak": 0,
+  "settings": {
+    "theme": "dark",
+    "haptics": false
+  },
+  "retiredIds": [],
+  "rewardLocks": [],
+  "unavailableDaily": []
+}

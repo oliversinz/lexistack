@@ -1,0 +1,32 @@
+android-progress-01 coins 205 campaign 8 results 9 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl01 3 stars +50
+android-progress-02 coins 255 campaign 9 results 10 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl02 3 stars +50
+android-progress-03 coins 305 campaign 10 results 11 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl03 3 stars +50
+android-progress-04 coins 355 campaign 11 results 12 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl04 3 stars +50
+android-progress-05 coins 405 campaign 12 results 13 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl05 3 stars +50
+android-progress-06 coins 455 campaign 13 results 14 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl06 3 stars +50
+android-progress-07 coins 505 campaign 14 results 15 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl07 3 stars +50
+android-progress-08 coins 555 campaign 15 results 16 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl08 3 stars +50
+android-progress-09 coins 605 campaign 16 results 17 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl09 3 stars +50
+android-progress-10 coins 655 campaign 17 results 18 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl10 3 stars +50
+android-progress-11 coins 705 campaign 18 results 19 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl11 3 stars +50
+android-progress-12 coins 755 campaign 19 results 20 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl12 3 stars +50
+android-progress-13 coins 805 campaign 20 results 21 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl13 3 stars +50
+android-progress-14 coins 855 campaign 21 results 22 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl14 3 stars +50
+android-progress-15 coins 905 campaign 22 results 23 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl15 3 stars +50
+android-progress-16 coins 955 campaign 23 results 24 attempts ['pack4_lvl01', 'pack5_lvl04']
+PASS Android intended solve pack6_lvl16 3 stars +50
